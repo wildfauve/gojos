@@ -1,0 +1,3814 @@
+{
+  "@context": [
+    "https://schema.org",
+    {
+      "csvw": "https://www.w3.org/ns/csvw#"
+    }
+  ],
+  "@type": "Dataset",
+  "name": "U.S. Open 2023 Leaderboard",
+  "description": "PGA TOUR Live Leaderboard 2023 U.S. Open, Los Angeles",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PGA TOUR"
+  },
+  "mainEntity": {
+    "@type": "csvw:Table",
+    "csvw:tableSchema": {
+      "csvw:columns": [
+        {
+          "csvw:name": "POS",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        },
+        {
+          "csvw:name": "PLAYER",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "O. Morales"
+            },
+            {
+              "csvw:value": "D. Germishuys"
+            },
+            {
+              "csvw:value": "J. Solomon"
+            },
+            {
+              "csvw:value": "B. Henson"
+            },
+            {
+              "csvw:value": "R. Nagano"
+            },
+            {
+              "csvw:value": "H. Lebioda"
+            },
+            {
+              "csvw:value": "R. Gerard"
+            },
+            {
+              "csvw:value": "Y. Katsuragawa"
+            },
+            {
+              "csvw:value": "M. Brennan"
+            },
+            {
+              "csvw:value": "M. Kim"
+            },
+            {
+              "csvw:value": "J. Smith"
+            },
+            {
+              "csvw:value": "W. Ding"
+            },
+            {
+              "csvw:value": "H. Buckley"
+            },
+            {
+              "csvw:value": "A. Svensson"
+            },
+            {
+              "csvw:value": "P. Larrazabal"
+            },
+            {
+              "csvw:value": "S. Stallings"
+            },
+            {
+              "csvw:value": "P. Summerhays"
+            },
+            {
+              "csvw:value": "L. Herbert"
+            },
+            {
+              "csvw:value": "Car. Young"
+            },
+            {
+              "csvw:value": "D. Wu"
+            },
+            {
+              "csvw:value": "R. Sloan"
+            },
+            {
+              "csvw:value": "J. Dantorp"
+            },
+            {
+              "csvw:value": "P. Rodgers"
+            },
+            {
+              "csvw:value": "R. Armour"
+            },
+            {
+              "csvw:value": "R. Ishikawa"
+            },
+            {
+              "csvw:value": "K. Streelman"
+            },
+            {
+              "csvw:value": "M. Pavon"
+            },
+            {
+              "csvw:value": "T. Pieters"
+            },
+            {
+              "csvw:value": "A. Wise"
+            },
+            {
+              "csvw:value": "G. Sargent"
+            },
+            {
+              "csvw:value": "S. Lowry"
+            },
+            {
+              "csvw:value": "J. Thomas"
+            },
+            {
+              "csvw:value": "T. Fleetwood"
+            },
+            {
+              "csvw:value": "B. DeChambeau"
+            },
+            {
+              "csvw:value": "F. Molinari"
+            },
+            {
+              "csvw:value": "T. Hatton"
+            },
+            {
+              "csvw:value": "S. Im"
+            },
+            {
+              "csvw:value": "K. Lee"
+            },
+            {
+              "csvw:value": "J.T. Poston"
+            },
+            {
+              "csvw:value": "T. Hoge"
+            },
+            {
+              "csvw:value": "S. Garcia"
+            },
+            {
+              "csvw:value": "S. Straka"
+            },
+            {
+              "csvw:value": "G. Woodland"
+            },
+            {
+              "csvw:value": "A. Scott"
+            },
+            {
+              "csvw:value": "C. Conners"
+            },
+            {
+              "csvw:value": "J. Rose"
+            },
+            {
+              "csvw:value": "R. Fowler"
+            },
+            {
+              "csvw:value": "J. Day"
+            },
+            {
+              "csvw:value": "C. Morikawa"
+            },
+            {
+              "csvw:value": "M. Homa"
+            },
+            {
+              "csvw:value": "S. Scheffler"
+            },
+            {
+              "csvw:value": "P. Reed"
+            },
+            {
+              "csvw:value": "M. Kuchar"
+            },
+            {
+              "csvw:value": "S.W. Kim"
+            },
+            {
+              "csvw:value": "D. McCarthy"
+            },
+            {
+              "csvw:value": "J. Dahmen"
+            },
+            {
+              "csvw:value": "A. Hadwin"
+            },
+            {
+              "csvw:value": "X. Schauffele"
+            },
+            {
+              "csvw:value": "V. Hovland"
+            },
+            {
+              "csvw:value": "J. Rahm"
+            },
+            {
+              "csvw:value": "M. McClean"
+            },
+            {
+              "csvw:value": "S. Power"
+            },
+            {
+              "csvw:value": "R. Fox"
+            },
+            {
+              "csvw:value": "M. Kaymer"
+            },
+            {
+              "csvw:value": "S. Cink"
+            },
+            {
+              "csvw:value": "M. Thorbjornsen"
+            },
+            {
+              "csvw:value": "M. Meissner"
+            },
+            {
+              "csvw:value": "B. Brown"
+            },
+            {
+              "csvw:value": "G. Charoenkul"
+            },
+            {
+              "csvw:value": "D. Horsey"
+            },
+            {
+              "csvw:value": "B. Valdes"
+            },
+            {
+              "csvw:value": "P. Barjon"
+            },
+            {
+              "csvw:value": "A. Yang"
+            },
+            {
+              "csvw:value": "J. Schutte"
+            },
+            {
+              "csvw:value": "A. Svoboda"
+            },
+            {
+              "csvw:value": "J. Gumberg"
+            },
+            {
+              "csvw:value": "K. Mueller"
+            },
+            {
+              "csvw:value": "B. Amat"
+            },
+            {
+              "csvw:value": "B. Grant"
+            },
+            {
+              "csvw:value": "V. Norrman"
+            },
+            {
+              "csvw:value": "C. Hoffman"
+            },
+            {
+              "csvw:value": "R. Fisher"
+            },
+            {
+              "csvw:value": "N. Echavarria"
+            },
+            {
+              "csvw:value": "P. Haley II"
+            },
+            {
+              "csvw:value": "S. Forsström"
+            },
+            {
+              "csvw:value": "C. Ortiz"
+            },
+            {
+              "csvw:value": "M. Moldovan"
+            },
+            {
+              "csvw:value": "N. Dunlap"
+            },
+            {
+              "csvw:value": "N. Hardy"
+            },
+            {
+              "csvw:value": "S. Stevens"
+            },
+            {
+              "csvw:value": "E. Cole"
+            },
+            {
+              "csvw:value": "T. Lawrence"
+            },
+            {
+              "csvw:value": "A. Schenk"
+            },
+            {
+              "csvw:value": "T. Pendrith"
+            },
+            {
+              "csvw:value": "A. Potgieter"
+            },
+            {
+              "csvw:value": "R. Langasque"
+            },
+            {
+              "csvw:value": "L. List"
+            },
+            {
+              "csvw:value": "W. Nienaber"
+            },
+            {
+              "csvw:value": "A. Del Rey"
+            },
+            {
+              "csvw:value": "A. Putnam"
+            },
+            {
+              "csvw:value": "V. Perez"
+            },
+            {
+              "csvw:value": "A. Ancer"
+            },
+            {
+              "csvw:value": "A. Meronk"
+            },
+            {
+              "csvw:value": "H. English"
+            },
+            {
+              "csvw:value": "J. Niemann"
+            },
+            {
+              "csvw:value": "P. Mickelson"
+            },
+            {
+              "csvw:value": "P. Harrington"
+            },
+            {
+              "csvw:value": "K. Bradley"
+            },
+            {
+              "csvw:value": "A. Noren"
+            },
+            {
+              "csvw:value": "W. Clark"
+            },
+            {
+              "csvw:value": "A. Eckroat"
+            },
+            {
+              "csvw:value": "M. Pereira"
+            },
+            {
+              "csvw:value": "E. Grillo"
+            },
+            {
+              "csvw:value": "M. Fernandez de Oliveira"
+            },
+            {
+              "csvw:value": "K. Kitayama"
+            },
+            {
+              "csvw:value": "C. Davis"
+            },
+            {
+              "csvw:value": "R. Henley"
+            },
+            {
+              "csvw:value": "T. Kim"
+            },
+            {
+              "csvw:value": "S. Theegala"
+            },
+            {
+              "csvw:value": "Cam. Young"
+            },
+            {
+              "csvw:value": "Ca. Smith"
+            },
+            {
+              "csvw:value": "S. Bennett"
+            },
+            {
+              "csvw:value": "M. Fitzpatrick"
+            },
+            {
+              "csvw:value": "S. Burns"
+            },
+            {
+              "csvw:value": "D. Johnson"
+            },
+            {
+              "csvw:value": "K. Mitchell"
+            },
+            {
+              "csvw:value": "B. Horschel"
+            },
+            {
+              "csvw:value": "C. Kirk"
+            },
+            {
+              "csvw:value": "B. Harman"
+            },
+            {
+              "csvw:value": "T. Finau"
+            },
+            {
+              "csvw:value": "J. Spieth"
+            },
+            {
+              "csvw:value": "P. Cantlay"
+            },
+            {
+              "csvw:value": "B. Koepka"
+            },
+            {
+              "csvw:value": "H. Matsuyama"
+            },
+            {
+              "csvw:value": "R. McIlroy"
+            },
+            {
+              "csvw:value": "D. Thompson"
+            },
+            {
+              "csvw:value": "M. Lee"
+            },
+            {
+              "csvw:value": "J. Suh"
+            },
+            {
+              "csvw:value": "S. Muñoz"
+            },
+            {
+              "csvw:value": "N. Taylor"
+            },
+            {
+              "csvw:value": "T. Montgomery"
+            },
+            {
+              "csvw:value": "T. Moore"
+            },
+            {
+              "csvw:value": "M. Hughes"
+            },
+            {
+              "csvw:value": "B. Carr"
+            },
+            {
+              "csvw:value": "O. Browne Jr."
+            },
+            {
+              "csvw:value": "D. Puig"
+            },
+            {
+              "csvw:value": "K. Vilips"
+            },
+            {
+              "csvw:value": "P. Cover"
+            },
+            {
+              "csvw:value": "D. Nyfjall"
+            },
+            {
+              "csvw:value": "F. Capan III"
+            },
+            {
+              "csvw:value": "C. Pereira"
+            },
+            {
+              "csvw:value": "I. Simmons"
+            },
+            {
+              "csvw:value": "J. Grey"
+            },
+            {
+              "csvw:value": "A. Truslow"
+            },
+            {
+              "csvw:value": "C. Cavaliere"
+            },
+            {
+              "csvw:value": "A. Schaake"
+            }
+          ]
+        },
+        {
+          "csvw:name": "TOT",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "E"
+            }
+          ]
+        },
+        {
+          "csvw:name": "THRU",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "6:45 AM"
+            },
+            {
+              "csvw:value": "6:45 AM"
+            },
+            {
+              "csvw:value": "6:45 AM"
+            },
+            {
+              "csvw:value": "6:45 AM*"
+            },
+            {
+              "csvw:value": "6:45 AM*"
+            },
+            {
+              "csvw:value": "6:45 AM*"
+            },
+            {
+              "csvw:value": "6:56 AM"
+            },
+            {
+              "csvw:value": "6:56 AM"
+            },
+            {
+              "csvw:value": "6:56 AM"
+            },
+            {
+              "csvw:value": "6:56 AM*"
+            },
+            {
+              "csvw:value": "6:56 AM*"
+            },
+            {
+              "csvw:value": "6:56 AM*"
+            },
+            {
+              "csvw:value": "7:07 AM"
+            },
+            {
+              "csvw:value": "7:07 AM"
+            },
+            {
+              "csvw:value": "7:07 AM"
+            },
+            {
+              "csvw:value": "7:07 AM*"
+            },
+            {
+              "csvw:value": "7:07 AM*"
+            },
+            {
+              "csvw:value": "7:07 AM*"
+            },
+            {
+              "csvw:value": "7:18 AM"
+            },
+            {
+              "csvw:value": "7:18 AM"
+            },
+            {
+              "csvw:value": "7:18 AM"
+            },
+            {
+              "csvw:value": "7:18 AM*"
+            },
+            {
+              "csvw:value": "7:18 AM*"
+            },
+            {
+              "csvw:value": "7:18 AM*"
+            },
+            {
+              "csvw:value": "7:29 AM"
+            },
+            {
+              "csvw:value": "7:29 AM"
+            },
+            {
+              "csvw:value": "7:29 AM"
+            },
+            {
+              "csvw:value": "7:29 AM*"
+            },
+            {
+              "csvw:value": "7:29 AM*"
+            },
+            {
+              "csvw:value": "7:29 AM*"
+            },
+            {
+              "csvw:value": "7:40 AM"
+            },
+            {
+              "csvw:value": "7:40 AM"
+            },
+            {
+              "csvw:value": "7:40 AM"
+            },
+            {
+              "csvw:value": "7:40 AM*"
+            },
+            {
+              "csvw:value": "7:40 AM*"
+            },
+            {
+              "csvw:value": "7:40 AM*"
+            },
+            {
+              "csvw:value": "7:51 AM"
+            },
+            {
+              "csvw:value": "7:51 AM"
+            },
+            {
+              "csvw:value": "7:51 AM"
+            },
+            {
+              "csvw:value": "7:51 AM*"
+            },
+            {
+              "csvw:value": "7:51 AM*"
+            },
+            {
+              "csvw:value": "7:51 AM*"
+            },
+            {
+              "csvw:value": "8:02 AM"
+            },
+            {
+              "csvw:value": "8:02 AM"
+            },
+            {
+              "csvw:value": "8:02 AM"
+            },
+            {
+              "csvw:value": "8:02 AM*"
+            },
+            {
+              "csvw:value": "8:02 AM*"
+            },
+            {
+              "csvw:value": "8:02 AM*"
+            },
+            {
+              "csvw:value": "8:13 AM"
+            },
+            {
+              "csvw:value": "8:13 AM"
+            },
+            {
+              "csvw:value": "8:13 AM"
+            },
+            {
+              "csvw:value": "8:13 AM*"
+            },
+            {
+              "csvw:value": "8:13 AM*"
+            },
+            {
+              "csvw:value": "8:13 AM*"
+            },
+            {
+              "csvw:value": "8:24 AM"
+            },
+            {
+              "csvw:value": "8:24 AM"
+            },
+            {
+              "csvw:value": "8:24 AM"
+            },
+            {
+              "csvw:value": "8:24 AM*"
+            },
+            {
+              "csvw:value": "8:24 AM*"
+            },
+            {
+              "csvw:value": "8:24 AM*"
+            },
+            {
+              "csvw:value": "8:35 AM"
+            },
+            {
+              "csvw:value": "8:35 AM"
+            },
+            {
+              "csvw:value": "8:35 AM"
+            },
+            {
+              "csvw:value": "8:35 AM*"
+            },
+            {
+              "csvw:value": "8:35 AM*"
+            },
+            {
+              "csvw:value": "8:35 AM*"
+            },
+            {
+              "csvw:value": "8:46 AM"
+            },
+            {
+              "csvw:value": "8:46 AM"
+            },
+            {
+              "csvw:value": "8:46 AM"
+            },
+            {
+              "csvw:value": "8:46 AM*"
+            },
+            {
+              "csvw:value": "8:46 AM*"
+            },
+            {
+              "csvw:value": "8:46 AM*"
+            },
+            {
+              "csvw:value": "8:57 AM"
+            },
+            {
+              "csvw:value": "8:57 AM"
+            },
+            {
+              "csvw:value": "8:57 AM"
+            },
+            {
+              "csvw:value": "8:57 AM*"
+            },
+            {
+              "csvw:value": "8:57 AM*"
+            },
+            {
+              "csvw:value": "8:57 AM*"
+            },
+            {
+              "csvw:value": "12:15 PM"
+            },
+            {
+              "csvw:value": "12:15 PM"
+            },
+            {
+              "csvw:value": "12:15 PM"
+            },
+            {
+              "csvw:value": "12:15 PM*"
+            },
+            {
+              "csvw:value": "12:15 PM*"
+            },
+            {
+              "csvw:value": "12:15 PM*"
+            },
+            {
+              "csvw:value": "12:26 PM"
+            },
+            {
+              "csvw:value": "12:26 PM"
+            },
+            {
+              "csvw:value": "12:26 PM"
+            },
+            {
+              "csvw:value": "12:26 PM*"
+            },
+            {
+              "csvw:value": "12:26 PM*"
+            },
+            {
+              "csvw:value": "12:26 PM*"
+            },
+            {
+              "csvw:value": "12:37 PM"
+            },
+            {
+              "csvw:value": "12:37 PM"
+            },
+            {
+              "csvw:value": "12:37 PM"
+            },
+            {
+              "csvw:value": "12:37 PM*"
+            },
+            {
+              "csvw:value": "12:37 PM*"
+            },
+            {
+              "csvw:value": "12:37 PM*"
+            },
+            {
+              "csvw:value": "12:48 PM"
+            },
+            {
+              "csvw:value": "12:48 PM"
+            },
+            {
+              "csvw:value": "12:48 PM"
+            },
+            {
+              "csvw:value": "12:48 PM*"
+            },
+            {
+              "csvw:value": "12:48 PM*"
+            },
+            {
+              "csvw:value": "12:48 PM*"
+            },
+            {
+              "csvw:value": "12:59 PM"
+            },
+            {
+              "csvw:value": "12:59 PM"
+            },
+            {
+              "csvw:value": "12:59 PM"
+            },
+            {
+              "csvw:value": "12:59 PM*"
+            },
+            {
+              "csvw:value": "12:59 PM*"
+            },
+            {
+              "csvw:value": "12:59 PM*"
+            },
+            {
+              "csvw:value": "1:10 PM"
+            },
+            {
+              "csvw:value": "1:10 PM"
+            },
+            {
+              "csvw:value": "1:10 PM"
+            },
+            {
+              "csvw:value": "1:10 PM*"
+            },
+            {
+              "csvw:value": "1:10 PM*"
+            },
+            {
+              "csvw:value": "1:10 PM*"
+            },
+            {
+              "csvw:value": "1:21 PM"
+            },
+            {
+              "csvw:value": "1:21 PM"
+            },
+            {
+              "csvw:value": "1:21 PM"
+            },
+            {
+              "csvw:value": "1:21 PM*"
+            },
+            {
+              "csvw:value": "1:21 PM*"
+            },
+            {
+              "csvw:value": "1:21 PM*"
+            },
+            {
+              "csvw:value": "1:32 PM"
+            },
+            {
+              "csvw:value": "1:32 PM"
+            },
+            {
+              "csvw:value": "1:32 PM"
+            },
+            {
+              "csvw:value": "1:32 PM*"
+            },
+            {
+              "csvw:value": "1:32 PM*"
+            },
+            {
+              "csvw:value": "1:32 PM*"
+            },
+            {
+              "csvw:value": "1:43 PM"
+            },
+            {
+              "csvw:value": "1:43 PM"
+            },
+            {
+              "csvw:value": "1:43 PM"
+            },
+            {
+              "csvw:value": "1:43 PM*"
+            },
+            {
+              "csvw:value": "1:43 PM*"
+            },
+            {
+              "csvw:value": "1:43 PM*"
+            },
+            {
+              "csvw:value": "1:54 PM"
+            },
+            {
+              "csvw:value": "1:54 PM"
+            },
+            {
+              "csvw:value": "1:54 PM"
+            },
+            {
+              "csvw:value": "1:54 PM*"
+            },
+            {
+              "csvw:value": "1:54 PM*"
+            },
+            {
+              "csvw:value": "1:54 PM*"
+            },
+            {
+              "csvw:value": "2:05 PM"
+            },
+            {
+              "csvw:value": "2:05 PM"
+            },
+            {
+              "csvw:value": "2:05 PM"
+            },
+            {
+              "csvw:value": "2:05 PM*"
+            },
+            {
+              "csvw:value": "2:05 PM*"
+            },
+            {
+              "csvw:value": "2:05 PM*"
+            },
+            {
+              "csvw:value": "2:16 PM"
+            },
+            {
+              "csvw:value": "2:16 PM"
+            },
+            {
+              "csvw:value": "2:16 PM"
+            },
+            {
+              "csvw:value": "2:16 PM*"
+            },
+            {
+              "csvw:value": "2:16 PM*"
+            },
+            {
+              "csvw:value": "2:16 PM*"
+            },
+            {
+              "csvw:value": "2:27 PM"
+            },
+            {
+              "csvw:value": "2:27 PM"
+            },
+            {
+              "csvw:value": "2:27 PM"
+            },
+            {
+              "csvw:value": "2:27 PM*"
+            },
+            {
+              "csvw:value": "2:27 PM*"
+            },
+            {
+              "csvw:value": "2:27 PM*"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R1",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R2",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R3",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R4",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
