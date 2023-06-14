@@ -13,6 +13,7 @@ class TournamentEvent:
         self.name = f"{self.is_event_of.subject_name}{self.scheduled_in_year}"
         self.label = f"{self.is_event_of.name} {self.scheduled_in_year}"
         self.entries = []
+        self.number_of_entries = None
         self.rounds = []
         self.errors = []
         self.points_strategy = None
@@ -21,7 +22,11 @@ class TournamentEvent:
 
     def add_entries(self, entries):
         self.entries = entries
+        self.number_of_entries = len(self.entries)
         return self
+
+    def positions_for_player_per_round(self, player):
+        return self.leaderboard.positions_for_player_per_round(player)
 
     def fantasy_points_strategy(self, points_strategy):
         self.points_strategy = points_strategy
@@ -47,23 +52,33 @@ class LeaderBoard:
         self.rounds = []
         pass
 
-    def for_round(self, rd):
-        rd = fn.find(partial(self._round_number_predicate, rd), self.rounds)
-        if not rd:
-            rd = Round(rd=rd)
+    def for_round(self, round_number):
+        for_round = fn.find(partial(self._round_number_predicate, round_number), self.rounds)
+        if not for_round:
+            rd = Round(round_number=round_number)
             self.rounds.append(rd)
+            return rd
             # raise error.ConfigException(f"Round id: {round_id} does not exist")
-        return rd
+        return for_round
+
+    def positions_for_player_per_round(self, player):
+        return [rd.position_for_player(player) for rd in self.rounds]
 
     def _round_number_predicate(self, number, rd):
-        return rd.rd == number
+        return rd.round_number == number
 
 
 class Round:
 
-    def __init__(self, rd: int):
-        self.rd = rd
+    def __init__(self, round_number: int):
+        self.round_number = round_number
         self.players = []
+
+    def position_for_player(self, player):
+        player_scr = fn.find(partial(self._player_predicate, player), self.players)
+        if not player_scr:
+            breakpoint()
+        return player_scr.round_position
 
     def player(self, plyr):
         ps = PlayerScore(player=plyr)
@@ -71,13 +86,21 @@ class Round:
         return ps
 
 
+    def _player_predicate(self, for_player, player_score):
+        return for_player == player_score.player
+
+
 class PlayerScore:
 
     def __init__(self, player):
         self.player = player
-        self.score = None
+        self.round_score = None
+        self.round_position = None
 
     def score(self, scr):
-        self.score = scr
+        self.round_score = scr
         return self
 
+    def position(self, pos):
+        self.round_position = pos
+        return self

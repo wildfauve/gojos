@@ -12,6 +12,9 @@ def team_musical_bears(major):
     return TEAM
 
 
-def selection_precut(major):
-    TEAM.major(major).precut_selection(McIlroy)
+def selection(major):
+    TEAM.major(major).selection(McIlroy)
+
+def wildcards(major):
+    pass
 

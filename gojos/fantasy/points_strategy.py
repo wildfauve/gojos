@@ -6,100 +6,37 @@ from collections import ChainMap
 from gojos import model
 
 
-class Points521(Enum):
-    NO_POINTS = ('', 0)
-    WINNER = ('correct-winner', 5)
-    NUMBER_OF_SETS = ('correct-sets', 2)
-    LOST_WITH_MAX_SETS = ('bonus-for-loss-in-max-sets', 1)
-
-
-class Points1HalfHalf(Enum):
-    NO_POINTS = ('', 0)
-    WINNER = ('correct-winner', 1)
-    NUMBER_OF_SETS = ('correct-sets', 0.5)
-    LOST_WITH_MAX_SETS = ('bonus-for-loss-in-max-sets', 0.5)
-
-
-class Points21Half(Enum):
-    NO_POINTS = ('', 0)
-    WINNER = ('correct-winner', 2)
-    NUMBER_OF_SETS = ('correct-sets', 1)
-    LOST_WITH_MAX_SETS = ('bonus-for-loss-in-max-sets', 0.5)
+class Points1(Enum):
+    POINTS_PER_POSITION = ('position', 1)
 
 
 class PointsStrategyCalculator:
 
-    def __init__(self, pts_strategy: Union[Type[Points521], Type[Points1HalfHalf]],
-                 per_round_accum_strategy: Callable):
+    def __init__(self, pts_strategy: Union[Type[Points1]]):
         self.pts_strategy = pts_strategy
-        self.per_round_accum_strategy = per_round_accum_strategy
 
 
-class WinNumSetsLossMaxSets(PointsStrategyCalculator):
+class InvertedPosition1Position4wildcards(PointsStrategyCalculator):
     """
-    Strategy for calculating Fantasy Points.
-    + n points for selecting the correct winner
-    + n points for selecting the correct number of sets
-    + n points for not selecting the correct winner, but getting the sets correct.
     """
-
-    def explain_points_for_round(self, for_round):
-        w = self._points_with_factor(self.pts_strategy.WINNER.value[1], for_round)
-        s = self._points_with_factor(self.pts_strategy.NUMBER_OF_SETS.value[1], for_round)
-        ls = self._points_with_factor(self.pts_strategy.LOST_WITH_MAX_SETS.value[1], for_round)
-        return f"w({w}) s({s}) lms({ls})"
 
     def calc(self, selection: model.Selection, explain: bool = False) -> Union[int, Dict]:
-        result = [strategy(selection, explain) for strategy in self.points_strategy_fns()]
-        if explain:
-            return result
-        return sum(result)
+        return self._one_pt_per_inverted_position(selection, explain)
 
-    def points_strategy_fns(self) -> List[Callable]:
-        return [self.selected_correct_winner, self.selected_correct_sets, self.lost_but_in_max_sets]
+    # def _points_strategy_fns(self) -> List[Callable]:
+    #     return [self._one_pt_per_inverted_position]
 
-    def selected_correct_winner(self, selection: model.Selection, explain: bool = False) -> int:
-        if selection.match.match_winner == selection.selected_winner:
-            return self._calc(self.pts_strategy.WINNER,
-                              selection.round_id,
-                              explain)
-        return self._calc(self.pts_strategy.NO_POINTS,
-                          selection.round_id,
-                          explain,
-                          self.pts_strategy.WINNER)
+    def _one_pt_per_inverted_position(self, selection: model.Selection, explain: bool = False) -> int:
+        return [self._invert_position(selection, pos) for pos in
+                selection.tournament.positions_for_player_per_round(selection.player)]
 
-    def selected_correct_sets(self, selection: model.Selection, explain: bool = False) -> int:
-        if selection.match.match_winner != selection.selected_winner:
-            return self._calc(self.pts_strategy.NO_POINTS,
-                              selection.round_id,
-                              explain,
-                              self.pts_strategy.NUMBER_OF_SETS)
-        if selection.in_number_sets == selection.match.number_of_sets_played():
-            return self._calc(self.pts_strategy.NUMBER_OF_SETS,
-                              selection.round_id,
-                              explain)
-        return self._calc(self.pts_strategy.NO_POINTS,
-                          selection.round_id,
-                          explain,
-                          self.pts_strategy.NUMBER_OF_SETS)
-
-    def lost_but_in_max_sets(self, selection: model.Selection, explain: bool = False) -> int:
-        if ((selection.match.match_winner != selection.selected_winner) and
-            selection.match.max_sets_played()):
-                # selection.match.number_of_sets_played() == selection.in_number_sets):
-            return self._calc(self.pts_strategy.LOST_WITH_MAX_SETS,
-                              selection.round_id,
-                              explain)
-        return self._calc(self.pts_strategy.NO_POINTS,
-                          selection.round_id,
-                          explain,
-                          self.pts_strategy.LOST_WITH_MAX_SETS)
+    def _invert_position(self, selection, pos):
+        return selection.tournament.number_of_entries + 1 - pos
 
     def _calc(self,
-              points_type: Union[Points521, Points1HalfHalf],
+              points_type,
               rd: int,
-              explain: bool = False,
-              when_no_points: Union[Points521, Points1HalfHalf] = None) -> Union[int, Dict]:
+              explain: bool = False) -> Union[int, Dict]:
         points_name, value = points_type.value
         if points_type == self.pts_strategy.NO_POINTS:
             return value if not explain else {when_no_points.value[0]: value}
@@ -135,22 +72,8 @@ class WinNumSetsLossMaxSets(PointsStrategyCalculator):
         return self._rd_range(acc, int(curr / 2))
 
 
-def doubling_per_round_strategy(rd: int):
-    if rd == 1:
-        return 1
-    return 2 ** (rd - 1)
-
-
-def strategy_1_point5_point5_double():
-    return WinNumSetsLossMaxSets(Points1HalfHalf, doubling_per_round_strategy)
-
-
-def strategy_5_2_1_double():
-    return WinNumSetsLossMaxSets(Points521, doubling_per_round_strategy)
-
-
-def strategy_2_1_point5_double():
-    return WinNumSetsLossMaxSets(Points21Half, doubling_per_round_strategy)
+def strategy_inverted_position_1_per_position_4_wildcards():
+    return InvertedPosition1Position4wildcards(Points1)
 
 
 def points_list_to_dict(points: List[Dict[str, int]]):

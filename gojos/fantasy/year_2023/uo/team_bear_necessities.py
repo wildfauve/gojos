@@ -12,7 +12,10 @@ def team_bear_necessities(major):
     helpers.selection_fn_caller(this, major)
     return TEAM
 
-def selection_precut(major):
-    TEAM.major(major).precut_selection(McIlroy)
+def selection(major):
+    TEAM.major(major).selection(McIlroy)
+    TEAM.major(major).selection(Scheffler)
 
 
+def wildcards(major):
+    pass

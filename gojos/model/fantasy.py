@@ -22,9 +22,7 @@ class Team:
         return self.fantasy_tournament
 
     def points_per_round(self):
-        pts = self.fantasy_tournament.points_per_round()
-        breakpoint()
-        return [sum(t) for t in zip(d1, d2)]
+        return self.fantasy_tournament.points_per_round()
 
     def total_points(self, for_round=None):
         return sum([fantasy_draw.total_points(for_round) for fantasy_draw in self.fantasy_draws])
@@ -45,10 +43,8 @@ class FantasyTournament:
         self.tournament = tournament
         self.selections = []
 
-    def precut_selection(self, player):
-        self.selections.append(Selection(tournament=self.tournament,
-                                         player=player,
-                                         precut=True))
+    def selection(self, player):
+        self.selections.append(Selection(tournament=self.tournament, player=player))
         return self
 
     def show(self, table: Table, for_round: int = None):
@@ -61,7 +57,7 @@ class FantasyTournament:
                     selection.show(self.draw.name, table)
 
     def points_per_round(self):
-        return sum([selects.points() for selects in self.selections])
+        return [sum(rd_pts) for rd_pts in zip(*[selects.points_per_round() for selects in self.selections])]
 
     def total_points(self, for_round=None):
         if for_round:
@@ -99,17 +95,13 @@ class FantasyTournament:
 
 
 class Selection:
-    def __init__(self, tournament, player, precut):
+    def __init__(self, tournament, player):
         self.tournament = tournament
         self.player = player
-        self.division = 'precut' if precut else 'postcut'
         self.points_strategy = tournament.points_strategy
         self.per_round_accum_strategy = tournament.round_factor_strategy
 
-    def points(self):
-        breakpoint()
-        if not self.match.is_finished():
-            return 0
+    def points_per_round(self):
         return self.points_strategy.calc(self, explain=False)
 
     def explain_points(self):
