@@ -3,7 +3,9 @@ from .player import (
 )
 
 from .tournament import (
-    GrandSlam
+    GrandSlam,
+    Tournament,
+    Course
 )
 
 from .fantasy import (

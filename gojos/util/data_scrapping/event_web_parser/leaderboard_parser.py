@@ -15,8 +15,8 @@ from gojos.util.data_scrapping import value
 leaderboard = "https://www.pgatour.com/leaderboard"
 
 
-def build_leaderboard():
-    return _csvw_parser(_entries(_get_page(leaderboard)))
+def build_leaderboard(for_round):
+    return _csvw_parser(_entries(_get_page(leaderboard)), for_round)
 
 
 def _get_page(url_or_file):
@@ -29,26 +29,26 @@ def _entries(page):
     return page.find('script', type='application/ld+json').text
 
 
-def _csvw_parser(json_ld):
+def _csvw_parser(json_ld, for_round):
     data = json.loads(json_ld)
     num_players = len(data['mainEntity']['csvw:tableSchema']['csvw:columns'][1]['csvw:cells'])
-    return reduce(partial(_per_player_row, data['mainEntity']['csvw:tableSchema']['csvw:columns']),
+    return reduce(partial(_per_player_row, for_round, data['mainEntity']['csvw:tableSchema']['csvw:columns']),
                   range(0, num_players - 1), [])
 
 
-def _per_player_row(table, accum, cell_id):
+def _per_player_row(for_round, table, accum, cell_id):
     pos = _to_int(_extract_value(table, 0, cell_id, "-"))
     name = _extract_value(table, 1, cell_id, "-")
     total = _extract_value(table, 1, cell_id, None)
-    r1 = _extract_value(table, 4, cell_id, "-")
-    r2 = _extract_value(table, 5, cell_id, "-")
-    r3 = _extract_value(table, 6, cell_id, "-")
-    r4 = _extract_value(table, 7, cell_id, "-")
+    rd = _extract_value(table, for_round + 3, cell_id, "-")
+    # r2 = _extract_value(table, 5, cell_id, "-")
+    # r3 = _extract_value(table, 6, cell_id, "-")
+    # r4 = _extract_value(table, 7, cell_id, "-")
     accum.append(value.ScrappedPlayer(name=_tokenise(name),
                                       player_module=mens_players,
                                       total=total,
                                       position=pos,
-                                      round_scores=[r1, r2, r3, r4]))
+                                      round_scores=[rd]))
     return accum
 
 def _to_int(pos: Union[str, int]):

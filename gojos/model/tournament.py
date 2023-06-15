@@ -7,3 +7,10 @@ class Tournament:
 
 class GrandSlam(Tournament):
     pass
+
+
+class Course:
+    def __init__(self, name, par, country_symbol):
+        self.name = name
+        self.par = par
+        self.country_symbol = country_symbol

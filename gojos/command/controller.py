@@ -30,10 +30,11 @@ def rank_plot(file: str,
     pass
 
 
-def leaderboard_scrap(entries_file, players_file, leaderboard_file):
+def leaderboard_scrap(entries_file, players_file, leaderboard_file, for_round):
     leaderboard_parser.build_leaderboard(entries_file=entries_file,
                                          players_file=players_file,
-                                         leaderboard_file=leaderboard_file)
+                                         leaderboard_file=leaderboard_file,
+                                         for_round=for_round)
 
 
 

@@ -16,6 +16,7 @@ class TournamentEvent:
         self.entries = []
         self.number_of_entries = None
         self.rounds = []
+        self.course = None
         self.errors = []
         self.points_strategy = None
         self.round_factor_strategy = None
@@ -24,6 +25,10 @@ class TournamentEvent:
     def add_entries(self, entries):
         self.entries = entries
         self.number_of_entries = len(self.entries)
+        return self
+
+    def at_course(self, course):
+        self.course = course
         return self
 
     def positions_for_player_per_round(self, player, wildcards):
