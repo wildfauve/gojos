@@ -2,6 +2,10 @@ from functools import partial
 from gojos import command
 import polars as pl
 
+from gojos.fantasy import teams
+from gojos import model
+from gojos.players.mens_players import *
+
 from tests.shared import *
 
 
@@ -14,7 +18,7 @@ def test_leaderboard_with_no_results(fantasy_tournaments):
     assert result.rows() == [('Team Clojo',), ('Team Bear Necessities',)]
 
 
-def test_leaderboard_with_r1_results(fantasy_tournaments):
+def test_leaderboard_with_r2_results_accumulated(fantasy_tournaments):
     tournie = clojos_open_2023_with_results()
     result = command.leaderboard_df('ClojosOpen2023',
                                     tournament_search_fn=partial(tournament_in_fantasy, tournie),
@@ -22,9 +26,30 @@ def test_leaderboard_with_r1_results(fantasy_tournaments):
 
     df = result.filter(pl.col('teams') == "Team Clojo")
 
-    team, score = df.rows()[0]
+    team, *points = df.rows()[0]
 
-    expected_pos = [11, 4, 12, 6, 7, 13, 10, 14, 15, 16]
-    expected_pts = [16 - pos + 1 for pos in expected_pos]
+    expected_pos = [[6, 7, 10, 8], [6, 7, 10, 8]]
+    expected_pts = [10 - pos + 1 for round_pos in expected_pos for pos in round_pos]
 
-    assert score == sum(expected_pts)
+    assert points[-1] == sum(expected_pts)
+
+
+def test_wildcard(fantasy_tournaments):
+    tournie = clojos_open_2023_with_results()
+    result = command.leaderboard_df('ClojosOpen2023',
+                                    tournament_search_fn=partial(tournament_in_fantasy, tournie),
+                                    fantasy_tournaments=fantasy_tournaments)
+
+    df = result.filter(pl.col('teams') == "Team Clojo")
+
+    assert df.rows()[0][2] == 26
+
+    teams.TeamClojo.major(tournie).play_wildcard(
+        model.WildCard().from_round(1).trade_out(Schauffele).trade_in(Morikawa))
+
+    result_after_wc = command.leaderboard_df('ClojosOpen2023',
+                                             tournament_search_fn=partial(tournament_in_fantasy, tournie),
+                                             fantasy_tournaments=fantasy_tournaments)
+    df_after_wc = result_after_wc.filter(pl.col('teams') == "Team Clojo")
+
+    assert df_after_wc.rows()[0][2] == 26 + 18

@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Tuple, Union
 from functools import reduce, partial
 import json
 
@@ -37,7 +37,7 @@ def _csvw_parser(json_ld):
 
 
 def _per_player_row(table, accum, cell_id):
-    pos = _extract_value(table, 0, cell_id, "-")
+    pos = _to_int(_extract_value(table, 0, cell_id, "-"))
     name = _extract_value(table, 1, cell_id, "-")
     total = _extract_value(table, 1, cell_id, None)
     r1 = _extract_value(table, 4, cell_id, "-")
@@ -50,6 +50,13 @@ def _per_player_row(table, accum, cell_id):
                                       position=pos,
                                       round_scores=[r1, r2, r3, r4]))
     return accum
+
+def _to_int(pos: Union[str, int]):
+    if isinstance(pos, int) or not pos:
+        return pos
+    if "T" in pos:
+        return int(pos.replace('T', ''))
+    breakpoint()
 
 
 def _extract_value(table, pos, cell_id, none_tst):

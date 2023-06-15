@@ -42,10 +42,10 @@ class FantasyTournament:
         self.team = team
         self.tournament = tournament
         self.roster = []
-        self.wild_card_swaps = []
+        self.wildcard_trades = []
 
     def on_roster(self, player=None):
-        if not player:
+        if not player or self._player_already_added(player):
             return self
         if self.tournament.points_strategy.valid_for_roster(self.roster, player):
             self.roster.append(RosterPlayer(tournament=self.tournament, player=player))
@@ -53,9 +53,12 @@ class FantasyTournament:
             breakpoint()
         return self
 
+    def _player_already_added(self, player):
+        return fn.find(lambda roster_player: roster_player.player == player, self.roster)
+
     def play_wildcard(self, wildcard):
-        if self.tournament.points_strategy.valid_wildcard(self.wild_card_swaps, wildcard):
-            self.wild_card_swaps.append(wildcard)
+        if self.tournament.points_strategy.valid_wildcard(self.wildcard_trades, wildcard):
+            self.wildcard_trades.append(wildcard)
         else:
             breakpoint()
         return self
@@ -70,7 +73,7 @@ class FantasyTournament:
                     selection.show(self.draw.name, table)
 
     def points_per_round(self):
-        pts_per_player_per_rd = [roster_player.points_per_round(self.wild_card_swaps) for roster_player in self.roster]
+        pts_per_player_per_rd = [roster_player.points_per_round(self.wildcard_trades) for roster_player in self.roster]
         print(f"Team: {self.team.name}...{pts_per_player_per_rd}")
         if len(pts_per_player_per_rd) == 1:  # there is only 1 player
             return pts_per_player_per_rd[0]
@@ -166,6 +169,7 @@ class WildCard:
 
     def __repr__(self):
         return f"Wildcard(starting_at_round={self.starting_at_round}, trade_out={self.trade_out_player.name} trade_in={self.trade_in_player.name})"
+
     def trade_out(self, player):
         self.trade_out_player = player
         return self

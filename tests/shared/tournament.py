@@ -23,7 +23,7 @@ def clojos_open_2023_with_results():
 def clojos_open_2023():
     tournie = (tournament_event.TournamentEvent(event_of=ClojosOpen, year=2023)
                .add_entries(entries())
-               .fantasy_points_strategy(points_strategy.strategy_inverted_position_1_per_position_4_wildcards()))
+               .fantasy_points_strategy(points_strategy.strategy_inverted_position_1_wc_2_max_players_4()))
     return tournie
 
 
@@ -39,11 +39,4 @@ def entries():
         Hovland,
         Hatton,
         Homa,
-        Schauffele,
-        McIlroy,
-        Rose,
-        Day,
-        Theegala,
-        Burns,
-        Spieth
-    ]
+        Schauffele]

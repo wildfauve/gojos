@@ -6,19 +6,28 @@ from collections import ChainMap
 from gojos import model
 
 
-class Points1(Enum):
+class Points1_4_10(Enum):
     POINTS_PER_POSITION = 1
     MAX_WILDCARD = 4
     MAX_PLAYERS = 10
 
 
+class Points1_2_4(Enum):
+    """
+    Class for testing only.
+    """
+    POINTS_PER_POSITION = 1
+    MAX_WILDCARD = 2
+    MAX_PLAYERS = 4
+
+
 class PointsStrategyCalculator:
 
-    def __init__(self, pts_strategy: Union[Type[Points1]]):
+    def __init__(self, pts_strategy: Union[Type[Points1_4_10]]):
         self.pts_strategy = pts_strategy
 
 
-class InvertedPosition1Position4wildcards(PointsStrategyCalculator):
+class InvertedPosition(PointsStrategyCalculator):
     """
     """
 
@@ -67,8 +76,15 @@ class InvertedPosition1Position4wildcards(PointsStrategyCalculator):
         return self._rd_range(acc, int(curr / 2))
 
 
-def strategy_inverted_position_1_per_position_4_wildcards():
-    return InvertedPosition1Position4wildcards(Points1)
+def strategy_inverted_position_1_wc_4_max_players_10():
+    return InvertedPosition(Points1_4_10)
+
+
+def strategy_inverted_position_1_wc_2_max_players_4():
+    """
+    for testing only
+    """
+    return InvertedPosition(Points1_2_4)
 
 
 def points_list_to_dict(points: List[Dict[str, int]]):
