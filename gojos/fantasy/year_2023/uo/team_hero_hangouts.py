@@ -28,7 +28,7 @@ def selection(major):
     TEAM.major(major).on_roster(Rahm)
     TEAM.major(major).on_roster(Hovland)
     TEAM.major(major).on_roster(Hatton)
-    TEAM.major(major).on_roster(Mcilroy)
+    TEAM.major(major).on_roster(McIlroy)
     TEAM.major(major).on_roster(Schauffele)
 
 
