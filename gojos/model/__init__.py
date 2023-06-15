@@ -7,5 +7,5 @@ from .tournament import (
 )
 
 from .fantasy import (
-    Selection
+    RosterPlayer
 )

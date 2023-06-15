@@ -44,11 +44,11 @@ class FantasyTournament:
         self.roster = []
         self.wild_card_swaps = []
 
-    def add_to_roster(self, player=None):
+    def on_roster(self, player=None):
         if not player:
             return self
         if self.tournament.points_strategy.valid_for_roster(self.roster, player):
-            self.roster.append(Selection(tournament=self.tournament, player=player))
+            self.roster.append(RosterPlayer(tournament=self.tournament, player=player))
         else:
             breakpoint()
         return self
@@ -96,7 +96,7 @@ class FantasyTournament:
         rd_id, mt_id = identity.split_match_id(match_id)
         selection = self._find_match_selection(rd_id, mt_id)
         if not selection:
-            selection = Selection(self.draw, rd_id, mt_id)
+            selection = RosterPlayer(self.draw, rd_id, mt_id)
             self._add_selection(selection, rd_id, mt_id)
         return selection
 
@@ -113,7 +113,7 @@ class FantasyTournament:
         return fn.deep_get(self.match_selections, [round_id, match_id])
 
 
-class Selection:
+class RosterPlayer:
     def __init__(self, tournament, player):
         self.tournament = tournament
         self.player = player
