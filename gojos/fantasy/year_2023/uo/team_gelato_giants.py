@@ -38,7 +38,7 @@ def wildcards(major):
 
     The following is an example of trading out Scottie and replacing him with Colin from round 3.
 
-    TEAM.major(major).wildcard(WildCard().from_round(3).trade_out(Scheffler).trade_in(Morikawa))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Scheffler).trade_in(Morikawa))
     """
     pass
 

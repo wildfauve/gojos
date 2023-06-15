@@ -53,7 +53,7 @@ class FantasyTournament:
             breakpoint()
         return self
 
-    def wildcard(self, wildcard):
+    def play_wildcard(self, wildcard):
         if self.tournament.points_strategy.valid_wildcard(self.wild_card_swaps, wildcard):
             self.wild_card_swaps.append(wildcard)
         else:
