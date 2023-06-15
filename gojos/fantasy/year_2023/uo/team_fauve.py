@@ -20,16 +20,16 @@ def selection(major):
     An example of adding Rory to your roster is:
     TEAM.major(major).selection(McIlroy)
     """
-    TEAM.major(major).selection(McIlroy)
-    TEAM.major(major).selection(Matsuyama)
-    TEAM.major(major).selection(Fleetwood)
-    TEAM.major(major).selection(Scheffler)
-    TEAM.major(major).selection(Rose)
-    TEAM.major(major).selection(Rahm)
-    TEAM.major(major).selection(Hovland)
-    TEAM.major(major).selection(Koepka)
-    TEAM.major(major).selection(Homa)
-    TEAM.major(major).selection(Kim_S_W)
+    TEAM.major(major).add_to_roster(McIlroy)
+    TEAM.major(major).add_to_roster(Matsuyama)
+    TEAM.major(major).add_to_roster(Fleetwood)
+    TEAM.major(major).add_to_roster(Scheffler)
+    TEAM.major(major).add_to_roster(Rose)
+    TEAM.major(major).add_to_roster(Rahm)
+    TEAM.major(major).add_to_roster(Hovland)
+    TEAM.major(major).add_to_roster(Koepka)
+    TEAM.major(major).add_to_roster(Homa)
+    TEAM.major(major).add_to_roster(Kim_S_W)
 
 
 

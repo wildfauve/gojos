@@ -41,14 +41,14 @@ class FantasyTournament:
     def __init__(self, tournament, team):
         self.team = team
         self.tournament = tournament
-        self.selections = []
+        self.roster = []
         self.wild_card_swaps = []
 
-    def selection(self, player=None):
+    def add_to_roster(self, player=None):
         if not player:
             return self
-        if self.tournament.points_strategy.valid_for_roster(self.selections, player):
-            self.selections.append(Selection(tournament=self.tournament, player=player))
+        if self.tournament.points_strategy.valid_for_roster(self.roster, player):
+            self.roster.append(Selection(tournament=self.tournament, player=player))
         else:
             breakpoint()
         return self
@@ -70,7 +70,7 @@ class FantasyTournament:
                     selection.show(self.draw.name, table)
 
     def points_per_round(self):
-        pts_per_player_per_rd = [selects.points_per_round(self.wild_card_swaps) for selects in self.selections]
+        pts_per_player_per_rd = [selects.points_per_round(self.wild_card_swaps) for selects in self.roster]
         print(f"Team: {self.team.name}...{pts_per_player_per_rd}")
         if len(pts_per_player_per_rd) == 1:  # there is only 1 player
             return pts_per_player_per_rd[0]
