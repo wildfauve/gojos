@@ -8,6 +8,8 @@ from gojos import model
 
 class Points1(Enum):
     POINTS_PER_POSITION = ('position', 1)
+    MAX_WILDCARD = 4
+    MAX_PLAYERS = 10
 
 
 class PointsStrategyCalculator:
@@ -20,15 +22,18 @@ class InvertedPosition1Position4wildcards(PointsStrategyCalculator):
     """
     """
 
-    def calc(self, selection: model.Selection, explain: bool = False) -> Union[int, Dict]:
-        return self._one_pt_per_inverted_position(selection, explain)
+    def valid_wildcard(self, wildcards, _new_wildcard):
+        return len(wildcards) < self.pts_strategy.MAX_WILDCARD.value
 
-    # def _points_strategy_fns(self) -> List[Callable]:
-    #     return [self._one_pt_per_inverted_position]
+    def valid_for_roster(self, roster, _new_player):
+        return len(roster) < self.pts_strategy.MAX_PLAYERS.value
 
-    def _one_pt_per_inverted_position(self, selection: model.Selection, explain: bool = False) -> int:
+    def calc(self, selection: model.Selection, wildcards, explain: bool = False) -> Union[int, Dict]:
+        return self._one_pt_per_inverted_position(selection, wildcards, explain)
+
+    def _one_pt_per_inverted_position(self, selection: model.Selection, wildcards, explain: bool = False) -> int:
         return [self._invert_position(selection, pos) for pos in
-                selection.tournament.positions_for_player_per_round(selection.player)]
+                selection.tournament.positions_for_player_per_round(selection.player, wildcards)]
 
     def _invert_position(self, selection, pos):
         return selection.tournament.number_of_entries + 1 - pos

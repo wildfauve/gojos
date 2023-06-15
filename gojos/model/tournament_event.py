@@ -2,6 +2,7 @@ from typing import List
 from functools import partial
 from itertools import accumulate
 
+from gojos.model import fantasy
 from gojos.util import fn
 
 
@@ -25,8 +26,8 @@ class TournamentEvent:
         self.number_of_entries = len(self.entries)
         return self
 
-    def positions_for_player_per_round(self, player):
-        return self.leaderboard.positions_for_player_per_round(player)
+    def positions_for_player_per_round(self, player, wildcards):
+        return self.leaderboard.positions_for_player_per_round(player, wildcards)
 
     def fantasy_points_strategy(self, points_strategy):
         self.points_strategy = points_strategy
@@ -61,8 +62,8 @@ class LeaderBoard:
             # raise error.ConfigException(f"Round id: {round_id} does not exist")
         return for_round
 
-    def positions_for_player_per_round(self, player):
-        return [rd.position_for_player(player) for rd in self.rounds]
+    def positions_for_player_per_round(self, player, wildcards):
+        return [rd.position_for_player(player, wildcards) for rd in self.rounds]
 
     def _round_number_predicate(self, number, rd):
         return rd.round_number == number
@@ -74,8 +75,8 @@ class Round:
         self.round_number = round_number
         self.players = []
 
-    def position_for_player(self, player):
-        player_scr = fn.find(partial(self._player_predicate, player), self.players)
+    def position_for_player(self, player, wildcards):
+        player_scr = fn.find(partial(self._player_predicate, self._player_or_wildcard(player, wildcards)), self.players)
         if not player_scr:
             breakpoint()
         return player_scr.round_position
@@ -85,6 +86,11 @@ class Round:
         self.players.append(ps)
         return ps
 
+    def _player_or_wildcard(self, player, wildcards):
+        wc = fantasy.WildCard.has_swap(wildcards, player, self.round_number)
+        if wc:
+            return wc.trade_in_player
+        return player
 
     def _player_predicate(self, for_player, player_score):
         return for_player == player_score.player

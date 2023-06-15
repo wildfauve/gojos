@@ -11,6 +11,9 @@ class Player:
         self.klass_name = klass_name
         self.alt_names = alt_names if alt_names else []
 
+    def __repr__(self):
+        return f"Player(klass={self.klass_name}, name={self.name})"
+
     def _format_player_klass_name(self, name):
         nm = name.rstrip().lstrip()
         if "." in nm:

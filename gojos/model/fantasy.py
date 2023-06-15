@@ -42,9 +42,22 @@ class FantasyTournament:
         self.team = team
         self.tournament = tournament
         self.selections = []
+        self.wild_card_swaps = []
 
-    def selection(self, player):
-        self.selections.append(Selection(tournament=self.tournament, player=player))
+    def selection(self, player=None):
+        if not player:
+            return self
+        if self.tournament.points_strategy.valid_for_roster(self.selections, player):
+            self.selections.append(Selection(tournament=self.tournament, player=player))
+        else:
+            breakpoint()
+        return self
+
+    def wildcard(self, wildcard):
+        if self.tournament.points_strategy.valid_wildcard(self.wild_card_swaps, wildcard):
+            self.wild_card_swaps.append(wildcard)
+        else:
+            breakpoint()
         return self
 
     def show(self, table: Table, for_round: int = None):
@@ -57,7 +70,13 @@ class FantasyTournament:
                     selection.show(self.draw.name, table)
 
     def points_per_round(self):
-        return [sum(rd_pts) for rd_pts in zip(*[selects.points_per_round() for selects in self.selections])]
+        pts_per_player_per_rd = [selects.points_per_round(self.wild_card_swaps) for selects in self.selections]
+        print(f"Team: {self.team.name}...{pts_per_player_per_rd}")
+        if len(pts_per_player_per_rd) == 1:  # there is only 1 player
+            return pts_per_player_per_rd[0]
+        total = [sum(rd_pts) for rd_pts in zip(*pts_per_player_per_rd)]
+        print(f"Team: {self.team.name}...TOTAL:  {total}")
+        return total
 
     def total_points(self, for_round=None):
         if for_round:
@@ -101,8 +120,8 @@ class Selection:
         self.points_strategy = tournament.points_strategy
         self.per_round_accum_strategy = tournament.round_factor_strategy
 
-    def points_per_round(self):
-        return self.points_strategy.calc(self, explain=False)
+    def points_per_round(self, wildcards):
+        return self.points_strategy.calc(self, wildcards=wildcards, explain=False)
 
     def explain_points(self):
         if not self.match.is_finished():
@@ -131,3 +150,42 @@ class Selection:
                       self.match.match_block(),
                       self.selected_winner.player().name,
                       str(self.in_number_sets))
+
+
+class WildCard:
+
+    @classmethod
+    def has_swap(cls, wildcards, selected_player, for_round):
+        if not wildcards:
+            return None
+        wc = list(fn.select(partial(cls._rd_player_predicate, selected_player, for_round), wildcards))
+        if not wc:
+            return None
+        if len(wc) > 1:
+            return sorted(wc, key=lambda x: x.starting_at_round)[-1]
+        return wc[0]
+
+    @classmethod
+    def _rd_player_predicate(cls, selected_player, for_round, wildcard_swap):
+        return ((selected_player == wildcard_swap.trade_out_player or
+                 selected_player == wildcard_swap.trade_in_player) and
+                wildcard_swap.starting_at_round <= for_round)
+
+    def __init__(self):
+        self.starting_at_round = None
+        self.trade_out_player = None
+        self.trade_in_player = None
+
+    def from_round(self, at_round):
+        self.starting_at_round = at_round
+        return self
+
+    def __repr__(self):
+        return f"Wildcard(starting_at_round={self.starting_at_round}, trade_out={self.trade_out_player.name} trade_in={self.trade_in_player.name})"
+    def trade_out(self, player):
+        self.trade_out_player = player
+        return self
+
+    def trade_in(self, player):
+        self.trade_in_player = player
+        return self
