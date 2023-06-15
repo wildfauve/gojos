@@ -11,7 +11,7 @@ from gojos.util import fn, echo
 
 console = Console()
 
-TeamGelatoGiants = fantasy.Team("Team Gelato Giants", "Bronzie & Juki)
+TeamGelatoGiants = fantasy.Team("Team Gelato Giants", "Bronzie & Juki")
 TeamPolarPrecision = fantasy.Team("Team Polar Precision", "IceT, Pepsi, Rollie, Lemmie & Gertie")
 TeamHeroHangouts = fantasy.Team("Team Hero Hangouts", "Marmalade, Richmond, Greenwich")
 TeamBearNecessities = fantasy.Team("Team Bear Necessities", "Fraser, Tom, Frank, Spencer & Duck")

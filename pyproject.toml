@@ -27,6 +27,29 @@ pytest-env = "^0.8.1"
 pytest = "^7.3.2"
 pdbpp = "^0.10.3"
 
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+python_classes = [
+    "*Test",
+    "Test*",
+    "Describe*",
+]
+python_functions = [
+    "test_*",
+    "it_*",
+]
+xfail_strict = true
+log_cli = true
+log_cli_level = 20
+env = [
+]
+testpaths = [
+    "tests",
+    "integration",
+]
+
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
