@@ -70,7 +70,7 @@ class FantasyTournament:
                     selection.show(self.draw.name, table)
 
     def points_per_round(self):
-        pts_per_player_per_rd = [selects.points_per_round(self.wild_card_swaps) for selects in self.roster]
+        pts_per_player_per_rd = [roster_player.points_per_round(self.wild_card_swaps) for roster_player in self.roster]
         print(f"Team: {self.team.name}...{pts_per_player_per_rd}")
         if len(pts_per_player_per_rd) == 1:  # there is only 1 player
             return pts_per_player_per_rd[0]
@@ -124,23 +124,7 @@ class RosterPlayer:
         return self.points_strategy.calc(self, wildcards=wildcards, explain=False)
 
     def explain_points(self):
-        if not self.match.is_finished():
-            return {
-                "match": self.match.match_id,
-                "between": f"{self.match.player1.player().name}, {self.match.player2.player().name}" if self.match.has_draw() else None,
-                "result-winner": "Not Finished",
-                "selected-winner": self.selected_winner.player().name if self.selected_winner else None,
-                "selected-in-sets": self.in_number_sets if self.in_number_sets else None,
-                "points": []
-            }
-
         return {
-            "match": self.match.match_id,
-            "between": f"{self.match.player1.player().name}, {self.match.player2.player().name}",
-            "result-winner": self.match.match_winner.player().name,
-            "result-in-sets": self.match.number_of_sets_played(),
-            "selected-winner": self.selected_winner.player().name if self.selected_winner else None,
-            "selected-in-sets": self.in_number_sets if self.in_number_sets else None,
             "points": self.points_strategy.calc(self, explain=True)
         }
 

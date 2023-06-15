@@ -7,7 +7,7 @@ from gojos import model
 
 
 class Points1(Enum):
-    POINTS_PER_POSITION = ('position', 1)
+    POINTS_PER_POSITION = 1
     MAX_WILDCARD = 4
     MAX_PLAYERS = 10
 
@@ -28,28 +28,18 @@ class InvertedPosition1Position4wildcards(PointsStrategyCalculator):
     def valid_for_roster(self, roster, _new_player):
         return len(roster) < self.pts_strategy.MAX_PLAYERS.value
 
-    def calc(self, selection: model.RosterPlayer, wildcards, explain: bool = False) -> Union[int, Dict]:
-        return self._one_pt_per_inverted_position(selection, wildcards, explain)
+    def calc(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> Union[int, Dict]:
+        return self._one_pt_per_inverted_position(roster_player, wildcards, explain)
 
-    def _one_pt_per_inverted_position(self, selection: model.RosterPlayer, wildcards, explain: bool = False) -> int:
-        return [self._invert_position(selection, pos) for pos in
-                selection.tournament.positions_for_player_per_round(selection.player, wildcards)]
+    def _one_pt_per_inverted_position(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> int:
+        return [self._invert_position(roster_player, pos) for pos in
+                roster_player.tournament.positions_for_player_per_round(roster_player.player, wildcards)]
 
-    def _invert_position(self, selection, pos):
-        return selection.tournament.number_of_entries + 1 - pos
+    def _invert_position(self, roster_player, pos):
+        return self._points_with_factor(roster_player.tournament.number_of_entries + 1 - pos)
 
-    def _calc(self,
-              points_type,
-              rd: int,
-              explain: bool = False) -> Union[int, Dict]:
-        points_name, value = points_type.value
-        if points_type == self.pts_strategy.NO_POINTS:
-            return value if not explain else {when_no_points.value[0]: value}
-        return self._points_with_factor(value, rd) if not explain else {
-            points_name: self._points_with_factor(value, rd)}
-
-    def _points_with_factor(self, points: int, rd: int) -> int:
-        return points * self.per_round_accum_strategy(rd)
+    def _points_with_factor(self, points: int) -> int:
+        return points * self.pts_strategy.POINTS_PER_POSITION.value
 
     def calc_points_schedule(self, number_of_matches: int) -> List[int]:
         round_of = self._max_number_rds(number_of_matches)
