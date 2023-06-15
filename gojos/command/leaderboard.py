@@ -4,7 +4,7 @@ from itertools import accumulate
 from rich.console import Console
 import polars as pl
 
-from gojos import dataframe, presenter
+from gojos import dataframe, presenter, plot
 from gojos.util import fn
 
 console = Console()

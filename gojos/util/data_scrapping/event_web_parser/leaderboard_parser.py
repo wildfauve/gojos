@@ -56,6 +56,8 @@ def _to_int(pos: Union[str, int]):
         return pos
     if "T" in pos:
         return int(pos.replace('T', ''))
+    if pos.isnumeric():
+        return int(pos)
     breakpoint()
 
 

@@ -309,3 +309,5 @@ Grey = Player("J. Grey", klass_name="Grey")
 Truslow = Player("A. Truslow", klass_name="Truslow")
 
 Cavaliere = Player("C. Cavaliere", klass_name="Cavaliere")
+
+Schaake = Player('A. Schaake', klass_name="Schaake")

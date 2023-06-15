@@ -43,6 +43,24 @@ def leaderboard_scrap(entries_file, players_file, leaderboard_file):
     pass
 
 
+@click.option('--file', '-f', required=True)
+@click.option("--tournament", "-t",
+              type=click.Choice(tournament_names()),
+              help="The name of the tournament")
+@click.option("--ranking-plot/--accum-totals-plot", "-r/-a", required=True, help="Plot Position, or plot total scores")
+@click.option("--to-discord", "channel", required=False, flag_value="to-discord", default=False,
+              help="Post the plot to Discord")
+@click.command()
+def plot(file, tournament, ranking_plot, channel):
+    """
+    Generate a Ranking Graph
+    """
+    command.rank_plot(file=file, tournament_name=tournament, ranking_plot=ranking_plot)
+    presenter.plot_to_channel(file, channel)
+    pass
+
+
 
 cli.add_command(leaderboard)
+cli.add_command(plot)
 cli.add_command(leaderboard_scrap)

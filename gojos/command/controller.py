@@ -18,6 +18,18 @@ def leaderboard_df(tournament_name,
     return leaderboard.current_leaderboard(tournie, _apply_fantasy(_start(tournie), fantasy_tournaments))
 
 
+def rank_plot(file: str,
+              tournament_name: str,
+              ranking_plot: bool,
+              tournament_search_fn: Callable = tournaments.tournament_in_fantasy,
+              fantasy_tournaments: Dict = fantasy.fantasy_tournaments):
+    tournie = _find_tournament_by_name(tournament_name, tournament_search_fn)
+    if not tournie:
+        return
+    leaderboard.scores_plot(file, tournie, _apply_fantasy(_start(tournie), fantasy_tournaments), ranking_plot)
+    pass
+
+
 def leaderboard_scrap(entries_file, players_file, leaderboard_file):
     leaderboard_parser.build_leaderboard(entries_file=entries_file,
                                          players_file=players_file,
