@@ -39,11 +39,16 @@ def _csvw_parser(json_ld):
 def _per_player_row(table, accum, cell_id):
     pos = _extract_value(table, 0, cell_id, "-")
     name = _extract_value(table, 1, cell_id, "-")
+    total = _extract_value(table, 1, cell_id, None)
     r1 = _extract_value(table, 4, cell_id, "-")
-    accum.append(value.Player(name=_tokenise(name),
-                              player_module=mens_players,
-                              position=pos,
-                              r1=r1))
+    r2 = _extract_value(table, 5, cell_id, "-")
+    r3 = _extract_value(table, 6, cell_id, "-")
+    r4 = _extract_value(table, 7, cell_id, "-")
+    accum.append(value.ScrappedPlayer(name=_tokenise(name),
+                                      player_module=mens_players,
+                                      total=total,
+                                      position=pos,
+                                      round_scores=[r1, r2, r3, r4]))
     return accum
 
 

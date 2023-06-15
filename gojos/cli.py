@@ -32,11 +32,14 @@ def leaderboard(tournament, to_discord):
 
 @click.command()
 @click.option("--entries-file", "-e", type=str, default=None, help="Entries File")
-@click.option("--players-file", "-p", type=str, default=None, help="Leaderboard File")
-def leaderboard_scrap(entries_file, players_file):
+@click.option("--players-file", "-p", type=str, default=None, help="Players File")
+@click.option("--leaderboard-file", "-l", type=str, default=None, help="Leaderboard File")
+def leaderboard_scrap(entries_file, players_file, leaderboard_file):
     """
     """
-    command.leaderboard_scrap(entries_file=entries_file, players_file=players_file)
+    command.leaderboard_scrap(entries_file=entries_file,
+                              players_file=players_file,
+                              leaderboard_file=leaderboard_file)
     pass
 
 

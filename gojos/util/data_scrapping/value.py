@@ -8,11 +8,12 @@ from gojos.util import fn
 
 
 @dataclass
-class Player:
+class ScrappedPlayer:
     name: str
     player_module: Callable
-    r1: int = None
+    round_scores: List[int] = None
     position: int = None
+    total: int = None
 
     def __post_init__(self):
         self.player_klass = players.match_player_by_name(self.name, self.player_module)

@@ -18,9 +18,10 @@ def leaderboard_df(tournament_name,
     return leaderboard.current_leaderboard(tournie, _apply_fantasy(_start(tournie), fantasy_tournaments))
 
 
-def leaderboard_scrap(entries_file, players_file):
+def leaderboard_scrap(entries_file, players_file, leaderboard_file):
     leaderboard_parser.build_leaderboard(entries_file=entries_file,
-                                         players_file=players_file)
+                                         players_file=players_file,
+                                         leaderboard_file=leaderboard_file)
 
 
 
