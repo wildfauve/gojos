@@ -21,15 +21,15 @@ def selection(major):
     """
 
     TEAM.major(major).on_roster(McIlroy)
-    TEAM.major(major).on_roster(Matsuyama)
+    TEAM.major(major).on_roster(Finau)
     TEAM.major(major).on_roster(Fleetwood)
     TEAM.major(major).on_roster(Scheffler)
     TEAM.major(major).on_roster(Rose)
     TEAM.major(major).on_roster(Rahm)
     TEAM.major(major).on_roster(Hovland)
-    TEAM.major(major).on_roster(Koepka)
+    TEAM.major(major).on_roster(Molinari)
     TEAM.major(major).on_roster(Homa)
-    TEAM.major(major).on_roster(Kim_S_W)
+    TEAM.major(major).on_roster(Taylor)
 
 def wildcards(major):
     """
