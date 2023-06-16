@@ -17,3 +17,5 @@ from .code_creator_presenter import (
 from .parquet_presenter import (
     to_parquet
 )
+
+from .cut_assessent_presenter import cut_assessment_table

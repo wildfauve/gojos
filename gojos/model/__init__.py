@@ -1,5 +1,6 @@
 from .player import (
-    Player
+    Player,
+    PlayerScore
 )
 
 from .tournament import (

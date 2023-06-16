@@ -37,10 +37,10 @@ class InvertedPosition(PointsStrategyCalculator):
     def valid_for_roster(self, roster, _new_player):
         return len(roster) < self.pts_strategy.MAX_PLAYERS.value
 
-    def calc(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> Union[int, Dict]:
+    def calc(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> Union[int, List]:
         return self._one_pt_per_inverted_position(roster_player, wildcards, explain)
 
-    def _one_pt_per_inverted_position(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> int:
+    def _one_pt_per_inverted_position(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> List[int]:
         return [self._invert_position(roster_player, pos) for pos in
                 roster_player.tournament.positions_for_player_per_round(roster_player.player, wildcards)]
 

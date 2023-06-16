@@ -1,5 +1,6 @@
+from typing import List
 from enum import Enum
-from functools import partial
+from functools import partial, reduce
 
 from rich.table import Table
 
@@ -30,6 +31,9 @@ class Team:
     def explain_points(self):
         return [fantasy_draw.explain_points() for fantasy_draw in self.fantasy_draws]
 
+    def players_relative_to_cut(self):
+        return self.fantasy_tournament.players_relative_to_cut()
+
     def __hash__(self):
         return hash((self.symbolic_name,))
 
@@ -52,6 +56,13 @@ class FantasyTournament:
         else:
             breakpoint()
         return self
+
+    def players_relative_to_cut(self):
+        return reduce(self._player_relative_to_cut, self.roster, [])
+
+    def _player_relative_to_cut(self, accum: List, roster_player):
+        accum.append((roster_player.player, roster_player.tournament.relative_to_cut(roster_player.player)))
+        return accum
 
     def _player_already_added(self, player):
         return fn.find(lambda roster_player: roster_player.player == player, self.roster)

@@ -25,7 +25,7 @@ def scores_plot(file: str, tournie, fantasy_teams, ranking_plot: bool = False):
 
 
 def _team_scores_df(tournie, fantasy_teams, accum: bool):
-    scores = _format_team_scores(tournie, accum, teams_points_per_round(fantasy_teams, accum))
+    scores = _format_team_scores(tournie, accum, _teams_points_per_round(fantasy_teams, accum))
 
     return dataframe.build_df(scores)
 
@@ -42,7 +42,7 @@ def _team_board_predicate(team, team_on_board):
     return team == team_on_board[0]
 
 
-def teams_points_per_round(fantasy_teams, accum):
+def _teams_points_per_round(fantasy_teams, accum):
     if not fantasy_teams:
         return []
     return [(team, _accumulate(team.points_per_round(), accum)) for team in fantasy_teams]

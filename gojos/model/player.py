@@ -40,3 +40,19 @@ class Player:
             if any([alt_name == on_name for alt_name in self.alt_names]):
                 return self
         return None
+
+
+class PlayerScore:
+
+    def __init__(self, player):
+        self.player = player
+        self.round_score = None
+        self.round_position = None
+
+    def score(self, scr):
+        self.round_score = scr
+        return self
+
+    def position(self, pos):
+        self.round_position = pos
+        return self

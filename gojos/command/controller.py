@@ -1,7 +1,7 @@
 from typing import Callable, Dict
 import polars as pl
 
-from . import leaderboard
+from . import leaderboard, fantasy_commands
 from gojos import fantasy
 from gojos.fantasy import teams, selections
 from gojos.majors import tournaments
@@ -30,12 +30,20 @@ def rank_plot(file: str,
     pass
 
 
+def cut_danger(tournament_name,
+               tournament_search_fn: Callable = tournaments.tournament_in_fantasy,
+               fantasy_tournaments: Dict = fantasy.fantasy_tournaments) -> pl.DataFrame:
+    tournie = _find_tournament_by_name(tournament_name, tournament_search_fn)
+    if not tournie:
+        return
+    return fantasy_commands.cut_danger(_apply_fantasy(_start(tournie), fantasy_tournaments))
+
+
 def leaderboard_scrap(entries_file, players_file, leaderboard_file, for_round):
     leaderboard_parser.build_leaderboard(entries_file=entries_file,
                                          players_file=players_file,
                                          leaderboard_file=leaderboard_file,
                                          for_round=for_round)
-
 
 
 def _find_tournament_by_name(for_name: str, tournament_search_fn: Callable):

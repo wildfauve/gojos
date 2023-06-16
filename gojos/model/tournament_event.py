@@ -2,7 +2,7 @@ from typing import List
 from functools import partial
 from itertools import accumulate
 
-from gojos.model import fantasy
+from . import player, fantasy
 from gojos.util import fn
 
 
@@ -17,6 +17,7 @@ class TournamentEvent:
         self.number_of_entries = None
         self.rounds = []
         self.course = None
+        self.cut_strategy = None
         self.errors = []
         self.points_strategy = None
         self.round_factor_strategy = None
@@ -31,8 +32,15 @@ class TournamentEvent:
         self.course = course
         return self
 
-    def positions_for_player_per_round(self, player, wildcards):
+    def has_cut_strategy(self, strategy):
+        self.cut_strategy = strategy
+        return self
+
+    def positions_for_player_per_round(self, player, wildcards: List = []):
         return self.leaderboard.positions_for_player_per_round(player, wildcards)
+
+    def relative_to_cut(self, player):
+        return self.cut_strategy.relative_to_cut(self.positions_for_player_per_round(player)[-1])
 
     def fantasy_points_strategy(self, points_strategy):
         self.points_strategy = points_strategy
@@ -87,7 +95,7 @@ class Round:
         return player_scr.round_position
 
     def player(self, plyr):
-        ps = PlayerScore(player=plyr)
+        ps = player.PlayerScore(player=plyr)
         self.players.append(ps)
         return ps
 
@@ -99,19 +107,3 @@ class Round:
 
     def _player_predicate(self, for_player, player_score):
         return for_player == player_score.player
-
-
-class PlayerScore:
-
-    def __init__(self, player):
-        self.player = player
-        self.round_score = None
-        self.round_position = None
-
-    def score(self, scr):
-        self.round_score = scr
-        return self
-
-    def position(self, pos):
-        self.round_position = pos
-        return self
