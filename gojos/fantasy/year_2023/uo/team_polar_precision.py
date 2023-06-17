@@ -2,6 +2,7 @@ import sys
 from gojos.fantasy.teams import *
 from gojos.fantasy import helpers
 from gojos.players.mens_players import *
+from gojos.model.fantasy import WildCard
 
 this = sys.modules[__name__]
 

@@ -2,6 +2,7 @@ import sys
 from gojos.fantasy.teams import *
 from gojos.fantasy import helpers
 from gojos.players.mens_players import *
+from gojos.model.fantasy import WildCard
 
 this = sys.modules[__name__]
 
@@ -40,5 +41,7 @@ def wildcards(major):
 
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Scheffler).trade_in(Morikawa))
     """
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Thomas).trade_in(Scheffler))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Kitayama).trade_in(Smith_Ca))
     pass
 
