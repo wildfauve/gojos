@@ -13,3 +13,7 @@ from .fantasy import (
     RosterPlayer,
     WildCard
 )
+
+from .tournament_event import (
+    PlayerState
+)

@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from gojos.players import mens_players
+from gojos.model import tournament_event
 from gojos.util import fn
 
 from gojos.util.data_scrapping import value
@@ -37,6 +38,7 @@ def _csvw_parser(json_ld, for_round):
 
 
 def _per_player_row(for_round, table, accum, cell_id):
+    player_state = None
     pos = _to_int(_extract_value(table, 0, cell_id, "-"))
     name = _extract_value(table, 1, cell_id, "-")
     total = _extract_value(table, 1, cell_id, None)
@@ -44,15 +46,21 @@ def _per_player_row(for_round, table, accum, cell_id):
     # r2 = _extract_value(table, 5, cell_id, "-")
     # r3 = _extract_value(table, 6, cell_id, "-")
     # r4 = _extract_value(table, 7, cell_id, "-")
+    if pos == "CUT":
+        pos = None
+        player_state = tournament_event.PlayerState.CUT
     accum.append(value.ScrappedPlayer(name=_tokenise(name),
                                       player_module=mens_players,
                                       total=total,
                                       position=pos,
+                                      player_state=player_state,
                                       round_scores=[rd]))
     return accum
 
 def _to_int(pos: Union[str, int]):
     if isinstance(pos, int) or not pos:
+        return pos
+    if "CUT" in pos:
         return pos
     if "T" in pos:
         return int(pos.replace('T', ''))

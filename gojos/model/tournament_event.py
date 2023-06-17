@@ -1,10 +1,14 @@
 from typing import List
 from functools import partial
 from itertools import accumulate
+from enum import Enum
 
 from . import player, fantasy
 from gojos.util import fn
 
+
+class PlayerState(Enum):
+    CUT = 'cut'
 
 class TournamentEvent:
 

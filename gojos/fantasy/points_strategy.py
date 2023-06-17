@@ -45,6 +45,8 @@ class InvertedPosition(PointsStrategyCalculator):
                 roster_player.tournament.positions_for_player_per_round(roster_player.player, wildcards)]
 
     def _invert_position(self, roster_player, pos):
+        if isinstance(pos, model.PlayerState):
+            return 0
         return self._points_with_factor(roster_player.tournament.number_of_entries + 1 - pos)
 
     def _points_with_factor(self, points: int) -> int:

@@ -1,7 +1,7 @@
 from typing import Tuple, Dict
 from functools import reduce, partial
 
-from .event_web_parser import leaderboard_parser
+from .event_web_parser import usopen_leaderboard_parser
 
 
 def build_leaderboard(for_round, entries_file=None, players_file=None, leaderboard_file=None):
@@ -13,7 +13,7 @@ def build_leaderboard(for_round, entries_file=None, players_file=None, leaderboa
 
 
 def _parser_for_event():
-    return leaderboard_parser
+    return usopen_leaderboard_parser
 
 
 def _format_leaderboard(entries, leaderboard_file, for_round):
@@ -55,6 +55,7 @@ from gojos.players import players
 
 def _results_function():
     return f"""from gojos.players.mens_players import *
+from gojos.model.tournament_event import PlayerState
 
 """
 
@@ -65,7 +66,7 @@ def _leaderboard_def(for_round, accum, entry):
 
 def _player_rd_score(entry, accum, round_score):
     rd, score = round_score
-    py = f"tournie.leaderboard.for_round({rd}).player({entry.player_klass.klass_name}).score({score}).position({entry.position})"
+    py = f"tournie.leaderboard.for_round({rd}).player({entry.player_klass.klass_name}).score({score}).position({entry.current_position()})"
     accum[rd].append(py)
     return accum
 

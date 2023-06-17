@@ -48,7 +48,7 @@ def _send_to_discord(table):
 def _send_to_discord_as_attachment(table):
     cons = console.to_string_console()
     cons.print(table)
-    _as_text(cons)
+    _as_attachment(cons)
     pass
 
 
