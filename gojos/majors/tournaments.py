@@ -3,6 +3,7 @@ import importlib
 import re
 
 from gojos import model
+from gojos.util import monad
 
 USOpen = model.GrandSlam(name="US Open", subject_name="USOpen", perma_id="uo")
 
@@ -32,14 +33,23 @@ def tournament_in_fantasy(name):
 
 
 def add_results(tournament, results_module):
-    results = _for_round(results_module, tournament)
+    results = _rounds_from_leaderboard(results_module, tournament)
     return results
 
 
-def _for_round(results_module, tournament):
-    return _for_rd_fn_caller(results_module, tournament)
-
-
-def _for_rd_fn_caller(results_module, tournament):
-    [getattr(results_module, f)(tournament) for f in dir(results_module) if re.match(f"^round_", f)]
+def _rounds_from_leaderboard(leaderboard_module, tournament):
+    [_apply_scores(tournament, leaderboard_module, rd) for rd in range(1, 5)]
     return tournament
+
+
+def _apply_scores(tournament, leaderboard_module, rd):
+    mod = _import_round(leaderboard_module, rd)
+    if mod.is_left():
+        return None
+    getattr(mod.value, 'scores')(tournament)
+    pass
+
+
+@monad.monadic_try()
+def _import_round(leaderboard_module, round_number):
+    return importlib.import_module(f"{leaderboard_module.__name__}.round{round_number}")

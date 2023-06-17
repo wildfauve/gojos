@@ -17,7 +17,7 @@ def current_leaderboard(tournie,
 
 
 def scores_plot(file: str, tournie, fantasy_teams, ranking_plot: bool = False):
-    df = _team_scores_df(tournie, fantasy_teams, True)
+    df = _team_scores_df(tournie, fantasy_teams, True).drop('Wildcards-Used')
 
     if ranking_plot:
         return plot.rank_plot(file, tournie, df)
@@ -60,7 +60,8 @@ def sorted_teams(fantasy_teams, round_number):
 
 def _format_team_scores(tournie, accum: bool, scores):
     rd_scores = reduce(partial(_scores_dict, tournie, accum), _transpose_scores(scores), {})
-    return {**{"teams": [team.name for team, _ in scores]}, **rd_scores}
+    wc_numbers = {'Wildcards-Used': [team.wildcards_used() for team, _ in scores]}
+    return {**{"Teams": [team.name for team, _ in scores]}, **wc_numbers, **rd_scores}
 
 
 def _scores_dict(tournie, accum: bool, acc, score_column):

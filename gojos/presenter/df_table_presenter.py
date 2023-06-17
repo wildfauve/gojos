@@ -22,18 +22,20 @@ def event_team_scores_table(df: pl.DataFrame, to_discord: bool = False):
     console.terminal_console().print(table)
 
     if to_discord:
-        _send_to_discord_as_attachment(table)
-
+        _send_to_discord(table)
 
 def _send_to_discord(table):
     cons = console.to_string_console()
     cons.print(table)
+    _as_text(cons)
+    pass
+
+def _as_text(cons):
     discord.send_basic_text(_format(cons.file.getvalue()))
     pass
 
-def _send_to_discord_as_attachment(table):
-    cons = console.to_string_console()
-    cons.print(table)
+
+def _as_attachment(cons):
     with open(temp_file_path, 'w') as f:
         f.write(cons.file.getvalue())
     discord.send_attachment(msg_title=f"Fantasy Leaderboard",

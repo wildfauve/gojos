@@ -1,6 +1,7 @@
 from gojos.players.mens_players import *
 
-def round_1(tournie):
+
+def scores(tournie):
     tournie.leaderboard.for_round(1).player(Fowler).score(62).position(1)
     tournie.leaderboard.for_round(1).player(Schauffele).score(62).position(1)
     tournie.leaderboard.for_round(1).player(Clark).score(64).position(3)
@@ -156,3 +157,4 @@ def round_1(tournie):
     tournie.leaderboard.for_round(1).player(Valdes).score(78).position(153)
     tournie.leaderboard.for_round(1).player(Capan_III).score(78).position(153)
     tournie.leaderboard.for_round(1).player(Wise).score(79).position(155)
+

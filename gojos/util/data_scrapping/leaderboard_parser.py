@@ -9,21 +9,20 @@ def build_leaderboard(for_round, entries_file=None, players_file=None, leaderboa
         _format_entries(
             _format_players(_parser_for_event().build_leaderboard(for_round), players_file),
             entries_file),
-        leaderboard_file
-    )
+        leaderboard_file, for_round)
 
 
 def _parser_for_event():
     return leaderboard_parser
 
 
-def _format_leaderboard(entries, leaderboard_file):
+def _format_leaderboard(entries, leaderboard_file, for_round):
     if not leaderboard_file:
         return entries
     py = _results_function()
-    for rd, entries in reduce(_leaderboard_def, entries, {1: [], 2: [], 3: [], 4: []}).items():
+    for rd, entries in reduce(partial(_leaderboard_def, for_round), entries, {1: [], 2: [], 3: [], 4: []}).items():
         if entries:
-            py = py + f"\n\ndef round_{rd}(tournie):\n"
+            py = py + f"\n\ndef scores(tournie):\n"
             for entry in entries:
                 py = py + f"{'':>4}{entry}\n"
 
@@ -53,13 +52,15 @@ from gojos.model.player import Player
 from gojos.players import players
 """
 
+
 def _results_function():
     return f"""from gojos.players.mens_players import *
 
 """
 
-def _leaderboard_def(accum, entry):
-    return reduce(partial(_player_rd_score, entry), enumerate(entry.round_scores, start=1), accum)
+
+def _leaderboard_def(for_round, accum, entry):
+    return reduce(partial(_player_rd_score,entry), enumerate(entry.round_scores, start=for_round), accum)
 
 
 def _player_rd_score(entry, accum, round_score):
@@ -67,6 +68,7 @@ def _player_rd_score(entry, accum, round_score):
     py = f"tournie.leaderboard.for_round({rd}).player({entry.player_klass.klass_name}).score({score}).position({entry.position})"
     accum[rd].append(py)
     return accum
+
 
 def _entry_def(py, entry):
     return py + entry.player_definition() + ",\n"

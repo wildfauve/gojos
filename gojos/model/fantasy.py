@@ -28,6 +28,9 @@ class Team:
     def total_points(self, for_round=None):
         return sum([fantasy_draw.total_points(for_round) for fantasy_draw in self.fantasy_draws])
 
+    def wildcards_used(self):
+        return len(self.fantasy_tournament.wildcard_trades)
+
     def explain_points(self):
         return [fantasy_draw.explain_points() for fantasy_draw in self.fantasy_draws]
 
