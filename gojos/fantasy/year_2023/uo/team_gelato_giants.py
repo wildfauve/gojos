@@ -45,7 +45,7 @@ def wildcards(major):
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Homa).trade_in(Fowler))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Taylor).trade_in(Clark))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Rose).trade_in(Schauffele))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Molinari).trade_in(English))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Molinari).trade_in(Bennett))
     
     pass
 
