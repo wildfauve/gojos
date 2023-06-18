@@ -44,7 +44,9 @@ def wildcards(major):
 
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Homa).trade_in(Fowler))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Rahm).trade_in(Clark))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Fleetwood).trade_in(McIlroy))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Hatton).trade_in(McIlroy))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Finau).trade_in(Scheffler))
+    
     
     
     pass
