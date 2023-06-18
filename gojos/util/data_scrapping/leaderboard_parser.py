@@ -26,6 +26,7 @@ def _format_leaderboard(entries, leaderboard_file, for_round):
             py = py + f"\n\ndef scores(tournie):\n"
             for entry in entries:
                 py = py + f"{'':>4}{entry}\n"
+            py = py + f"{'':>4}tournie.leaderboard.for_round({rd}).done()\n"
 
     _write_file(leaderboard_file, py)
     return entries

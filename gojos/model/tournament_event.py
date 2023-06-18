@@ -110,7 +110,9 @@ class LeaderBoard:
         return list(accumulate(scores))
 
     def positions_for_player_per_round(self, player, wildcards):
-        return [rd.position_for_player(player, wildcards) for rd in self.rounds]
+        rr = [rd.position_for_player(player, wildcards) for rd in self.rounds]
+        print(rr)
+        return rr
 
     def _round_number_predicate(self, number, rd):
         return rd.round_number == number
@@ -130,11 +132,16 @@ class Round:
         """
         Set positions based on round_score
         """
-        reduce(self._set_position, self.players, (1, 0, None))
+        reduce(self._set_position, self._sort_player_scores(), (1, 0, None))
         return None
 
     def _sort_player_scores(self):
-        return sorted(self.players, key=lambda ps: ps.total)
+        return sorted(self._elegible_players(), key=lambda ps: ps.total)
+
+    def _elegible_players(self):
+        if self.round_number < 3:
+            return self.players
+        return [p for p in self.players if not p.player_state]
 
     def position_for_player(self, player, wildcards):
         player_scr = fn.find(partial(self._player_predicate, self._player_or_wildcard(player, wildcards)), self.players)

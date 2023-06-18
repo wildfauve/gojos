@@ -45,4 +45,5 @@ def wildcards(major):
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Rose).trade_in(Fowler))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Day).trade_in(Johnson))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Spieth).trade_in(Clark))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Theegala).trade_in(Kim_T))
     pass

@@ -43,5 +43,7 @@ def wildcards(major):
     """
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Thomas).trade_in(Scheffler))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Kitayama).trade_in(Smith_Ca))
+    TEAM.major(major).play_wildcard(WildCard().from_round(4).trade_out(Theegala).trade_in(Kim_S_W))
+    TEAM.major(major).play_wildcard(WildCard().from_round(4).trade_out(Rahm).trade_in(Kim_T))
     pass
 

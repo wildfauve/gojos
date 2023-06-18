@@ -41,7 +41,6 @@ def _per_player_row(for_round, table, accum, cell_id):
     player_state = None
     pos = _to_int(_extract_value(table, 0, cell_id, "-"))
     name = _extract_value(table, 1, cell_id, "-")
-    total = _extract_value(table, 1, cell_id, None)
     rd = _extract_value(table, for_round + 3, cell_id, "-")
     # r2 = _extract_value(table, 5, cell_id, "-")
     # r3 = _extract_value(table, 6, cell_id, "-")
@@ -51,7 +50,7 @@ def _per_player_row(for_round, table, accum, cell_id):
         player_state = tournament_event.PlayerState.CUT
     accum.append(value.ScrappedPlayer(name=_tokenise(name),
                                       player_module=mens_players,
-                                      total=total,
+                                      total=None,
                                       position=pos,
                                       player_state=player_state,
                                       round_scores=[rd]))

@@ -32,7 +32,7 @@ class CutTop60AndTies(Cut):
     cut_position = 60
 
     def _position_from_cut(self, position):
-        if isinstance(position, model.PlayerState):
+        if isinstance(position, model.PlayerState) or not position:
             return -1
         if position == self.cut_position:
             return 0

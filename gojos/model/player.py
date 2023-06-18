@@ -3,6 +3,8 @@ from functools import partial
 from rdflib import Graph, URIRef, Literal, RDF
 from gojos.util import fn, tokeniser
 
+from gojos import model
+
 
 class Player:
 
@@ -78,18 +80,23 @@ class PlayerScore:
         self.overall_total = None
         self.round_score = None
         self.current_position = None
+        self.player_state = None
         self.total = 0
 
     def score(self, scr):
+        if not scr:
+            self.rounds[self.current_round] = {'score': scr, 'current_pos': None}
+            return self
         self.rounds[self.current_round] = {'score': scr, 'current_pos': None, 'running_total': self.total + scr}
         self.total += scr
         self.round_score = scr
         return self
 
     def position(self, pos, rd_number: int = None):
+        if isinstance(pos, model.PlayerState):
+            self.player_state = pos
         self.current_position = pos
         if rd_number:
             self.rounds[rd_number]['current_pos'] = pos
-
         return self
 
