@@ -6,6 +6,10 @@ from gojos.util import fn, tokeniser
 
 class Player:
 
+    @classmethod
+    def player_predicate(cls, test_for_player, player):
+        return test_for_player == player
+
     def __init__(self, name, klass_name: str, alt_names: List = None):
         self.name = name
         self.klass_name = klass_name
@@ -44,15 +48,48 @@ class Player:
 
 class PlayerScore:
 
-    def __init__(self, player):
+    player_score_cache = []
+
+    @classmethod
+    def scoring_for_player(cls, player, round_number):
+        from_cache = cls.player_from_cache(player)
+        if not from_cache:
+            ps = cls(player, round_number)
+            cls.player_score_cache.append(ps)
+            return ps
+        from_cache.current_round = round_number
+        return from_cache
+
+    @classmethod
+    def player_from_cache(cls, player):
+        if not cls.player_score_cache:
+            return None
+        return fn.find(partial(cls._player_predicate, player), cls.player_score_cache)
+
+    @classmethod
+    def _player_predicate(cls, test_for_player, player_score):
+        return test_for_player == player_score.player
+
+
+    def __init__(self, player, current_round):
         self.player = player
+        self.current_round = current_round
+        self.rounds = {1: None, 2: None, 3: None, 4: None}
+        self.overall_total = None
         self.round_score = None
-        self.round_position = None
+        self.current_position = None
+        self.total = 0
 
     def score(self, scr):
+        self.rounds[self.current_round] = {'score': scr, 'current_pos': None, 'running_total': self.total + scr}
+        self.total += scr
         self.round_score = scr
         return self
 
-    def position(self, pos):
-        self.round_position = pos
+    def position(self, pos, rd_number: int = None):
+        self.current_position = pos
+        if rd_number:
+            self.rounds[rd_number]['current_pos'] = pos
+
         return self
+

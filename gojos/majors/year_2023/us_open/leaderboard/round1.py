@@ -157,4 +157,6 @@ def scores(tournie):
     tournie.leaderboard.for_round(1).player(Valdes).score(78).position(153)
     tournie.leaderboard.for_round(1).player(Capan_III).score(78).position(153)
     tournie.leaderboard.for_round(1).player(Wise).score(79).position(155)
+    tournie.leaderboard.for_round(1).player(Yang).score(79).position(155)
+    tournie.leaderboard.for_round(1).done()
 

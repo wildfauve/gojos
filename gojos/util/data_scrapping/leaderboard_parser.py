@@ -3,6 +3,7 @@ from functools import reduce, partial
 
 from .event_web_parser import usopen_leaderboard_parser
 
+lb_preamble = "tournie.leaderboard.for_round"
 
 def build_leaderboard(for_round, entries_file=None, players_file=None, leaderboard_file=None):
     _format_leaderboard(
@@ -66,7 +67,7 @@ def _leaderboard_def(for_round, accum, entry):
 
 def _player_rd_score(entry, accum, round_score):
     rd, score = round_score
-    py = f"tournie.leaderboard.for_round({rd}).player({entry.player_klass.klass_name}).score({score}).position({entry.current_position()})"
+    py = f"{lb_preamble}({rd}).player({entry.player_klass.klass_name}).score({score}).position({entry.current_position()})"
     accum[rd].append(py)
     return accum
 

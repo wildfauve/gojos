@@ -1,6 +1,7 @@
 from .expr import (
+    add_total_column,
     filter_team_name,
-    sum_races
+    sum_rounds
 )
 
 from .dataframe import (

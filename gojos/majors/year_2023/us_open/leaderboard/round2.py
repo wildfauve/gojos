@@ -159,3 +159,5 @@ def scores(tournie):
     tournie.leaderboard.for_round(2).player(Thomas).score(81).position(PlayerState.CUT)
     tournie.leaderboard.for_round(2).player(Horsey).score(79).position(PlayerState.CUT)
     tournie.leaderboard.for_round(2).player(Valdes).score(78).position(PlayerState.CUT)
+    tournie.leaderboard.for_round(2).player(Lebioda).score(77).position(PlayerState.CUT)
+    tournie.leaderboard.for_round(2).done()
