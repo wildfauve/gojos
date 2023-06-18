@@ -89,7 +89,7 @@ class FantasyTournament:
     def points_per_round(self):
         pts_per_player_per_rd = [roster_player.points_per_round(self.wildcard_trades) for roster_player in self.roster]
         print(f"Team: {self.team.name}...{pts_per_player_per_rd}")
-        if len(pts_per_player_per_rd) == 1:  # there is only 1 player
+        if len(pts_per_player_per_rd) == 1:  # there is only 1 round
             return pts_per_player_per_rd[0]
         total = [sum(rd_pts) for rd_pts in zip(*pts_per_player_per_rd)]
         print(f"Team: {self.team.name}...TOTAL:  {total}")

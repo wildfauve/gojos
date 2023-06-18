@@ -8,6 +8,7 @@ from gojos import model
 
 class Points1_4_10(Enum):
     POINTS_PER_POSITION = 1
+    POINTS_FOR_MISSED_CUT = 0
     MAX_WILDCARD = 4
     MAX_PLAYERS = 10
 
@@ -17,13 +18,14 @@ class Points1_2_4(Enum):
     Class for testing only.
     """
     POINTS_PER_POSITION = 1
+    POINTS_FOR_MISSED_CUT = 0
     MAX_WILDCARD = 2
     MAX_PLAYERS = 4
 
 
 class PointsStrategyCalculator:
 
-    def __init__(self, pts_strategy: Union[Type[Points1_4_10]]):
+    def __init__(self, pts_strategy: Union[Type[Points1_4_10], Type[Points1_2_4]]):
         self.pts_strategy = pts_strategy
 
 
@@ -46,7 +48,7 @@ class InvertedPosition(PointsStrategyCalculator):
 
     def _invert_position(self, roster_player, pos):
         if isinstance(pos, model.PlayerState) or not pos:
-            return 0
+            return self.pts_strategy.POINTS_FOR_MISSED_CUT.value
         return self._points_with_factor(roster_player.tournament.number_of_entries + 1 - pos)
 
     def _points_with_factor(self, points: int) -> int:
