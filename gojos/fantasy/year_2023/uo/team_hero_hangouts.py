@@ -44,8 +44,9 @@ def wildcards(major):
     """
 
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Taylor).trade_in(Fowler))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Rahm).trade_in(English))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Fleetwood).trade_in(Lee_M))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Fitzpatrick).trade_in(English))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Hatton).trade_in(Lee_M))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Hovland).trade_in(Johnson))
     
     pass
 
