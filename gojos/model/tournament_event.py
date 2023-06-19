@@ -4,6 +4,7 @@ from itertools import accumulate, pairwise
 from enum import Enum
 
 import polars as pl
+from rich import print
 
 from . import player, fantasy
 from gojos import dataframe, model
@@ -182,6 +183,7 @@ class Round:
     def _player_or_wildcard(self, player, wildcards):
         wc = fantasy.WildCard.has_swap(wildcards, player, self.round_number)
         if wc:
+            print(f"Round: {self.round_number} Trade out [bold blue]{player.klass_name}[/] trade in [bold green]{wc.trade_in_player.klass_name}")
             return wc.trade_in_player
         return player
 

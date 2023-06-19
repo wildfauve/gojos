@@ -3,6 +3,8 @@ from enum import Enum
 from functools import partial, reduce
 
 from rich.table import Table
+from rich.pretty import pprint
+from rich import print
 
 from gojos.model.player import Player
 
@@ -23,6 +25,7 @@ class Team:
         return self.fantasy_tournament
 
     def points_per_round(self):
+        print
         return self.fantasy_tournament.points_per_round()
 
     def total_points(self, for_round=None):
@@ -87,12 +90,12 @@ class FantasyTournament:
                     selection.show(self.draw.name, table)
 
     def points_per_round(self):
+        print(f"Team: [bold magenta]{self.team.name}")
         pts_per_player_per_rd = [roster_player.points_per_round(self.wildcard_trades) for roster_player in self.roster]
-        print(f"Team: {self.team.name}...{pts_per_player_per_rd}")
         if len(pts_per_player_per_rd) == 1:  # there is only 1 round
             return pts_per_player_per_rd[0]
         total = [sum(rd_pts) for rd_pts in zip(*pts_per_player_per_rd)]
-        print(f"Team: {self.team.name}...TOTAL:  {total}")
+        self._print_pts(pts_per_player_per_rd, total)
         return total
 
     def total_points(self, for_round=None):
@@ -128,6 +131,12 @@ class FantasyTournament:
 
     def _find_match_selection(self, round_id, match_id):
         return fn.deep_get(self.match_selections, [round_id, match_id])
+
+    def _print_pts(self, pts_per_player_per_rd, total):
+        print("\n".join([f"[{', '.join([str(pt) for pt in rd])}]" for rd in pts_per_player_per_rd]))
+        print(f"TOTAL:  {total}\n\n")
+        pass
+
 
 
 class RosterPlayer:
