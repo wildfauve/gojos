@@ -1,7 +1,7 @@
 from typing import Tuple, Dict
 from functools import reduce, partial
 
-from .event_web_parser import usopen_leaderboard_parser
+from .event_web_parser import pga_leaderboard_parser
 
 lb_preamble = "tournie.leaderboard.for_round"
 
@@ -14,7 +14,7 @@ def build_leaderboard(for_round, entries_file=None, players_file=None, leaderboa
 
 
 def _parser_for_event():
-    return usopen_leaderboard_parser
+    return pga_leaderboard_parser
 
 
 def _format_leaderboard(entries, leaderboard_file, for_round):

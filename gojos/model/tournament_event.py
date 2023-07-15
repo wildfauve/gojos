@@ -13,6 +13,7 @@ from gojos.util import fn
 
 class PlayerState(Enum):
     CUT = 'cut'
+    WD = 'wd'
 
 
 class TournamentEvent:

@@ -55,24 +55,6 @@ def explain_points_for_team(team: Union[str, fantasy.Team], teams=None):
     return tm.explain_points()
 
 
-def show_draw_for_team(team_name, teams, round):
-    team = find_team_by_name(team_name, teams)
-    if not team:
-        echo.echo("Team Not Found")
-        return None
-
-    table = Table(title=f"Leaderboard For Round {round}", box=box.ROUNDED)
-
-    table.add_column("Draw", justify="center", style="cyan", no_wrap=True)
-    table.add_column("Match Number", justify="center", style="cyan", no_wrap=True)
-    table.add_column("Match", justify="center", style="cyan", no_wrap=True)
-    table.add_column("Selected Winner", justify="left", style="magenta")
-    table.add_column("Selected Sets", justify="left", style="magenta")
-
-    team.show_draws(table=table, for_round=round)
-
-    console.print(table)
-
 
 def find_team_by_name(team_name, teams):
     return fn.find(partial(_team_name_predicate, team_name), teams)

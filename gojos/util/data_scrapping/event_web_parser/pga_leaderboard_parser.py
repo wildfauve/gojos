@@ -48,6 +48,9 @@ def _per_player_row(for_round, table, accum, cell_id):
     if pos == "CUT":
         pos = None
         player_state = tournament_event.PlayerState.CUT
+    if pos == "WD":
+        pos = None
+        player_state = tournament_event.PlayerState.WD
     accum.append(value.ScrappedPlayer(name=_tokenise(name),
                                       player_module=mens_players,
                                       total=None,
@@ -60,6 +63,8 @@ def _to_int(pos: Union[str, int]):
     if isinstance(pos, int) or not pos:
         return pos
     if "CUT" in pos:
+        return pos
+    if "WD" in pos:
         return pos
     if "T" in pos:
         return int(pos.replace('T', ''))

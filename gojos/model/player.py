@@ -12,6 +12,14 @@ class Player:
     def player_predicate(cls, test_for_player, player):
         return test_for_player == player
 
+    @classmethod
+    def format_player_klass_name(cls, name):
+        nm = name.rstrip().lstrip()
+        if "." in nm:
+            return tokeniser.string_tokeniser(nm, tokeniser.dot_splitter, tokeniser.special_char_set)
+        return tokeniser.string_tokeniser(nm, tokeniser.sp_splitter, tokeniser.special_char_set)
+
+
     def __init__(self, name, klass_name: str, alt_names: List = None):
         self.name = name
         self.klass_name = klass_name
@@ -19,12 +27,6 @@ class Player:
 
     def __repr__(self):
         return f"Player(klass={self.klass_name}, name={self.name})"
-
-    def _format_player_klass_name(self, name):
-        nm = name.rstrip().lstrip()
-        if "." in nm:
-            return tokeniser.string_tokeniser(nm, tokeniser.dot_splitter, tokeniser.special_char_set)
-        return tokeniser.string_tokeniser(nm, tokeniser.sp_splitter, tokeniser.special_char_set)
 
     def uri_name(self):
         return self.name.split(" ")[-1]
@@ -38,11 +40,11 @@ class Player:
         return self.name == other.name
 
     def match_by_name(self, on_name):
-        if self._format_player_klass_name(on_name) == self.klass_name:
+        if self.__class__.format_player_klass_name(on_name) == self.klass_name:
             return self
         if self.name == on_name:
             return self
-        if self._format_player_klass_name(on_name) in self.klass_name:
+        if self.__class__.format_player_klass_name(on_name) in self.klass_name:
             if any([alt_name == on_name for alt_name in self.alt_names]):
                 return self
         return None

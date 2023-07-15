@@ -17,6 +17,9 @@ def match_player_by_name(name, player_module):
         return None
     breakpoint()
 
+def player_by_klass_name(klass_name, player_module):
+    return getattr(player_module, klass_name, None)
+
 
 def _player_finder(name, player):
     return player.match_by_name(name)

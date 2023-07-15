@@ -6,9 +6,11 @@ from gojos import model
 from gojos.util import monad
 
 USOpen = model.GrandSlam(name="US Open", subject_name="USOpen", perma_id="uo")
+TheOpen = model.GrandSlam(name="The Open", subject_name="TheOpen", perma_id="to")
 
 TournamentLoaderConfig = {
     'USOpen2023': (2023, "us_open"),
+    'TheOpen2023': (2023, "the_open"),
 }
 
 
