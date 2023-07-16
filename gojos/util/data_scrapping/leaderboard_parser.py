@@ -56,7 +56,7 @@ from gojos.players import players
 
 
 def _results_function():
-    return f"""from gojos.players.mens_players import *
+    return f"""from gojos.players import mens_players as players
 from gojos.model.tournament_event import PlayerState
 
 """
@@ -68,7 +68,7 @@ def _leaderboard_def(for_round, accum, entry):
 
 def _player_rd_score(entry, accum, round_score):
     rd, score = round_score
-    py = f"{lb_preamble}({rd}).player({entry.player_klass.klass_name}).score({score}).position({entry.current_position()})"
+    py = f"{lb_preamble}({rd}).player(players.{entry.player_klass.klass_name}).score({score}).position({entry.current_position()})"
     accum[rd].append(py)
     return accum
 

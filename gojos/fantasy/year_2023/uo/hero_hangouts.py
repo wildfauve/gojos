@@ -1,7 +1,7 @@
 import sys
 from gojos.fantasy.teams import *
 from gojos.fantasy import helpers
-from gojos.players.mens_players import *
+from gojos.players import mens_players as players
 from gojos.model.fantasy import WildCard
 
 this = sys.modules[__name__]
@@ -25,19 +25,19 @@ def selection(major):
     Add 10 teams to your roster.
 
     An example of adding Rory to your roster is:
-    TEAM.major(major).selection(McIlroy)
+    TEAM.major(major).selection(players.McIlroy)
     """
 
-    TEAM.major(major).on_roster(Taylor)
-    TEAM.major(major).on_roster(Clark)
-    TEAM.major(major).on_roster(Fleetwood)
-    TEAM.major(major).on_roster(Scheffler)
-    TEAM.major(major).on_roster(Fitzpatrick)
-    TEAM.major(major).on_roster(Rahm)
-    TEAM.major(major).on_roster(Hovland)
-    TEAM.major(major).on_roster(Hatton)
-    TEAM.major(major).on_roster(McIlroy)
-    TEAM.major(major).on_roster(Schauffele)
+    TEAM.major(major).on_roster(players.Taylor)
+    TEAM.major(major).on_roster(players.Clark)
+    TEAM.major(major).on_roster(players.Fleetwood)
+    TEAM.major(major).on_roster(players.Scheffler)
+    TEAM.major(major).on_roster(players.Fitzpatrick)
+    TEAM.major(major).on_roster(players.Rahm)
+    TEAM.major(major).on_roster(players.Hovland)
+    TEAM.major(major).on_roster(players.Hatton)
+    TEAM.major(major).on_roster(players.McIlroy)
+    TEAM.major(major).on_roster(players.Schauffele)
 
 
 def wildcards(major):
@@ -47,13 +47,13 @@ def wildcards(major):
 
     The following is an example of trading out Scottie and replacing him with Colin from round 3.
 
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Scheffler).trade_in(Morikawa))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.(players.Scheffler).trade_in(players.Morikawa))
     """
 
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Taylor).trade_in(Fowler))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Fitzpatrick).trade_in(English))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Hatton).trade_in(Lee_M))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Hovland).trade_in(Johnson))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Taylor).trade_in(players.Fowler))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Fitzpatrick).trade_in(players.English))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Hatton).trade_in(players.Lee_M))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Hovland).trade_in(players.Johnson))
     
     pass
 

@@ -1,7 +1,7 @@
 import sys
 from gojos.fantasy.teams import *
 from gojos.fantasy import helpers
-from gojos.players.mens_players import *
+from gojos.players import mens_players as players
 from gojos.model.fantasy import WildCard
 
 this = sys.modules[__name__]
@@ -24,7 +24,7 @@ def selection(major):
     Add 10 teams to your roster.
 
     An example of adding Rory to your roster is:
-    TEAM.major(major).selection(McIlroy)
+    TEAM.major(major).selection(players.McIlroy)
     """
     TEAM.major(major)
     pass
@@ -37,7 +37,7 @@ def wildcards(major):
 
     The following is an example of trading out Scottie and replacing him with Colin from round 3.
 
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Scheffler).trade_in(Morikawa))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Scheffler).trade_in(players.Morikawa))
     """
 
     pass

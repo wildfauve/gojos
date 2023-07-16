@@ -1,4 +1,4 @@
-from gojos.players.mens_players import *
+from gojos.players import mens_players as players
 
 
 def round_1(tournie):

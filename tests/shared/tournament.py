@@ -2,7 +2,7 @@ from gojos.majors import tournaments
 from gojos.model import tournament_event
 from gojos import model
 from gojos.fantasy import points_strategy
-from gojos.players.mens_players import *
+from gojos.players import mens_players as players
 
 from tests.fixtures import results
 

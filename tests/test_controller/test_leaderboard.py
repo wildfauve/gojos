@@ -4,7 +4,7 @@ import polars as pl
 
 from gojos.fantasy import teams
 from gojos import model
-from gojos.players.mens_players import *
+from gojos.players import mens_players as players
 
 from tests.shared import *
 
@@ -45,7 +45,7 @@ def test_wildcard(fantasy_tournaments):
     assert df.rows()[0][2] == 26
 
     teams.TeamClojo.major(tournie).play_wildcard(
-        model.WildCard().from_round(1).trade_out(Schauffele).trade_in(Morikawa))
+        model.WildCard().from_round(1).trade_out(players.Schauffele).trade_in(players.Morikawa))
 
     result_after_wc = command.leaderboard_df('ClojosOpen2023',
                                              tournament_search_fn=partial(tournament_in_fantasy, tournie),
