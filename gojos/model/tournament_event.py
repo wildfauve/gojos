@@ -32,6 +32,16 @@ class TournamentEvent:
         self.points_strategy = None
         self.round_factor_strategy = None
         self.leaderboard = LeaderBoard()
+        model.Player.loadall()
+
+    def __repr__(self):
+        cls_name = self.__class__.__name__
+        components = [
+            f"name={self.name}",
+            f"label={self.label}",
+            f"number_of_entries={self.number_of_entries}"]
+        return f"{cls_name}({', '.join(fn.remove_none(components))})"
+
 
     def add_entries(self, entries):
         self.entries = entries

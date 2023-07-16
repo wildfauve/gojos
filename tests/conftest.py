@@ -1,3 +1,3 @@
 import pytest
 
-from tests import shared
+from tests.shared import *

@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import Union
 from functools import partial, reduce
 import json
@@ -6,29 +7,29 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 
-from gojos.model import fantasy
+from gojos import model
 from gojos.util import fn, echo
 
 console = Console()
 
-TeamGelatoGiants = fantasy.Team("Team Gelato Giants", "Bronzie & Juki")
-TeamPolarPrecision = fantasy.Team("Team Polar Precision", "IceT, Pepsi, Rollie, Lemmie & Gertie")
-TeamHeroHangouts = fantasy.Team("Team Hero Hangouts", "Marmalade, Richmond, Greenwich")
-TeamBearNecessities = fantasy.Team("Team Bear Necessities", "Fraser, Tom, Frank, Spencer & Duck")
-TeamMusicalBears = fantasy.Team("Team Musical Bears", "Rinksy, Beetie, Motzie")
-TeamFauve = fantasy.Team("Team Fauve", "Perky")
-TeamClojo = fantasy.Team("Team Clojo", "Claudie, Fyodoro")
-TeamLightHouse = fantasy.Team("Team LightHouse", "Edouard, Piri")
-
-teams = [TeamGelatoGiants,
-         TeamPolarPrecision,
-         TeamHeroHangouts,
-         TeamBearNecessities,
-         TeamMusicalBears,
-         TeamClojo,
-         TeamLightHouse,
-         TeamFauve]
-
+# TeamGelatoGiants = model.Team("Team Gelato Giants", "Bronzie & Juki")
+# TeamPolarPrecision = model.Team("Team Polar Precision", "IceT, Pepsi, Rollie, Lemmie & Gertie")
+# TeamHeroHangouts = model.Team("Team Hero Hangouts", "Marmalade, Richmond, Greenwich")
+# TeamBearNecessities = model.Team("Team Bear Necessities", "Fraser, Tom, Frank, Spencer & Duck")
+# TeamMusicalBears = model.Team("Team Musical Bears", "Rinksy, Beetie, Motzie")
+# TeamFauve = model.Team("Team Fauve", "Perky")
+# TeamClojo = model.Team("Team Clojo", "Claudie, Fyodoro")
+# TeamLightHouse = model.Team("Team LightHouse", "Edouard, Piri")
+#
+# teams = [TeamGelatoGiants,
+#          TeamPolarPrecision,
+#          TeamHeroHangouts,
+#          TeamBearNecessities,
+#          TeamMusicalBears,
+#          TeamClojo,
+#          TeamLightHouse,
+#          TeamFauve]
+#
 
 def build_graph(g):
     [team.build_graph(g) for team in teams]
@@ -47,7 +48,7 @@ def _team_points_aggregate(accum, team):
     return {**accum, **{team: for_team}}
 
 
-def explain_points_for_team(team: Union[str, fantasy.Team], teams=None):
+def explain_points_for_team(team: Union[str, model.Team], teams=None):
     tm = find_team_by_name(team, teams) if isinstance(team, str) else team
     if not tm:
         echo.echo("Team Not Found")

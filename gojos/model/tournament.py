@@ -7,6 +7,9 @@ class Tournament:
         self.perma_id = perma_id
         self.subject_name = subject_name
 
+    def __repr__(self):
+        return f"{self.__class__.__name__}(name={self.name})"
+
 
 class GrandSlam(Tournament):
     pass

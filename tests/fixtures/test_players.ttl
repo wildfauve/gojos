@@ -1,0 +1,17 @@
+@prefix clo-go: <https://clojos.io/ontology/FantasyGolf/> .
+@prefix clo-go-ind-plr: <https://clojos.io/ontology/FantasyGolf/Ind/Player/> .
+@prefix clo-go-plr: <https://clojos.io/ontology/FantasyGolf/Player/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+clo-go-ind-plr:McIlroy a clo-go:Player ;
+    foaf:name "R. McIlroy" ;
+    clo-go-plr:hasKlassName "McIlroy" .
+
+clo-go-ind-plr:Scheffler a clo-go:Player ;
+    foaf:name "S. Scheffler" ;
+    clo-go-plr:hasKlassName "Scheffler" .
+
+clo-go-ind-plr:Fleetwood a clo-go:Player ;
+    foaf:name "T. Fleetwood" ;
+    clo-go-plr:hasKlassName "Fleetwood" .

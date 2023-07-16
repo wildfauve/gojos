@@ -1,0 +1,38 @@
+@prefix clo-fan: <https://clojos.io/ontology/Fantasy/> .
+@prefix clo-fan-ind: <https://clojos.io/ontology/Fantasy/Ind/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+clo-fan-ind:Fauve a clo-fan:Team ;
+    skos:notation "Fauve" ;
+    clo-fan:hasTeamMembers "Perky, Jacque, Albert" .
+
+clo-fan-ind:BearNecessities a clo-fan:Team ;
+    skos:notation "Bear Necessities" ;
+    clo-fan:hasTeamMembers "Fraser, Tom, Frank, Spencer, Duck" .
+
+clo-fan-ind:Clojos a clo-fan:Team ;
+    skos:notation "Clojos" ;
+    clo-fan:hasTeamMembers "Claudie, Fyodoro" .
+
+clo-fan-ind:GelatoGiants a clo-fan:Team ;
+    skos:notation "Gelato Giants" ;
+    clo-fan:hasTeamMembers "Bronzie, Juki" .
+
+clo-fan-ind:HeroHangouts a clo-fan:Team ;
+    skos:notation "Hero Hangouts" ;
+    clo-fan:hasTeamMembers "Marmalade, Richmond, Greenwich" .
+
+clo-fan-ind:LightHouse a clo-fan:Team ;
+    skos:notation "LightHouse" ;
+    clo-fan:hasTeamMembers "Edouard, Piri, Jack, Tom, Islay, Pinky, Purpley, Florance, Fennel" .
+
+clo-fan-ind:MusicalBears a clo-fan:Team ;
+    skos:notation "Musical Bears" ;
+    clo-fan:hasTeamMembers "Rinksy, Beetie, Motzie" .
+
+clo-fan-ind:PolarPrecision a clo-fan:Team ;
+    skos:notation "Polar Precision" ;
+    clo-fan:hasTeamMembers "IceT, Pepsi, Rollie, Lemmie, Gertie" .
+

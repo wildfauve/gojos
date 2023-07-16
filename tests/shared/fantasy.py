@@ -1,7 +1,5 @@
 import pytest
 
-from tests.fixtures import tournie_teams
-
 @pytest.fixture
 def fantasy_tournaments():
     return {

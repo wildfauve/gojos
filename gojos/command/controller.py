@@ -66,5 +66,4 @@ def _apply_fantasy(tournie, fantasy_tournaments: Dict):
     if not fantasy_module:
         echo.echo(f"No fantasy selections for {tournie.name}")
         return
-
     return selections.apply(fantasy_module, tournie)

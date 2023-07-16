@@ -1,22 +1,53 @@
+from __future__ import annotations
 from typing import List
-from enum import Enum
 from functools import partial, reduce
 
+from rdflib import URIRef
 from rich.table import Table
-from rich.pretty import pprint
-from rich import print
 
-from gojos.model.player import Player
-
-from gojos.util import fn, identity
+from gojos import model
+from gojos.repo import repository
+from gojos import rdf
+from gojos.util import fn, identity, singleton, logger
 
 
 class Team:
-    def __init__(self, name, members):
+    repo = model.GraphModel(repository.TeamRepo, model.GraphModel.fantasy_graph)
+
+    @classmethod
+    def init(cls):
+        cls.repo = model.GraphModel(repository.TeamRepo, model.GraphModel.fantasy_graph)
+
+    @classmethod
+    def create(cls, name: str, members: str, features: List[model.FantasyFeature] = None):
+        team = cls(name, members, features)
+        cls.repo().upsert(team)
+        return team
+
+    @classmethod
+    def get(cls, name):
+        team = cls.repo().find_by_name(name)
+        if not team:
+            return None
+        name, members, features, sub = team
+        return cls(name=name, members=members, features=[model.FantasyFeature[feat] for feat in features])
+
+    @classmethod
+    def get_all(cls):
+        return [cls.to_team(team) for team in cls.repo().get_all()]
+
+    @classmethod
+    def to_team(cls, team):
+        name, members, features, sub = team
+        return cls(name=name, members=members, features=[model.FantasyFeature[feat] for feat in features])
+
+    def __init__(self, name, members, features: List = None, sub: URIRef = None):
         self.name = name
         self.symbolic_name = name.replace(" ", "")
         self.members = members
         self.fantasy_tournament = None
+        self.features = features if features else []
+        self.subject = rdf.clo_fan_ind[self.symbolic_name] if not sub else sub
 
     def major(self, tournament):
         if self.fantasy_tournament:
@@ -25,7 +56,6 @@ class Team:
         return self.fantasy_tournament
 
     def points_per_round(self):
-        print
         return self.fantasy_tournament.points_per_round()
 
     def total_points(self, for_round=None):
@@ -90,7 +120,7 @@ class FantasyTournament:
                     selection.show(self.draw.name, table)
 
     def points_per_round(self):
-        print(f"Team: [bold magenta]{self.team.name}")
+        logger.info(f"Team: [bold magenta]{self.team.name}")
         pts_per_player_per_rd = [roster_player.points_per_round(self.wildcard_trades) for roster_player in self.roster]
         if len(pts_per_player_per_rd) == 1:  # there is only 1 round
             return pts_per_player_per_rd[0]
@@ -133,10 +163,9 @@ class FantasyTournament:
         return fn.deep_get(self.match_selections, [round_id, match_id])
 
     def _print_pts(self, pts_per_player_per_rd, total):
-        print("\n".join([f"[{', '.join([str(pt) for pt in rd])}]" for rd in pts_per_player_per_rd]))
-        print(f"TOTAL:  {total}\n\n")
+        logger.info("\n".join([f"[{', '.join([str(pt) for pt in rd])}]" for rd in pts_per_player_per_rd]))
+        logger.info(f"TOTAL:  {total}\n\n")
         pass
-
 
 
 class RosterPlayer:
@@ -200,3 +229,22 @@ class WildCard:
     def trade_in(self, player):
         self.trade_in_player = player
         return self
+
+
+class TeamDirectory(singleton.Singleton):
+
+    def add_teams(self, teams):
+        self.teams = teams
+
+    def symbolic_names(self):
+        return [team.symbolic_name for team in self.teams]
+
+    def load_all_selections(self, event):
+        [team.load_all_selections(event) for team in self.teams]
+        return self
+
+
+def teams():
+    all_teams = model.Team.get_all()
+    TeamDirectory().add_teams(all_teams)
+    return TeamDirectory()

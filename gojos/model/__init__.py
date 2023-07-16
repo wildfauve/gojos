@@ -1,3 +1,13 @@
+from .base import GraphModel
+
+from .fantasy import (
+    RosterPlayer,
+    Team,
+    WildCard
+)
+
+from .feature import FantasyFeature
+
 from .player import (
     Player,
     PlayerScore
@@ -9,11 +19,7 @@ from .tournament import (
     Course
 )
 
-from .fantasy import (
-    RosterPlayer,
-    WildCard
-)
-
 from .tournament_event import (
     PlayerState
 )
+
