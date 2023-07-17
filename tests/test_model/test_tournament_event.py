@@ -1,5 +1,5 @@
 from gojos import model
-from gojos import repo
+from gojos import repo, fantasy
 from gojos.players import mens_players
 
 from tests.shared import tournament
@@ -28,6 +28,20 @@ def test_make_event_from_tournament(configure_repo):
 
     exactly_the_same_event = tournie.make_event(year=2023)
     assert id(event) == id(exactly_the_same_event)
+
+
+def test_strategies(configure_repo):
+    tournie = tournament.create_tournie()
+
+    event = tournie.make_event(year=2023, cut_strategy=model.Cut.build("CutTop60AndTies"))
+
+
+    assert isinstance(event.cut_strategy, model.CutTop60AndTies)
+    assert isinstance(event.points_strategy, fantasy.InvertedPosition)
+
+    same_event = model.TournamentEvent.get(tournament=event.is_event_of, year=2023)
+    assert isinstance(same_event.points_strategy, fantasy.InvertedPosition)
+    assert isinstance(same_event.cut_strategy, model.CutTop60AndTies)
 
 
 def test_get_all_events(configure_repo):

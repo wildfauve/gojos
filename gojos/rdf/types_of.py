@@ -13,3 +13,5 @@ PLAYER_ENTRY = clo_go.PlayerEntry
 FANTASY_TOURNAMENT = clo_fan.FantasyTournament
 
 FANTASY_POINTS_STRATEGY = clo_fan.FantasyPointsStrategy
+
+CUT_STRATEGY = clo_fan.CutStategy

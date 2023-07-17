@@ -24,6 +24,8 @@ class TournamentEventRepo(graphrepo.GraphRepo):
         g.add((sub, rdf.skos.notation, Literal(event.name)))
         g.add((sub, rdf.isInYear, Literal(event.scheduled_in_year)))
         g.add((sub, rdf.isEventOf, event.is_event_of.subject))
+        g.add((sub, rdf.hasFantasyPointsStrategy, event.points_strategy.subject()))
+        g.add((sub, rdf.hasCutStrategy, event.cut_strategy.subject()))
         return g
 
     def get_all(self):
@@ -49,6 +51,8 @@ class TournamentEventRepo(graphrepo.GraphRepo):
         return (result.year.toPython(),
                 result.event_name.toPython(),
                 result.event,
+                result.cut_strat,
+                result.fant_strat,
                 result.tournament_sub)
 
     def _sparql(self, tournament_sub=None, year=None, sub=None):
@@ -64,13 +68,15 @@ class TournamentEventRepo(graphrepo.GraphRepo):
         filter = "" if not filter_criteria else f"filter({filter_criteria})"
 
         return f"""
-        select ?event ?event_name ?year ?tournament_sub
+        select ?event ?event_name ?year ?cut_strat ?fant_strat ?tournament_sub
 
         where {{
 
   	    ?event a clo-go:TournamentEvent ;
 	           skos:notation ?event_name ;
 	           clo-go:isInYear ?year ;
+	           clo-go:hasCutStrategy ?cut_strat ;
+	           clo-go:hasFantasyPointsStrategy ?fant_strat ;
                clo-go:isEventOf ?tournament_sub .
 
         {filter} }}

@@ -5,3 +5,9 @@ fantasy_tournaments = {
     "USOpen2023": uo_2023,
     "TheOpen2023": to_2023
 }
+
+from .points_strategy import (
+    InvertedPosition,
+    PointsStrategyCalculator,
+    strategy_inverted_position_1_wc_4_max_players_10
+)

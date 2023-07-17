@@ -7,7 +7,7 @@ import polars as pl
 from rdflib import URIRef
 from rich import print
 
-from gojos import model, rdf
+from gojos import model, rdf, fantasy
 from gojos.repo import repository
 from gojos.util import fn
 
@@ -21,9 +21,13 @@ class TournamentEvent:
     repo = model.GraphModel(repository.TournamentEventRepo, model.GraphModel.tournament_graph)
 
     @classmethod
-    def create(cls, year: int, tournament_name: str = None, tournament=None):
+    def create(cls,
+               year: int,
+               tournament_name: str = None,
+               tournament=None,
+               cut_strategy: str = None):
         event_of = tournament if isinstance(tournament, model.GrandSlam) else model.GrandSlam.get(name=tournament_name)
-        event = cls(event_of=event_of, year=year)
+        event = cls(event_of=event_of, year=year, cut_strategy=cut_strategy)
         cls.repo().upsert(event)
         return event
 
@@ -44,9 +48,11 @@ class TournamentEvent:
 
     @classmethod
     def build_event(cls, tournament: Union[model.Tournament, str, URIRef], event):
-        year, name, sub, _tourn_sub = event
+        year, name, sub, cut_strat, fant_strat, _tourn_sub = event
         return cls(event_of=tournament,
                    year=year,
+                   cut_strategy=cut_strat,
+                   pts_strategy_components=fant_strat,
                    sub=sub)
 
     @classmethod
@@ -56,7 +62,12 @@ class TournamentEvent:
             return None
         return cls(*[event[-1:][0]] + list(event[:-1]))
 
-    def __init__(self, event_of, year, sub: URIRef = None):
+    def __init__(self,
+                 event_of,
+                 year,
+                 pts_strategy_components: Union[tuple, URIRef] = None,
+                 cut_strategy: Union[str, URIRef, model.Cut] = None,
+                 sub: URIRef = None):
         if isinstance(event_of, model.GrandSlam):
             self.is_event_of = event_of
         elif isinstance(event_of, URIRef):
@@ -72,9 +83,9 @@ class TournamentEvent:
         self.number_of_entries = None
         self.rounds = []
         self.course = None
-        self.cut_strategy = None
+        self.cut_strategy = model.Cut.build(cut_strategy) if not isinstance(cut_strategy, model.Cut) else cut_strategy
         self.errors = []
-        self.points_strategy = None
+        self.points_strategy = self.fantasy_strategy(pts_strategy_components)
         self.round_factor_strategy = None
         self.leaderboard = LeaderBoard()
         model.Player.loadall()
@@ -97,6 +108,11 @@ class TournamentEvent:
 
     def tournament_by_sub(self, sub):
         return model.GrandSlam.get_by_sub(sub)
+
+    def fantasy_strategy(self, components: Union[Tuple, URIRef] = None):
+        if components:
+            return fantasy.PointsStrategyCalculator.build(components)
+        return fantasy.strategy_inverted_position_1_wc_4_max_players_10()
 
     def add_entries(self, entries):
         self.entries = entries

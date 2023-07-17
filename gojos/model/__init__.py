@@ -14,6 +14,8 @@ from .player import (
 )
 
 from .tournament import (
+    Cut,
+    CutTop60AndTies,
     GrandSlam,
     Tournament,
     Course

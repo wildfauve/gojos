@@ -1,20 +1,26 @@
-@prefix clo-go: <https://clojos.io/ontology/FantasyGolf/> .
+@prefix clo-go:         <https://clojos.io/ontology/FantasyGolf/> .
 @prefix clo-go-ind-tou: <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
 
-<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023> a clo-go:TournamentEvent ;
-    skos:notation "TheOpen2023" ;
-    clo-go:isEventOf clo-go-ind-tou:TheOpen ;
-    clo-go:isInYear 2023 .
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023>
+    a                     clo-go:TournamentEvent ;
+    skos:notation         "TheOpen2023" ;
+    clo-go:isEventOf      clo-go-ind-tou:TheOpen ;
+    clo-go:hasCutStrategy <https://clojos.io/ontology/Fantasy/CutStategy/CutTop60AndTies> ;
+    clo-go:hasFantasyPointsStrategy
+                          <https://clojos.io/ontology/Fantasy/FantasyPointsStrategy/InvertedPosition/Points1_4_10> ;
+    clo-go:isInYear       2023 .
 
-clo-go-ind-tou:USOpen a clo-go:Tournament ;
-    skos:notation "US Open" ;
-    clo-go:hasPermId "us" ;
+clo-go-ind-tou:USOpen
+    a                     clo-go:Tournament ;
+    skos:notation         "US Open" ;
+    clo-go:hasPermId      "us" ;
     clo-go:hasSubjectName "USOpen" .
 
-clo-go-ind-tou:TheOpen a clo-go:Tournament ;
-    skos:notation "The Open" ;
-    clo-go:hasPermId "to" ;
+clo-go-ind-tou:TheOpen
+    a                     clo-go:Tournament ;
+    skos:notation         "The Open" ;
+    clo-go:hasPermId      "to" ;
     clo-go:hasSubjectName "TheOpen" .
 

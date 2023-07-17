@@ -1,9 +1,13 @@
+from typing import Union, Tuple
+import sys
+
 from rdflib import URIRef
 
 from . import player
 from gojos import model, rdf
 from gojos.repo import repository
 from gojos.util import singleton, fn
+
 
 class Tournament:
     repo = model.GraphModel(repository.TournamentRepo, model.GraphModel.tournament_graph)
@@ -50,14 +54,13 @@ class Tournament:
             return None
         return self.subject == other.subject
 
-    def make_event(self, year):
+    def make_event(self, year, cut_strategy: str = None):
         event = fn.find(lambda ev: ev.scheduled_in_year == year, self.events)
         if event:
             return event
-        event = model.TournamentEvent.create(year=year, tournament=self)
+        event = model.TournamentEvent.create(year=year, tournament=self, cut_strategy=cut_strategy)
         self.events.append(event)
         return event
-
 
     def for_year(self, year, load: bool = False):
         event = fn.find(lambda event: event.scheduled_in_year == year, self.events)
@@ -68,8 +71,6 @@ class Tournament:
     def all_events(self):
         self.events = model.TournamentEvent.get_all_for_tournament(self)
         return self
-
-
 
 
 class GrandSlam(Tournament):
@@ -83,14 +84,27 @@ class Course:
         self.country_symbol = country_symbol
 
 
-
 class Cut:
+
+    @classmethod
+    def build(cls, sub: Union[URIRef, str]):
+        if isinstance(sub, URIRef):
+            klass_name = sub.split("/")[-1]
+        else:
+            klass_name = sub
+        klass = getattr(sys.modules[__name__], klass_name)
+        return klass()
+
+    def subject(self):
+        return URIRef(
+            rdf.CUT_STRATEGY) + f"/{self.__class__.__name__}"
 
     def below_cut_line(self, player_score: player.PlayerScore):
         return self.player_below_cut(player_score)
 
     def relative_to_cut(self, position):
         return self._position_from_cut(position)
+
 
 class CutTop60AndTies(Cut):
     cut_position = 60
