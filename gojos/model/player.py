@@ -18,11 +18,13 @@ class PlayerCache(singleton.Singleton):
         self.__class__.players = {}
         return self
 
-    def get_by_name_or_klass(self, name=None, klass_name=None):
+    def get_by_name_or_klass_or_sub(self, name=None, klass_name=None, sub=None):
         if name:
             possible_hit = self.__class__.player_name_index.get(name, None)
-        else:
+        elif klass_name:
             possible_hit = self.__class__.players.get(klass_name, None)
+        else:
+            possible_hit = fn.find(lambda plr: plr.subject == sub, self.__class__.players.values())
         if possible_hit and isinstance(possible_hit, str):
             return monad.Right(self.__class__.players[possible_hit])
         if not possible_hit:
@@ -32,7 +34,7 @@ class PlayerCache(singleton.Singleton):
 
     def add_to_cache(self, player):
         self.set_player_on_player_module(player)
-        if self.get_by_name_or_klass(klass_name=player.klass_name).is_right():
+        if self.get_by_name_or_klass_or_sub(klass_name=player.klass_name).is_right():
             return monad.Right(player)
         self.__class__.players[player.klass_name] = player
         self.__class__.player_name_index[player.name] = player.klass_name
@@ -66,8 +68,8 @@ class Player:
         return player
 
     @classmethod
-    def load(cls, name: str = None, klass_name: str = None):
-        cached_player = cls.cache_hit(name=name, klass_name=klass_name)
+    def load(cls, name: str = None, klass_name: str = None, sub: URIRef = None):
+        cached_player = cls.cache_hit(name=name, klass_name=klass_name, sub=sub)
         if cached_player.is_right():
             logger.log(f"Player Cache Hit: {cached_player.value}")
             return cached_player.value
@@ -102,8 +104,8 @@ class Player:
 
 
     @classmethod
-    def cache_hit(cls, name=None, klass_name=None):
-        return cls.player_cache().get_by_name_or_klass(name=name, klass_name=klass_name)
+    def cache_hit(cls, name=None, klass_name=None, sub=None):
+        return cls.player_cache().get_by_name_or_klass_or_sub(name=name, klass_name=klass_name, sub=sub)
 
 
     @classmethod
@@ -125,7 +127,7 @@ class Player:
         self.subject = rdf_prefix.clo_go_ind_plr[klass_name] if not sub else sub
 
     def __repr__(self):
-        return f"klass={self.klass_name}, name={self.name})"
+        return f"Player(klass={self.klass_name}, name={self.name})"
 
     def uri_name(self):
         return self.name.split(" ")[-1]

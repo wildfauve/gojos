@@ -44,6 +44,20 @@ def test_strategies(configure_repo):
     assert isinstance(same_event.cut_strategy, model.CutTop60AndTies)
 
 
+def test_add_player_entries(configure_repo):
+    tournie = tournament.create_tournie()
+
+    event = tournie.make_event(year=2023, cut_strategy=model.Cut.build("CutTop60AndTies"))
+
+    event.add_entries(['McIlroy', "Fleetwood"])
+
+    assert set(event.entries) == {mens_players.McIlroy, mens_players.Fleetwood}
+
+    same_event = model.TournamentEvent.get(tournament=event.is_event_of, year=2023)
+    assert set(same_event.entries) == {mens_players.McIlroy, mens_players.Fleetwood}
+
+
+
 def test_get_all_events(configure_repo):
     tournament.clojos_open_2023()
 

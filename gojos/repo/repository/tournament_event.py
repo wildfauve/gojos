@@ -36,6 +36,9 @@ class TournamentEventRepo(graphrepo.GraphRepo):
         return self.to_event(rdf.single_result_or_none(rdf.query(self.graph,
                                                                    self._sparql(year=year,
                                                                                 tournament_sub=tournament_sub))))
+    def add_player_as_entry(self, event, player):
+        self.graph.add((event.subject, rdf.hasEnteredPlayer, player.subject))
+        pass
 
     def find_by_tournament(self, tournament_sub):
         events = rdf.many(rdf.query(self.graph, self._sparql(tournament_sub=tournament_sub)))
@@ -44,6 +47,8 @@ class TournamentEventRepo(graphrepo.GraphRepo):
     def get_by_sub(self, sub):
         return self.to_event(rdf.single_result_or_none(rdf.query(self.graph, self._sparql(sub=sub))))
 
+    def get_entries(self, sub):
+        return [player_sub for _, _, player_sub in  rdf.all_matching(self.graph, (sub, rdf.hasEnteredPlayer, None))]
 
     def to_event(self, result) -> Tuple:
         if not result:

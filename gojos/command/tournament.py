@@ -25,42 +25,17 @@ def new_event(tournament, year):
     return monad.Right(ev)
 
 
-@commanda.command()
-def new_draw(tournament, year, draw_name, best_of, draw_size, fantasy_pt_strat: Tuple = None):
-    event = tournament.for_year(year, load=True)
-    if not event:
-        return monad.Left(event)
 
-    draw = event.make_draw(name=draw_name,
-                           best_of=best_of,
-                           draw_size=draw_size,
-                           points_strategy_components=fantasy_pt_strat)
-
-    if draw:
-        draw.init_draw()
-        return monad.Right(draw)
-
-
-@commanda.command()
-def add_entries(tournament, year, draw_name, in_file):
+@commanda.command(graph_names=['tournament'])
+def add_entries(tournament, year):
     event = tournament.for_year(year, load=True)
 
     if not event:
         return monad.Left(event)
 
-    draw = model.Draw.get(event=event, name=draw_name)
-    entries = []
-    with open(in_file, newline='') as f:
-        reader = csv.reader(f, delimiter=',')
-        for player_klass_name, seed in reader:
-            player = _get_player(draw_name, player_klass_name)
-            if not player:
-                breakpoint()
-            # if "Wang" in player.klass_name:
-            #     breakpoint()
-            entries.append((player, seed))
-    draw.add_entries(entries)
-    return monad.Right(draw)
+    event.build_entry_list()
+
+    return monad.Right(event)
 
 
 @commanda.command()

@@ -7,7 +7,7 @@ import polars as pl
 from rdflib import URIRef
 from rich import print
 
-from gojos import model, rdf, fantasy
+from gojos import model, rdf, fantasy, adapter
 from gojos.repo import repository
 from gojos.util import fn
 
@@ -49,11 +49,14 @@ class TournamentEvent:
     @classmethod
     def build_event(cls, tournament: Union[model.Tournament, str, URIRef], event):
         year, name, sub, cut_strat, fant_strat, _tourn_sub = event
-        return cls(event_of=tournament,
-                   year=year,
-                   cut_strategy=cut_strat,
-                   pts_strategy_components=fant_strat,
-                   sub=sub)
+        ev = cls(event_of=tournament,
+                 year=year,
+                 cut_strategy=cut_strat,
+                 pts_strategy_components=fant_strat,
+                 sub=sub)
+        entries = [model.Player.load(sub=sub) for sub in cls.repo().get_entries(ev.subject)]
+        ev.entries = entries
+        return ev
 
     @classmethod
     def get_by_sub(cls, sub):
@@ -106,6 +109,14 @@ class TournamentEvent:
             return None
         return self.subject == other.subject
 
+    def load(self):
+        # Do something here
+        return self
+
+    def build_entry_list(self):
+        self.add_entries([scrapped_player.player_klass for scrapped_player in adapter.build_leaderboard(for_round=1)])
+        return self
+
     def tournament_by_sub(self, sub):
         return model.GrandSlam.get_by_sub(sub)
 
@@ -114,9 +125,17 @@ class TournamentEvent:
             return fantasy.PointsStrategyCalculator.build(components)
         return fantasy.strategy_inverted_position_1_wc_4_max_players_10()
 
-    def add_entries(self, entries):
-        self.entries = entries
+    def add_entries(self, entries: List[Union[str, model.Player]]):
+        [self.add_entry(entry) for entry in entries]
         self.number_of_entries = len(self.entries)
+        return self
+
+    def add_entry(self, player_klass_name_or_klass: Union[str, model.Player]):
+        player = model.Player.load(klass_name=player_klass_name_or_klass) if isinstance(player_klass_name_or_klass,
+                                                                                        str) else player_klass_name_or_klass
+        if player not in self.entries:
+            self.__class__.repo().add_player_as_entry(self, player)
+            self.entries.append(player)
         return self
 
     def at_course(self, course):

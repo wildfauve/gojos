@@ -11,7 +11,7 @@ from gojos.players import mens_players
 from gojos import model
 from gojos.util import fn
 
-from gojos.util.data_scrapping import value
+from . import value
 
 leaderboard = "https://www.pgatour.com/leaderboard"
 
@@ -47,10 +47,10 @@ def _per_player_row(for_round, table, accum, cell_id):
     # r4 = _extract_value(table, 7, cell_id, "-")
     if pos == "CUT":
         pos = None
-        player_state = tournament_event.PlayerState.CUT
+        player_state = model.PlayerState.CUT
     if pos == "WD":
         pos = None
-        player_state = tournament_event.PlayerState.WD
+        player_state = model.PlayerState.WD
     accum.append(value.ScrappedPlayer(name=_tokenise(name),
                                       player_module=mens_players,
                                       total=None,

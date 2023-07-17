@@ -15,7 +15,6 @@ class ScrappedPlayer:
     name: str
     player_module: Callable
     round_scores: List[int] = None
-    player_klass: model.Player = None
     position: int = None
     player_state: model.PlayerState = None
     total: int = None

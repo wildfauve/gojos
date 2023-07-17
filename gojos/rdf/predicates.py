@@ -22,5 +22,6 @@ hasSubjectName = clo_go.hasSubjectName
 hasPermId = clo_go.hasPermId
 isEventOf = clo_go.isEventOf
 isEntryForPlayer = clo_go.isEntryForPlayer
+hasEnteredPlayer = clo_go.hasEnteredPlayer
 hasFantasyPointsStrategy = clo_go.hasFantasyPointsStrategy
 hasCutStrategy = clo_go.hasCutStrategy
