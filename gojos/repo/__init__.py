@@ -7,5 +7,6 @@ from .triples import (
     reload,
     RepoContext,
     save,
+    tournament_graph,
     write_to_ttl
 )

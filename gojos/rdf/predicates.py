@@ -12,6 +12,8 @@ hasKlassName = clo_go_plr.hasKlassName
 hasTeamMembers = clo_fan.hasTeamMembers
 hasFeature = clo_fan.hasFeature
 isSelectionForTeam = clo_fan.isSelectionForTeam
+isForTeam = clo_fan.isForTeam
+isFantasyForEvent = clo_fan.isFantasyForEvent
 
 
 # Tournaments

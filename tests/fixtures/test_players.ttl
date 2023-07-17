@@ -1,17 +1,60 @@
-@prefix clo-go: <https://clojos.io/ontology/FantasyGolf/> .
+@prefix clo-go:         <https://clojos.io/ontology/FantasyGolf/> .
 @prefix clo-go-ind-plr: <https://clojos.io/ontology/FantasyGolf/Ind/Player/> .
-@prefix clo-go-plr: <https://clojos.io/ontology/FantasyGolf/Player/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix clo-go-plr:     <https://clojos.io/ontology/FantasyGolf/Player/> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
 
 
-clo-go-ind-plr:McIlroy a clo-go:Player ;
-    foaf:name "R. McIlroy" ;
+clo-go-ind-plr:McIlroy
+    a                       clo-go:Player ;
+    foaf:name               "R. McIlroy" ;
     clo-go-plr:hasKlassName "McIlroy" .
 
-clo-go-ind-plr:Scheffler a clo-go:Player ;
-    foaf:name "S. Scheffler" ;
+clo-go-ind-plr:Scheffler
+    a                       clo-go:Player ;
+    foaf:name               "S. Scheffler" ;
     clo-go-plr:hasKlassName "Scheffler" .
 
-clo-go-ind-plr:Fleetwood a clo-go:Player ;
-    foaf:name "T. Fleetwood" ;
+clo-go-ind-plr:Fleetwood
+    a                       clo-go:Player ;
+    foaf:name               "T. Fleetwood" ;
     clo-go-plr:hasKlassName "Fleetwood" .
+
+
+clo-go-ind-plr:Morikawa
+    a                       clo-go:Player ;
+    foaf:name               "C. Morikawa" ;
+    clo-go-plr:hasKlassName "Morikawa" .
+
+
+clo-go-ind-plr:Schauffele
+    a                       clo-go:Player ;
+    foaf:name               "X. Schauffele" ;
+    clo-go-plr:hasKlassName "Schauffele" .
+
+clo-go-ind-plr:Hovland
+    a                       clo-go:Player ;
+    foaf:name               "V. Hovland" ;
+    clo-go-plr:hasKlassName "Hovland" .
+
+
+clo-go-ind-plr:Rahm
+    a                       clo-go:Player ;
+    foaf:name               "J. Rahm" ;
+    clo-go-plr:hasKlassName "Rahm" .
+
+clo-go-ind-plr:Hatton
+    a                       clo-go:Player ;
+    foaf:name               "T. Hatton" ;
+    clo-go-plr:hasKlassName "Hatton" .
+
+
+clo-go-ind-plr:Homa
+    a                       clo-go:Player ;
+    foaf:name               "M. Homa" ;
+    clo-go-plr:hasKlassName "Homa" .
+
+
+clo-go-ind-plr:Fitzpatrick
+    a                       clo-go:Player ;
+    foaf:name               "M. Fitzpatrick" ;
+    clo-go-plr:hasKlassName "Fitzpatrick" .

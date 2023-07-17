@@ -1,13 +1,14 @@
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Union
 from functools import partial, reduce
 from itertools import accumulate, pairwise
 from enum import Enum
 
 import polars as pl
+from rdflib import URIRef
 from rich import print
 
-from . import player, fantasy
-from gojos import dataframe, model
+from gojos import model, rdf
+from gojos.repo import repository
 from gojos.util import fn
 
 
@@ -17,12 +18,56 @@ class PlayerState(Enum):
 
 
 class TournamentEvent:
+    repo = model.GraphModel(repository.TournamentEventRepo, model.GraphModel.tournament_graph)
 
-    def __init__(self, event_of, year):
-        self.is_event_of = event_of
+    @classmethod
+    def create(cls, year: int, tournament_name: str = None, tournament=None):
+        event_of = tournament if isinstance(tournament, model.GrandSlam) else model.GrandSlam.get(name=tournament_name)
+        event = cls(event_of=event_of, year=year)
+        cls.repo().upsert(event)
+        return event
+
+    @classmethod
+    def get_all(cls):
+        return [cls.build_event(event[3], event) for event in cls.repo().get_all()]
+
+    @classmethod
+    def get(cls, year: int, tournament):
+        event = cls.repo().find_by_year(tournament.subject, year)
+        if not event:
+            return None
+        return cls.build_event(tournament, event)
+
+    @classmethod
+    def get_all_for_tournament(cls, tournament):
+        return [cls.build_event(tournament, event) for event in cls.repo().find_by_tournament(tournament.subject)]
+
+    @classmethod
+    def build_event(cls, tournament: Union[model.Tournament, str, URIRef], event):
+        year, name, sub, _tourn_sub = event
+        return cls(event_of=tournament,
+                   year=year,
+                   sub=sub)
+
+    @classmethod
+    def get_by_sub(cls, sub):
+        event = cls.repository().get_by_sub(sub)
+        if not event:
+            return None
+        return cls(*[event[-1:][0]] + list(event[:-1]))
+
+    def __init__(self, event_of, year, sub: URIRef = None):
+        if isinstance(event_of, model.GrandSlam):
+            self.is_event_of = event_of
+        elif isinstance(event_of, URIRef):
+            self.is_event_of = self.tournament_by_sub(event_of)
+        else:
+            self.is_event_of = self.tournament_by_sub(event_of)
         self.scheduled_in_year = year
         self.name = f"{self.is_event_of.subject_name}{self.scheduled_in_year}"
+        self.relative_subject = f"{self.is_event_of.subject_name}/{self.scheduled_in_year}"
         self.label = f"{self.is_event_of.name} {self.scheduled_in_year}"
+        self.subject = rdf.clo_go_ind_tou[self.relative_subject] if not sub else sub
         self.entries = []
         self.number_of_entries = None
         self.rounds = []
@@ -42,6 +87,16 @@ class TournamentEvent:
             f"number_of_entries={self.number_of_entries}"]
         return f"{cls_name}({', '.join(fn.remove_none(components))})"
 
+    def __hash__(self):
+        return hash((self.subject,))
+
+    def __eq__(self, other):
+        if not self or not other:
+            return None
+        return self.subject == other.subject
+
+    def tournament_by_sub(self, sub):
+        return model.GrandSlam.get_by_sub(sub)
 
     def add_entries(self, entries):
         self.entries = entries
@@ -160,7 +215,7 @@ class Round:
         return player_scr.rounds[self.round_number]['current_pos']
 
     def player(self, pl):
-        ps = player.PlayerScore.scoring_for_player(player=pl, round_number=self.round_number)
+        ps = model.PlayerScore.scoring_for_player(player=pl, round_number=self.round_number)
         self.players.append(ps)
         return ps
 
@@ -192,9 +247,10 @@ class Round:
         return ps.round_score
 
     def _player_or_wildcard(self, player, wildcards):
-        wc = fantasy.WildCard.has_swap(wildcards, player, self.round_number)
+        wc = model.WildCard.has_swap(wildcards, player, self.round_number)
         if wc:
-            print(f"Round: {self.round_number} Trade out [bold blue]{player.klass_name}[/] trade in [bold green]{wc.trade_in_player.klass_name}")
+            print(
+                f"Round: {self.round_number} Trade out [bold blue]{player.klass_name}[/] trade in [bold green]{wc.trade_in_player.klass_name}")
             return wc.trade_in_player
         return player
 

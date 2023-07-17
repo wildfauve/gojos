@@ -5,13 +5,15 @@ from gojos import repo, model
 
 PLAYERS_PATH = (Path(__file__).parent.parent / "fixtures" / "test_players.ttl")
 FANTASY_PATH = (Path(__file__).parent.parent / "fixtures" / "test_fantasy.ttl")
+TOURNAMENT_PATH = (Path(__file__).parent.parent / "fixtures" / "test_tournament.ttl")
 EMPTY_PLAYERS_PATH = (Path(__file__).parent.parent / "fixtures" / "test_empty_players.ttl")
 
 
 @pytest.fixture
 def configure_repo():
     repo.RepoContext().configure(players_triples_location=PLAYERS_PATH,
-                                 fantasy_triples_location=FANTASY_PATH)
+                                 fantasy_triples_location=FANTASY_PATH,
+                                 tournament_triples_location=TOURNAMENT_PATH)
     repo.init()
     yield repo
     repo.drop()
@@ -19,7 +21,8 @@ def configure_repo():
 @pytest.fixture
 def configure_repo_empty_players():
     repo.RepoContext().configure(players_triples_location=EMPTY_PLAYERS_PATH,
-                                 fantasy_triples_location=FANTASY_PATH)
+                                 fantasy_triples_location=FANTASY_PATH,
+                                 tournament_triples_location=TOURNAMENT_PATH)
     repo.init()
     yield repo
     repo.drop()

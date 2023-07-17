@@ -20,6 +20,6 @@ from .tournament import (
 )
 
 from .tournament_event import (
-    PlayerState
+    PlayerState,
+    TournamentEvent
 )
-

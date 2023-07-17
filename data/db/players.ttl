@@ -1,1005 +1,1255 @@
-@prefix clo-go: <https://clojos.io/ontology/FantasyGolf/> .
+@prefix clo-go:         <https://clojos.io/ontology/FantasyGolf/> .
 @prefix clo-go-ind-plr: <https://clojos.io/ontology/FantasyGolf/Ind/Player/> .
-@prefix clo-go-plr: <https://clojos.io/ontology/FantasyGolf/Player/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix clo-go-plr:     <https://clojos.io/ontology/FantasyGolf/Player/> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
 
-clo-go-ind-plr:Aberg a clo-go:Player ;
-    foaf:name "L. Aberg" ;
+clo-go-ind-plr:Aberg
+    a                       clo-go:Player ;
+    foaf:name               "L. Aberg" ;
     clo-go-plr:hasKlassName "Aberg" .
 
-clo-go-ind-plr:Amat a clo-go:Player ;
-    foaf:name "B. Amat" ;
+clo-go-ind-plr:Amat
+    a                       clo-go:Player ;
+    foaf:name               "B. Amat" ;
     clo-go-plr:hasKlassName "Amat" .
 
-clo-go-ind-plr:An a clo-go:Player ;
-    foaf:name "B. An" ;
+clo-go-ind-plr:An
+    a                       clo-go:Player ;
+    foaf:name               "B. An" ;
     clo-go-plr:hasKlassName "An" .
 
-clo-go-ind-plr:Ancer a clo-go:Player ;
-    foaf:name "A. Ancer" ;
+clo-go-ind-plr:Ancer
+    a                       clo-go:Player ;
+    foaf:name               "A. Ancer" ;
     clo-go-plr:hasKlassName "Ancer" .
 
-clo-go-ind-plr:Armitage a clo-go:Player ;
-    foaf:name "M. Armitage" ;
+clo-go-ind-plr:Armitage
+    a                       clo-go:Player ;
+    foaf:name               "M. Armitage" ;
     clo-go-plr:hasKlassName "Armitage" .
 
-clo-go-ind-plr:Armour a clo-go:Player ;
-    foaf:name "R. Armour" ;
+clo-go-ind-plr:Armour
+    a                       clo-go:Player ;
+    foaf:name               "R. Armour" ;
     clo-go-plr:hasKlassName "Armour" .
 
-clo-go-ind-plr:Arnaus a clo-go:Player ;
-    foaf:name "A. Arnaus" ;
+clo-go-ind-plr:Arnaus
+    a                       clo-go:Player ;
+    foaf:name               "A. Arnaus" ;
     clo-go-plr:hasKlassName "Arnaus" .
 
-clo-go-ind-plr:Bachem a clo-go:Player ;
-    foaf:name "N. Bachem" ;
+clo-go-ind-plr:Bachem
+    a                       clo-go:Player ;
+    foaf:name               "N. Bachem" ;
     clo-go-plr:hasKlassName "Bachem" .
 
-clo-go-ind-plr:Baddeley a clo-go:Player ;
-    foaf:name "A. Baddeley" ;
+clo-go-ind-plr:Baddeley
+    a                       clo-go:Player ;
+    foaf:name               "A. Baddeley" ;
     clo-go-plr:hasKlassName "Baddeley" .
 
-clo-go-ind-plr:Baldwin a clo-go:Player ;
-    foaf:name "M. Baldwin" ;
+clo-go-ind-plr:Baldwin
+    a                       clo-go:Player ;
+    foaf:name               "M. Baldwin" ;
     clo-go-plr:hasKlassName "Baldwin" .
 
-clo-go-ind-plr:Barjon a clo-go:Player ;
-    foaf:name "P. Barjon" ;
+clo-go-ind-plr:Barjon
+    a                       clo-go:Player ;
+    foaf:name               "P. Barjon" ;
     clo-go-plr:hasKlassName "Barjon" .
 
-clo-go-ind-plr:Bekker a clo-go:Player ;
-    foaf:name "O. Bekker" ;
+clo-go-ind-plr:Bekker
+    a                       clo-go:Player ;
+    foaf:name               "O. Bekker" ;
     clo-go-plr:hasKlassName "Bekker" .
 
-clo-go-ind-plr:Bennett a clo-go:Player ;
-    foaf:name "S. Bennett" ;
+clo-go-ind-plr:Bennett
+    a                       clo-go:Player ;
+    foaf:name               "S. Bennett" ;
     clo-go-plr:hasKlassName "Bennett" .
 
-clo-go-ind-plr:Besseling a clo-go:Player ;
-    foaf:name "W. Besseling" ;
+clo-go-ind-plr:Besseling
+    a                       clo-go:Player ;
+    foaf:name               "W. Besseling" ;
     clo-go-plr:hasKlassName "Besseling" .
 
-clo-go-ind-plr:Bezuidenhout a clo-go:Player ;
-    foaf:name "C. Bezuidenhout" ;
+clo-go-ind-plr:Bezuidenhout
+    a                       clo-go:Player ;
+    foaf:name               "C. Bezuidenhout" ;
     clo-go-plr:hasKlassName "Bezuidenhout" .
 
-clo-go-ind-plr:Björk a clo-go:Player ;
-    foaf:name "A. Björk" ;
+clo-go-ind-plr:Björk
+    a                       clo-go:Player ;
+    foaf:name               "A. Björk" ;
     clo-go-plr:hasKlassName "Björk" .
 
-clo-go-ind-plr:Blair a clo-go:Player ;
-    foaf:name "Z. Blair" ;
+clo-go-ind-plr:Blair
+    a                       clo-go:Player ;
+    foaf:name               "Z. Blair" ;
     clo-go-plr:hasKlassName "Blair" .
 
-clo-go-ind-plr:Bradbury a clo-go:Player ;
-    foaf:name "D. Bradbury" ;
+clo-go-ind-plr:Bradbury
+    a                       clo-go:Player ;
+    foaf:name               "D. Bradbury" ;
     clo-go-plr:hasKlassName "Bradbury" .
 
-clo-go-ind-plr:Bradley a clo-go:Player ;
-    foaf:name "K. Bradley" ;
+clo-go-ind-plr:Bradley
+    a                       clo-go:Player ;
+    foaf:name               "K. Bradley" ;
     clo-go-plr:hasKlassName "Bradley" .
 
-clo-go-ind-plr:Bramlett a clo-go:Player ;
-    foaf:name "J. Bramlett" ;
+clo-go-ind-plr:Bramlett
+    a                       clo-go:Player ;
+    foaf:name               "J. Bramlett" ;
     clo-go-plr:hasKlassName "Bramlett" .
 
-clo-go-ind-plr:Brennan a clo-go:Player ;
-    foaf:name "M. Brennan" ;
+clo-go-ind-plr:Brennan
+    a                       clo-go:Player ;
+    foaf:name               "M. Brennan" ;
     clo-go-plr:hasKlassName "Brennan" .
 
-clo-go-ind-plr:Brown a clo-go:Player ;
-    foaf:name "B. Brown" ;
+clo-go-ind-plr:Brown
+    a                       clo-go:Player ;
+    foaf:name               "B. Brown" ;
     clo-go-plr:hasKlassName "Brown" .
 
-clo-go-ind-plr:Browne_Jr a clo-go:Player ;
-    foaf:name "O. Browne_Jr." ;
+clo-go-ind-plr:Browne_Jr
+    a                       clo-go:Player ;
+    foaf:name               "O. Browne_Jr." ;
     clo-go-plr:hasKlassName "Browne_Jr" .
 
-clo-go-ind-plr:Brun a clo-go:Player ;
-    foaf:name "J. Brun" ;
+clo-go-ind-plr:Brun
+    a                       clo-go:Player ;
+    foaf:name               "J. Brun" ;
     clo-go-plr:hasKlassName "Brun" .
 
-clo-go-ind-plr:Buckley a clo-go:Player ;
-    foaf:name "H. Buckley" ;
+clo-go-ind-plr:Buckley
+    a                       clo-go:Player ;
+    foaf:name               "H. Buckley" ;
     clo-go-plr:hasKlassName "Buckley" .
 
-clo-go-ind-plr:Burns a clo-go:Player ;
-    foaf:name "S. Burns" ;
+clo-go-ind-plr:Burns
+    a                       clo-go:Player ;
+    foaf:name               "S. Burns" ;
     clo-go-plr:hasKlassName "Burns" .
 
-clo-go-ind-plr:Cabrera_Bello a clo-go:Player ;
-    foaf:name "R. Cabrera Bello" ;
+clo-go-ind-plr:Cabrera_Bello
+    a                       clo-go:Player ;
+    foaf:name               "R. Cabrera Bello" ;
     clo-go-plr:hasKlassName "Cabrera_Bello" .
 
-clo-go-ind-plr:Campillo a clo-go:Player ;
-    foaf:name "J. Campillo" ;
+clo-go-ind-plr:Campillo
+    a                       clo-go:Player ;
+    foaf:name               "J. Campillo" ;
     clo-go-plr:hasKlassName "Campillo" .
 
-clo-go-ind-plr:Cantlay a clo-go:Player ;
-    foaf:name "P. Cantlay" ;
+clo-go-ind-plr:Cantlay
+    a                       clo-go:Player ;
+    foaf:name               "P. Cantlay" ;
     clo-go-plr:hasKlassName "Cantlay" .
 
-clo-go-ind-plr:Capan_III a clo-go:Player ;
-    foaf:name "F. Capan_III" ;
+clo-go-ind-plr:Capan_III
+    a                       clo-go:Player ;
+    foaf:name               "F. Capan_III" ;
     clo-go-plr:hasKlassName "Capan_III" .
 
-clo-go-ind-plr:Carr a clo-go:Player ;
-    foaf:name "B. Carr" ;
+clo-go-ind-plr:Carr
+    a                       clo-go:Player ;
+    foaf:name               "B. Carr" ;
     clo-go-plr:hasKlassName "Carr" .
 
-clo-go-ind-plr:Cavaliere a clo-go:Player ;
-    foaf:name "C. Cavaliere" ;
+clo-go-ind-plr:Cavaliere
+    a                       clo-go:Player ;
+    foaf:name               "C. Cavaliere" ;
     clo-go-plr:hasKlassName "Cavaliere" .
 
-clo-go-ind-plr:Charoenkul a clo-go:Player ;
-    foaf:name "G. Charoenkul" ;
+clo-go-ind-plr:Charoenkul
+    a                       clo-go:Player ;
+    foaf:name               "G. Charoenkul" ;
     clo-go-plr:hasKlassName "Charoenkul" .
 
-clo-go-ind-plr:Cink a clo-go:Player ;
-    foaf:name "S. Cink" ;
+clo-go-ind-plr:Cink
+    a                       clo-go:Player ;
+    foaf:name               "S. Cink" ;
     clo-go-plr:hasKlassName "Cink" .
 
-clo-go-ind-plr:Clark a clo-go:Player ;
-    foaf:name "W. Clark" ;
+clo-go-ind-plr:Clark
+    a                       clo-go:Player ;
+    foaf:name               "W. Clark" ;
     clo-go-plr:hasKlassName "Clark" .
 
-clo-go-ind-plr:Cole a clo-go:Player ;
-    foaf:name "E. Cole" ;
+clo-go-ind-plr:Cole
+    a                       clo-go:Player ;
+    foaf:name               "E. Cole" ;
     clo-go-plr:hasKlassName "Cole" .
 
-clo-go-ind-plr:Colsaerts a clo-go:Player ;
-    foaf:name "N. Colsaerts" ;
+clo-go-ind-plr:Colsaerts
+    a                       clo-go:Player ;
+    foaf:name               "N. Colsaerts" ;
     clo-go-plr:hasKlassName "Colsaerts" .
 
-clo-go-ind-plr:Conners a clo-go:Player ;
-    foaf:name "C. Conners" ;
+clo-go-ind-plr:Conners
+    a                       clo-go:Player ;
+    foaf:name               "C. Conners" ;
     clo-go-plr:hasKlassName "Conners" .
 
-clo-go-ind-plr:Cover a clo-go:Player ;
-    foaf:name "P. Cover" ;
+clo-go-ind-plr:Cover
+    a                       clo-go:Player ;
+    foaf:name               "P. Cover" ;
     clo-go-plr:hasKlassName "Cover" .
 
-clo-go-ind-plr:Crocker a clo-go:Player ;
-    foaf:name "S. Crocker" ;
+clo-go-ind-plr:Crocker
+    a                       clo-go:Player ;
+    foaf:name               "S. Crocker" ;
     clo-go-plr:hasKlassName "Crocker" .
 
-clo-go-ind-plr:Dahmen a clo-go:Player ;
-    foaf:name "J. Dahmen" ;
+clo-go-ind-plr:Dahmen
+    a                       clo-go:Player ;
+    foaf:name               "J. Dahmen" ;
     clo-go-plr:hasKlassName "Dahmen" .
 
-clo-go-ind-plr:Dantorp a clo-go:Player ;
-    foaf:name "J. Dantorp" ;
+clo-go-ind-plr:Dantorp
+    a                       clo-go:Player ;
+    foaf:name               "J. Dantorp" ;
     clo-go-plr:hasKlassName "Dantorp" .
 
-clo-go-ind-plr:Davis a clo-go:Player ;
-    foaf:name "C. Davis" ;
+clo-go-ind-plr:Davis
+    a                       clo-go:Player ;
+    foaf:name               "C. Davis" ;
     clo-go-plr:hasKlassName "Davis" .
 
-clo-go-ind-plr:Day a clo-go:Player ;
-    foaf:name "J. Day" ;
+clo-go-ind-plr:Day
+    a                       clo-go:Player ;
+    foaf:name               "J. Day" ;
     clo-go-plr:hasKlassName "Day" .
 
-clo-go-ind-plr:DeChambeau a clo-go:Player ;
-    foaf:name "B. DeChambeau" ;
+clo-go-ind-plr:DeChambeau
+    a                       clo-go:Player ;
+    foaf:name               "B. DeChambeau" ;
     clo-go-plr:hasKlassName "DeChambeau" .
 
-clo-go-ind-plr:Detry a clo-go:Player ;
-    foaf:name "T. Detry" ;
+clo-go-ind-plr:Detry
+    a                       clo-go:Player ;
+    foaf:name               "T. Detry" ;
     clo-go-plr:hasKlassName "Detry" .
 
-clo-go-ind-plr:Ding a clo-go:Player ;
-    foaf:name "W. Ding" ;
+clo-go-ind-plr:Ding
+    a                       clo-go:Player ;
+    foaf:name               "W. Ding" ;
     clo-go-plr:hasKlassName "Ding" .
 
-clo-go-ind-plr:Donald a clo-go:Player ;
-    foaf:name "L. Donald" ;
+clo-go-ind-plr:Donald
+    a                       clo-go:Player ;
+    foaf:name               "L. Donald" ;
     clo-go-plr:hasKlassName "Donald" .
 
-clo-go-ind-plr:Donaldson a clo-go:Player ;
-    foaf:name "J. Donaldson" ;
+clo-go-ind-plr:Donaldson
+    a                       clo-go:Player ;
+    foaf:name               "J. Donaldson" ;
     clo-go-plr:hasKlassName "Donaldson" .
 
-clo-go-ind-plr:Dunlap a clo-go:Player ;
-    foaf:name "N. Dunlap" ;
+clo-go-ind-plr:Dunlap
+    a                       clo-go:Player ;
+    foaf:name               "N. Dunlap" ;
     clo-go-plr:hasKlassName "Dunlap" .
 
-clo-go-ind-plr:Echavarria a clo-go:Player ;
-    foaf:name "N. Echavarria" ;
+clo-go-ind-plr:Echavarria
+    a                       clo-go:Player ;
+    foaf:name               "N. Echavarria" ;
     clo-go-plr:hasKlassName "Echavarria" .
 
-clo-go-ind-plr:Eckroat a clo-go:Player ;
-    foaf:name "A. Eckroat" ;
+clo-go-ind-plr:Eckroat
+    a                       clo-go:Player ;
+    foaf:name               "A. Eckroat" ;
     clo-go-plr:hasKlassName "Eckroat" .
 
-clo-go-ind-plr:Endycott a clo-go:Player ;
-    foaf:name "H. Endycott" ;
+clo-go-ind-plr:Endycott
+    a                       clo-go:Player ;
+    foaf:name               "H. Endycott" ;
     clo-go-plr:hasKlassName "Endycott" .
 
-clo-go-ind-plr:English a clo-go:Player ;
-    foaf:name "H. English" ;
+clo-go-ind-plr:English
+    a                       clo-go:Player ;
+    foaf:name               "H. English" ;
     clo-go-plr:hasKlassName "English" .
 
-clo-go-ind-plr:Ferguson a clo-go:Player ;
-    foaf:name "E. Ferguson" ;
+clo-go-ind-plr:Ferguson
+    a                       clo-go:Player ;
+    foaf:name               "E. Ferguson" ;
     clo-go-plr:hasKlassName "Ferguson" .
 
-clo-go-ind-plr:Finau a clo-go:Player ;
-    foaf:name "T. Finau" ;
+clo-go-ind-plr:Finau
+    a                       clo-go:Player ;
+    foaf:name               "T. Finau" ;
     clo-go-plr:hasKlassName "Finau" .
 
-clo-go-ind-plr:Fisher a clo-go:Player ;
-    foaf:name "R. Fisher" ;
+clo-go-ind-plr:Fisher
+    a                       clo-go:Player ;
+    foaf:name               "R. Fisher" ;
     clo-go-plr:hasKlassName "Fisher" .
 
-clo-go-ind-plr:Fitzpatrick a clo-go:Player ;
-    foaf:name "M. Fitzpatrick" ;
+clo-go-ind-plr:Fitzpatrick
+    a                       clo-go:Player ;
+    foaf:name               "M. Fitzpatrick" ;
     clo-go-plr:hasKlassName "Fitzpatrick" .
 
-clo-go-ind-plr:Fleetwood a clo-go:Player ;
-    foaf:name "T. Fleetwood" ;
+clo-go-ind-plr:Fleetwood
+    a                       clo-go:Player ;
+    foaf:name               "T. Fleetwood" ;
     clo-go-plr:hasKlassName "Fleetwood" .
 
-clo-go-ind-plr:Forrest a clo-go:Player ;
-    foaf:name "G. Forrest" ;
+clo-go-ind-plr:Forrest
+    a                       clo-go:Player ;
+    foaf:name               "G. Forrest" ;
     clo-go-plr:hasKlassName "Forrest" .
 
-clo-go-ind-plr:Forsström a clo-go:Player ;
-    foaf:name "S. Forsström" ;
+clo-go-ind-plr:Forsström
+    a                       clo-go:Player ;
+    foaf:name               "S. Forsström" ;
     clo-go-plr:hasKlassName "Forsström" .
 
-clo-go-ind-plr:Fowler a clo-go:Player ;
-    foaf:name "R. Fowler" ;
+clo-go-ind-plr:Fowler
+    a                       clo-go:Player ;
+    foaf:name               "R. Fowler" ;
     clo-go-plr:hasKlassName "Fowler" .
 
-clo-go-ind-plr:Fox a clo-go:Player ;
-    foaf:name "R. Fox" ;
+clo-go-ind-plr:Fox
+    a                       clo-go:Player ;
+    foaf:name               "R. Fox" ;
     clo-go-plr:hasKlassName "Fox" .
 
-clo-go-ind-plr:Frittelli a clo-go:Player ;
-    foaf:name "D. Frittelli" ;
+clo-go-ind-plr:Frittelli
+    a                       clo-go:Player ;
+    foaf:name               "D. Frittelli" ;
     clo-go-plr:hasKlassName "Frittelli" .
 
-clo-go-ind-plr:Garcia a clo-go:Player ;
-    foaf:name "S. Garcia" ;
+clo-go-ind-plr:Garcia
+    a                       clo-go:Player ;
+    foaf:name               "S. Garcia" ;
     clo-go-plr:hasKlassName "Garcia" .
 
-clo-go-ind-plr:Gavins a clo-go:Player ;
-    foaf:name "D. Gavins" ;
+clo-go-ind-plr:Gavins
+    a                       clo-go:Player ;
+    foaf:name               "D. Gavins" ;
     clo-go-plr:hasKlassName "Gavins" .
 
-clo-go-ind-plr:Gerard a clo-go:Player ;
-    foaf:name "R. Gerard" ;
+clo-go-ind-plr:Gerard
+    a                       clo-go:Player ;
+    foaf:name               "R. Gerard" ;
     clo-go-plr:hasKlassName "Gerard" .
 
-clo-go-ind-plr:Germishuys a clo-go:Player ;
-    foaf:name "D. Germishuys" ;
+clo-go-ind-plr:Germishuys
+    a                       clo-go:Player ;
+    foaf:name               "D. Germishuys" ;
     clo-go-plr:hasKlassName "Germishuys" .
 
-clo-go-ind-plr:Ghim a clo-go:Player ;
-    foaf:name "D. Ghim" ;
+clo-go-ind-plr:Ghim
+    a                       clo-go:Player ;
+    foaf:name               "D. Ghim" ;
     clo-go-plr:hasKlassName "Ghim" .
 
-clo-go-ind-plr:Gordon a clo-go:Player ;
-    foaf:name "W. Gordon" ;
+clo-go-ind-plr:Gordon
+    a                       clo-go:Player ;
+    foaf:name               "W. Gordon" ;
     clo-go-plr:hasKlassName "Gordon" .
 
-clo-go-ind-plr:Grant a clo-go:Player ;
-    foaf:name "B. Grant" ;
+clo-go-ind-plr:Grant
+    a                       clo-go:Player ;
+    foaf:name               "B. Grant" ;
     clo-go-plr:hasKlassName "Grant" .
 
-clo-go-ind-plr:Green a clo-go:Player ;
-    foaf:name "G. Green" ;
+clo-go-ind-plr:Green
+    a                       clo-go:Player ;
+    foaf:name               "G. Green" ;
     clo-go-plr:hasKlassName "Green" .
 
-clo-go-ind-plr:Grey a clo-go:Player ;
-    foaf:name "J. Grey" ;
+clo-go-ind-plr:Grey
+    a                       clo-go:Player ;
+    foaf:name               "J. Grey" ;
     clo-go-plr:hasKlassName "Grey" .
 
-clo-go-ind-plr:Griffin a clo-go:Player ;
-    foaf:name "B. Griffin" ;
+clo-go-ind-plr:Griffin
+    a                       clo-go:Player ;
+    foaf:name               "B. Griffin" ;
     clo-go-plr:hasKlassName "Griffin" .
 
-clo-go-ind-plr:Grillo a clo-go:Player ;
-    foaf:name "E. Grillo" ;
+clo-go-ind-plr:Grillo
+    a                       clo-go:Player ;
+    foaf:name               "E. Grillo" ;
     clo-go-plr:hasKlassName "Grillo" .
 
-clo-go-ind-plr:Gumberg a clo-go:Player ;
-    foaf:name "J. Gumberg" ;
+clo-go-ind-plr:Gumberg
+    a                       clo-go:Player ;
+    foaf:name               "J. Gumberg" ;
     clo-go-plr:hasKlassName "Gumberg" .
 
-clo-go-ind-plr:Hadwin a clo-go:Player ;
-    foaf:name "A. Hadwin" ;
+clo-go-ind-plr:Hadwin
+    a                       clo-go:Player ;
+    foaf:name               "A. Hadwin" ;
     clo-go-plr:hasKlassName "Hadwin" .
 
-clo-go-ind-plr:Haley_II a clo-go:Player ;
-    foaf:name "P. Haley_II" ;
+clo-go-ind-plr:Haley_II
+    a                       clo-go:Player ;
+    foaf:name               "P. Haley_II" ;
     clo-go-plr:hasKlassName "Haley_II" .
 
-clo-go-ind-plr:Hall a clo-go:Player ;
-    foaf:name "H. Hall" ;
+clo-go-ind-plr:Hall
+    a                       clo-go:Player ;
+    foaf:name               "H. Hall" ;
     clo-go-plr:hasKlassName "Hall" .
 
-clo-go-ind-plr:Hanna a clo-go:Player ;
-    foaf:name "C. Hanna" ;
+clo-go-ind-plr:Hanna
+    a                       clo-go:Player ;
+    foaf:name               "C. Hanna" ;
     clo-go-plr:hasKlassName "Hanna" .
 
-clo-go-ind-plr:Hardy a clo-go:Player ;
-    foaf:name "N. Hardy" ;
+clo-go-ind-plr:Hardy
+    a                       clo-go:Player ;
+    foaf:name               "N. Hardy" ;
     clo-go-plr:hasKlassName "Hardy" .
 
-clo-go-ind-plr:Harman a clo-go:Player ;
-    foaf:name "B. Harman" ;
+clo-go-ind-plr:Harman
+    a                       clo-go:Player ;
+    foaf:name               "B. Harman" ;
     clo-go-plr:hasKlassName "Harman" .
 
-clo-go-ind-plr:Harrington a clo-go:Player ;
-    foaf:name "P. Harrington" ;
+clo-go-ind-plr:Harrington
+    a                       clo-go:Player ;
+    foaf:name               "P. Harrington" ;
     clo-go-plr:hasKlassName "Harrington" .
 
-clo-go-ind-plr:Hatton a clo-go:Player ;
-    foaf:name "T. Hatton" ;
+clo-go-ind-plr:Hatton
+    a                       clo-go:Player ;
+    foaf:name               "T. Hatton" ;
     clo-go-plr:hasKlassName "Hatton" .
 
-clo-go-ind-plr:Henley a clo-go:Player ;
-    foaf:name "R. Henley" ;
+clo-go-ind-plr:Henley
+    a                       clo-go:Player ;
+    foaf:name               "R. Henley" ;
     clo-go-plr:hasKlassName "Henley" .
 
-clo-go-ind-plr:Henson a clo-go:Player ;
-    foaf:name "B. Henson" ;
+clo-go-ind-plr:Henson
+    a                       clo-go:Player ;
+    foaf:name               "B. Henson" ;
     clo-go-plr:hasKlassName "Henson" .
 
-clo-go-ind-plr:Herbert a clo-go:Player ;
-    foaf:name "L. Herbert" ;
+clo-go-ind-plr:Herbert
+    a                       clo-go:Player ;
+    foaf:name               "L. Herbert" ;
     clo-go-plr:hasKlassName "Herbert" .
 
-clo-go-ind-plr:Higgo a clo-go:Player ;
-    foaf:name "G. Higgo" ;
+clo-go-ind-plr:Higgo
+    a                       clo-go:Player ;
+    foaf:name               "G. Higgo" ;
     clo-go-plr:hasKlassName "Higgo" .
 
-clo-go-ind-plr:Hill a clo-go:Player ;
-    foaf:name "C. Hill" ;
+clo-go-ind-plr:Hill
+    a                       clo-go:Player ;
+    foaf:name               "C. Hill" ;
     clo-go-plr:hasKlassName "Hill" .
 
-clo-go-ind-plr:Hillier a clo-go:Player ;
-    foaf:name "D. Hillier" ;
+clo-go-ind-plr:Hillier
+    a                       clo-go:Player ;
+    foaf:name               "D. Hillier" ;
     clo-go-plr:hasKlassName "Hillier" .
 
-clo-go-ind-plr:Hodges a clo-go:Player ;
-    foaf:name "L. Hodges" ;
+clo-go-ind-plr:Hodges
+    a                       clo-go:Player ;
+    foaf:name               "L. Hodges" ;
     clo-go-plr:hasKlassName "Hodges" .
 
-clo-go-ind-plr:Hoffman a clo-go:Player ;
-    foaf:name "C. Hoffman" ;
+clo-go-ind-plr:Hoffman
+    a                       clo-go:Player ;
+    foaf:name               "C. Hoffman" ;
     clo-go-plr:hasKlassName "Hoffman" .
 
-clo-go-ind-plr:Hoge a clo-go:Player ;
-    foaf:name "T. Hoge" ;
+clo-go-ind-plr:Hoge
+    a                       clo-go:Player ;
+    foaf:name               "T. Hoge" ;
     clo-go-plr:hasKlassName "Hoge" .
 
-clo-go-ind-plr:Hojgaard_N a clo-go:Player ;
-    foaf:name "N. Hojgaard" ;
+clo-go-ind-plr:Hojgaard_N
+    a                       clo-go:Player ;
+    foaf:name               "N. Hojgaard" ;
     clo-go-plr:hasKlassName "Hojgaard_N" .
 
-clo-go-ind-plr:Hojgaard_R a clo-go:Player ;
-    foaf:name "R. Hojgaard" ;
+clo-go-ind-plr:Hojgaard_R
+    a                       clo-go:Player ;
+    foaf:name               "R. Hojgaard" ;
     clo-go-plr:hasKlassName "Hojgaard_R" .
 
-clo-go-ind-plr:Homa a clo-go:Player ;
-    foaf:name "M. Homa" ;
+clo-go-ind-plr:Homa
+    a                       clo-go:Player ;
+    foaf:name               "M. Homa" ;
     clo-go-plr:hasKlassName "Homa" .
 
-clo-go-ind-plr:Horschel a clo-go:Player ;
-    foaf:name "B. Horschel" ;
+clo-go-ind-plr:Horschel
+    a                       clo-go:Player ;
+    foaf:name               "B. Horschel" ;
     clo-go-plr:hasKlassName "Horschel" .
 
-clo-go-ind-plr:Horsey a clo-go:Player ;
-    foaf:name "D. Horsey" ;
+clo-go-ind-plr:Horsey
+    a                       clo-go:Player ;
+    foaf:name               "D. Horsey" ;
     clo-go-plr:hasKlassName "Horsey" .
 
-clo-go-ind-plr:Hovland a clo-go:Player ;
-    foaf:name "V. Hovland" ;
+clo-go-ind-plr:Hovland
+    a                       clo-go:Player ;
+    foaf:name               "V. Hovland" ;
     clo-go-plr:hasKlassName "Hovland" .
 
-clo-go-ind-plr:Hughes a clo-go:Player ;
-    foaf:name "M. Hughes" ;
+clo-go-ind-plr:Hughes
+    a                       clo-go:Player ;
+    foaf:name               "M. Hughes" ;
     clo-go-plr:hasKlassName "Hughes" .
 
-clo-go-ind-plr:Im a clo-go:Player ;
-    foaf:name "S. Im" ;
+clo-go-ind-plr:Im
+    a                       clo-go:Player ;
+    foaf:name               "S. Im" ;
     clo-go-plr:hasKlassName "Im" .
 
-clo-go-ind-plr:Ishikawa a clo-go:Player ;
-    foaf:name "R. Ishikawa" ;
+clo-go-ind-plr:Ishikawa
+    a                       clo-go:Player ;
+    foaf:name               "R. Ishikawa" ;
     clo-go-plr:hasKlassName "Ishikawa" .
 
-clo-go-ind-plr:Jamieson a clo-go:Player ;
-    foaf:name "S. Jamieson" ;
+clo-go-ind-plr:Jamieson
+    a                       clo-go:Player ;
+    foaf:name               "S. Jamieson" ;
     clo-go-plr:hasKlassName "Jamieson" .
 
-clo-go-ind-plr:Johnson a clo-go:Player ;
-    foaf:name "D. Johnson" ;
+clo-go-ind-plr:Johnson
+    a                       clo-go:Player ;
+    foaf:name               "D. Johnson" ;
     clo-go-plr:hasKlassName "Johnson" .
 
-clo-go-ind-plr:Jordan a clo-go:Player ;
-    foaf:name "M. Jordan" ;
+clo-go-ind-plr:Jordan
+    a                       clo-go:Player ;
+    foaf:name               "M. Jordan" ;
     clo-go-plr:hasKlassName "Jordan" .
 
-clo-go-ind-plr:Katsuragawa a clo-go:Player ;
-    foaf:name "Y. Katsuragawa" ;
+clo-go-ind-plr:Katsuragawa
+    a                       clo-go:Player ;
+    foaf:name               "Y. Katsuragawa" ;
     clo-go-plr:hasKlassName "Katsuragawa" .
 
-clo-go-ind-plr:Kaymer a clo-go:Player ;
-    foaf:name "M. Kaymer" ;
+clo-go-ind-plr:Kaymer
+    a                       clo-go:Player ;
+    foaf:name               "M. Kaymer" ;
     clo-go-plr:hasKlassName "Kaymer" .
 
-clo-go-ind-plr:Kieffer a clo-go:Player ;
-    foaf:name "M. Kieffer" ;
+clo-go-ind-plr:Kieffer
+    a                       clo-go:Player ;
+    foaf:name               "M. Kieffer" ;
     clo-go-plr:hasKlassName "Kieffer" .
 
-clo-go-ind-plr:Kim_B a clo-go:Player ;
-    foaf:name "B. Kim" ;
+clo-go-ind-plr:Kim_B
+    a                       clo-go:Player ;
+    foaf:name               "B. Kim" ;
     clo-go-plr:hasKlassName "Kim_B" .
 
-clo-go-ind-plr:Kim_M a clo-go:Player ;
-    foaf:name "M. Kim" ;
+clo-go-ind-plr:Kim_M
+    a                       clo-go:Player ;
+    foaf:name               "M. Kim" ;
     clo-go-plr:hasKlassName "Kim_M" .
 
-clo-go-ind-plr:Kim_S_H a clo-go:Player ;
-    foaf:name "S.H. Kim" ;
+clo-go-ind-plr:Kim_S_H
+    a                       clo-go:Player ;
+    foaf:name               "S.H. Kim" ;
     clo-go-plr:hasKlassName "Kim_S_H" .
 
-clo-go-ind-plr:Kim_S_W a clo-go:Player ;
-    foaf:name "S.W. Kim" ;
+clo-go-ind-plr:Kim_S_W
+    a                       clo-go:Player ;
+    foaf:name               "S.W. Kim" ;
     clo-go-plr:hasKlassName "Kim_S_W" .
 
-clo-go-ind-plr:Kim_T a clo-go:Player ;
-    foaf:name "T. Kim" ;
+clo-go-ind-plr:Kim_T
+    a                       clo-go:Player ;
+    foaf:name               "T. Kim" ;
     clo-go-plr:hasKlassName "Kim_T" .
 
-clo-go-ind-plr:Kim_Y a clo-go:Player ;
-    foaf:name "Y. Kim" ;
+clo-go-ind-plr:Kim_Y
+    a                       clo-go:Player ;
+    foaf:name               "Y. Kim" ;
     clo-go-plr:hasKlassName "Kim_Y" .
 
-clo-go-ind-plr:Kirk a clo-go:Player ;
-    foaf:name "C. Kirk" ;
+clo-go-ind-plr:Kirk
+    a                       clo-go:Player ;
+    foaf:name               "C. Kirk" ;
     clo-go-plr:hasKlassName "Kirk" .
 
-clo-go-ind-plr:Kitayama a clo-go:Player ;
-    foaf:name "K. Kitayama" ;
+clo-go-ind-plr:Kitayama
+    a                       clo-go:Player ;
+    foaf:name               "K. Kitayama" ;
     clo-go-plr:hasKlassName "Kitayama" .
 
-clo-go-ind-plr:Koepka a clo-go:Player ;
-    foaf:name "B. Koepka" ;
+clo-go-ind-plr:Koepka
+    a                       clo-go:Player ;
+    foaf:name               "B. Koepka" ;
     clo-go-plr:hasKlassName "Koepka" .
 
-clo-go-ind-plr:Kuchar a clo-go:Player ;
-    foaf:name "M. Kuchar" ;
+clo-go-ind-plr:Kuchar
+    a                       clo-go:Player ;
+    foaf:name               "M. Kuchar" ;
     clo-go-plr:hasKlassName "Kuchar" .
 
-clo-go-ind-plr:Lagergren a clo-go:Player ;
-    foaf:name "J. Lagergren" ;
+clo-go-ind-plr:Lagergren
+    a                       clo-go:Player ;
+    foaf:name               "J. Lagergren" ;
     clo-go-plr:hasKlassName "Lagergren" .
 
-clo-go-ind-plr:Langasque a clo-go:Player ;
-    foaf:name "R. Langasque" ;
+clo-go-ind-plr:Langasque
+    a                       clo-go:Player ;
+    foaf:name               "R. Langasque" ;
     clo-go-plr:hasKlassName "Langasque" .
 
-clo-go-ind-plr:Larrazabal a clo-go:Player ;
-    foaf:name "P. Larrazabal" ;
+clo-go-ind-plr:Larrazabal
+    a                       clo-go:Player ;
+    foaf:name               "P. Larrazabal" ;
     clo-go-plr:hasKlassName "Larrazabal" .
 
-clo-go-ind-plr:Law a clo-go:Player ;
-    foaf:name "D. Law" ;
+clo-go-ind-plr:Law
+    a                       clo-go:Player ;
+    foaf:name               "D. Law" ;
     clo-go-plr:hasKlassName "Law" .
 
-clo-go-ind-plr:Lawrence a clo-go:Player ;
-    foaf:name "T. Lawrence" ;
+clo-go-ind-plr:Lawrence
+    a                       clo-go:Player ;
+    foaf:name               "T. Lawrence" ;
     clo-go-plr:hasKlassName "Lawrence" .
 
-clo-go-ind-plr:Lebioda a clo-go:Player ;
-    foaf:name "H. Lebioda" ;
+clo-go-ind-plr:Lebioda
+    a                       clo-go:Player ;
+    foaf:name               "H. Lebioda" ;
     clo-go-plr:hasKlassName "Lebioda" .
 
-clo-go-ind-plr:Lee_K a clo-go:Player ;
-    foaf:name "K. Lee" ;
+clo-go-ind-plr:Lee_K
+    a                       clo-go:Player ;
+    foaf:name               "K. Lee" ;
     clo-go-plr:hasKlassName "Lee_K" .
 
-clo-go-ind-plr:Lee_M a clo-go:Player ;
-    foaf:name "M. Lee" ;
+clo-go-ind-plr:Lee_M
+    a                       clo-go:Player ;
+    foaf:name               "M. Lee" ;
     clo-go-plr:hasKlassName "Lee_M" .
 
-clo-go-ind-plr:Li a clo-go:Player ;
-    foaf:name "H. Li" ;
+clo-go-ind-plr:Li
+    a                       clo-go:Player ;
+    foaf:name               "H. Li" ;
     clo-go-plr:hasKlassName "Li" .
 
-clo-go-ind-plr:Lingmerth a clo-go:Player ;
-    foaf:name "D. Lingmerth" ;
+clo-go-ind-plr:Lingmerth
+    a                       clo-go:Player ;
+    foaf:name               "D. Lingmerth" ;
     clo-go-plr:hasKlassName "Lingmerth" .
 
-clo-go-ind-plr:List a clo-go:Player ;
-    foaf:name "L. List" ;
+clo-go-ind-plr:List
+    a                       clo-go:Player ;
+    foaf:name               "L. List" ;
     clo-go-plr:hasKlassName "List" .
 
-clo-go-ind-plr:Lombard a clo-go:Player ;
-    foaf:name "Z. Lombard" ;
+clo-go-ind-plr:Lombard
+    a                       clo-go:Player ;
+    foaf:name               "Z. Lombard" ;
     clo-go-plr:hasKlassName "Lombard" .
 
-clo-go-ind-plr:Long a clo-go:Player ;
-    foaf:name "H. Long" ;
+clo-go-ind-plr:Long
+    a                       clo-go:Player ;
+    foaf:name               "H. Long" ;
     clo-go-plr:hasKlassName "Long" .
 
-clo-go-ind-plr:Lowry a clo-go:Player ;
-    foaf:name "S. Lowry" ;
+clo-go-ind-plr:Lowry
+    a                       clo-go:Player ;
+    foaf:name               "S. Lowry" ;
     clo-go-plr:hasKlassName "Lowry" .
 
-clo-go-ind-plr:Luiten a clo-go:Player ;
-    foaf:name "J. Luiten" ;
+clo-go-ind-plr:Luiten
+    a                       clo-go:Player ;
+    foaf:name               "J. Luiten" ;
     clo-go-plr:hasKlassName "Luiten" .
 
-clo-go-ind-plr:MacIntyre a clo-go:Player ;
-    foaf:name "R. MacIntyre" ;
+clo-go-ind-plr:MacIntyre
+    a                       clo-go:Player ;
+    foaf:name               "R. MacIntyre" ;
     clo-go-plr:hasKlassName "MacIntyre" .
 
-clo-go-ind-plr:Mansell a clo-go:Player ;
-    foaf:name "R. Mansell" ;
+clo-go-ind-plr:Mansell
+    a                       clo-go:Player ;
+    foaf:name               "R. Mansell" ;
     clo-go-plr:hasKlassName "Mansell" .
 
-clo-go-ind-plr:Martin a clo-go:Player ;
-    foaf:name "B. Martin" ;
+clo-go-ind-plr:Martin
+    a                       clo-go:Player ;
+    foaf:name               "B. Martin" ;
     clo-go-plr:hasKlassName "Martin" .
 
-clo-go-ind-plr:Matsuyama a clo-go:Player ;
-    foaf:name "H. Matsuyama" ;
+clo-go-ind-plr:Matsuyama
+    a                       clo-go:Player ;
+    foaf:name               "H. Matsuyama" ;
     clo-go-plr:hasKlassName "Matsuyama" .
 
-clo-go-ind-plr:McCarthy a clo-go:Player ;
-    foaf:name "D. McCarthy" ;
+clo-go-ind-plr:McCarthy
+    a                       clo-go:Player ;
+    foaf:name               "D. McCarthy" ;
     clo-go-plr:hasKlassName "McCarthy" .
 
-clo-go-ind-plr:McClean a clo-go:Player ;
-    foaf:name "M. McClean" ;
+clo-go-ind-plr:McClean
+    a                       clo-go:Player ;
+    foaf:name               "M. McClean" ;
     clo-go-plr:hasKlassName "McClean" .
 
-clo-go-ind-plr:McIlroy a clo-go:Player ;
-    foaf:name "R. McIlroy" ;
+clo-go-ind-plr:McIlroy
+    a                       clo-go:Player ;
+    foaf:name               "R. McIlroy" ;
     clo-go-plr:hasKlassName "McIlroy" .
 
-clo-go-ind-plr:McKibbin a clo-go:Player ;
-    foaf:name "T. McKibbin" ;
+clo-go-ind-plr:McKibbin
+    a                       clo-go:Player ;
+    foaf:name               "T. McKibbin" ;
     clo-go-plr:hasKlassName "McKibbin" .
 
-clo-go-ind-plr:Meissner a clo-go:Player ;
-    foaf:name "M. Meissner" ;
+clo-go-ind-plr:Meissner
+    a                       clo-go:Player ;
+    foaf:name               "M. Meissner" ;
     clo-go-plr:hasKlassName "Meissner" .
 
-clo-go-ind-plr:Meronk a clo-go:Player ;
-    foaf:name "A. Meronk" ;
+clo-go-ind-plr:Meronk
+    a                       clo-go:Player ;
+    foaf:name               "A. Meronk" ;
     clo-go-plr:hasKlassName "Meronk" .
 
-clo-go-ind-plr:Merritt a clo-go:Player ;
-    foaf:name "T. Merritt" ;
+clo-go-ind-plr:Merritt
+    a                       clo-go:Player ;
+    foaf:name               "T. Merritt" ;
     clo-go-plr:hasKlassName "Merritt" .
 
-clo-go-ind-plr:Mickelson a clo-go:Player ;
-    foaf:name "P. Mickelson" ;
+clo-go-ind-plr:Mickelson
+    a                       clo-go:Player ;
+    foaf:name               "P. Mickelson" ;
     clo-go-plr:hasKlassName "Mickelson" .
 
-clo-go-ind-plr:Migliozzi a clo-go:Player ;
-    foaf:name "G. Migliozzi" ;
+clo-go-ind-plr:Migliozzi
+    a                       clo-go:Player ;
+    foaf:name               "G. Migliozzi" ;
     clo-go-plr:hasKlassName "Migliozzi" .
 
-clo-go-ind-plr:Mitchell a clo-go:Player ;
-    foaf:name "K. Mitchell" ;
+clo-go-ind-plr:Mitchell
+    a                       clo-go:Player ;
+    foaf:name               "K. Mitchell" ;
     clo-go-plr:hasKlassName "Mitchell" .
 
-clo-go-ind-plr:Moldovan a clo-go:Player ;
-    foaf:name "M. Moldovan" ;
+clo-go-ind-plr:Moldovan
+    a                       clo-go:Player ;
+    foaf:name               "M. Moldovan" ;
     clo-go-plr:hasKlassName "Moldovan" .
 
-clo-go-ind-plr:Molinari a clo-go:Player ;
-    foaf:name "F. Molinari" ;
+clo-go-ind-plr:Molinari
+    a                       clo-go:Player ;
+    foaf:name               "F. Molinari" ;
     clo-go-plr:hasKlassName "Molinari" .
 
-clo-go-ind-plr:Montgomery a clo-go:Player ;
-    foaf:name "T. Montgomery" ;
+clo-go-ind-plr:Montgomery
+    a                       clo-go:Player ;
+    foaf:name               "T. Montgomery" ;
     clo-go-plr:hasKlassName "Montgomery" .
 
-clo-go-ind-plr:Moore a clo-go:Player ;
-    foaf:name "T. Moore" ;
+clo-go-ind-plr:Moore
+    a                       clo-go:Player ;
+    foaf:name               "T. Moore" ;
     clo-go-plr:hasKlassName "Moore" .
 
-clo-go-ind-plr:Morales a clo-go:Player ;
-    foaf:name "O. Morales" ;
+clo-go-ind-plr:Morales
+    a                       clo-go:Player ;
+    foaf:name               "O. Morales" ;
     clo-go-plr:hasKlassName "Morales" .
 
-clo-go-ind-plr:Morikawa a clo-go:Player ;
-    foaf:name "C. Morikawa" ;
+clo-go-ind-plr:Morikawa
+    a                       clo-go:Player ;
+    foaf:name               "C. Morikawa" ;
     clo-go-plr:hasKlassName "Morikawa" .
 
-clo-go-ind-plr:Mueller a clo-go:Player ;
-    foaf:name "K. Mueller" ;
+clo-go-ind-plr:Mueller
+    a                       clo-go:Player ;
+    foaf:name               "K. Mueller" ;
     clo-go-plr:hasKlassName "Mueller" .
 
-clo-go-ind-plr:Muñoz a clo-go:Player ;
-    foaf:name "S. Muñoz" ;
+clo-go-ind-plr:Muñoz
+    a                       clo-go:Player ;
+    foaf:name               "S. Muñoz" ;
     clo-go-plr:hasKlassName "Muñoz" .
 
-clo-go-ind-plr:Nagano a clo-go:Player ;
-    foaf:name "R. Nagano" ;
+clo-go-ind-plr:Nagano
+    a                       clo-go:Player ;
+    foaf:name               "R. Nagano" ;
     clo-go-plr:hasKlassName "Nagano" .
 
-clo-go-ind-plr:Niemann a clo-go:Player ;
-    foaf:name "J. Niemann" ;
+clo-go-ind-plr:Niemann
+    a                       clo-go:Player ;
+    foaf:name               "J. Niemann" ;
     clo-go-plr:hasKlassName "Niemann" .
 
-clo-go-ind-plr:Nienaber a clo-go:Player ;
-    foaf:name "W. Nienaber" ;
+clo-go-ind-plr:Nienaber
+    a                       clo-go:Player ;
+    foaf:name               "W. Nienaber" ;
     clo-go-plr:hasKlassName "Nienaber" .
 
-clo-go-ind-plr:Noren a clo-go:Player ;
-    foaf:name "A. Noren" ;
+clo-go-ind-plr:Noren
+    a                       clo-go:Player ;
+    foaf:name               "A. Noren" ;
     clo-go-plr:hasKlassName "Noren" .
 
-clo-go-ind-plr:Norrman a clo-go:Player ;
-    foaf:name "V. Norrman" ;
+clo-go-ind-plr:Norrman
+    a                       clo-go:Player ;
+    foaf:name               "V. Norrman" ;
     clo-go-plr:hasKlassName "Norrman" .
 
-clo-go-ind-plr:Nyfjall a clo-go:Player ;
-    foaf:name "D. Nyfjall" ;
+clo-go-ind-plr:Nyfjall
+    a                       clo-go:Player ;
+    foaf:name               "D. Nyfjall" ;
     clo-go-plr:hasKlassName "Nyfjall" .
 
-clo-go-ind-plr:Olesen a clo-go:Player ;
-    foaf:name "T. Olesen" ;
+clo-go-ind-plr:Olesen
+    a                       clo-go:Player ;
+    foaf:name               "T. Olesen" ;
     clo-go-plr:hasKlassName "Olesen" .
 
-clo-go-ind-plr:Oliveira a clo-go:Player ;
-    foaf:name "M. Fernandez de Oliveira" ;
+clo-go-ind-plr:Oliveira
+    a                       clo-go:Player ;
+    foaf:name               "M. Fernandez de Oliveira" ;
     clo-go-plr:hasKlassName "Oliveira" .
 
-clo-go-ind-plr:Ortiz a clo-go:Player ;
-    foaf:name "C. Ortiz" ;
+clo-go-ind-plr:Ortiz
+    a                       clo-go:Player ;
+    foaf:name               "C. Ortiz" ;
     clo-go-plr:hasKlassName "Ortiz" .
 
-clo-go-ind-plr:Otaegui a clo-go:Player ;
-    foaf:name "A. Otaegui" ;
+clo-go-ind-plr:Otaegui
+    a                       clo-go:Player ;
+    foaf:name               "A. Otaegui" ;
     clo-go-plr:hasKlassName "Otaegui" .
 
-clo-go-ind-plr:Pan a clo-go:Player ;
-    foaf:name "C.T. Pan" ;
+clo-go-ind-plr:Pan
+    a                       clo-go:Player ;
+    foaf:name               "C.T. Pan" ;
     clo-go-plr:hasKlassName "Pan" .
 
-clo-go-ind-plr:Paul a clo-go:Player ;
-    foaf:name "Y. Paul" ;
+clo-go-ind-plr:Paul
+    a                       clo-go:Player ;
+    foaf:name               "Y. Paul" ;
     clo-go-plr:hasKlassName "Paul" .
 
-clo-go-ind-plr:Pavon a clo-go:Player ;
-    foaf:name "M. Pavon" ;
+clo-go-ind-plr:Pavon
+    a                       clo-go:Player ;
+    foaf:name               "M. Pavon" ;
     clo-go-plr:hasKlassName "Pavon" .
 
-clo-go-ind-plr:Pendrith a clo-go:Player ;
-    foaf:name "T. Pendrith" ;
+clo-go-ind-plr:Pendrith
+    a                       clo-go:Player ;
+    foaf:name               "T. Pendrith" ;
     clo-go-plr:hasKlassName "Pendrith" .
 
-clo-go-ind-plr:Pepperell a clo-go:Player ;
-    foaf:name "E. Pepperell" ;
+clo-go-ind-plr:Pepperell
+    a                       clo-go:Player ;
+    foaf:name               "E. Pepperell" ;
     clo-go-plr:hasKlassName "Pepperell" .
 
-clo-go-ind-plr:Pereira a clo-go:Player ;
-    foaf:name "M. Pereira" ;
+clo-go-ind-plr:Pereira
+    a                       clo-go:Player ;
+    foaf:name               "M. Pereira" ;
     clo-go-plr:hasKlassName "Pereira" .
 
-clo-go-ind-plr:Pereira_C a clo-go:Player ;
-    foaf:name "C. Pereira" ;
+clo-go-ind-plr:Pereira_C
+    a                       clo-go:Player ;
+    foaf:name               "C. Pereira" ;
     clo-go-plr:hasKlassName "Pereira_C" .
 
-clo-go-ind-plr:Perez a clo-go:Player ;
-    foaf:name "V. Perez" ;
+clo-go-ind-plr:Perez
+    a                       clo-go:Player ;
+    foaf:name               "V. Perez" ;
     clo-go-plr:hasKlassName "Perez" .
 
-clo-go-ind-plr:Pieters a clo-go:Player ;
-    foaf:name "T. Pieters" ;
+clo-go-ind-plr:Pieters
+    a                       clo-go:Player ;
+    foaf:name               "T. Pieters" ;
     clo-go-plr:hasKlassName "Pieters" .
 
-clo-go-ind-plr:Poston a clo-go:Player ;
-    foaf:name "J.T. Poston" ;
+clo-go-ind-plr:Poston
+    a                       clo-go:Player ;
+    foaf:name               "J.T. Poston" ;
     clo-go-plr:hasKlassName "Poston" .
 
-clo-go-ind-plr:Potgieter a clo-go:Player ;
-    foaf:name "A. Potgieter" ;
+clo-go-ind-plr:Potgieter
+    a                       clo-go:Player ;
+    foaf:name               "A. Potgieter" ;
     clo-go-plr:hasKlassName "Potgieter" .
 
-clo-go-ind-plr:Power a clo-go:Player ;
-    foaf:name "S. Power" ;
+clo-go-ind-plr:Power
+    a                       clo-go:Player ;
+    foaf:name               "S. Power" ;
     clo-go-plr:hasKlassName "Power" .
 
-clo-go-ind-plr:Puig a clo-go:Player ;
-    foaf:name "D. Puig" ;
+clo-go-ind-plr:Puig
+    a                       clo-go:Player ;
+    foaf:name               "D. Puig" ;
     clo-go-plr:hasKlassName "Puig" .
 
-clo-go-ind-plr:Pulkkanen a clo-go:Player ;
-    foaf:name "T. Pulkkanen" ;
+clo-go-ind-plr:Pulkkanen
+    a                       clo-go:Player ;
+    foaf:name               "T. Pulkkanen" ;
     clo-go-plr:hasKlassName "Pulkkanen" .
 
-clo-go-ind-plr:Putnam a clo-go:Player ;
-    foaf:name "A. Putnam" ;
+clo-go-ind-plr:Putnam
+    a                       clo-go:Player ;
+    foaf:name               "A. Putnam" ;
     clo-go-plr:hasKlassName "Putnam" .
 
-clo-go-ind-plr:Rahm a clo-go:Player ;
-    foaf:name "J. Rahm" ;
+clo-go-ind-plr:Rahm
+    a                       clo-go:Player ;
+    foaf:name               "J. Rahm" ;
     clo-go-plr:hasKlassName "Rahm" .
 
-clo-go-ind-plr:Rai a clo-go:Player ;
-    foaf:name "A. Rai" ;
+clo-go-ind-plr:Rai
+    a                       clo-go:Player ;
+    foaf:name               "A. Rai" ;
     clo-go-plr:hasKlassName "Rai" .
 
-clo-go-ind-plr:Ramsay a clo-go:Player ;
-    foaf:name "R. Ramsay" ;
+clo-go-ind-plr:Ramsay
+    a                       clo-go:Player ;
+    foaf:name               "R. Ramsay" ;
     clo-go-plr:hasKlassName "Ramsay" .
 
-clo-go-ind-plr:Reed a clo-go:Player ;
-    foaf:name "P. Reed" ;
+clo-go-ind-plr:Reed
+    a                       clo-go:Player ;
+    foaf:name               "P. Reed" ;
     clo-go-plr:hasKlassName "Reed" .
 
-clo-go-ind-plr:Rey a clo-go:Player ;
-    foaf:name "A. Del Rey" ;
+clo-go-ind-plr:Rey
+    a                       clo-go:Player ;
+    foaf:name               "A. Del Rey" ;
     clo-go-plr:hasKlassName "Rey" .
 
-clo-go-ind-plr:Riley a clo-go:Player ;
-    foaf:name "D. Riley" ;
+clo-go-ind-plr:Riley
+    a                       clo-go:Player ;
+    foaf:name               "D. Riley" ;
     clo-go-plr:hasKlassName "Riley" .
 
-clo-go-ind-plr:Rodgers a clo-go:Player ;
-    foaf:name "P. Rodgers" ;
+clo-go-ind-plr:Rodgers
+    a                       clo-go:Player ;
+    foaf:name               "P. Rodgers" ;
     clo-go-plr:hasKlassName "Rodgers" .
 
-clo-go-ind-plr:Rose a clo-go:Player ;
-    foaf:name "J. Rose" ;
+clo-go-ind-plr:Rose
+    a                       clo-go:Player ;
+    foaf:name               "J. Rose" ;
     clo-go-plr:hasKlassName "Rose" .
 
-clo-go-ind-plr:Rozner a clo-go:Player ;
-    foaf:name "A. Rozner" ;
+clo-go-ind-plr:Rozner
+    a                       clo-go:Player ;
+    foaf:name               "A. Rozner" ;
     clo-go-plr:hasKlassName "Rozner" .
 
-clo-go-ind-plr:Ryder a clo-go:Player ;
-    foaf:name "S. Ryder" ;
+clo-go-ind-plr:Ryder
+    a                       clo-go:Player ;
+    foaf:name               "S. Ryder" ;
     clo-go-plr:hasKlassName "Ryder" .
 
-clo-go-ind-plr:Samooja a clo-go:Player ;
-    foaf:name "K. Samooja" ;
+clo-go-ind-plr:Samooja
+    a                       clo-go:Player ;
+    foaf:name               "K. Samooja" ;
     clo-go-plr:hasKlassName "Samooja" .
 
-clo-go-ind-plr:Sargent a clo-go:Player ;
-    foaf:name "G. Sargent" ;
+clo-go-ind-plr:Sargent
+    a                       clo-go:Player ;
+    foaf:name               "G. Sargent" ;
     clo-go-plr:hasKlassName "Sargent" .
 
-clo-go-ind-plr:Schaake a clo-go:Player ;
-    foaf:name "A. Schaake" ;
+clo-go-ind-plr:Schaake
+    a                       clo-go:Player ;
+    foaf:name               "A. Schaake" ;
     clo-go-plr:hasKlassName "Schaake" .
 
-clo-go-ind-plr:Schauffele a clo-go:Player ;
-    foaf:name "X. Schauffele" ;
+clo-go-ind-plr:Schauffele
+    a                       clo-go:Player ;
+    foaf:name               "X. Schauffele" ;
     clo-go-plr:hasKlassName "Schauffele" .
 
-clo-go-ind-plr:Scheffler a clo-go:Player ;
-    foaf:name "S. Scheffler" ;
+clo-go-ind-plr:Scheffler
+    a                       clo-go:Player ;
+    foaf:name               "S. Scheffler" ;
     clo-go-plr:hasKlassName "Scheffler" .
 
-clo-go-ind-plr:Schenk a clo-go:Player ;
-    foaf:name "A. Schenk" ;
+clo-go-ind-plr:Schenk
+    a                       clo-go:Player ;
+    foaf:name               "A. Schenk" ;
     clo-go-plr:hasKlassName "Schenk" .
 
-clo-go-ind-plr:Schneider a clo-go:Player ;
-    foaf:name "M. Schneider" ;
+clo-go-ind-plr:Schneider
+    a                       clo-go:Player ;
+    foaf:name               "M. Schneider" ;
     clo-go-plr:hasKlassName "Schneider" .
 
-clo-go-ind-plr:Schutte a clo-go:Player ;
-    foaf:name "J. Schutte" ;
+clo-go-ind-plr:Schutte
+    a                       clo-go:Player ;
+    foaf:name               "J. Schutte" ;
     clo-go-plr:hasKlassName "Schutte" .
 
-clo-go-ind-plr:Scott a clo-go:Player ;
-    foaf:name "A. Scott" ;
+clo-go-ind-plr:Scott
+    a                       clo-go:Player ;
+    foaf:name               "A. Scott" ;
     clo-go-plr:hasKlassName "Scott" .
 
-clo-go-ind-plr:Seo a clo-go:Player ;
-    foaf:name "Y. Seo" ;
+clo-go-ind-plr:Seo
+    a                       clo-go:Player ;
+    foaf:name               "Y. Seo" ;
     clo-go-plr:hasKlassName "Seo" .
 
-clo-go-ind-plr:Sharma a clo-go:Player ;
-    foaf:name "S. Sharma" ;
+clo-go-ind-plr:Sharma
+    a                       clo-go:Player ;
+    foaf:name               "S. Sharma" ;
     clo-go-plr:hasKlassName "Sharma" .
 
-clo-go-ind-plr:Shelton a clo-go:Player ;
-    foaf:name "R. Shelton" ;
+clo-go-ind-plr:Shelton
+    a                       clo-go:Player ;
+    foaf:name               "R. Shelton" ;
     clo-go-plr:hasKlassName "Shelton" .
 
-clo-go-ind-plr:Shinkwin a clo-go:Player ;
-    foaf:name "C. Shinkwin" ;
+clo-go-ind-plr:Shinkwin
+    a                       clo-go:Player ;
+    foaf:name               "C. Shinkwin" ;
     clo-go-plr:hasKlassName "Shinkwin" .
 
-clo-go-ind-plr:Siem a clo-go:Player ;
-    foaf:name "M. Siem" ;
+clo-go-ind-plr:Siem
+    a                       clo-go:Player ;
+    foaf:name               "M. Siem" ;
     clo-go-plr:hasKlassName "Siem" .
 
-clo-go-ind-plr:Simmons a clo-go:Player ;
-    foaf:name "I. Simmons" ;
+clo-go-ind-plr:Simmons
+    a                       clo-go:Player ;
+    foaf:name               "I. Simmons" ;
     clo-go-plr:hasKlassName "Simmons" .
 
-clo-go-ind-plr:Sloan a clo-go:Player ;
-    foaf:name "R. Sloan" ;
+clo-go-ind-plr:Sloan
+    a                       clo-go:Player ;
+    foaf:name               "R. Sloan" ;
     clo-go-plr:hasKlassName "Sloan" .
 
-clo-go-ind-plr:Smalley a clo-go:Player ;
-    foaf:name "A. Smalley" ;
+clo-go-ind-plr:Smalley
+    a                       clo-go:Player ;
+    foaf:name               "A. Smalley" ;
     clo-go-plr:hasKlassName "Smalley" .
 
-clo-go-ind-plr:Smith a clo-go:Player ;
-    foaf:name "J. Smith" ;
+clo-go-ind-plr:Smith
+    a                       clo-go:Player ;
+    foaf:name               "J. Smith" ;
     clo-go-plr:hasKlassName "Smith" .
 
-clo-go-ind-plr:Smith_Ca a clo-go:Player ;
-    foaf:name "Ca. Smith" ;
+clo-go-ind-plr:Smith_Ca
+    a                       clo-go:Player ;
+    foaf:name               "Ca. Smith" ;
     clo-go-plr:hasKlassName "Smith_Ca" .
 
-clo-go-ind-plr:Soderberg a clo-go:Player ;
-    foaf:name "S. Soderberg" ;
+clo-go-ind-plr:Soderberg
+    a                       clo-go:Player ;
+    foaf:name               "S. Soderberg" ;
     clo-go-plr:hasKlassName "Soderberg" .
 
-clo-go-ind-plr:Solomon a clo-go:Player ;
-    foaf:name "J. Solomon" ;
+clo-go-ind-plr:Solomon
+    a                       clo-go:Player ;
+    foaf:name               "J. Solomon" ;
     clo-go-plr:hasKlassName "Solomon" .
 
-clo-go-ind-plr:Southgate a clo-go:Player ;
-    foaf:name "M. Southgate" ;
+clo-go-ind-plr:Southgate
+    a                       clo-go:Player ;
+    foaf:name               "M. Southgate" ;
     clo-go-plr:hasKlassName "Southgate" .
 
-clo-go-ind-plr:Spieth a clo-go:Player ;
-    foaf:name "J. Spieth" ;
+clo-go-ind-plr:Spieth
+    a                       clo-go:Player ;
+    foaf:name               "J. Spieth" ;
     clo-go-plr:hasKlassName "Spieth" .
 
-clo-go-ind-plr:Stallings a clo-go:Player ;
-    foaf:name "S. Stallings" ;
+clo-go-ind-plr:Stallings
+    a                       clo-go:Player ;
+    foaf:name               "S. Stallings" ;
     clo-go-plr:hasKlassName "Stallings" .
 
-clo-go-ind-plr:Stevens a clo-go:Player ;
-    foaf:name "S. Stevens" ;
+clo-go-ind-plr:Stevens
+    a                       clo-go:Player ;
+    foaf:name               "S. Stevens" ;
     clo-go-plr:hasKlassName "Stevens" .
 
-clo-go-ind-plr:Straka a clo-go:Player ;
-    foaf:name "S. Straka" ;
+clo-go-ind-plr:Straka
+    a                       clo-go:Player ;
+    foaf:name               "S. Straka" ;
     clo-go-plr:hasKlassName "Straka" .
 
-clo-go-ind-plr:Streelman a clo-go:Player ;
-    foaf:name "K. Streelman" ;
+clo-go-ind-plr:Streelman
+    a                       clo-go:Player ;
+    foaf:name               "K. Streelman" ;
     clo-go-plr:hasKlassName "Streelman" .
 
-clo-go-ind-plr:Strydom a clo-go:Player ;
-    foaf:name "O. Strydom" ;
+clo-go-ind-plr:Strydom
+    a                       clo-go:Player ;
+    foaf:name               "O. Strydom" ;
     clo-go-plr:hasKlassName "Strydom" .
 
-clo-go-ind-plr:Suh a clo-go:Player ;
-    foaf:name "J. Suh" ;
+clo-go-ind-plr:Suh
+    a                       clo-go:Player ;
+    foaf:name               "J. Suh" ;
     clo-go-plr:hasKlassName "Suh" .
 
-clo-go-ind-plr:Summerhays a clo-go:Player ;
-    foaf:name "P. Summerhays" ;
+clo-go-ind-plr:Summerhays
+    a                       clo-go:Player ;
+    foaf:name               "P. Summerhays" ;
     clo-go-plr:hasKlassName "Summerhays" .
 
-clo-go-ind-plr:Svensson a clo-go:Player ;
-    foaf:name "A. Svensson" ;
+clo-go-ind-plr:Svensson
+    a                       clo-go:Player ;
+    foaf:name               "A. Svensson" ;
     clo-go-plr:hasKlassName "Svensson" .
 
-clo-go-ind-plr:Svoboda a clo-go:Player ;
-    foaf:name "A. Svoboda" ;
+clo-go-ind-plr:Svoboda
+    a                       clo-go:Player ;
+    foaf:name               "A. Svoboda" ;
     clo-go-plr:hasKlassName "Svoboda" .
 
-clo-go-ind-plr:Syme a clo-go:Player ;
-    foaf:name "C. Syme" ;
+clo-go-ind-plr:Syme
+    a                       clo-go:Player ;
+    foaf:name               "C. Syme" ;
     clo-go-plr:hasKlassName "Syme" .
 
-clo-go-ind-plr:Tarren a clo-go:Player ;
-    foaf:name "C. Tarren" ;
+clo-go-ind-plr:Tarren
+    a                       clo-go:Player ;
+    foaf:name               "C. Tarren" ;
     clo-go-plr:hasKlassName "Tarren" .
 
-clo-go-ind-plr:Taylor a clo-go:Player ;
-    foaf:name "N. Taylor" ;
+clo-go-ind-plr:Taylor
+    a                       clo-go:Player ;
+    foaf:name               "N. Taylor" ;
     clo-go-plr:hasKlassName "Taylor" .
 
-clo-go-ind-plr:Theegala a clo-go:Player ;
-    foaf:name "S. Theegala" ;
+clo-go-ind-plr:Theegala
+    a                       clo-go:Player ;
+    foaf:name               "S. Theegala" ;
     clo-go-plr:hasKlassName "Theegala" .
 
-clo-go-ind-plr:Thomas a clo-go:Player ;
-    foaf:name "J. Thomas" ;
+clo-go-ind-plr:Thomas
+    a                       clo-go:Player ;
+    foaf:name               "J. Thomas" ;
     clo-go-plr:hasKlassName "Thomas" .
 
-clo-go-ind-plr:Thompson a clo-go:Player ;
-    foaf:name "D. Thompson" ;
+clo-go-ind-plr:Thompson
+    a                       clo-go:Player ;
+    foaf:name               "D. Thompson" ;
     clo-go-plr:hasKlassName "Thompson" .
 
-clo-go-ind-plr:Thorbjornsen a clo-go:Player ;
-    foaf:name "M. Thorbjornsen" ;
+clo-go-ind-plr:Thorbjornsen
+    a                       clo-go:Player ;
+    foaf:name               "M. Thorbjornsen" ;
     clo-go-plr:hasKlassName "Thorbjornsen" .
 
-clo-go-ind-plr:Truslow a clo-go:Player ;
-    foaf:name "A. Truslow" ;
+clo-go-ind-plr:Truslow
+    a                       clo-go:Player ;
+    foaf:name               "A. Truslow" ;
     clo-go-plr:hasKlassName "Truslow" .
 
-clo-go-ind-plr:Valdes a clo-go:Player ;
-    foaf:name "B. Valdes" ;
+clo-go-ind-plr:Valdes
+    a                       clo-go:Player ;
+    foaf:name               "B. Valdes" ;
     clo-go-plr:hasKlassName "Valdes" .
 
-clo-go-ind-plr:Valimaki a clo-go:Player ;
-    foaf:name "S. Valimaki" ;
+clo-go-ind-plr:Valimaki
+    a                       clo-go:Player ;
+    foaf:name               "S. Valimaki" ;
     clo-go-plr:hasKlassName "Valimaki" .
 
-clo-go-ind-plr:Vilips a clo-go:Player ;
-    foaf:name "K. Vilips" ;
+clo-go-ind-plr:Vilips
+    a                       clo-go:Player ;
+    foaf:name               "K. Vilips" ;
     clo-go-plr:hasKlassName "Vilips" .
 
-clo-go-ind-plr:Von_Dellingshausen a clo-go:Player ;
-    foaf:name "N. Von Dellingshausen" ;
+clo-go-ind-plr:Von_Dellingshausen
+    a                       clo-go:Player ;
+    foaf:name               "N. Von Dellingshausen" ;
     clo-go-plr:hasKlassName "Von_Dellingshausen" .
 
-clo-go-ind-plr:Walker a clo-go:Player ;
-    foaf:name "J. Walker" ;
+clo-go-ind-plr:Walker
+    a                       clo-go:Player ;
+    foaf:name               "J. Walker" ;
     clo-go-plr:hasKlassName "Walker" .
 
-clo-go-ind-plr:Wallace a clo-go:Player ;
-    foaf:name "M. Wallace" ;
+clo-go-ind-plr:Wallace
+    a                       clo-go:Player ;
+    foaf:name               "M. Wallace" ;
     clo-go-plr:hasKlassName "Wallace" .
 
-clo-go-ind-plr:Walters a clo-go:Player ;
-    foaf:name "J. Walters" ;
+clo-go-ind-plr:Walters
+    a                       clo-go:Player ;
+    foaf:name               "J. Walters" ;
     clo-go-plr:hasKlassName "Walters" .
 
-clo-go-ind-plr:Waring a clo-go:Player ;
-    foaf:name "P. Waring" ;
+clo-go-ind-plr:Waring
+    a                       clo-go:Player ;
+    foaf:name               "P. Waring" ;
     clo-go-plr:hasKlassName "Waring" .
 
-clo-go-ind-plr:Whitnell a clo-go:Player ;
-    foaf:name "D. Whitnell" ;
+clo-go-ind-plr:Whitnell
+    a                       clo-go:Player ;
+    foaf:name               "D. Whitnell" ;
     clo-go-plr:hasKlassName "Whitnell" .
 
-clo-go-ind-plr:Willett a clo-go:Player ;
-    foaf:name "D. Willett" ;
+clo-go-ind-plr:Willett
+    a                       clo-go:Player ;
+    foaf:name               "D. Willett" ;
     clo-go-plr:hasKlassName "Willett" .
 
-clo-go-ind-plr:Wilson a clo-go:Player ;
-    foaf:name "O. Wilson" ;
+clo-go-ind-plr:Wilson
+    a                       clo-go:Player ;
+    foaf:name               "O. Wilson" ;
     clo-go-plr:hasKlassName "Wilson" .
 
-clo-go-ind-plr:Wise a clo-go:Player ;
-    foaf:name "A. Wise" ;
+clo-go-ind-plr:Wise
+    a                       clo-go:Player ;
+    foaf:name               "A. Wise" ;
     clo-go-plr:hasKlassName "Wise" .
 
-clo-go-ind-plr:Woodland a clo-go:Player ;
-    foaf:name "G. Woodland" ;
+clo-go-ind-plr:Woodland
+    a                       clo-go:Player ;
+    foaf:name               "G. Woodland" ;
     clo-go-plr:hasKlassName "Woodland" .
 
-clo-go-ind-plr:Wu a clo-go:Player ;
-    foaf:name "D. Wu" ;
+clo-go-ind-plr:Wu
+    a                       clo-go:Player ;
+    foaf:name               "D. Wu" ;
     clo-go-plr:hasKlassName "Wu" .
 
-clo-go-ind-plr:Yang a clo-go:Player ;
-    foaf:name "A. Yang" ;
+clo-go-ind-plr:Yang
+    a                       clo-go:Player ;
+    foaf:name               "A. Yang" ;
     clo-go-plr:hasKlassName "Yang" .
 
-clo-go-ind-plr:Young a clo-go:Player ;
-    foaf:name "Car. Young" ;
+clo-go-ind-plr:Young
+    a                       clo-go:Player ;
+    foaf:name               "Car. Young" ;
     clo-go-plr:hasKlassName "Young" .
 
-clo-go-ind-plr:Young_Cam a clo-go:Player ;
-    foaf:name "Cam. Young" ;
+clo-go-ind-plr:Young_Cam
+    a                       clo-go:Player ;
+    foaf:name               "Cam. Young" ;
     clo-go-plr:hasKlassName "Young_Cam" .
 
-clo-go-ind-plr:Yu a clo-go:Player ;
-    foaf:name "K. Yu" ;
+clo-go-ind-plr:Yu
+    a                       clo-go:Player ;
+    foaf:name               "K. Yu" ;
     clo-go-plr:hasKlassName "Yu" .
 
-clo-go-ind-plr:Zanotti a clo-go:Player ;
-    foaf:name "F. Zanotti" ;
+clo-go-ind-plr:Zanotti
+    a                       clo-go:Player ;
+    foaf:name               "F. Zanotti" ;
     clo-go-plr:hasKlassName "Zanotti" .
 
-clo-go-ind-plr:van_Rooyen a clo-go:Player ;
-    foaf:name "E. van Rooyen" ;
+clo-go-ind-plr:van_Rooyen
+    a                       clo-go:Player ;
+    foaf:name               "E. van Rooyen" ;
     clo-go-plr:hasKlassName "van_Rooyen" .
 

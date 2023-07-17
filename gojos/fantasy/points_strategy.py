@@ -2,8 +2,11 @@ from typing import Callable, List, Tuple, Union, Type, Optional, Dict
 from functools import reduce
 from enum import Enum
 from collections import ChainMap
+import sys
 
-from gojos import model
+from rdflib import URIRef
+
+from gojos import model, rdf
 
 
 class Points1_4_10(Enum):
@@ -25,8 +28,23 @@ class Points1_2_4(Enum):
 
 class PointsStrategyCalculator:
 
+    @classmethod
+    def build(cls, sub: Union[URIRef, Tuple]):
+        if isinstance(sub, tuple):
+            klass_name, pts_strat_name = sub
+        else:
+            klass_name, pts_strat_name = sub.split("/")[-2:]
+        klass = getattr(sys.modules[__name__], klass_name)
+        strat_klass = getattr(sys.modules[__name__], pts_strat_name)
+        return klass(strat_klass)
+
     def __init__(self, pts_strategy: Union[Type[Points1_4_10], Type[Points1_2_4]]):
         self.pts_strategy = pts_strategy
+
+
+    def subject(self):
+        return URIRef(
+            rdf.FANTASY_POINTS_STRATEGY) + f"/{self.__class__.__name__}/{self.pts_strategy.__name__}"
 
 
 class InvertedPosition(PointsStrategyCalculator):
@@ -44,12 +62,12 @@ class InvertedPosition(PointsStrategyCalculator):
 
     def _one_pt_per_inverted_position(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> List[int]:
         return [self._invert_position(roster_player, pos) for pos in
-                roster_player.tournament.positions_for_player_per_round(roster_player.player, wildcards)]
+                roster_player.event.positions_for_player_per_round(roster_player.player, wildcards)]
 
     def _invert_position(self, roster_player, pos):
         if isinstance(pos, model.PlayerState) or not pos:
             return self.pts_strategy.POINTS_FOR_MISSED_CUT.value
-        return self._points_with_factor(roster_player.tournament.number_of_entries + 1 - pos)
+        return self._points_with_factor(roster_player.event.number_of_entries + 1 - pos)
 
     def _points_with_factor(self, points: int) -> int:
         return points * self.pts_strategy.POINTS_PER_POSITION.value

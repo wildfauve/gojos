@@ -52,7 +52,7 @@ class Team:
     def major(self, tournament):
         if self.fantasy_tournament:
             return self.fantasy_tournament
-        self.fantasy_tournament = FantasyTournament(tournament, self)
+        self.fantasy_tournament = FantasyTournament.create(tournament, self)
         return self.fantasy_tournament
 
     def points_per_round(self):
@@ -78,17 +78,30 @@ class Team:
 
 
 class FantasyTournament:
-    def __init__(self, tournament, team):
+    repo = model.GraphModel(repository.FantasyTournamentRepo, model.GraphModel.fantasy_graph)
+
+    @classmethod
+    def create(cls, event: model.TournamentEvent, team: Team):
+        fantasy = cls(event=event, team=team)
+        cls.repo().upsert(fantasy)
+        return fantasy
+
+    # @classmethod
+    # def get(cls, ):
+
+
+    def __init__(self, event: model.TournamentEvent, team: Team, sub: URIRef = None):
         self.team = team
-        self.tournament = tournament
+        self.event = event
         self.roster = []
         self.wildcard_trades = []
+        self.subject = team.subject + f"/{event.relative_subject}"
 
     def on_roster(self, player=None):
         if not player or self._player_already_added(player):
             return self
-        if self.tournament.points_strategy.valid_for_roster(self.roster, player):
-            self.roster.append(RosterPlayer(tournament=self.tournament, player=player))
+        if self.event.points_strategy.valid_for_roster(self.roster, player):
+            self.roster.append(RosterPlayer(event=self.event, player=player))
         else:
             breakpoint()
         return self
@@ -104,7 +117,7 @@ class FantasyTournament:
         return fn.find(lambda roster_player: roster_player.player == player, self.roster)
 
     def play_wildcard(self, wildcard):
-        if self.tournament.points_strategy.valid_wildcard(self.wildcard_trades, wildcard):
+        if self.event.points_strategy.valid_wildcard(self.wildcard_trades, wildcard):
             self.wildcard_trades.append(wildcard)
         else:
             breakpoint()
@@ -169,11 +182,11 @@ class FantasyTournament:
 
 
 class RosterPlayer:
-    def __init__(self, tournament, player):
-        self.tournament = tournament
+    def __init__(self, event: model.TournamentEvent, player: model.Player, sub: URIRef = None):
+        self.event = event
         self.player = player
-        self.points_strategy = tournament.points_strategy
-        self.per_round_accum_strategy = tournament.round_factor_strategy
+        self.points_strategy = event.points_strategy
+        self.per_round_accum_strategy = event.round_factor_strategy
 
     def points_per_round(self, wildcards):
         return self.points_strategy.calc(self, wildcards=wildcards, explain=False)
@@ -210,7 +223,7 @@ class WildCard:
                  selected_player == wildcard_swap.trade_in_player) and
                 wildcard_swap.starting_at_round <= for_round)
 
-    def __init__(self):
+    def __init__(self, sub: URIRef = None):
         self.starting_at_round = None
         self.trade_out_player = None
         self.trade_in_player = None

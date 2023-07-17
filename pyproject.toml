@@ -6,7 +6,8 @@ authors = ["Col Perks <wild.fauve@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-go = "gojos.cli.cli:cli"
+fan = "gojos.cli.fantasy:cli"
+to = "gojos.cli.tournament:cli"
 
 
 [tool.poetry.dependencies]

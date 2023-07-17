@@ -11,6 +11,10 @@ class GraphModel:
     def player_graph(cls):
         return repo.players_graph()
 
+    @classmethod
+    def tournament_graph(cls):
+        return repo.tournament_graph()
+
     def __init__(self, repository, graph_fn):
         self.repository = repository
         self.graph_fn = graph_fn

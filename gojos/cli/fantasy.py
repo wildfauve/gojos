@@ -30,21 +30,6 @@ def leaderboard(tournament, to_discord):
 
 
 
-@click.command()
-@click.option("--entries-file", "-e", type=str, default=None, help="Entries File")
-@click.option("--players-file", "-p", type=str, default=None, help="Players File")
-@click.option("--leaderboard-file", "-l", type=str, default=None, help="Leaderboard File")
-@click.option("--for-round", "-r", type=int, default=1, help="The round number to scrap.")
-def leaderboard_scrap(entries_file, players_file, leaderboard_file, for_round):
-    """
-    """
-    command.leaderboard_scrap(entries_file=entries_file,
-                              players_file=players_file,
-                              leaderboard_file=leaderboard_file,
-                              for_round=for_round)
-    pass
-
-
 @click.option('--file', '-f', required=True)
 @click.option("--tournament", "-t",
               type=click.Choice(tournament_names()),

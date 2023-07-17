@@ -6,8 +6,9 @@ from gojos.players import mens_players as players
 
 from tests.fixtures import results
 
-ClojosOpen = model.GrandSlam(name="Clojos Open", subject_name="ClojosOpen", perma_id="co")
 
+def create_tournie():
+    return model.GrandSlam.create(name="Clojos Open", subject_name="ClojosOpen", perma_id="co")
 
 def tournament_in_fantasy(tournament_to_return, _name):
     return tournament_to_return
@@ -21,22 +22,20 @@ def clojos_open_2023_with_results():
 
 
 def clojos_open_2023():
-    tournie = (tournament_event.TournamentEvent(event_of=ClojosOpen, year=2023)
-               .add_entries(entries())
-               .fantasy_points_strategy(points_strategy.strategy_inverted_position_1_wc_2_max_players_4()))
-    return tournie
-
+    event = (tournament_event.TournamentEvent.create(tournament=create_tournie(), year=2023)
+             .add_entries(entries())
+             .fantasy_points_strategy(points_strategy.strategy_inverted_position_1_wc_2_max_players_4()))
+    return event
 
 
 def entries():
     return [
-        Morikawa,
-        Finau,
-        Fleetwood,
-        Scheffler,
-        Fitzpatrick,
-        Rahm,
-        Hovland,
-        Hatton,
-        Homa,
-        Schauffele]
+        players.Fleetwood,
+        players.Scheffler,
+        players.Fitzpatrick,
+        players.Rahm,
+        players.Hovland,
+        players.Hatton,
+        players.Homa,
+        players.Schauffele,
+        players.McIlroy]
