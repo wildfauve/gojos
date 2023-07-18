@@ -99,7 +99,7 @@ class Cut:
         return URIRef(
             rdf.CUT_STRATEGY) + f"/{self.__class__.__name__}"
 
-    def below_cut_line(self, player_score: player.PlayerScore):
+    def below_cut_line(self, player_score: model.PlayerScore):
         return self.player_below_cut(player_score)
 
     def relative_to_cut(self, position):

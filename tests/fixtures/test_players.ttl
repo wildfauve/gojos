@@ -58,3 +58,9 @@ clo-go-ind-plr:Fitzpatrick
     a                       clo-go:Player ;
     foaf:name               "M. Fitzpatrick" ;
     clo-go-plr:hasKlassName "Fitzpatrick" .
+
+
+clo-go-ind-plr:Finau
+    a                       clo-go:Player ;
+    foaf:name               "T. Finau" ;
+    clo-go-plr:hasKlassName "Finau" .

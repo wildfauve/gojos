@@ -9,8 +9,8 @@ from gojos import rdf
 from . import graphrepo
 
 
-class TournamentEventRepo(graphrepo.GraphRepo):
-    rdf_type = rdf.TOURNAMENT_EVENT
+class LeaderBoardRepo(graphrepo.GraphRepo):
+    rdf_type = rdf.LEADERBOARD
 
     def __init__(self, graph: Graph):
         self.graph = graph
@@ -19,13 +19,9 @@ class TournamentEventRepo(graphrepo.GraphRepo):
         rdf.subject_finder_creator(self.graph, event.subject, self.rdf_type, partial(self.creator, event))
         pass
 
-    def creator(self, event, g, sub):
-        g.add((sub, RDF.type, rdf.TOURNAMENT_EVENT))
-        g.add((sub, rdf.skos.notation, Literal(event.name)))
-        g.add((sub, rdf.isInYear, Literal(event.scheduled_in_year)))
-        g.add((sub, rdf.isEventOf, event.is_event_of.subject))
-        g.add((sub, rdf.hasFantasyPointsStrategy, event.points_strategy.subject()))
-        g.add((sub, rdf.hasCutStrategy, event.cut_strategy.subject()))
+    def creator(self, leaderboard, g, sub):
+        g.add((sub, RDF.type, rdf.LEADERBOARD))
+        g.add((sub, rdf.isForEvent, leaderboard.event.subject))
         return g
 
     def get_all(self):
@@ -36,19 +32,15 @@ class TournamentEventRepo(graphrepo.GraphRepo):
         return self.to_event(rdf.single_result_or_none(rdf.query(self.graph,
                                                                    self._sparql(year=year,
                                                                                 tournament_sub=tournament_sub))))
-    def add_player_as_entry(self, event, player):
-        self.graph.add((event.subject, rdf.hasEnteredPlayer, player.subject))
-        pass
-
-    def find_by_tournament(self, tournament_sub):
-        events = rdf.many(rdf.query(self.graph, self._sparql(tournament_sub=tournament_sub)))
-        return [self.to_event(event) for event in events]
-
-    def get_by_sub(self, sub):
+    def get_by_event_sub(self, event_sub):
+        sub, _, _ = rdf.first_match(self.graph, (event_sub, rdf.hasLeaderboard, None))
+        if not sub:
+            return None
+        breakpoint()
         return self.to_event(rdf.single_result_or_none(rdf.query(self.graph, self._sparql(sub=sub))))
 
     def get_entries(self, sub):
-        return [player_sub for _, _, player_sub in rdf.all_matching(self.graph, (sub, rdf.hasEnteredPlayer, None))]
+        return [player_sub for _, _, player_sub in  rdf.all_matching(self.graph, (sub, rdf.hasEnteredPlayer, None))]
 
     def to_event(self, result) -> Tuple:
         if not result:

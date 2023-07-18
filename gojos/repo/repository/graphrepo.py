@@ -6,7 +6,7 @@ class GraphRepo:
         self.graph = graph
 
 
-    def output(self):
+    def out(self):
         print(self.graph.serialize(format="ttl"))
         pass
 

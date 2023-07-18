@@ -38,7 +38,7 @@ def add_entries(tournament, year):
     return monad.Right(event)
 
 
-@commanda.command()
+@commanda.command(graph_names=['tournament'])
 def first_round_draw(tournament, year, draw_name, in_file):
     event = tournament.for_year(year, load=True)
 
@@ -61,17 +61,10 @@ def first_round_draw(tournament, year, draw_name, in_file):
     return monad.Right(draw)
 
 
-@commanda.command()
-def results(tournament, year, round_number, scores_only):
+@commanda.command(graph_names=['tournament'])
+def leaderboard_for_round(tournament, year, for_round):
     event = tournament.for_year(year, load=True)
 
-    rd_results = model.results(event=event,
-                               for_round=round_number,
-                               scores_only=scores_only)
+    rd_results = event.scores_for_round(for_round=for_round)
+    breakpoint()
     return monad.Right(event)
-
-
-def _get_player(draw_name, player_klass_name):
-    if draw_name == "MensSingles":
-        return getattr(atp_players, player_klass_name, None)
-    return getattr(wta_players, player_klass_name, None)

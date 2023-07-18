@@ -743,10 +743,17 @@ clo-go-ind-plr:Moldovan
     foaf:name               "M. Moldovan" ;
     clo-go-plr:hasKlassName "Moldovan" .
 
-clo-go-ind-plr:Molinari
+clo-go-ind-plr:Molinari_F
     a                       clo-go:Player ;
     foaf:name               "F. Molinari" ;
-    clo-go-plr:hasKlassName "Molinari" .
+    clo-go-plr:hasKlassName "Molinari_F" .
+
+
+clo-go-ind-plr:Molinari_E
+    a                       clo-go:Player ;
+    foaf:name               "E. Molinari" ;
+    clo-go-plr:hasKlassName "Molinari_E" .
+
 
 clo-go-ind-plr:Montgomery
     a                       clo-go:Player ;
@@ -1123,10 +1130,17 @@ clo-go-ind-plr:Tarren
     foaf:name               "C. Tarren" ;
     clo-go-plr:hasKlassName "Tarren" .
 
-clo-go-ind-plr:Taylor
+clo-go-ind-plr:Taylor_N
     a                       clo-go:Player ;
     foaf:name               "N. Taylor" ;
-    clo-go-plr:hasKlassName "Taylor" .
+    clo-go-plr:hasKlassName "Taylor_N" .
+
+
+clo-go-ind-plr:Taylor_B
+    a                       clo-go:Player ;
+    foaf:name               "B. Taylor" ;
+    clo-go-plr:hasKlassName "Taylor_B" .
+
 
 clo-go-ind-plr:Theegala
     a                       clo-go:Player ;
@@ -1218,10 +1232,22 @@ clo-go-ind-plr:Woodland
     foaf:name               "G. Woodland" ;
     clo-go-plr:hasKlassName "Woodland" .
 
-clo-go-ind-plr:Wu
+clo-go-ind-plr:Wu_D
     a                       clo-go:Player ;
     foaf:name               "D. Wu" ;
-    clo-go-plr:hasKlassName "Wu" .
+    clo-go-plr:hasKlassName "Wu_D" .
+
+
+clo-go-ind-plr:Wu_B
+    a                       clo-go:Player ;
+    foaf:name               "B. Wu" ;
+    clo-go-plr:hasKlassName "Wu_B" .
+
+
+clo-go-ind-plr:Wu_A
+    a                       clo-go:Player ;
+    foaf:name               "A. Wu" ;
+    clo-go-plr:hasKlassName "Wu_A" .
 
 clo-go-ind-plr:Yang
     a                       clo-go:Player ;

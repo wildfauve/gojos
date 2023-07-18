@@ -38,4 +38,5 @@ def entries():
         players.Hatton,
         players.Homa,
         players.Schauffele,
-        players.McIlroy]
+        players.McIlroy,
+        players.Finau]

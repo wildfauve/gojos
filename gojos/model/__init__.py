@@ -8,10 +8,15 @@ from .fantasy import (
 
 from .feature import FantasyFeature
 
+from .leaderboard import LeaderBoard
+
 from .player import (
     Player,
-    PlayerScore
 )
+
+from .player_score import PlayerScore
+
+from .round import Round
 
 from .tournament import (
     Cut,
