@@ -24,10 +24,12 @@ class LeaderBoard:
 
     @classmethod
     def load(cls, event: model.TournamentEvent):
-        lb = cls.repo().get_by_event_sub(event.subject)
-        if not lb:
+        lb_sub = cls.repo().get_by_event_sub(event.subject)
+        if not lb_sub:
             return cls.create(event)
-        return cls()
+        lb = cls(event=event, sub=lb_sub)
+        lb.load_rounds()
+        return lb
 
     def __init__(self, event: model.TournamentEvent, sub: URIRef = None):
         self.rounds = []
@@ -40,10 +42,23 @@ class LeaderBoard:
     def for_round(self, round_number):
         for_round = fn.find(partial(self._round_number_predicate, round_number), self.rounds)
         if not for_round:
-            rd = model.Round.create(self, round_number=round_number, previous_rounds=self.rounds)
+            rd = model.Round.create(self, round_number=round_number)
             self.rounds.append(rd)
+            self.__class__.repo().add_round(self, rd)
             return rd
         return for_round
+
+    def add_scoring_player(self, player_score_subject: URIRef):
+        self.__class__.repo().add_scoring_player(self, player_score_subject)
+        return self
+
+    def load_rounds(self):
+        rds = model.Round.load_for_leaderboard(self)
+        self.rounds = rds
+        ps = model.PlayerScore.load_for_leaderboard(self)
+        for rd in self.rounds:
+            rd.load_player_scores(ps)
+        return self
 
     def _scores_per_player_per_round(self):
         return sorted(reduce(self._player_scores_for_rd, self.rounds, {}).items(), key=lambda r: r[1]['total'])

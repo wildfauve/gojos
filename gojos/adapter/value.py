@@ -2,11 +2,7 @@ from __future__ import annotations
 from typing import Callable, List
 from dataclasses import dataclass
 
-import bs4
-
-from gojos.players import players
 from gojos import model
-from gojos.util import fn
 
 missing_file_name = '_temp/missing.py'
 
@@ -20,13 +16,13 @@ class ScrappedPlayer:
     total: int = None
 
     def __post_init__(self):
-        self.player_klass = players.match_player_by_name(self.name, self.player_module)
+        self.player_klass = model.Player.load(name=self.name)
         if not self.player_klass:
             with open('_temp/missing.py', 'a') as missing_file:
                 possible_klass_name = model.Player.format_player_klass_name(self.name)
-                if players.player_by_klass_name(possible_klass_name, self.player_module):
+                if (found_player := model.Player.load(klass_name=possible_klass_name)):
                     breakpoint()
-                plyr_def = (f"{possible_klass_name} = Player('{self.name}',klass_name='{possible_klass_name}')\n")
+                plyr_def = (f"{possible_klass_name} = model.Player.new('{self.name}',klass_name='{possible_klass_name}')\n")
                 print(f"Cant find player: {plyr_def}")
                 missing_file.write(plyr_def)
 

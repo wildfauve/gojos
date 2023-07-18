@@ -39,29 +39,6 @@ def add_entries(tournament, year):
 
 
 @commanda.command(graph_names=['tournament'])
-def first_round_draw(tournament, year, draw_name, in_file):
-    event = tournament.for_year(year, load=True)
-
-    if not event:
-        return monad.Left(event)
-
-    draw = model.Draw.get(event=event, name=draw_name)
-
-    first_rd = []
-    with open(in_file, newline='') as f:
-        reader = csv.reader(f, delimiter=',')
-        for match, pl1_klass_name, pl2_klass_name in reader:
-            pl1 = _get_player(draw_name, pl1_klass_name)
-            pl2 = _get_player(draw_name, pl2_klass_name)
-            if not pl1 or not pl2:
-                breakpoint()
-            first_rd.append((int(match), pl1, pl2))
-
-    draw.first_round_draw(first_rd)
-    return monad.Right(draw)
-
-
-@commanda.command(graph_names=['tournament'])
 def leaderboard_for_round(tournament, year, for_round):
     event = tournament.for_year(year, load=True)
 

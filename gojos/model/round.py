@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import List
+from typing import List, Tuple
 from functools import partial, reduce
 
 from rdflib import URIRef
@@ -17,14 +17,22 @@ class Round:
         cls.repo = model.GraphModel(repository.RoundRepo, model.GraphModel.tournament_graph)
 
     @classmethod
-    def create(cls, leaderboard: model.LeaderBoard, round_number: int, previous_rounds: List[model.Round]):
-        rd = cls(leaderboard=leaderboard, round_number=round_number, previous_rounds=previous_rounds)
+    def create(cls, leaderboard: model.LeaderBoard, round_number: int, ):
+        rd = cls(leaderboard=leaderboard, round_number=round_number)
         cls.repo().upsert(rd)
         return rd
 
-    def __init__(self, leaderboard: model.LeaderBoard, round_number: int, previous_rounds: List, sub: URIRef = None):
+    @classmethod
+    def load_for_leaderboard(cls, leaderboard: model.LeaderBoard):
+        return [cls.build_round(leaderboard, rd) for rd in cls.repo().get_all(leaderboard.subject)]
+
+    @classmethod
+    def build_round(cls, leaderboard: model.LeaderBoard, rd: Tuple):
+        sub, number = rd
+        return cls(leaderboard=leaderboard, round_number=number, sub=sub)
+
+    def __init__(self, leaderboard: model.LeaderBoard, round_number: int, sub: URIRef = None):
         self.round_number = round_number
-        self.previous_rounds = previous_rounds
         self.leaderboard = leaderboard
         self.subject = leaderboard.subject + f"/Round/{self.round_number}" if not sub else sub
         self.player_scores = []
@@ -63,11 +71,17 @@ class Round:
             breakpoint()
         return player_scr.rounds[self.subject]['current_pos']
 
+    def load_player_scores(self, player_scores: model.Player):
+        self.player_scores = player_scores
+        return self
+
     def player_score(self, player: model.Player, score: int):
-        score = model.PlayerScore.create(player=player, for_round=self, score=score)
+        ps = model.PlayerScore.create(player=player, for_round=self, score=score)
         # if self.round_number > 1:
         #     breakpoint()
-        self.player_scores.append(score)
+        if self.round_number == 1:  # That is, the first time this player has set a score; usually round 1
+            self.leaderboard.add_scoring_player(ps.subject)
+        self.player_scores.append(ps)
         return self
 
     def _set_position(self, accum, player_score):

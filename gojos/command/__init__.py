@@ -1,8 +1,7 @@
-from .controller import (
+from .fantasy import (
     cut_danger,
-    leaderboard_df,
+    build_leaderboard,
     rank_plot,
-    leaderboard_scrap
 )
 
 from .tournament import (

@@ -1,7 +1,7 @@
 import re
 
 
-def apply(fantasy_module, tournament):
+def apply_selections(fantasy_module, tournament):
     return [_apply_selections(fantasy_module, team_fn, tournament) for team_fn in
             _apply_functions_for_teams(fantasy_module)]
 

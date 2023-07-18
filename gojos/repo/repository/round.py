@@ -23,12 +23,18 @@ class RoundRepo(graphrepo.GraphRepo):
     def creator(self, for_round: model.Round, g, sub):
         g.add((sub, RDF.type, rdf.ROUND))
         g.add((sub, rdf.isRoundNumber, Literal(for_round.round_number)))
-        g.add((sub, rdf.isOnLeaderboard, for_round.leaderboard.subject))
-        [g.add((sub, rdf.hasPreviousRounds, rd.subject)) for rd in for_round.previous_rounds]
+        g.add((sub, rdf.isRoundOnLeaderboard, for_round.leaderboard.subject))
         return g
 
-    def get_all(self):
-        return [self.to_event(event) for event in (rdf.many(rdf.query(self.graph, self._sparql())))]
+    def get_all(self, lb_sub):
+        return [self.build_round(sub) for sub in rdf.all_matching(self.graph, (None, rdf.isRoundOnLeaderboard, lb_sub), form=rdf.subject)]
+
+
+    def build_round(self, rd_sub):
+        rd_triples = rdf.all_matching(self.graph, (rd_sub, None, None))
+        rd_number = rdf.triple_finder(rdf.isRoundNumber, rd_triples)
+        return (rd_sub, rd_number.toPython())
+
 
     def find_by_year(self, tournament_sub, year):
         return self.to_event(rdf.single_result_or_none(rdf.query(self.graph,

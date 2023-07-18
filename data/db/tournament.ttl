@@ -1,21 +1,172 @@
-@prefix clo-go:         <https://clojos.io/ontology/FantasyGolf/> .
+@prefix clo-go: <https://clojos.io/ontology/FantasyGolf/> .
 @prefix clo-go-ind-plr: <https://clojos.io/ontology/FantasyGolf/Ind/Player/> .
 @prefix clo-go-ind-tou: <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/> .
-@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023>
-    a                     clo-go:TournamentEvent ;
-    skos:notation         "TheOpen2023" ;
-    clo-go:hasCutStrategy <https://clojos.io/ontology/Fantasy/CutStategy/CutTop60AndTies> ;
-    clo-go:hasFantasyPointsStrategy
-                          <https://clojos.io/ontology/Fantasy/FantasyPointsStrategy/InvertedPosition/Points1_4_10> ;
-    clo-go:isEventOf      clo-go-ind-tou:TheOpen ;
-    clo-go:isInYear       2023 .
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> a clo-go:Leaderboard ;
+    clo-go:isForEvent <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023> .
 
-clo-go-ind-tou:TheOpen
-    a                     clo-go:Tournament ;
-    skos:notation         "The Open" ;
-    clo-go:hasPermId      "to" ;
+clo-go-ind-tou:TheOpen a clo-go:Tournament ;
+    skos:notation "The Open" ;
+    clo-go:hasPermId "to" ;
     clo-go:hasSubjectName "TheOpen" .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023> a clo-go:TournamentEvent ;
+    skos:notation "TheOpen2023" ;
+    clo-go:hasCutStrategy <https://clojos.io/ontology/Fantasy/CutStategy/CutTop70AndTies> ;
+    clo-go:hasEnteredPlayer clo-go-ind-plr:An,
+        clo-go-ind-plr:Ancer,
+        clo-go-ind-plr:Arnaus,
+        clo-go-ind-plr:Ballester_Barrio,
+        clo-go-ind-plr:Barker,
+        clo-go-ind-plr:Barron,
+        clo-go-ind-plr:Bezuidenhout,
+        clo-go-ind-plr:Björk,
+        clo-go-ind-plr:Bland,
+        clo-go-ind-plr:Bradbury,
+        clo-go-ind-plr:Bradley,
+        clo-go-ind-plr:Burns,
+        clo-go-ind-plr:Campillo,
+        clo-go-ind-plr:Canter,
+        clo-go-ind-plr:Cantlay,
+        clo-go-ind-plr:Cañizares,
+        clo-go-ind-plr:Christensen,
+        clo-go-ind-plr:Cink,
+        clo-go-ind-plr:Clark,
+        clo-go-ind-plr:Clarke,
+        clo-go-ind-plr:Conners,
+        clo-go-ind-plr:Crowe,
+        clo-go-ind-plr:Daly,
+        clo-go-ind-plr:Day,
+        clo-go-ind-plr:DeChambeau,
+        clo-go-ind-plr:Detry,
+        clo-go-ind-plr:Els,
+        clo-go-ind-plr:Elvira,
+        clo-go-ind-plr:English,
+        clo-go-ind-plr:Farr,
+        clo-go-ind-plr:Ferguson,
+        clo-go-ind-plr:Finau,
+        clo-go-ind-plr:Fischer,
+        clo-go-ind-plr:Fitzpatrick,
+        clo-go-ind-plr:Fitzpatrick_M,
+        clo-go-ind-plr:Fleetwood,
+        clo-go-ind-plr:Fowler,
+        clo-go-ind-plr:Fox,
+        clo-go-ind-plr:Gooch,
+        clo-go-ind-plr:Grace,
+        clo-go-ind-plr:Griffin,
+        clo-go-ind-plr:Grillo,
+        clo-go-ind-plr:Harman,
+        clo-go-ind-plr:Harrington,
+        clo-go-ind-plr:Hatton,
+        clo-go-ind-plr:Henley,
+        clo-go-ind-plr:Herbert,
+        clo-go-ind-plr:Higa,
+        clo-go-ind-plr:Hillier,
+        clo-go-ind-plr:Hirata,
+        clo-go-ind-plr:Hodges,
+        clo-go-ind-plr:Hoge,
+        clo-go-ind-plr:Hojgaard_N,
+        clo-go-ind-plr:Hojgaard_R,
+        clo-go-ind-plr:Homa,
+        clo-go-ind-plr:Horschel,
+        clo-go-ind-plr:Hoshino,
+        clo-go-ind-plr:Hovland,
+        clo-go-ind-plr:Im,
+        clo-go-ind-plr:Iwata,
+        clo-go-ind-plr:Janewattananond,
+        clo-go-ind-plr:Johnson,
+        clo-go-ind-plr:Johnson_D,
+        clo-go-ind-plr:Kanaya,
+        clo-go-ind-plr:Kang,
+        clo-go-ind-plr:Kim_B,
+        clo-go-ind-plr:Kim_M,
+        clo-go-ind-plr:Kim_S_W,
+        clo-go-ind-plr:Kim_T,
+        clo-go-ind-plr:Kirk,
+        clo-go-ind-plr:Kitayama,
+        clo-go-ind-plr:Koepka,
+        clo-go-ind-plr:Lamprecht,
+        clo-go-ind-plr:Langasque,
+        clo-go-ind-plr:Larrazabal,
+        clo-go-ind-plr:Lawrence,
+        clo-go-ind-plr:Lee_K,
+        clo-go-ind-plr:Lee_M,
+        clo-go-ind-plr:Lingmerth,
+        clo-go-ind-plr:Long,
+        clo-go-ind-plr:Lowry,
+        clo-go-ind-plr:Luiten,
+        clo-go-ind-plr:MacIntyre,
+        clo-go-ind-plr:Maguire,
+        clo-go-ind-plr:Matsuyama,
+        clo-go-ind-plr:McCarthy,
+        clo-go-ind-plr:McIlroy,
+        clo-go-ind-plr:McKinney,
+        clo-go-ind-plr:Meronk,
+        clo-go-ind-plr:Micheluzzi,
+        clo-go-ind-plr:Mickelson,
+        clo-go-ind-plr:Migliozzi,
+        clo-go-ind-plr:Molinari_F,
+        clo-go-ind-plr:Moore,
+        clo-go-ind-plr:Morikawa,
+        clo-go-ind-plr:Mullinax,
+        clo-go-ind-plr:Nakajima,
+        clo-go-ind-plr:Niemann,
+        clo-go-ind-plr:Noren,
+        clo-go-ind-plr:Olesen,
+        clo-go-ind-plr:Oliveira,
+        clo-go-ind-plr:Oosthuizen,
+        clo-go-ind-plr:Otaegui,
+        clo-go-ind-plr:Paul,
+        clo-go-ind-plr:Perez,
+        clo-go-ind-plr:Pieters,
+        clo-go-ind-plr:Poston,
+        clo-go-ind-plr:Power,
+        clo-go-ind-plr:Putnam,
+        clo-go-ind-plr:Rahm,
+        clo-go-ind-plr:Ramsay,
+        clo-go-ind-plr:Reed,
+        clo-go-ind-plr:Riley,
+        clo-go-ind-plr:Robertson,
+        clo-go-ind-plr:Robinson_Thompson,
+        clo-go-ind-plr:Rohwer,
+        clo-go-ind-plr:Rose,
+        clo-go-ind-plr:Rozner,
+        clo-go-ind-plr:Samooja,
+        clo-go-ind-plr:Schauffele,
+        clo-go-ind-plr:Scheffler,
+        clo-go-ind-plr:Schenk,
+        clo-go-ind-plr:Schwartzel,
+        clo-go-ind-plr:Scott,
+        clo-go-ind-plr:Semikawa,
+        clo-go-ind-plr:Sharma,
+        clo-go-ind-plr:Shinkwin,
+        clo-go-ind-plr:Siem,
+        clo-go-ind-plr:Smith,
+        clo-go-ind-plr:Smith_Ca,
+        clo-go-ind-plr:Smyth,
+        clo-go-ind-plr:Southgate,
+        clo-go-ind-plr:Spieth,
+        clo-go-ind-plr:Stallings,
+        clo-go-ind-plr:Stenson,
+        clo-go-ind-plr:Stewart,
+        clo-go-ind-plr:Straka,
+        clo-go-ind-plr:Strydom,
+        clo-go-ind-plr:Syme,
+        clo-go-ind-plr:Taylor_N,
+        clo-go-ind-plr:Theegala,
+        clo-go-ind-plr:Thomas,
+        clo-go-ind-plr:Todd,
+        clo-go-ind-plr:Valimaki,
+        clo-go-ind-plr:Wallace,
+        clo-go-ind-plr:Warren,
+        clo-go-ind-plr:Wiebe,
+        clo-go-ind-plr:Willett,
+        clo-go-ind-plr:Wilson,
+        clo-go-ind-plr:Woodland,
+        clo-go-ind-plr:Young_Cam ;
+    clo-go:hasFantasyPointsStrategy <https://clojos.io/ontology/Fantasy/FantasyPointsStrategy/InvertedPosition/Points1_4_10> ;
+    clo-go:isEventOf clo-go-ind-tou:TheOpen ;
+    clo-go:isInYear 2023 .
 

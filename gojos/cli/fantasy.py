@@ -1,12 +1,11 @@
 import click
 
 from gojos import command, presenter
-from gojos.majors import tournaments
-
+from . import helpers
 from gojos.initialiser import environment, db
 
 def tournament_names():
-    return tournaments.tournament_names()
+    return helpers.tournament_names()
 
 
 @click.group()
@@ -14,16 +13,15 @@ def cli():
     pass
 
 @click.command()
-@click.option("--tournament", "-t",
-              type=click.Choice(tournament_names()),
-              help="The name of the tournament")
+@click.option("--tournament", "-t", type=click.Choice(tournament_names()), help="The name of the tournament")
+@click.option("--year", "-y", type=int)
 @click.option("--to-discord/--to-shell", "-d/-s", required=True, default=False, help="To discord or to the shell")
-def leaderboard(tournament, to_discord):
+def leaderboard(tournament, year, to_discord):
     """
     Starts the tournament,  applies the results, applies the fantasy selection and prints the leaderboard
     """
     presenter.event_team_scores_table(
-        command.leaderboard_df(tournament),
+        command.build_leaderboard(tournament=helpers.to_tournament(tournament), year=year, to_discord=to_discord),
         to_discord
     )
     pass
@@ -66,5 +64,4 @@ def cut_danger(tournament, to_discord):
 
 cli.add_command(leaderboard)
 cli.add_command(plot)
-cli.add_command(leaderboard_scrap)
 cli.add_command(cut_danger)

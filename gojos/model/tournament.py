@@ -121,6 +121,17 @@ class CutTop60AndTies(Cut):
         return self.cut_position - position
 
 
+class CutTop70AndTies(Cut):
+    cut_position = 70
+
+    def _position_from_cut(self, position):
+        if isinstance(position, model.PlayerState) or not position:
+            return -1
+        if position == self.cut_position:
+            return 0
+        return self.cut_position - position
+
+
 class TournamentFinder(singleton.Singleton):
 
     def add_touraments(self, tournies):

@@ -1,7 +1,8 @@
 from __future__ import annotations
-from typing import Tuple
+from typing import Tuple, List, NamedTuple
 from functools import partial
 from itertools import groupby
+# from collections import namedtuple
 
 from rdflib import Graph, URIRef, Literal, RDF, BNode
 
@@ -9,6 +10,17 @@ from gojos import rdf, model
 from gojos.util import fn
 
 from . import graphrepo
+
+
+RoundScore = NamedTuple('RoundScore', [('round_number', int),
+                                       ('score', int),
+                                       ("position", int),
+                                       ('running_total', int),
+                                       ('round_subject', URIRef)])
+PlayerScore = NamedTuple('PlayerScore', [('subject', URIRef),
+                                         ('total', int),
+                                         ('position', int),
+                                         ('round_scores', RoundScore)])
 
 
 class PlayerScoreRepo(graphrepo.GraphRepo):
@@ -40,6 +52,40 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
         self.create_round_bnode(self.graph, score.subject, rd_sub, score.rounds[rd_sub])
         self.graph.set((score.subject, rdf.hasScoreTotal, Literal(score.total)))
 
+    def scores_on_leaderboard(self, lb_sub: URIRef):
+        return [self.load_player_score(ps) for ps in
+                rdf.all_matching(self.graph, (None, rdf.isOnLeaderboard, lb_sub), form=rdf.subject)]
+
+    def load_player_score(self, sub):
+        triples = rdf.all_matching(self.graph, (sub, None, None))
+        total = rdf.triple_finder(rdf.hasScoreTotal, triples)
+        pos = rdf.triple_finder(rdf.isInCurrentPosition, triples)
+        rd_scores = [self.load_rd_bnodes(bn) for bn in
+                     rdf.triple_finder(rdf.hasRoundScores, triples, filter_fn=fn.select, builder=rdf.all_objects)]
+        return PlayerScore(sub, total, pos, rd_scores)
+
+    def load_rd_bnodes(self, bn_sub):
+        """
+        [ clo-go:hasPositionAfterRound 3 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 137 ;
+            clo-go:isRoundNumber 2 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/ClojosOpen/2023/Leaderboard/Round/2> ]
+        :param bn_sub:
+        :return:
+        """
+        triples = rdf.all_matching(self.graph, (bn_sub, None, None))
+        rd_num = rdf.triple_finder(rdf.isRoundNumber, triples)
+        pos = rdf.triple_finder(rdf.hasPositionAfterRound, triples)
+        score = rdf.triple_finder(rdf.hasRoundScore, triples)
+        running_total = rdf.triple_finder(rdf.hasRunningScoreTotal, triples)
+        rd_sub = rdf.triple_finder(rdf.isRoundSubject, triples)
+        return RoundScore(rd_num.toPython(),
+                          score.toPython(),
+                          pos.toPython(),
+                          running_total.toPython(),
+                          rd_sub)
+
     def create_round_bnode(self, g, sub, round_sub, score_for_round):
         bn = BNode()
         g.add((bn, rdf.isRoundSubject, round_sub))
@@ -56,10 +102,12 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
         self.graph.set((this_rd_bnode, rdf.hasPositionAfterRound, Literal(position)))
 
     def find_bn_for_round(self, score_sub, rd_sub):
-        return self.find_fn_for_rd_sub(rd_sub, rdf.all_matching(self.graph, (score_sub, rdf.hasRoundScores, None), form=rdf.object))
+        return self.find_fn_for_rd_sub(rd_sub, rdf.all_matching(self.graph, (score_sub, rdf.hasRoundScores, None),
+                                                                form=rdf.object))
 
     def find_fn_for_rd_sub(self, rd_sub, bnodes: BNode):
-        bn = fn.remove_none([rdf.first_match(self.graph, (bn, rdf.isRoundSubject, rd_sub), form=rdf.subject) for bn in bnodes])
+        bn = fn.remove_none(
+            [rdf.first_match(self.graph, (bn, rdf.isRoundSubject, rd_sub), form=rdf.subject) for bn in bnodes])
         if not bn or len(bn) > 1:
             breakpoint()
         return bn[0]
