@@ -13,6 +13,10 @@ class Round:
     repo = model.GraphModel(repository.RoundRepo, model.GraphModel.tournament_graph)
 
     @classmethod
+    def reset(cls):
+        cls.repo = model.GraphModel(repository.RoundRepo, model.GraphModel.tournament_graph)
+
+    @classmethod
     def create(cls, leaderboard: model.LeaderBoard, round_number: int, previous_rounds: List[model.Round]):
         rd = cls(leaderboard=leaderboard, round_number=round_number, previous_rounds=previous_rounds)
         cls.repo().upsert(rd)
@@ -32,9 +36,11 @@ class Round:
         return f"{cls_name}({', '.join(fn.remove_none(components))})"
 
     def upsert_scores(self):
-        [self.player_score(scrapped_player.player_klass, int(scrapped_player.round_scores[0])) for scrapped_player in adapter.build_leaderboard(for_round=self.round_number)]
+        [self.player_score(scrapped_player.player_klass, int(scrapped_player.round_scores[0])) for scrapped_player in
+         adapter.build_leaderboard(for_round=self.round_number)]
         self.done()
         return self
+
     def done(self):
         """
         Set positions based on round_score

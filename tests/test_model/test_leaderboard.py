@@ -5,8 +5,14 @@ from gojos.players import mens_players
 from tests.shared import tournament
 from tests.fixtures import results
 
+def setup_function():
+    model.Tournament.reset()
+    model.Round.reset()
+    model.LeaderBoard.reset()
+    model.TournamentEvent.reset()
+    model.PlayerScore.reset()
 
-def test_add_first_round_scores(configure_repo):
+def test_add_first_round_scores(configure_repo, build_players):
     event = create_event()
 
     leaderboard = event.leaderboard
@@ -15,14 +21,14 @@ def test_add_first_round_scores(configure_repo):
 
     results.round_1(event)
 
-    round1 = leaderboard.for_round(1)
+    leaderboard.for_round(1)
 
     assert leaderboard.positions_for_player_per_round(mens_players.Morikawa, []) == [1]
     assert leaderboard.positions_for_player_per_round(mens_players.Schauffele, []) == [10]
 
 
 
-def test_add_2nd_round_scores(configure_repo):
+def test_add_2nd_round_scores(configure_repo, build_players):
     event = create_event()
 
     leaderboard = event.leaderboard
@@ -30,8 +36,6 @@ def test_add_2nd_round_scores(configure_repo):
     results.round_2(event)
 
     round2 = leaderboard.for_round(2)
-
-    breakpoint()
 
     assert leaderboard.positions_for_player_per_round(mens_players.Fleetwood, []) == [3, 1]
     assert leaderboard.positions_for_player_per_round(mens_players.Finau, []) == [2, 9]

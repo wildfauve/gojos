@@ -15,7 +15,7 @@ class Team:
     repo = model.GraphModel(repository.TeamRepo, model.GraphModel.fantasy_graph)
 
     @classmethod
-    def init(cls):
+    def reset(cls):
         cls.repo = model.GraphModel(repository.TeamRepo, model.GraphModel.fantasy_graph)
 
     @classmethod

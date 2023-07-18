@@ -16,6 +16,11 @@ class PlayerScore:
     player_score_cache = []
 
     @classmethod
+    def reset(cls):
+        cls.player_score_cache = []
+        cls.repo = model.GraphModel(repository.PlayerScoreRepo, model.GraphModel.tournament_graph)
+
+    @classmethod
     def create(cls, player: model.Player, for_round: model.Round, score: int):
         if (from_cache := cls.player_from_cache(player)):
             return from_cache.score_for_round(for_round=for_round, score=score)

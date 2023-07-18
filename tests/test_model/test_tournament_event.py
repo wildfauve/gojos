@@ -4,6 +4,10 @@ from gojos.players import mens_players
 
 from tests.shared import tournament
 
+def setup_function():
+    model.Tournament.reset()
+    model.TournamentEvent.reset()
+
 
 def test_create_event(configure_repo):
     tournament.create_tournie()
@@ -44,7 +48,7 @@ def test_strategies(configure_repo):
     assert isinstance(same_event.cut_strategy, model.CutTop60AndTies)
 
 
-def test_add_player_entries(configure_repo):
+def test_add_player_entries(configure_repo, build_players):
     tournie = tournament.create_tournie()
 
     event = tournie.make_event(year=2023, cut_strategy=model.Cut.build("CutTop60AndTies"))
@@ -58,7 +62,7 @@ def test_add_player_entries(configure_repo):
 
 
 
-def test_get_all_events(configure_repo):
+def test_get_all_events(configure_repo, build_players):
     tournament.clojos_open_2023()
 
     results = model.TournamentEvent.get_all()

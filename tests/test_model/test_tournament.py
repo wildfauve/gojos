@@ -1,6 +1,10 @@
 from gojos import model
 from gojos import repo
 
+def setup_function():
+    model.Tournament.reset()
+    model.TournamentEvent.reset()
+
 
 def test_create_tournament(configure_repo):
     tournie = model.GrandSlam.create(name="The Open", subject_name="TheOpen", perma_id="to")

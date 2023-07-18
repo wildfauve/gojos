@@ -1,7 +1,7 @@
 from gojos import model
 
 def setup_function():
-    model.Team.init()
+    model.Team.reset()
 
 def test_create_fantasy_team(configure_repo):
     team = model.Team.create("Fauve", "Perky, Jacque, Albert",

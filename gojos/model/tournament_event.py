@@ -21,6 +21,10 @@ class TournamentEvent:
     repo = model.GraphModel(repository.TournamentEventRepo, model.GraphModel.tournament_graph)
 
     @classmethod
+    def reset(cls):
+        cls.repo = model.GraphModel(repository.TournamentEventRepo, model.GraphModel.tournament_graph)
+
+    @classmethod
     def create(cls,
                year: int,
                tournament_name: str = None,
@@ -33,7 +37,8 @@ class TournamentEvent:
 
     @classmethod
     def get_all(cls):
-        return [cls.build_event(event[3], event) for event in cls.repo().get_all()]
+        # The tournament URI is the last value in the array
+        return [cls.build_event(event[-1], event) for event in cls.repo().get_all()]
 
     @classmethod
     def get(cls, year: int, tournament):

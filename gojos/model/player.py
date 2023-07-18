@@ -50,8 +50,9 @@ class Player:
     player_cache = PlayerCache
 
     @classmethod
-    def init(cls):
-        cls.repo = model.GraphModel(repository.TeamRepo, model.GraphModel.player_graph)
+    def reset(cls):
+        cls.repo = model.GraphModel(repository.PlayerRepo, model.GraphModel.player_graph)
+        cls.player_cache = PlayerCache
 
     @classmethod
     def new(cls, name, klass_name: str, alt_names: List = None):

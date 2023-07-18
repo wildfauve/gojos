@@ -13,6 +13,10 @@ class LeaderBoard:
     repo = model.GraphModel(repository.LeaderBoardRepo, model.GraphModel.tournament_graph)
 
     @classmethod
+    def reset(cls):
+        cls.repo = model.GraphModel(repository.LeaderBoardRepo, model.GraphModel.tournament_graph)
+
+    @classmethod
     def create(cls, event: model.TournamentEvent):
         lb = cls(event=event)
         cls.repo().upsert(lb)

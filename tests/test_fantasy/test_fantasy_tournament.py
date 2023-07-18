@@ -3,9 +3,9 @@ from gojos import model
 from tests.shared import tournament
 
 def setup_function():
-    model.Team.init()
+    model.Team.reset()
 
-def test_create_fantasy_tournament(configure_repo):
+def test_create_fantasy_tournament(configure_repo, build_players):
     team = create_team()
 
     event = tournament.clojos_open_2023()

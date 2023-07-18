@@ -13,6 +13,10 @@ class Tournament:
     repo = model.GraphModel(repository.TournamentRepo, model.GraphModel.tournament_graph)
 
     @classmethod
+    def reset(cls):
+        cls.repo = model.GraphModel(repository.TournamentRepo, model.GraphModel.tournament_graph)
+
+    @classmethod
     def create(cls, name: str, subject_name: str, perma_id: str):
         tournie = cls(name, subject_name, perma_id)
         cls.repo().upsert(tournie)

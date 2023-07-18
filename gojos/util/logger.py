@@ -18,7 +18,7 @@ class LogType(Enum):
 logging_switch = {
     LogType.PERF_LOG: True,
     LogType.DEBUG: True,
-    LogType.INFO: True
+    LogType.INFO: False
 }
 
 

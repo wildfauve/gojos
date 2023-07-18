@@ -2,8 +2,8 @@ from gojos.model import player
 from gojos.players import mens_players
 
 
-def test_create_new_player(configure_repo_empty_players):
-    player.Player.clear_cache()
+def test_create_new_player(configure_repo):
+    player.Player.reset()
     pl = player.Player.new("R. McIlroy", klass_name="McIlroy")
 
     assert pl.name == "R. McIlroy"
@@ -17,7 +17,7 @@ def test_create_new_player(configure_repo_empty_players):
 
 
 def test_search_on(configure_repo_empty_players):
-    player.Player.clear_cache()
+    player.Player.reset()
     add_players()
 
     pl1_name = player.Player.load(name="R. McIlroy")
@@ -26,8 +26,8 @@ def test_search_on(configure_repo_empty_players):
     assert pl1_name == pl1_klass_name
 
 
-def test_load_all_players(configure_repo_empty_players):
-    player.Player.clear_cache()
+def test_load_all_players(configure_repo):
+    player.Player.reset()
     add_players()
 
     player.Player.loadall()
@@ -36,8 +36,8 @@ def test_load_all_players(configure_repo_empty_players):
 
 
 
-def test_player_set_on_class_module(configure_repo_empty_players):
-    player.Player.clear_cache()
+def test_player_set_on_class_module(configure_repo):
+    player.Player.reset()
     add_players()
     player.Player.loadall()
 
@@ -57,7 +57,6 @@ def test_player_set_on_class_module(configure_repo_empty_players):
 
 
 def test_find_player_not_defined(configure_repo_empty_players):
-    player.Player.clear_cache()
     add_players()
 
     assert not player.Player.load("Not A Real Name")

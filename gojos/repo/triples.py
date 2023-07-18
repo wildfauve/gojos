@@ -24,17 +24,25 @@ class Db:
         self.ttl_writer = ttl_writer
 
     def drop(self):
-        if RepoContext().fantasy_triples_location.exists():
-            self.ttl_writer(self.init_empty_graph_fn(), file=RepoContext().fantasy_triples_location)
-        if RepoContext().tournament_triples_location.exists():
-            self.ttl_writer(self.init_empty_graph_fn(), file=RepoContext().tournament_triples_location)
+        self.players_graph = None
+        self.tournament_graph = None
+        self.fantasy_graph = None
+        [self.drop_graph(location) for location in self.graph_locations()]
         return self
 
     def graph_locations(self):
         return ['fantasy', 'players', 'tournament']
+
     def load(self):
         [self.load_graph(location) for location in self.graph_locations()]
         return self
+
+    def drop_graph(self, loc_name: str):
+        loc_path = self.location_name_to_location(loc_name)
+        if loc_path.exists():
+            self.ttl_writer(self.init_empty_graph_fn(), file=loc_path)
+        return self
+
 
     def load_graph(self, loc_name: str):
         loc_path = self.location_name_to_location(loc_name)
