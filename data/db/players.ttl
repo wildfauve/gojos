@@ -287,9 +287,9 @@ clo-go-ind-plr:Fisher a clo-go:Player ;
     foaf:name "R. Fisher" ;
     clo-go-plr:hasKlassName "Fisher" .
 
-clo-go-ind-plr:Fitzpatrick a clo-go:Player ;
+clo-go-ind-plr:Fitzpatrick_A a clo-go:Player ;
     foaf:name "A. Fitzpatrick" ;
-    clo-go-plr:hasKlassName "Fitzpatrick" .
+    clo-go-plr:hasKlassName "Fitzpatrick_A" .
 
 clo-go-ind-plr:Fitzpatrick_M a clo-go:Player ;
     foaf:name "M. Fitzpatrick" ;

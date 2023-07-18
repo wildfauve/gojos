@@ -24,7 +24,7 @@ def selection(major):
     Add 10 teams to your roster.
 
     An example of adding Rory to your roster is:
-    TEAM.major(major).selection(players.McIlroy)
+    TEAM.major(major).on_roster(players.McIlroy)
     """
     
     TEAM.major(major).on_roster(players.McIlroy)
@@ -37,7 +37,6 @@ def selection(major):
     TEAM.major(major).on_roster(players.Hatton)
     TEAM.major(major).on_roster(players.Molinari)
     TEAM.major(major).on_roster(players.Macintyre)
-    
     pass
 
 

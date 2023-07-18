@@ -48,7 +48,7 @@ clo-go-ind-tou:TheOpen a clo-go:Tournament ;
         clo-go-ind-plr:Ferguson,
         clo-go-ind-plr:Finau,
         clo-go-ind-plr:Fischer,
-        clo-go-ind-plr:Fitzpatrick,
+        clo-go-ind-plr:Fitzpatrick_A,
         clo-go-ind-plr:Fitzpatrick_M,
         clo-go-ind-plr:Fleetwood,
         clo-go-ind-plr:Fowler,
