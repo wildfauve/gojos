@@ -2,7 +2,7 @@ from gojos import model
 from gojos import repo, fantasy
 from gojos.players import mens_players
 
-from tests.shared import tournament
+from tests.shared import *
 from tests.fixtures import results
 
 def setup_function():
@@ -13,9 +13,9 @@ def setup_function():
     model.PlayerScore.reset()
 
 def test_add_first_round_scores(configure_repo, build_players):
-    event = create_event()
+    event = clojos_open_2023()
 
-    leaderboard = event.leaderboard
+    leaderboard = event.load().leaderboard
 
     assert not leaderboard.rounds
 
@@ -29,9 +29,10 @@ def test_add_first_round_scores(configure_repo, build_players):
 
 
 def test_add_2nd_round_scores(configure_repo, build_players):
-    event = create_event()
+    event = clojos_open_2023()
 
-    leaderboard = event.leaderboard
+    leaderboard = event.load().leaderboard
+
     results.round_1(event)
     results.round_2(event)
 
@@ -43,11 +44,11 @@ def test_add_2nd_round_scores(configure_repo, build_players):
 
 
 def test_load_the_event(configure_repo, build_players):
-    create_event_with_results()
+    event = clojos_open_2023_with_results()
 
     finder = model.tournament.tournaments()
 
-    co2023 = finder.slam("ClojosOpen").for_year(2023)
+    co2023 = finder.slam("ClojosOpen").for_year(2023, True)
 
     leaderboard = co2023.leaderboard
 
@@ -57,12 +58,3 @@ def test_load_the_event(configure_repo, build_players):
 
 
 # Helpers
-
-def create_event_with_results():
-    event = create_event()
-    results.round_1(event)
-    results.round_2(event)
-
-
-def create_event():
-    return tournament.clojos_open_2023()

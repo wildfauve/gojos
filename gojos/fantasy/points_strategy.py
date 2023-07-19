@@ -7,11 +7,12 @@ import sys
 from rdflib import URIRef
 
 from gojos import model, rdf
+from gojos.util import fn
 
 
 class Points1_4_10(Enum):
     POINTS_PER_POSITION = 1
-    POINTS_FOR_MISSED_CUT = 0
+    POINTS_FOR_MISSED_CUT = None
     MAX_WILDCARD = 4
     MAX_PLAYERS = 10
 
@@ -21,7 +22,7 @@ class Points1_2_4(Enum):
     Class for testing only.
     """
     POINTS_PER_POSITION = 1
-    POINTS_FOR_MISSED_CUT = 0
+    POINTS_FOR_MISSED_CUT = None
     MAX_WILDCARD = 2
     MAX_PLAYERS = 4
 
@@ -61,13 +62,22 @@ class InvertedPosition(PointsStrategyCalculator):
         return self._one_pt_per_inverted_position(roster_player, wildcards, explain)
 
     def _one_pt_per_inverted_position(self, roster_player: model.RosterPlayer, wildcards, explain: bool = False) -> List[int]:
-        return [self._invert_position(roster_player, pos) for pos in
-                roster_player.event.positions_for_player_per_round(roster_player.player, wildcards)]
+        positions = self.positions_for_player(roster_player, wildcards)
+        return [self._invert_position(roster_player, positions, pos) for pos in positions]
 
-    def _invert_position(self, roster_player, pos):
+    def positions_for_player(self, roster_player, wildcards):
+        return roster_player.event.positions_for_player_per_round(roster_player.player, wildcards)
+
+    def _invert_position(self, roster_player, all_positions, pos):
         if isinstance(pos, model.PlayerState) or not pos:
-            return self.pts_strategy.POINTS_FOR_MISSED_CUT.value
+            if self.pts_strategy.POINTS_FOR_MISSED_CUT.value is not None:
+                return self.pts_strategy.POINTS_FOR_MISSED_CUT.value
+            return self._points_with_factor(roster_player.event.number_of_entries + 1 - self._position_at_cut(all_positions))
         return self._points_with_factor(roster_player.event.number_of_entries + 1 - pos)
+
+    def _position_at_cut(self, all_positions):
+        return fn.remove(lambda pos: isinstance(pos, model.PlayerState), all_positions)[-1]
+
 
     def _points_with_factor(self, points: int) -> int:
         return points * self.pts_strategy.POINTS_PER_POSITION.value

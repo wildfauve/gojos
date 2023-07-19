@@ -33,8 +33,8 @@ def selection(major):
     TEAM.major(major).on_roster(players.Lowry)
     TEAM.major(major).on_roster(players.Scheffler)
     TEAM.major(major).on_roster(players.Hatton)
-    TEAM.major(major).on_roster(players.Hojgarrd)
-    TEAM.major(major).on_roster(players.Macintyre)
+    TEAM.major(major).on_roster(players.Hojgaard_N)
+    TEAM.major(major).on_roster(players.MacIntyre)
     pass
 
 def wildcards(major):

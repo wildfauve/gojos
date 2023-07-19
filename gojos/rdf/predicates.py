@@ -40,5 +40,6 @@ hasRoundScores = clo_go.hasRoundScores
 hasRunningScoreTotal = clo_go.hasRunningScoreTotal
 isInCurrentPosition = clo_go.isInCurrentPosition
 hasPositionAfterRound = clo_go.hasPositionAfterRound
+playerIsInState = clo_go.playerIsInState
 
 

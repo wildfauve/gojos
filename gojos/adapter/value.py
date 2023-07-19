@@ -3,6 +3,7 @@ from typing import Callable, List
 from dataclasses import dataclass
 
 from gojos import model
+from gojos.util import logger
 
 missing_file_name = '_temp/missing.py'
 
@@ -23,7 +24,7 @@ class ScrappedPlayer:
                 if (found_player := model.Player.load(klass_name=possible_klass_name)):
                     breakpoint()
                 plyr_def = (f"{possible_klass_name} = model.Player.new('{self.name}',klass_name='{possible_klass_name}')\n")
-                print(f"Cant find player: {plyr_def}")
+                logger.debug(f"Cant find player: {plyr_def}")
                 missing_file.write(plyr_def)
 
     def player_entry_klass_name(self):

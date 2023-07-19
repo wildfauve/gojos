@@ -3,21 +3,30 @@ from gojos import model
 from gojos.fantasy import points_strategy
 from gojos.players import mens_players as players
 
-from tests.fixtures import results
+from tests import fixtures
 
 
 def create_tournie():
     return model.GrandSlam.create(name="Clojos Open", subject_name="ClojosOpen", perma_id="co")
 
+
 def tournament_in_fantasy(tournament_to_return, _name):
     return tournament_to_return
 
 
-# def clojos_open_2023_with_results():
-#     tournie = clojos_open_2023()
-#
-#     tournaments.add_results(tournament=tournie, results_module=results)
-#     return tournie
+def clojos_open_2023_with_results():
+    event = clojos_open_2023().load()
+    fixtures.round_1(event)
+    fixtures.round_2(event)
+    return event
+
+
+def clojos_open_2023_with_3_rds_and_missed_cut():
+    event = clojos_open_2023().load()
+    fixtures.round_1(event)
+    fixtures.round_2_with_mc(event)
+    fixtures.round_3(event)
+    return event
 
 
 def clojos_open_2023():
@@ -42,15 +51,15 @@ def build_players():
     model.Player.new(name="T. Finau", klass_name="Finau")
     model.Player.loadall()
 
+
 def entries():
-    return [
-        players.Fleetwood,
-        players.Scheffler,
-        players.Fitzpatrick,
-        players.Rahm,
-        players.Hovland,
-        players.Hatton,
-        players.Homa,
-        players.Schauffele,
-        players.McIlroy,
-        players.Finau]
+    return [players.Fleetwood,
+            players.Scheffler,
+            players.Fitzpatrick,
+            players.Rahm,
+            players.Hovland,
+            players.Hatton,
+            players.Homa,
+            players.Schauffele,
+            players.Finau,
+            players.Morikawa]

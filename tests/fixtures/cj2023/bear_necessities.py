@@ -10,35 +10,22 @@ TEAM = None
 
 
 def team():
-    this.TEAM = model.Team.get('Gelato Giants')
+    this.TEAM = model.Team.get('Bear Necessities')
 
 
-def team_gelato_giants(major):
+def team_bear_necessities(major):
     team()
     helpers.selection_fn_caller(this, major)
     return TEAM
-
 
 def selection(major):
     """
     Add 10 teams to your roster.
 
     An example of adding Rory to your roster is:
-    TEAM.major(major).on_roster(players.McIlroy)
+    TEAM.major(major).selection(McIlroy)
     """
-    
-    TEAM.major(major).on_roster(players.McIlroy)
     TEAM.major(major).on_roster(players.Fleetwood)
-    TEAM.major(major).on_roster(players.Hovland)
-    TEAM.major(major).on_roster(players.An)
-    TEAM.major(major).on_roster(players.Kim_T)
-    TEAM.major(major).on_roster(players.Lowry)
-    TEAM.major(major).on_roster(players.Scheffler)
-    TEAM.major(major).on_roster(players.Hatton)
-    TEAM.major(major).on_roster(players.Molinari_F)
-    TEAM.major(major).on_roster(players.MacIntyre)
-    pass
-
 
 def wildcards(major):
     """
@@ -47,7 +34,6 @@ def wildcards(major):
 
     The following is an example of trading out Scottie and replacing him with Colin from round 3.
 
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Scheffler).trade_in(players.Morikawa))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(Scheffler).trade_in(Morikawa))
     """
-
     pass

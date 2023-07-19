@@ -1,12 +1,12 @@
 from __future__ import annotations
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 from functools import partial, reduce
 
 from rdflib import URIRef
 
 from gojos import model, adapter
 from gojos.repo import repository
-from gojos.util import fn
+from gojos.util import fn, logger
 
 
 class Round:
@@ -62,21 +62,24 @@ class Round:
     def _eligible_players(self):
         if self.round_number < 3:
             return self.player_scores
-        return [p for p in self.player_scores if not p.player_state]
+        return [p for p in self.player_scores if not p.state]
 
     def position_for_player(self, player: model.Player, wildcards: List[model.WildCard]):
         player_scr = fn.find(partial(self._player_predicate, self._player_or_wildcard(player, wildcards)),
                              self.player_scores)
         if not player_scr:
             breakpoint()
+        if self.subject not in player_scr.rounds:
+            return model.PlayerState.CUT
+
         return player_scr.rounds[self.subject]['current_pos']
 
     def load_player_scores(self, player_scores: model.Player):
         self.player_scores = player_scores
         return self
 
-    def player_score(self, player: model.Player, score: int):
-        ps = model.PlayerScore.create(player=player, for_round=self, score=score)
+    def player_score(self, player: model.Player, score: int = None, state: Optional[model.PlayerState] = None):
+        ps = model.PlayerScore.create(player=player, for_round=self, score=score, state=state)
         # if self.round_number > 1:
         #     breakpoint()
         if self.round_number == 1:  # That is, the first time this player has set a score; usually round 1
@@ -114,7 +117,7 @@ class Round:
     def _player_or_wildcard(self, player, wildcards):
         wc = model.WildCard.has_swap(wildcards, player, self.round_number)
         if wc:
-            print(
+            logger.debug(
                 f"Round: {self.round_number} Trade out [bold blue]{player.klass_name}[/] trade in [bold green]{wc.trade_in_player.klass_name}")
             return wc.trade_in_player
         return player

@@ -49,6 +49,13 @@ class Team:
         self.features = features if features else []
         self.subject = rdf.clo_fan_ind[self.symbolic_name] if not sub else sub
 
+    def __repr__(self):
+        cls_name = self.__class__.__name__
+        components = [
+            f"name={self.name}"]
+        return f"{cls_name}({', '.join(fn.remove_none(components))})"
+
+
     def major(self, tournament):
         if self.fantasy_tournament:
             return self.fantasy_tournament
@@ -97,14 +104,26 @@ class FantasyTournament:
         self.wildcard_trades = []
         self.subject = team.subject + f"/{event.relative_subject}"
 
+    def __repr__(self):
+        cls_name = self.__class__.__name__
+        components = [
+            f"team={self.team}",
+            f"roster={self.roster}",
+            f"wildcard_trades={self.wildcard_trades}"]
+        return f"{cls_name}({', '.join(fn.remove_none(components))})"
+
+
     def on_roster(self, player=None):
         if not player or self._player_already_added(player):
             return self
-        if self.event.points_strategy.valid_for_roster(self.roster, player):
+        if self.event.points_strategy.valid_for_roster(self.roster, player) and self.is_player_entered(player):
             self.roster.append(RosterPlayer(event=self.event, player=player))
         else:
             breakpoint()
         return self
+
+    def is_player_entered(self, player) -> bool:
+        return self.event.is_player_entered(player)
 
     def players_relative_to_cut(self):
         return reduce(self._player_relative_to_cut, self.roster, [])
@@ -188,6 +207,13 @@ class RosterPlayer:
         self.points_strategy = event.points_strategy
         self.per_round_accum_strategy = event.round_factor_strategy
 
+    def __repr__(self):
+        cls_name = self.__class__.__name__
+        components = [
+            f"player={self.player}"]
+        return f"{cls_name}({', '.join(fn.remove_none(components))})"
+
+
     def points_per_round(self, wildcards):
         return self.points_strategy.calc(self, wildcards=wildcards, explain=False)
 
@@ -228,12 +254,18 @@ class WildCard:
         self.trade_out_player = None
         self.trade_in_player = None
 
+    def __repr__(self):
+        cls_name = self.__class__.__name__
+        components = [
+            f"trade_out_player={self.trade_out_player}",
+            f"trade_in_player={self.trade_in_player}",
+            f"starting_at_round={self.starting_at_round}"]
+        return f"{cls_name}({', '.join(fn.remove_none(components))})"
+
+
     def from_round(self, at_round):
         self.starting_at_round = at_round
         return self
-
-    def __repr__(self):
-        return f"Wildcard(starting_at_round={self.starting_at_round}, trade_out={self.trade_out_player.name} trade_in={self.trade_in_player.name})"
 
     def trade_out(self, player):
         self.trade_out_player = player

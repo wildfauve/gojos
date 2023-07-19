@@ -1,5 +1,7 @@
 from gojos import repo
 
+from gojos.util import logger
+
 
 class GraphModel:
 
@@ -21,9 +23,9 @@ class GraphModel:
         self.repo_instance = None
 
     def gr(self):
-        print(list(self.graph_fn().subjects()))
+        logger.debug(list(self.graph_fn().subjects()))
         if self.repo_instance:
-            print(list(self.repo_instance.graph.subjects()))
+            logger.debug(list(self.repo_instance.graph.subjects()))
 
     def __call__(self):
         if self.repo_instance:

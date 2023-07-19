@@ -128,7 +128,7 @@ class Player:
         self.subject = rdf_prefix.clo_go_ind_plr[klass_name] if not sub else sub
 
     def __repr__(self):
-        return f"Player(klass={self.klass_name}, name={self.name})"
+        return f"Player(klass='{self.klass_name}', name='{self.name}')"
 
     def uri_name(self):
         return self.name.split(" ")[-1]

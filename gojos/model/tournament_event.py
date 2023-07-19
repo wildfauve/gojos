@@ -13,8 +13,8 @@ from gojos.util import fn
 
 
 class PlayerState(Enum):
-    CUT = 'cut'
-    WD = 'wd'
+    CUT = 'urn:clojos:golf:playerState:cut'
+    WD = 'urn:clojos:golf:playerState:withDrawn'
 
 
 class TournamentEvent:
@@ -59,8 +59,7 @@ class TournamentEvent:
                  cut_strategy=cut_strat,
                  pts_strategy_components=fant_strat,
                  sub=sub)
-        entries = [model.Player.load(sub=sub) for sub in cls.repo().get_entries(ev.subject)]
-        ev.entries = entries
+        ev.load_entries()
         return ev
 
     @classmethod
@@ -95,8 +94,7 @@ class TournamentEvent:
         self.errors = []
         self.points_strategy = self.fantasy_strategy(pts_strategy_components)
         self.round_factor_strategy = None
-        self.leaderboard = model.LeaderBoard.load(self)
-        model.Player.loadall()
+        self.leaderboard = None
 
     def __repr__(self):
         cls_name = self.__class__.__name__
@@ -115,7 +113,19 @@ class TournamentEvent:
         return self.subject == other.subject
 
     def load(self):
-        # Do something here
+        """
+        Load object graph from persisted triples.
+        Add players to the player module.
+        :return:
+        """
+
+        model.Player.loadall()
+        self.leaderboard = model.LeaderBoard.load(self)
+        self.load_entries()
+        return self
+
+    def load_entries(self):
+        self.add_entries([model.Player.load(sub=sub) for sub in self.__class__.repo().get_entries(self.subject)])
         return self
 
     def scores_for_round(self, for_round: int):
@@ -147,10 +157,13 @@ class TournamentEvent:
     def add_entry(self, player_klass_name_or_klass: Union[str, model.Player]):
         player = model.Player.load(klass_name=player_klass_name_or_klass) if isinstance(player_klass_name_or_klass,
                                                                                         str) else player_klass_name_or_klass
-        if player not in self.entries:
+        if not self.is_player_entered(player):
             self.__class__.repo().add_player_as_entry(self, player)
             self.entries.append(player)
         return self
+
+    def is_player_entered(self, player) -> bool:
+        return player in self.entries
 
     def at_course(self, course):
         self.course = course

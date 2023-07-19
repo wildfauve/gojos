@@ -16,10 +16,12 @@ RoundScore = NamedTuple('RoundScore', [('round_number', int),
                                        ('score', int),
                                        ("position", int),
                                        ('running_total', int),
+                                       ('state', str),
                                        ('round_subject', URIRef)])
 PlayerScore = NamedTuple('PlayerScore', [('subject', URIRef),
                                          ('total', int),
                                          ('position', int),
+                                         ('state', str),
                                          ('round_scores', RoundScore)])
 
 
@@ -49,8 +51,10 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
         return g
 
     def add_round_score(self, score: model.PlayerScore, rd_sub: URIRef.Round):
-        self.create_round_bnode(self.graph, score.subject, rd_sub, score.rounds[rd_sub])
+        if score.state:
+            self.graph.set((score.subject, rdf.playerIsInState, Literal(score.state.value)))
         self.graph.set((score.subject, rdf.hasScoreTotal, Literal(score.total)))
+        self.create_round_bnode(self.graph, score.subject, rd_sub, score.rounds[rd_sub])
 
     def scores_on_leaderboard(self, lb_sub: URIRef):
         return [self.load_player_score(ps) for ps in
@@ -60,9 +64,14 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
         triples = rdf.all_matching(self.graph, (sub, None, None))
         total = rdf.triple_finder(rdf.hasScoreTotal, triples)
         pos = rdf.triple_finder(rdf.isInCurrentPosition, triples)
+        state = rdf.triple_finder(rdf.playerIsInState, triples)
         rd_scores = [self.load_rd_bnodes(bn) for bn in
                      rdf.triple_finder(rdf.hasRoundScores, triples, filter_fn=fn.select, builder=rdf.all_objects)]
-        return PlayerScore(sub, total, pos, rd_scores)
+        return PlayerScore(sub,
+                           total.toPython(),
+                           pos.toPython(),
+                           state.toPython() if state else None,
+                           rd_scores)
 
     def load_rd_bnodes(self, bn_sub):
         """
@@ -80,10 +89,12 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
         score = rdf.triple_finder(rdf.hasRoundScore, triples)
         running_total = rdf.triple_finder(rdf.hasRunningScoreTotal, triples)
         rd_sub = rdf.triple_finder(rdf.isRoundSubject, triples)
+        state = rdf.triple_finder(rdf.playerIsInState, triples)
         return RoundScore(rd_num.toPython(),
                           score.toPython(),
                           pos.toPython(),
                           running_total.toPython(),
+                          state.toPython() if state else None,
                           rd_sub)
 
     def create_round_bnode(self, g, sub, round_sub, score_for_round):
@@ -93,6 +104,9 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
         g.add((bn, rdf.hasRoundScore, Literal(score_for_round['score'])))
         if (pos := score_for_round['current_pos']):
             g.add((bn, rdf.hasPositionAfterRound, Literal(pos)))
+
+        if (state:=score_for_round['state']):
+            g.add((bn, rdf.playerIsInState, Literal(score_for_round['state'].value)))
         g.add((bn, rdf.hasRunningScoreTotal, Literal(score_for_round['running_total'])))
         g.add((sub, rdf.hasRoundScores, bn))
 

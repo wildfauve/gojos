@@ -30,12 +30,12 @@ def selection(major):
     TEAM.major(major).on_roster(players.Fleetwood)
     TEAM.major(major).on_roster(players.Hovland)
     TEAM.major(major).on_roster(players.An)
-    TEAM.major(major).on_roster(players.Kim)
+    TEAM.major(major).on_roster(players.Kim_T)
     TEAM.major(major).on_roster(players.Lingmerth)
     TEAM.major(major).on_roster(players.Scheffler)
     TEAM.major(major).on_roster(players.Hatton)
-    TEAM.major(major).on_roster(players.Hojgarrd)
-    TEAM.major(major).on_roster(players.Macintyre)
+    TEAM.major(major).on_roster(players.Hojgaard_N)
+    TEAM.major(major).on_roster(players.MacIntyre)
     pass
 
 
