@@ -27,7 +27,18 @@ def selection(major):
     An example of adding Rory to your roster is:
     TEAM.major(major).selection(players.McIlroy)
     """
-    TEAM.major(major)
+    
+    TEAM.major(major).on_roster(players.McIlroy)
+    TEAM.major(major).on_roster(players.Fleetwood)
+    TEAM.major(major).on_roster(players.Smith_Cameron)
+    TEAM.major(major).on_roster(players.An)
+    TEAM.major(major).on_roster(players.Kim)
+    TEAM.major(major).on_roster(players.Lowry)
+    TEAM.major(major).on_roster(players.Scheffler)
+    TEAM.major(major).on_roster(players.Hatton)
+    TEAM.major(major).on_roster(players.Hojgarrd)
+    TEAM.major(major).on_roster(players.Macintyre)
+    
     pass
 
 def wildcards(major):
