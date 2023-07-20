@@ -6,6 +6,7 @@ from itertools import groupby
 from rdflib import Graph, URIRef, Literal, RDF
 
 from gojos import rdf, model
+from gojos.util import logger
 
 from . import graphrepo
 

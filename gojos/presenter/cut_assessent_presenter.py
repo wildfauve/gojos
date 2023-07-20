@@ -15,13 +15,15 @@ def cut_assessment_table(assessment: Dict, to_discord: bool = False):
 
     table.add_column('Team', justify="right", style="cyan")
     table.add_column('Player', justify="right", style="magenta")
+    table.add_column('Current Position', justify="right", style="magenta")
     table.add_column('Cut Assessment', justify="right")
 
     for team, players_assessments in assessment.items():
-        table.add_row('', '', '')
-        for player, assessment in players_assessments:
+        table.add_row('', '', '', '')
+        for player, latest_pos, assessment in players_assessments:
             table.add_row(team.name,
                           player.name,
+                          str(latest_pos),
                           _cut_assessment(assessment))
 
     console.terminal_console().print(table)

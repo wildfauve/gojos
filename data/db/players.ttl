@@ -1191,3 +1191,17 @@ clo-go-ind-plr:van_Rooyen a clo-go:Player ;
     foaf:name "E. van Rooyen" ;
     clo-go-plr:hasKlassName "van_Rooyen" .
 
+
+clo-go-ind-plr:Yasumori a clo-go:Player ;
+    foaf:name "K. Yasumori" ;
+    clo-go-plr:hasKlassName "Yasumori" .
+
+
+clo-go-ind-plr:Han a clo-go:Player ;
+    foaf:name "S. Han" ;
+    clo-go-plr:hasKlassName "Han" .
+
+
+clo-go-ind-plr:Penge a clo-go:Player ;
+    foaf:name "M. Penge" ;
+    clo-go-plr:hasKlassName "Penge" .

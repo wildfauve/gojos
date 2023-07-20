@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Callable, List
+from typing import Callable, List, Dict
 from dataclasses import dataclass
 
 from gojos import model
@@ -11,7 +11,7 @@ missing_file_name = '_temp/missing.py'
 class ScrappedPlayer:
     name: str
     player_module: Callable
-    round_scores: List[int] = None
+    round_scores: Dict = None
     position: int = None
     player_state: model.PlayerState = None
     total: int = None

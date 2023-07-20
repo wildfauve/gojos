@@ -29,16 +29,14 @@ def rank_plot(file: str,
     pass
 
 
-def cut_danger(tournament_name, year: int) -> pl.DataFrame:
-    breakpoint()
-    tournie = _find_tournament_by_name(tournament_name, tournament_search_fn)
-    if not tournie:
+def cut_danger(tournament: model.Tournament,
+               year: int,
+               to_discord,
+               fantasy_tournaments_dict=fantasy.fantasy_tournaments) -> pl.DataFrame:
+    event = tournament.for_year(year, load=True)
+    if not event:
         return
-    return fantasy_commands.cut_danger(_apply_fantasy(_start(tournie), fantasy_tournaments))
-
-
-def cut_danger(fantasy_teams):
-    return _assess_cut_danger(fantasy_teams)
+    return _assess_cut_danger(_apply_fantasy(event, fantasy_tournaments_dict))
 
 
 def _assess_cut_danger(fantasy_teams):

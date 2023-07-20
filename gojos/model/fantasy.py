@@ -129,7 +129,8 @@ class FantasyTournament:
         return reduce(self._player_relative_to_cut, self.roster, [])
 
     def _player_relative_to_cut(self, accum: List, roster_player):
-        accum.append((roster_player.player, roster_player.tournament.relative_to_cut(roster_player.player)))
+        latest_pos, relative_to_cut = roster_player.event.relative_to_cut(roster_player.player)
+        accum.append((roster_player.player, latest_pos, relative_to_cut))
         return accum
 
     def _player_already_added(self, player):

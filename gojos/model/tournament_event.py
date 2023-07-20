@@ -177,7 +177,8 @@ class TournamentEvent:
         return self.leaderboard.positions_for_player_per_round(player, wildcards)
 
     def relative_to_cut(self, player):
-        return self.cut_strategy.relative_to_cut(self.positions_for_player_per_round(player)[-1])
+        latest_pos = self.positions_for_player_per_round(player)[-1]
+        return latest_pos, self.cut_strategy.relative_to_cut(latest_pos)
 
     def fantasy_points_strategy(self, points_strategy):
         self.points_strategy = points_strategy

@@ -44,10 +44,16 @@ class Round:
         return f"{cls_name}({', '.join(fn.remove_none(components))})"
 
     def upsert_scores(self):
-        [self.player_score(scrapped_player.player_klass, int(scrapped_player.round_scores[0])) for scrapped_player in
-         adapter.build_leaderboard(for_round=self.round_number)]
+        [self.apply_scraped_player_score(scrap) for scrap in adapter.build_leaderboard(for_round=self.round_number)]
         self.done()
         return self
+
+    def apply_scraped_player_score(self, scrapped_player: adapter.ScrappedPlayer):
+        if (len(scrapped_player.round_scores) < self.round_number
+                or not scrapped_player.round_scores
+                or not scrapped_player.round_scores[self.round_number]):
+            breakpoint()
+        self.player_score(scrapped_player.player_klass, int(scrapped_player.round_scores[self.round_number]))
 
     def done(self):
         """

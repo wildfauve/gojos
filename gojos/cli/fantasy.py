@@ -46,16 +46,15 @@ def plot(file, tournament, ranking_plot, channel):
 
 
 @click.command()
-@click.option("--tournament", "-t",
-              type=click.Choice(tournament_names()),
-              help="The name of the tournament")
+@click.option("--tournament", "-t", type=click.Choice(tournament_names()), help="The name of the tournament")
+@click.option("--year", "-y", type=int)
 @click.option("--to-discord/--to-shell", "-d/-s", required=True, default=False, help="To discord or to the shell")
-def cut_danger(tournament, to_discord):
+def cut_danger(tournament, year, to_discord):
     """
     Starts the tournament,  applies the results, applies the fantasy selection and prints the leaderboard
     """
     presenter.cut_assessment_table(
-        command.cut_danger(tournament),
+        command.cut_danger(tournament=helpers.to_tournament(tournament), year=year, to_discord=to_discord),
         to_discord
     )
     pass

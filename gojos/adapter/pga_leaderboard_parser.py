@@ -41,10 +41,13 @@ def _per_player_row(for_round, table, accum, cell_id):
     player_state = None
     pos = _to_int(_extract_value(table, 0, cell_id, "-"))
     name = _extract_value(table, 1, cell_id, "-")
-    rd = _extract_value(table, for_round + 3, cell_id, "-")
-    # r2 = _extract_value(table, 5, cell_id, "-")
-    # r3 = _extract_value(table, 6, cell_id, "-")
-    # r4 = _extract_value(table, 7, cell_id, "-")
+    rds = {
+        "this": _extract_value(table, for_round + 3, cell_id, "-"),
+        1: _extract_value(table, 4, cell_id, "-"),
+        2: _extract_value(table, 5, cell_id, "-"),
+        3: _extract_value(table, 6, cell_id, "-"),
+        4: _extract_value(table, 7, cell_id, "-")
+    }
     if pos == "CUT":
         pos = None
         player_state = model.PlayerState.CUT
@@ -56,7 +59,7 @@ def _per_player_row(for_round, table, accum, cell_id):
                                       total=None,
                                       position=pos,
                                       player_state=player_state,
-                                      round_scores=[rd]))
+                                      round_scores=rds))
     return accum
 
 def _to_int(pos: Union[str, int]):

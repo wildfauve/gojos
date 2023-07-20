@@ -4,8 +4,1555 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> a clo-go:Leaderboard ;
-    clo-go:isForEvent <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023> .
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/An/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Ancer/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Arnaus/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 153 ;
+            clo-go:hasRoundScore 82 ;
+            clo-go:hasRunningScoreTotal 82 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 82 ;
+    clo-go:isInCurrentPosition 153 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Ballester_Barrio/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Barker/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Barron/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Bezuidenhout/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Björk/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 13 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 69 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 69 ;
+    clo-go:isInCurrentPosition 13 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Bland/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Bradbury/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Bradley/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Burns/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Campillo/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 153 ;
+            clo-go:hasRoundScore 82 ;
+            clo-go:hasRunningScoreTotal 82 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 82 ;
+    clo-go:isInCurrentPosition 153 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Canter/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Cantlay/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Cañizares/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Christensen/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Cink/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 7 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 68 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 68 ;
+    clo-go:isInCurrentPosition 7 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Clark/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 7 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 68 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 68 ;
+    clo-go:isInCurrentPosition 7 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Clarke/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Conners/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Crowe/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Daly/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Day/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/DeChambeau/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Detry/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Els/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Elvira/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/English/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Farr/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Ferguson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Finau/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Fischer/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Fitzpatrick_A/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Fitzpatrick_M/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Fleetwood/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 1 ;
+            clo-go:hasRoundScore 66 ;
+            clo-go:hasRunningScoreTotal 66 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 66 ;
+    clo-go:isInCurrentPosition 1 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Fowler/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Fox/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Gooch/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Grace/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Griffin/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Grillo/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 1 ;
+            clo-go:hasRoundScore 66 ;
+            clo-go:hasRunningScoreTotal 66 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 66 ;
+    clo-go:isInCurrentPosition 1 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Han/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Harman/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 4 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 67 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 67 ;
+    clo-go:isInCurrentPosition 4 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Harrington/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hatton/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Henley/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Herbert/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Higa/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hillier/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hirata/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hodges/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hoge/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hojgaard_N/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hojgaard_R/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Homa/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 7 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 68 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 68 ;
+    clo-go:isInCurrentPosition 7 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Horschel/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hoshino/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Hovland/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Im/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Iwata/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Janewattananond/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 152 ;
+            clo-go:hasRoundScore 81 ;
+            clo-go:hasRunningScoreTotal 81 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 81 ;
+    clo-go:isInCurrentPosition 152 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson_D/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Jordan/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 13 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 69 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 69 ;
+    clo-go:isInCurrentPosition 13 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kanaya/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kang/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_B/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_M/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_S_W/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 13 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 69 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 69 ;
+    clo-go:isInCurrentPosition 13 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_T/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kirk/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kitayama/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Koepka/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Lamprecht/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 1 ;
+            clo-go:hasRoundScore 66 ;
+            clo-go:hasRunningScoreTotal 66 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 66 ;
+    clo-go:isInCurrentPosition 1 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Langasque/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Larrazabal/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Lawrence/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Lee_K/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Lee_M/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Lingmerth/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Long/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Lowry/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Luiten/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/MacIntyre/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Maguire/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Matsuyama/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/McCarthy/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/McIlroy/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/McKinney/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Meronk/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Micheluzzi/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Mickelson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Migliozzi/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 13 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 69 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 69 ;
+    clo-go:isInCurrentPosition 13 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Molinari_F/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Moore/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Morikawa/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Mullinax/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Nakajima/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Niemann/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Noren/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 7 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 68 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 68 ;
+    clo-go:isInCurrentPosition 7 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Olesen/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Oliveira/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Oosthuizen/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Otaegui/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 4 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 67 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 67 ;
+    clo-go:isInCurrentPosition 4 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Paul/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Penge/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Perez/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Pieters/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Poston/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Power/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Putnam/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Rahm/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Ramsay/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Reed/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Riley/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Robertson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Robinson_Thompson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Rohwer/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Rose/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Rozner/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 4 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 67 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 67 ;
+    clo-go:isInCurrentPosition 4 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Samooja/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Schauffele/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Scheffler/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 19 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 70 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 70 ;
+    clo-go:isInCurrentPosition 19 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Schenk/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 148 ;
+            clo-go:hasRoundScore 79 ;
+            clo-go:hasRunningScoreTotal 79 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 79 ;
+    clo-go:isInCurrentPosition 148 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Schwartzel/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Scott/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Semikawa/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 130 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 77 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 77 ;
+    clo-go:isInCurrentPosition 130 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Sharma/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 7 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 68 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 68 ;
+    clo-go:isInCurrentPosition 7 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Shinkwin/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Siem/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Smith/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Smith_Ca/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Smyth/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 139 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 78 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 78 ;
+    clo-go:isInCurrentPosition 139 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Southgate/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Spieth/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 13 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 69 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 69 ;
+    clo-go:isInCurrentPosition 13 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Stallings/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Stenson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Stewart/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 7 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 68 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 68 ;
+    clo-go:isInCurrentPosition 7 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Straka/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 32 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 71 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 71 ;
+    clo-go:isInCurrentPosition 32 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Strydom/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Syme/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Taylor_N/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Theegala/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 148 ;
+            clo-go:hasRoundScore 79 ;
+            clo-go:hasRunningScoreTotal 79 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 79 ;
+    clo-go:isInCurrentPosition 148 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Thomas/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 153 ;
+            clo-go:hasRoundScore 82 ;
+            clo-go:hasRunningScoreTotal 82 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 82 ;
+    clo-go:isInCurrentPosition 153 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Todd/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 89 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 74 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 74 ;
+    clo-go:isInCurrentPosition 89 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Valimaki/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 121 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 76 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 76 ;
+    clo-go:isInCurrentPosition 121 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Wallace/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 75 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 75 ;
+    clo-go:isInCurrentPosition 109 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Warren/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 148 ;
+            clo-go:hasRoundScore 79 ;
+            clo-go:hasRunningScoreTotal 79 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 79 ;
+    clo-go:isInCurrentPosition 148 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Wiebe/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 148 ;
+            clo-go:hasRoundScore 79 ;
+            clo-go:hasRunningScoreTotal 79 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 79 ;
+    clo-go:isInCurrentPosition 148 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Willett/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Wilson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 13 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 69 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 69 ;
+    clo-go:isInCurrentPosition 13 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Woodland/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Yasumori/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 73 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 73 ;
+    clo-go:isInCurrentPosition 66 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Young_Cam/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 48 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 72 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 72 ;
+    clo-go:isInCurrentPosition 48 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
 
 clo-go-ind-tou:TheOpen a clo-go:Tournament ;
     skos:notation "The Open" ;
@@ -15,7 +1562,8 @@ clo-go-ind-tou:TheOpen a clo-go:Tournament ;
 <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023> a clo-go:TournamentEvent ;
     skos:notation "TheOpen2023" ;
     clo-go:hasCutStrategy <https://clojos.io/ontology/Fantasy/CutStategy/CutTop70AndTies> ;
-    clo-go:hasEnteredPlayer clo-go-ind-plr:An,
+    clo-go:hasEnteredPlayer clo-go-ind-plr:Aberg,
+        clo-go-ind-plr:An,
         clo-go-ind-plr:Ancer,
         clo-go-ind-plr:Arnaus,
         clo-go-ind-plr:Ballester_Barrio,
@@ -169,4 +1717,167 @@ clo-go-ind-tou:TheOpen a clo-go:Tournament ;
     clo-go:hasFantasyPointsStrategy <https://clojos.io/ontology/Fantasy/FantasyPointsStrategy/InvertedPosition/Points1_4_10> ;
     clo-go:isEventOf clo-go-ind-tou:TheOpen ;
     clo-go:isInYear 2023 .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> a clo-go:Leaderboard ;
+    clo-go:hasRound <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ;
+    clo-go:isForEvent <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023> ;
+    clo-go:isPlayerOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Player/An/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ancer/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Arnaus/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ballester_Barrio/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Barker/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Barron/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Bezuidenhout/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Björk/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Bland/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Bradbury/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Bradley/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Burns/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Campillo/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Canter/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Cantlay/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Cañizares/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Christensen/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Cink/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Clark/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Clarke/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Conners/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Crowe/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Daly/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Day/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/DeChambeau/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Detry/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Els/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Elvira/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/English/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Farr/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ferguson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Finau/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fischer/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fitzpatrick_A/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fitzpatrick_M/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fleetwood/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fowler/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fox/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Gooch/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Grace/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Griffin/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Grillo/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Han/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Harman/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Harrington/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hatton/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Henley/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Herbert/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Higa/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hillier/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hirata/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hodges/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hoge/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hojgaard_N/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hojgaard_R/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Homa/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Horschel/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hoshino/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hovland/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Im/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Iwata/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Janewattananond/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson_D/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Jordan/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kanaya/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kang/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_B/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_M/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_S_W/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_T/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kirk/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kitayama/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Koepka/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lamprecht/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Langasque/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Larrazabal/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lawrence/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lee_K/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lee_M/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lingmerth/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Long/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lowry/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Luiten/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/MacIntyre/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Maguire/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Matsuyama/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/McCarthy/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/McIlroy/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/McKinney/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Meronk/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Micheluzzi/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Mickelson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Migliozzi/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Molinari_F/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Moore/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Morikawa/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Mullinax/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Nakajima/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Niemann/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Noren/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Olesen/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Oliveira/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Oosthuizen/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Otaegui/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Paul/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Penge/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Perez/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Pieters/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Poston/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Power/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Putnam/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Rahm/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ramsay/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Reed/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Riley/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Robertson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Robinson_Thompson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Rohwer/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Rose/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Rozner/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Samooja/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Schauffele/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Scheffler/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Schenk/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Schwartzel/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Scott/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Semikawa/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Sharma/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Shinkwin/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Siem/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Smith/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Smith_Ca/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Smyth/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Southgate/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Spieth/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Stallings/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Stenson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Stewart/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Straka/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Strydom/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Syme/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Taylor_N/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Theegala/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Thomas/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Todd/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Valimaki/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Wallace/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Warren/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Wiebe/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Willett/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Wilson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Woodland/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Yasumori/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Young_Cam/TheOpen/2023/Leaderboard> .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> a clo-go:ROUND ;
+    clo-go:isRoundNumber 1 ;
+    clo-go:isRoundOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
 

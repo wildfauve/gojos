@@ -7,7 +7,7 @@ from itertools import groupby
 from rdflib import Graph, URIRef, Literal, RDF, BNode
 
 from gojos import rdf, model
-from gojos.util import fn
+from gojos.util import fn, logger
 
 from . import graphrepo
 
@@ -57,8 +57,15 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
         self.create_round_bnode(self.graph, score.subject, rd_sub, score.rounds[rd_sub])
 
     def scores_on_leaderboard(self, lb_sub: URIRef):
+        return self.query_for_all_scores(lb_sub, perf_ctx=lb_sub)
+
+
+    @logger.with_perf_log(name="PlayerScore.query_for_all_scores")
+    def query_for_all_scores(self, lb_sub, perf_ctx):
         return [self.load_player_score(ps) for ps in
                 rdf.all_matching(self.graph, (None, rdf.isOnLeaderboard, lb_sub), form=rdf.subject)]
+
+
 
     def load_player_score(self, sub):
         triples = rdf.all_matching(self.graph, (sub, None, None))
