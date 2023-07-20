@@ -78,6 +78,9 @@ class Round:
         self.player_scores = player_scores
         return self
 
+    def scores_for_player(self, player: model.Player) -> model.PlayerScore:
+        return fn.find(lambda ps: ps.player == player, self.player_scores)
+
     def player_score(self, player: model.Player, score: int = None, state: Optional[model.PlayerState] = None):
         ps = model.PlayerScore.create(player=player, for_round=self, score=score, state=state)
         # if self.round_number > 1:

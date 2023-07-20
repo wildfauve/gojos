@@ -33,7 +33,7 @@ def selection(major):
     TEAM.major(major).on_roster(players.Johnson_D)
     TEAM.major(major).on_roster(players.Schauffele)
     TEAM.major(major).on_roster(players.Koepka)
-    TEAM.major(major).on_roster(players.Fitzpatrick_M)
+    TEAM.major(major).on_roster(players.Rose)
     TEAM.major(major).on_roster(players.Scheffler)
     TEAM.major(major).on_roster(players.Lingmerth)
     pass
