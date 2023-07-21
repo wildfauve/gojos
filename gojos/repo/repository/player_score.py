@@ -25,6 +25,27 @@ PlayerScore = NamedTuple('PlayerScore', [('subject', URIRef),
                                          ('round_scores', RoundScore)])
 
 
+def add_round_score(g, score: model.PlayerScore, rd_sub: URIRef.Round):
+    breakpoint()
+    if score.state:
+        g.set((score.subject, rdf.playerIsInState, Literal(score.state.value)))
+    g.set((score.subject, rdf.hasScoreTotal, Literal(score.total)))
+    create_round_bnode(g, score.subject, rd_sub, score.rounds[rd_sub])
+
+def create_round_bnode(g, sub, round_sub, score_for_round):
+    bn = BNode()
+    g.add((bn, rdf.isRoundSubject, round_sub))
+    g.add((bn, rdf.isRoundNumber, Literal(score_for_round['round_number'])))
+    g.add((bn, rdf.hasRoundScore, Literal(score_for_round['score'])))
+    if (pos := score_for_round['current_pos']):
+        g.add((bn, rdf.hasPositionAfterRound, Literal(pos)))
+
+    if (state:=score_for_round['state']):
+        g.add((bn, rdf.playerIsInState, Literal(score_for_round['state'].value)))
+    g.add((bn, rdf.hasRunningScoreTotal, Literal(score_for_round['running_total'])))
+    g.add((sub, rdf.hasRoundScores, bn))
+
+
 class PlayerScoreRepo(graphrepo.GraphRepo):
     rdf_type = rdf.PLAYER_SCORE
 

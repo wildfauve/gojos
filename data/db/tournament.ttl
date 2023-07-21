@@ -1709,6 +1709,18 @@
     clo-go:isInCurrentPosition 48 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
 
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Kho/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 156 ;
+            clo-go:hasRoundScore 83 ;
+            clo-go:hasRunningScoreTotal 83 ;
+            clo-go:isRoundNumber 1 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard/Round/1> ] ;
+    clo-go:hasScoreTotal 83 ;
+    clo-go:isEventScoreForPlayer clo-go-ind-plr:Kho ;
+    clo-go:isInCurrentPosition 156 ;
+    clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
+
+
 clo-go-ind-tou:TheOpen a clo-go:Tournament ;
     skos:notation "The Open" ;
     clo-go:hasPermId "to" ;

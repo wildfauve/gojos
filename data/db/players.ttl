@@ -1205,3 +1205,8 @@ clo-go-ind-plr:Han a clo-go:Player ;
 clo-go-ind-plr:Penge a clo-go:Player ;
     foaf:name "M. Penge" ;
     clo-go-plr:hasKlassName "Penge" .
+
+
+clo-go-ind-plr:Kho a clo-go:Player ;
+    foaf:name "T. Kho" ;
+    clo-go-plr:hasKlassName "Kho" .
