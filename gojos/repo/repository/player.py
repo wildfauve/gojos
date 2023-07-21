@@ -14,26 +14,34 @@ class PlayerRepo(graphrepo.GraphRepo):
     def __init__(self, graph: Graph):
         self.graph = graph
 
+    @logger.with_perf_log(name="Player.get_all")
     def get_all(self):
-        results = rdf.many(rdf.query(self.graph, self._name_sparql()))
-        return [self.to_player(player, props) for player, props in groupby(results, lambda x: x[0])]
+        return [self.to_player(sub) for sub in rdf.all_matching(self.graph, (None, RDF.type, rdf.PLAYER), form=rdf.subject)]
 
-    def to_player(self, player, props):
-        player_props = props if isinstance(props, list) else list(props)
-        return (player_props[0].sub,
-                player_props[0].name.toPython(),
-                player_props[0].klass_name.toPython(),
-                [r.alt_names.toPython() for r in player_props] if player_props[0].alt_names else None)
+
+    def to_player(self, sub):
+        if not sub:
+            return None
+        triples = rdf.all_matching(self.graph, (sub, None, None))
+        name = rdf.triple_finder(rdf.name, triples)
+        klass_name = rdf.triple_finder(rdf.hasKlassName, triples)
+        return (sub,
+                name.toPython(),
+                klass_name.toPython(),
+                None)  # no alt names
 
     def upsert(self, player):
         rdf.subject_finder_creator(self.graph, player.subject, self.rdf_type, partial(self.creator, player))
         pass
 
-    def get_by_name_or_klass_name(self, name=None, klass_name=None, alt_name=None):
-        result = rdf.many(rdf.query(self.graph, self._name_sparql(name=name, klass_name=klass_name, alt_name=alt_name)))
-        if not result:
-            return None
-        return self.to_player(result[0].sub, result)
+    def get_by_name_or_klass_name(self, sub=None, name=None, klass_name=None, alt_name=None):
+        if sub:
+            return self.to_player(sub)
+        if name:
+            return self.to_player(rdf.first_match(self.graph, (None, rdf.name, Literal(name)), form=rdf.subject))
+        if klass_name:
+            return self.to_player(rdf.first_match(self.graph, (None, rdf.hasKlassName, Literal(name)), form=rdf.subject))
+        breakpoint()
 
     def creator(self, player, g, sub):
         g.add((sub, RDF.type, self.rdf_type))
@@ -41,31 +49,3 @@ class PlayerRepo(graphrepo.GraphRepo):
         g.add((sub, rdf.hasKlassName, Literal(player.klass_name)))
         for alt in player.alt_names:
             g.add((sub, rdf.hasAlternateName, Literal(alt)))
-
-    def _name_sparql(self, name=None, klass_name=None, alt_name=None):
-        if not name and not klass_name and not alt_name:
-            filter_criteria = None
-        elif name:
-            filter_criteria = f"?name = {Literal(name).n3()}"
-        else:
-            filter_criteria = f"?klass_name = {Literal(klass_name).n3()}"
-
-        if alt_name:
-            filter_criteria += f" || ?alt_names = {Literal(alt_name).n3()}"
-
-        filter = "" if not filter_criteria else f"filter({filter_criteria})"
-        logger.log(filter)
-
-        return f"""
-        select ?sub ?name ?klass_name ?alt_names
-
-        where {{
-        
-        ?sub a clo-go:Player ;
-             foaf:name ?name ;
-             clo-go-plr:hasKlassName ?klass_name .
-             
-        OPTIONAL {{ ?sub clo-go-plr:hasAltName ?alt_names .}} 
-    
-        {filter} }}
-        """

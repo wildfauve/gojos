@@ -119,7 +119,7 @@ class TournamentEvent:
         :return:
         """
 
-        model.Player.loadall()
+        # model.Player.loadall()
         self.leaderboard = model.LeaderBoard.load(self)
         self.load_entries()
         return self

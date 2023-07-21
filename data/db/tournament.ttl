@@ -624,7 +624,7 @@
     clo-go:isInCurrentPosition 152 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheOpen/2023/Leaderboard> .
 
-<https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
+<https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson_Z/TheOpen/2023/Leaderboard> a clo-go:PlayerScore ;
     clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 109 ;
             clo-go:hasRoundScore 75 ;
             clo-go:hasRunningScoreTotal 75 ;
@@ -1624,7 +1624,7 @@ clo-go-ind-tou:TheOpen a clo-go:Tournament ;
         clo-go-ind-plr:Im,
         clo-go-ind-plr:Iwata,
         clo-go-ind-plr:Janewattananond,
-        clo-go-ind-plr:Johnson,
+        clo-go-ind-plr:Johnson_Z,
         clo-go-ind-plr:Johnson_D,
         clo-go-ind-plr:Kanaya,
         clo-go-ind-plr:Kang,
@@ -1783,7 +1783,7 @@ clo-go-ind-tou:TheOpen a clo-go:Tournament ;
         <https://clojos.io/ontology/FantasyGolf/Ind/Player/Im/TheOpen/2023/Leaderboard>,
         <https://clojos.io/ontology/FantasyGolf/Ind/Player/Iwata/TheOpen/2023/Leaderboard>,
         <https://clojos.io/ontology/FantasyGolf/Ind/Player/Janewattananond/TheOpen/2023/Leaderboard>,
-        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson/TheOpen/2023/Leaderboard>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson_Z/TheOpen/2023/Leaderboard>,
         <https://clojos.io/ontology/FantasyGolf/Ind/Player/Johnson_D/TheOpen/2023/Leaderboard>,
         <https://clojos.io/ontology/FantasyGolf/Ind/Player/Jordan/TheOpen/2023/Leaderboard>,
         <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kanaya/TheOpen/2023/Leaderboard>,

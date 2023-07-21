@@ -5,6 +5,7 @@ from itertools import groupby
 from rdflib import Graph, URIRef, Literal, RDF
 
 from gojos import rdf
+from gojos.util import logger
 
 from . import graphrepo
 
@@ -31,6 +32,7 @@ class LeaderBoardRepo(graphrepo.GraphRepo):
     def add_scoring_player(self, leaderboard, player_score_sub: URIRef):
         self.graph.add((leaderboard.subject, rdf.isPlayerOnLeaderboard, player_score_sub))
 
+    @logger.with_perf_log(name="Leaderboard.get_all")
     def get_all(self):
         return [self.to_event(event) for event in (rdf.many(rdf.query(self.graph, self._sparql())))]
 

@@ -75,7 +75,7 @@ class Player:
             logger.log(f"Player Cache Hit: {cached_player.value}")
             return cached_player.value
 
-        plr = cls.cls_search(name=name, klass_name=klass_name, alt_name=name)
+        plr = cls.cls_search(sub=sub, name=name, klass_name=klass_name, alt_name=name)
         if plr.is_left():
             logger.log(f"Player with Name {name} or klass_name {klass_name} not found")
             return None
@@ -97,8 +97,8 @@ class Player:
         return cls(name, klass_name, alt_names, sub)
 
     @classmethod
-    def cls_search(cls, name=None, klass_name=None, alt_name=None) -> monad.EitherMonad[Tuple]:
-        plr = cls.repo().get_by_name_or_klass_name(name=name, klass_name=klass_name, alt_name=alt_name)
+    def cls_search(cls, sub=None, name=None, klass_name=None, alt_name=None) -> monad.EitherMonad[Tuple]:
+        plr = cls.repo().get_by_name_or_klass_name(sub=sub, name=name, klass_name=klass_name, alt_name=alt_name)
         if not plr:
             return monad.Left(plr)
         return monad.Right(plr)

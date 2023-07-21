@@ -503,9 +503,9 @@ clo-go-ind-plr:Janewattananond a clo-go:Player ;
     foaf:name "J. Janewattananond" ;
     clo-go-plr:hasKlassName "Janewattananond" .
 
-clo-go-ind-plr:Johnson a clo-go:Player ;
+clo-go-ind-plr:Johnson_Z a clo-go:Player ;
     foaf:name "Z. Johnson" ;
-    clo-go-plr:hasKlassName "Johnson" .
+    clo-go-plr:hasKlassName "Johnson_Z" .
 
 clo-go-ind-plr:Johnson_D a clo-go:Player ;
     foaf:name "D. Johnson" ;
