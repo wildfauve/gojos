@@ -1,12 +1,12 @@
-from typing import List, Tuple
-from functools import partial
+from typing import List, Tuple, Dict
 from rdflib import Graph, URIRef, Literal, RDF
 
 from gojos.rdf import rdf_prefix
 from gojos.util import fn, tokeniser, monad, singleton, logger
-from gojos import model
+from gojos import model, rdf
 from gojos.repo import repository
 from gojos.players import mens_players
+
 
 class PlayerCache(singleton.Singleton):
     player_name_index = {}
@@ -31,7 +31,6 @@ class PlayerCache(singleton.Singleton):
             return monad.Left(None)
         return monad.Right(possible_hit)
 
-
     def add_to_cache(self, player):
         self.set_player_on_player_module(player)
         if self.get_by_name_or_klass_or_sub(klass_name=player.klass_name).is_right():
@@ -43,6 +42,7 @@ class PlayerCache(singleton.Singleton):
     def set_player_on_player_module(self, player):
         setattr(self.__class__.mens_players_module, player.klass_name, player)
         pass
+
 
 
 class Player:
@@ -90,7 +90,6 @@ class Player:
             cls.player_cache().add_to_cache(player)
         pass
 
-
     @classmethod
     def build_player(cls, player_tuple):
         sub, name, klass_name, alt_names = player_tuple
@@ -103,11 +102,9 @@ class Player:
             return monad.Left(plr)
         return monad.Right(plr)
 
-
     @classmethod
     def cache_hit(cls, name=None, klass_name=None, sub=None):
         return cls.player_cache().get_by_name_or_klass_or_sub(name=name, klass_name=klass_name, sub=sub)
-
 
     @classmethod
     def player_predicate(cls, test_for_player, player):
@@ -119,7 +116,6 @@ class Player:
         if "." in nm:
             return tokeniser.string_tokeniser(nm, tokeniser.dot_splitter, tokeniser.special_char_set)
         return tokeniser.string_tokeniser(nm, tokeniser.sp_splitter, tokeniser.special_char_set)
-
 
     def __init__(self, name, klass_name: str, alt_names: List = None, sub: URIRef = None):
         self.name = name
@@ -150,4 +146,3 @@ class Player:
             if any([alt_name == on_name for alt_name in self.alt_names]):
                 return self
         return None
-

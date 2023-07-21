@@ -16,8 +16,8 @@ from . import value
 leaderboard = "https://www.pgatour.com/leaderboard"
 
 
-def build_leaderboard(for_round):
-    return _csvw_parser(_entries(_get_page(leaderboard)), for_round)
+def build_leaderboard(for_round: int, to_model: bool = True):
+    return _csvw_parser(_entries(_get_page(leaderboard)), for_round, to_model)
 
 
 def _get_page(url_or_file):
@@ -30,14 +30,16 @@ def _entries(page):
     return page.find('script', type='application/ld+json').text
 
 
-def _csvw_parser(json_ld, for_round):
+def _csvw_parser(json_ld, for_round, to_model):
     data = json.loads(json_ld)
     num_players = len(data['mainEntity']['csvw:tableSchema']['csvw:columns'][1]['csvw:cells'])
-    return reduce(partial(_per_player_row, for_round, data['mainEntity']['csvw:tableSchema']['csvw:columns']),
-                  range(0, num_players - 1), [])
+    return [_per_player_row(for_round, data['mainEntity']['csvw:tableSchema']['csvw:columns'], idx, to_model) for idx in
+            range(0, num_players - 1)]
+    # return reduce(partial(_per_player_row, for_round, data['mainEntity']['csvw:tableSchema']['csvw:columns']),
+    #               range(0, num_players - 1), [])
 
 
-def _per_player_row(for_round, table, accum, cell_id):
+def _per_player_row(for_round, table, cell_id, to_model):
     player_state = None
     pos = _to_int(_extract_value(table, 0, cell_id, "-"))
     name = _extract_value(table, 1, cell_id, "-")
@@ -54,13 +56,23 @@ def _per_player_row(for_round, table, accum, cell_id):
     if pos == "WD":
         pos = None
         player_state = model.PlayerState.WD
-    accum.append(value.ScrappedPlayer(name=_tokenise(name),
-                                      player_module=mens_players,
-                                      total=None,
-                                      position=pos,
-                                      player_state=player_state,
-                                      round_scores=rds))
-    return accum
+    if to_model:
+        return value.ScrappedPlayer(name=_tokenise(name),
+                                    player_module=mens_players,
+                                    total=None,
+                                    position=pos,
+                                    player_state=player_state,
+                                    round_scores=rds)
+    else:
+        return {
+            'name': _tokenise(name),
+            'player_module': mens_players,
+            'total': None,
+            'position': pos,
+            'player_state': player_state,
+            'round_scores': rds
+        }
+
 
 def _to_int(pos: Union[str, int]):
     if isinstance(pos, int) or not pos:
@@ -87,6 +99,7 @@ def _tokenise(name):
         first_parts = parts[0:-1]
         return ' '.join(first_parts) + "_" + parts[-1]
     return name
+
 
 def _write_file(file_name, content):
     with open(f"{file_name}", 'w') as f:

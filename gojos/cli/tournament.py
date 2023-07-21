@@ -55,21 +55,10 @@ def add_round_results(tournament, year, for_round):
     """
     """
     command.leaderboard_for_round(tournament=helpers.to_tournament(tournament), year=year, for_round=for_round)
+    # command.leaderboard_for_round2(tournament=tournament, year=year, for_round=for_round)
     pass
 
 
-@click.command()
-@click.option("--tournament", "-t", type=click.Choice(helpers.tournament_names()))
-@click.option("--year", "-y", type=int)
-@click.option("--for-round", "-r", type=int, default=1, help="The round number to scrap.")
-def round_results(entries_file, players_file, leaderboard_file, for_round):
-    """
-    """
-    command.leaderboard_scrap(entries_file=entries_file,
-                              players_file=players_file,
-                              leaderboard_file=leaderboard_file,
-                              for_round=for_round)
-    pass
 
 cli.add_command(new_tournament)
 cli.add_command(new_event)

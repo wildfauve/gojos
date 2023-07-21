@@ -11,7 +11,7 @@ from .feature import FantasyFeature
 from .leaderboard import LeaderBoard
 
 from .player import (
-    Player,
+    Player
 )
 
 from .player_score import PlayerScore

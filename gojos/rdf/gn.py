@@ -10,14 +10,17 @@ from gojos import repo
 from gojos.util import fn, monad
 from . import sparql
 
+
 def single_result_or_none(result: SPARQLResult) -> Optional[ResultRow]:
     result_list = list(result)
     if len(result_list) != 1:
         return None
     return result_list[0]
 
+
 def many(result: SPARQLResult) -> List[ResultRow]:
     return list(result)
+
 
 def subject_finder_creator(g: Graph,
                            sub_uri: URIRef,
@@ -137,8 +140,17 @@ def month_day_from_nav(navdatetime) -> Tuple[str, str]:
     return time.value.format("YYYY-MM"), time.value.to_date_string()
 
 
-def gr(g: Graph):
+def gprint(g: Graph):
     return list(g.triples((None, None, None)))
+
+
+def gout(g: Graph):
+    print(g.serialize(format="ttl"))
+    pass
+
+def gwrite(g:Graph, file):
+    with open(file, 'w') as f:
+        f.write(g.serialize(format="ttl"))
 
 
 class Grapher:

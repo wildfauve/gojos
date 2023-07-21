@@ -1,4 +1,5 @@
 from typing import Callable, List, Tuple
+from functools import reduce
 from rdflib import Graph
 from pathlib import Path
 
@@ -43,6 +44,12 @@ class Db:
             self.ttl_writer(self.init_empty_graph_fn(), file=loc_path)
         return self
 
+    def graph_for(self, names: List) -> Graph:
+        return reduce(self.graph_for_name, names, {})
+
+    def graph_for_name(self, accum, name):
+        g_name = f"{name}_graph"
+        return {**accum, **{g_name: getattr(self, g_name)}}
 
     def load_graph(self, loc_name: str):
         loc_path = self.location_name_to_location(loc_name)

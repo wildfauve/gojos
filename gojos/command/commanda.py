@@ -1,4 +1,7 @@
 from typing import List
+from rdflib import Graph
+
+from gojos import repo
 from . import helpers
 
 
@@ -30,6 +33,22 @@ def command(graph_names: List = []):
             opts = kwargs.get('opts', dict())
             if result and result.is_right() and not opts.get('in_runner', None):
                 helpers.save(graph_names=graph_names)
+            return result
+
+        return try_it
+
+    return inner
+
+
+def command2(graphs: List[str]):
+    def inner(fn):
+        def try_it(*args, **kwargs):
+            g = repo.RepoContext().db.graph_for(graphs)
+            result = fn(*args, **{**g, **kwargs})
+            breakpoint()
+            opts = kwargs.get('opts', dict())
+            if result and result.is_right() and not opts.get('in_runner', None):
+                helpers.save2(g)
             return result
 
         return try_it

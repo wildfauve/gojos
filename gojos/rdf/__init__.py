@@ -14,7 +14,9 @@ from .rdf_prefix import *
 from .gn import (
     all_matching,
     all_objects,
-    gr,
+    gprint,
+    gout,
+    gwrite,
     Grapher,
     query_match,
     object,

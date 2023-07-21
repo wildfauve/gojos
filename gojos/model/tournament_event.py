@@ -4,7 +4,7 @@ from itertools import accumulate, pairwise
 from enum import Enum
 
 import polars as pl
-from rdflib import URIRef
+from rdflib import URIRef, RDF
 from rich import print
 
 from gojos import model, rdf, fantasy, adapter

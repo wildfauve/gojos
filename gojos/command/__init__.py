@@ -8,5 +8,6 @@ from .tournament import (
     add_entries,
     new_event,
     new_tournament,
-    leaderboard_for_round
+    leaderboard_for_round,
+    leaderboard_for_round2,
 )
