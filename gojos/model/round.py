@@ -24,7 +24,8 @@ class Round:
 
     @classmethod
     def load_for_leaderboard(cls, leaderboard: model.LeaderBoard):
-        return [cls.build_round(leaderboard, rd) for rd in cls.repo().get_all(leaderboard.subject)]
+        return [cls.build_round(leaderboard, rd) for rd in sorted(cls.repo().get_all(leaderboard.subject),
+                                                                  key=lambda rd: rd[1])]
 
     @classmethod
     def build_round(cls, leaderboard: model.LeaderBoard, rd: Tuple):
@@ -53,7 +54,9 @@ class Round:
                 or not scrapped_player.round_scores
                 or not scrapped_player.round_scores[self.round_number]):
             breakpoint()
-        self.player_score(scrapped_player.player_klass, int(scrapped_player.round_scores[self.round_number]))
+        self.player_score(scrapped_player.player_klass,
+                          int(scrapped_player.round_scores[self.round_number]),
+                          state=scrapped_player.player_state)
 
     def done(self):
         """
@@ -91,8 +94,11 @@ class Round:
         ps = model.PlayerScore.create(player=player, for_round=self, score=score, state=state)
         # if self.round_number > 1:
         #     breakpoint()
+        # if ps.state:
         if self.round_number == 1:  # That is, the first time this player has set a score; usually round 1
             self.leaderboard.add_scoring_player(ps.subject)
+        # if ps.state:
+        #     breakpoint()
         self.player_scores.append(ps)
         return self
 

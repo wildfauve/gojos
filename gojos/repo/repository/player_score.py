@@ -126,6 +126,8 @@ class PlayerScoreRepo(graphrepo.GraphRepo):
                           rd_sub)
 
     def create_round_bnode(self, g, sub, round_sub, score_for_round):
+        # if score_for_round['state']:
+        #     breakpoint()
         bn = BNode()
         g.add((bn, rdf.isRoundSubject, round_sub))
         g.add((bn, rdf.isRoundNumber, Literal(score_for_round['round_number'])))

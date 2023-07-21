@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 from gojos.players import mens_players
 from gojos import model
-from gojos.util import fn
+from gojos.util import fn, logger
 
 from . import value
 
@@ -77,15 +77,15 @@ def _per_player_row(for_round, table, cell_id, to_model):
 def _to_int(pos: Union[str, int]):
     if isinstance(pos, int) or not pos:
         return pos
+    if pos.isnumeric():
+        return int(pos)
+    # logger.debug(f"POS: {pos}")
     if "CUT" in pos:
         return pos
     if "WD" in pos:
         return pos
     if "T" in pos:
         return int(pos.replace('T', ''))
-    if pos.isnumeric():
-        return int(pos)
-    breakpoint()
 
 
 def _extract_value(table, pos, cell_id, none_tst):

@@ -86,6 +86,7 @@ class LeaderBoard:
         return list(accumulate(scores))
 
     def positions_for_player_per_round(self, player, wildcards):
+        # return [rd.position_for_player(player, wildcards) for rd in sorted(self.rounds, key=lambda x: x.round_number)]
         return [rd.position_for_player(player, wildcards) for rd in self.rounds]
 
     def _round_number_predicate(self, number, rd):
