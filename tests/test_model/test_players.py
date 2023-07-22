@@ -1,14 +1,14 @@
 from gojos import model
 from gojos.players import mens_players
 
-def test_functional_version_of_player(configure_repo):
-    model.Player.reset()
-    pl = model.Player.new("R. McIlroy", klass_name="McIlroy")
-
-    players = {'players': set()}
-
-    player, players = model.player_for(configure_repo.players_graph(), players, klass_name="McIlroy")
-    breakpoint()
+# def test_functional_version_of_player(configure_repo):
+#     model.Player.reset()
+#     pl = model.Player.new("R. McIlroy", klass_name="McIlroy")
+#
+#     players = {'players': set()}
+#
+#     player, players = model.player_for(configure_repo.players_graph(), players, klass_name="McIlroy")
+#     breakpoint()
     
 
 def test_create_new_player(configure_repo):

@@ -74,14 +74,15 @@ class Round:
         return [p for p in self.player_scores if not p.state]
 
     def position_for_player(self, player: model.Player, wildcards: List[model.WildCard]):
-        player_scr = fn.find(partial(self._player_predicate, self._player_or_wildcard(player, wildcards)),
-                             self.player_scores)
+        player_or_wc = self._player_or_wildcard(player, wildcards)
+        player_scr = fn.find(partial(self._player_predicate, player_or_wc), self.player_scores)
         if not player_scr:
             breakpoint()
         if self.subject not in player_scr.rounds:
             return model.PlayerState.CUT
 
-        return player_scr.rounds[self.subject]['current_pos']
+        # return player_scr.rounds[self.subject]['current_pos']
+        return {**player_scr.rounds[self.subject], **{'player': player_or_wc}}
 
     def load_player_scores(self, player_scores: model.Player):
         self.player_scores = player_scores

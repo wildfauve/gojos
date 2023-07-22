@@ -1,4 +1,4 @@
-from typing import Union, Tuple
+from typing import Union, Tuple, Dict
 import sys
 
 from rdflib import URIRef
@@ -124,12 +124,13 @@ class CutTop60AndTies(Cut):
 class CutTop70AndTies(Cut):
     cut_position = 70
 
-    def _position_from_cut(self, position):
-        if isinstance(position, model.PlayerState) or not position:
+    def _position_from_cut(self, rd_position: Dict):
+        if isinstance(rd_position, model.PlayerState) or not rd_position:
             return -1
-        if position == self.cut_position:
+        pos = rd_position.get('current_pos')
+        if pos == self.cut_position:
             return 0
-        return self.cut_position - position
+        return self.cut_position - pos
 
 
 class TournamentFinder(singleton.Singleton):

@@ -46,7 +46,7 @@ def test_leaderboard_with_r2_results_accumulated(configure_repo, build_players, 
 
     team, *points = bn.rows()[0]
 
-    expected_pts = [10 - pos + 1 for pos in fleetwood]
+    expected_pts = [10 - pos.get('current_pos') + 1 for pos in fleetwood]
 
     assert points[1] == expected_pts[0]
     assert points[2] == sum(expected_pts)
@@ -65,7 +65,7 @@ def test_wildcard(configure_repo, build_players, test_teams):
     fleetwood = leaderboard.positions_for_player_per_round(players.Fleetwood, [])
     homa = leaderboard.positions_for_player_per_round(players.Homa, [])
 
-    expected_pts = [10 - pos + 1 for pos in [fleetwood[0], homa[1]]]
+    expected_pts = [10 - pos.get('current_pos') + 1 for pos in [fleetwood[0], homa[1]]]
 
     assert fu.rows()[0][3] == sum(expected_pts)
 
@@ -81,7 +81,7 @@ def test_leaderboard_with_r3_with_mc(configure_repo, build_players, test_teams):
 
     assert model.PlayerState.CUT in fleetwood
 
-    expected_pts = [10 - pos + 1 for pos in fleetwood[:-1] + [10]]
+    expected_pts = [10 - pos.get('current_pos') + 1 for pos in fleetwood[:-1]] + [1]
 
     bn = df.filter(pl.col('Teams') == "Bear Necessities")
 

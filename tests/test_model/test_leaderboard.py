@@ -25,8 +25,8 @@ def test_add_first_round_scores(configure_repo, build_players):
 
     leaderboard.for_round(1)
 
-    assert leaderboard.positions_for_player_per_round(mens_players.Morikawa, []) == [1]
-    assert leaderboard.positions_for_player_per_round(mens_players.Schauffele, []) == [10]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Morikawa, [])) == [1]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Schauffele, [])) == [10]
 
 
 def test_add_2nd_round_scores(configure_repo, build_players):
@@ -39,9 +39,9 @@ def test_add_2nd_round_scores(configure_repo, build_players):
 
     leaderboard.for_round(2)
 
-    assert leaderboard.positions_for_player_per_round(mens_players.Fleetwood, []) == [3, 1]
-    assert leaderboard.positions_for_player_per_round(mens_players.Finau, []) == [2, 9]
-    assert leaderboard.positions_for_player_per_round(mens_players.Hatton, []) == [8, 9]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Fleetwood, [])) == [3, 1]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Finau, [])) == [2, 9]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Hatton, [])) == [8, 9]
 
 
 def test_missed_cut(configure_repo, build_players):
@@ -69,8 +69,12 @@ def test_load_the_event(configure_repo, build_players):
 
     leaderboard = co2023.leaderboard
 
-    assert leaderboard.positions_for_player_per_round(mens_players.Fleetwood, []) == [3, 1]
-    assert leaderboard.positions_for_player_per_round(mens_players.Finau, []) == [2, 9]
-    assert leaderboard.positions_for_player_per_round(mens_players.Hatton, []) == [8, 9]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Fleetwood, [])) == [3, 1]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Finau, [])) == [2, 9]
+    assert positions(leaderboard.positions_for_player_per_round(mens_players.Hatton, [])) == [8, 9]
 
 # Helpers
+
+
+def positions(rounds):
+    return [rd.get('current_pos') for rd in rounds]

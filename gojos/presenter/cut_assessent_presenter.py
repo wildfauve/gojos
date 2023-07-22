@@ -23,7 +23,7 @@ def cut_assessment_table(assessment: Dict, to_discord: bool = False):
         for player, latest_pos, assessment in players_assessments:
             table.add_row(team.name,
                           player.name,
-                          str(latest_pos),
+                          str(latest_pos.get('current_pos')),
                           _cut_assessment(assessment))
 
     console.terminal_console().print(table)

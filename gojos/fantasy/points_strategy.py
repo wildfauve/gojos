@@ -68,12 +68,13 @@ class InvertedPosition(PointsStrategyCalculator):
     def positions_for_player(self, roster_player, wildcards):
         return roster_player.event.positions_for_player_per_round(roster_player.player, wildcards)
 
-    def _invert_position(self, roster_player, all_positions, pos):
+    def _invert_position(self, roster_player, all_positions, pos: Dict):
         if isinstance(pos, model.PlayerState) or not pos:
             if self.pts_strategy.POINTS_FOR_MISSED_CUT.value is not None:
                 return self.pts_strategy.POINTS_FOR_MISSED_CUT.value
-            return self._points_with_factor(roster_player.event.number_of_entries + 1 - self._position_at_cut(all_positions))
-        return self._points_with_factor(roster_player.event.number_of_entries + 1 - pos)
+            at_cut_pos = self._position_at_cut(all_positions)
+            return self._points_with_factor(roster_player.event.number_of_entries + 1 - at_cut_pos.get('current_pos'))
+        return self._points_with_factor(roster_player.event.number_of_entries + 1 - pos.get('current_pos'))
 
     def _position_at_cut(self, all_positions):
         return fn.remove(lambda pos: isinstance(pos, model.PlayerState), all_positions)[-1]
