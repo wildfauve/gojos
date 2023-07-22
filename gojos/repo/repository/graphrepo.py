@@ -10,6 +10,6 @@ class GraphRepo:
         print(self.graph.serialize(format="ttl"))
         pass
 
-    def write(self, file):
+    def write(self, file, fmt="ttl"):
         with open(file, 'w') as f:
-            f.write(self.graph.serialize(format="ttl"))
+            f.write(self.graph.serialize(format=fmt))

@@ -51,11 +51,12 @@ class Round:
 
     def apply_scraped_player_score(self, scrapped_player: adapter.ScrappedPlayer):
         if (len(scrapped_player.round_scores) < self.round_number
-                or not scrapped_player.round_scores
-                or not scrapped_player.round_scores[self.round_number]):
+                or not scrapped_player.round_scores):
+            # or not scrapped_player.round_scores[self.round_number]):
             breakpoint()
+        rd_score = int(scr) if (scr := scrapped_player.round_scores.get(self.round_number, None)) else None
         self.player_score(scrapped_player.player_klass,
-                          int(scrapped_player.round_scores[self.round_number]),
+                          rd_score,
                           state=scrapped_player.player_state)
 
     def done(self):
@@ -92,6 +93,10 @@ class Round:
         return fn.find(lambda ps: ps.player == player, self.player_scores)
 
     def player_score(self, player: model.Player, score: int = None, state: Optional[model.PlayerState] = None):
+        if not score and state == model.PlayerState.CUT:  # that is, they missed the cut
+            return self
+        if not score:
+            breakpoint()
         ps = model.PlayerScore.create(player=player, for_round=self, score=score, state=state)
         # if self.round_number > 1:
         #     breakpoint()
