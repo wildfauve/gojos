@@ -51,7 +51,7 @@ def wildcards(major):
     """
 
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.An).trade_in(players.Day))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Lingmerth).trade_in(players.Lee_MW))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Lingmerth).trade_in(players.Lee_M))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.MacIntyre).trade_in(players.Harman))
 
     

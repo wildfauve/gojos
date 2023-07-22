@@ -20,16 +20,24 @@ def cut_assessment_table(assessment: Dict, to_discord: bool = False):
 
     for team, players_assessments in assessment.items():
         table.add_row('', '', '', '')
-        for player, latest_pos, assessment in players_assessments:
+        for player, wc, latest_pos, assessment in players_assessments:
+            pos = str(latest_pos.get('current_pos')) if isinstance(latest_pos, dict) else "CUT"
             table.add_row(team.name,
-                          player.name,
-                          str(latest_pos.get('current_pos')),
+                          decorate_player(player, wc),
+                          pos,
                           _cut_assessment(assessment))
 
     console.terminal_console().print(table)
 
     if to_discord:
         _send_to_discord_as_attachment(table)
+
+
+def decorate_player(player, wc) -> str:
+    if not wc:
+        return player.name
+    return f"{player.name} ({wc})"
+
 
 
 def _cut_assessment(relative_position):

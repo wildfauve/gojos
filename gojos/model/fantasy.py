@@ -74,8 +74,8 @@ class Team:
     def explain_points(self):
         return [fantasy_draw.explain_points() for fantasy_draw in self.fantasy_draws]
 
-    def players_relative_to_cut(self):
-        return self.fantasy_tournament.players_relative_to_cut()
+    def players_relative_to_cut(self, for_round):
+        return self.fantasy_tournament.players_relative_to_cut(for_round)
 
     def __hash__(self):
         return hash((self.symbolic_name,))
@@ -125,12 +125,17 @@ class FantasyTournament:
     def is_player_entered(self, player) -> bool:
         return self.event.is_player_entered(player)
 
-    def players_relative_to_cut(self):
-        return reduce(self._player_relative_to_cut, self.roster, [])
+    def players_relative_to_cut(self, for_round):
+        return reduce(partial(self._player_relative_to_cut, for_round), self.roster, [])
 
-    def _player_relative_to_cut(self, accum: List, roster_player):
-        latest_pos, relative_to_cut = roster_player.event.relative_to_cut(roster_player.player)
-        accum.append((roster_player.player, latest_pos, relative_to_cut))
+    def _player_relative_to_cut(self, for_round, accum: List, roster_player):
+        wc = WildCard.has_swap(self.wildcard_trades, roster_player.player, for_round)
+        plr = wc.trade_in_player if wc else roster_player.player
+        latest_pos, relative_to_cut = roster_player.event.relative_to_cut(plr)
+        accum.append((plr,
+                      "WC" if wc else None,
+                      latest_pos,
+                      relative_to_cut))
         return accum
 
     def _player_already_added(self, player):
