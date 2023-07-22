@@ -50,4 +50,8 @@ def wildcards(major):
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Scheffler).trade_in(players.Morikawa))
     """
 
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Molinari_F).trade_in(players.Migliozzi))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Lowry).trade_in(players.Migliozzi))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.MacIntyre).trade_in(players.Harman))
+    
     pass
