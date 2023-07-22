@@ -29,7 +29,7 @@ def selection(major):
     """
     TEAM.major(major).on_roster(players.McIlroy)
     TEAM.major(major).on_roster(players.Fleetwood)
-    TEAM.major(major).on_roster(players.Smith_Ca)
+    TEAM.major(major).on_roster(players.Smith_C)
     TEAM.major(major).on_roster(players.An)
     TEAM.major(major).on_roster(players.Kim_T)
     TEAM.major(major).on_roster(players.Lowry)
@@ -49,6 +49,10 @@ def wildcards(major):
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Scheffler).trade_in(players.Morikawa))
     """
 
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.An).trade_in(players.Day))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Lowry).trade_in(players.Lee_MW))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.MacIntyre).trade_in(players.Harman))
+    
     pass
 
 
