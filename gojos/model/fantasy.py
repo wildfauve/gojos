@@ -100,7 +100,7 @@ class FantasyTournament:
     def __init__(self, event: model.TournamentEvent, team: Team, sub: URIRef = None):
         self.team = team
         self.event = event
-        self.roster = []
+        self.roster = set()
         self.wildcard_trades = []
         self.subject = team.subject + f"/{event.relative_subject}"
 
@@ -117,7 +117,7 @@ class FantasyTournament:
         if not player or self._player_already_added(player):
             return self
         if self.event.points_strategy.valid_for_roster(self.roster, player) and self.is_player_entered(player):
-            self.roster.append(RosterPlayer(event=self.event, player=player))
+            self.roster.add(RosterPlayer(event=self.event, player=player))
         else:
             breakpoint()
         return self
