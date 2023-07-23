@@ -58,7 +58,7 @@ def cut_danger(tournament, year, for_round, to_discord):
         command.cut_danger(tournament=helpers.to_tournament(tournament),
                            year=year,
                            for_round=for_round,
-                           to_discord=to_discord), to_discord)
+                           to_discord=to_discord), for_round, to_discord)
     pass
 
 

@@ -10,8 +10,8 @@ from . import console
 temp_file_path = Path("_temp") / "cut_assessment.txt"
 
 
-def cut_assessment_table(assessment: Dict, to_discord: bool = False):
-    table = Table(title="Cut Assessment For Teams")
+def cut_assessment_table(assessment: Dict, for_round: int, to_discord: bool = False):
+    table = Table(title=f"Cut Assessment and Positions at Round {for_round}")
 
     table.add_column('Team', justify="right", style="cyan")
     table.add_column('Player', justify="right", style="magenta")
@@ -70,10 +70,10 @@ def _as_text(cons):
 def _as_attachment(cons):
     with open(temp_file_path, 'w') as f:
         f.write(cons.file.getvalue())
-    discord.send_attachment(msg_title=f"Fantasy Leaderboard",
+    discord.send_attachment(msg_title=f"Cut Assessment and Positions",
                             description="",
                             file_path=temp_file_path,
-                            file_name=f"leaderboard.md",
+                            file_name=f"cut_assessment_and_positions.md",
                             as_attachment=False)
     temp_file_path.unlink(missing_ok=False)
     pass

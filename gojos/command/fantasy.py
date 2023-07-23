@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Dict
 from functools import reduce, partial
 
 import polars as pl
@@ -34,7 +34,7 @@ def cut_danger(tournament: model.Tournament,
                year: int,
                for_round: int,
                to_discord,
-               fantasy_tournaments_dict=fantasy.fantasy_tournaments) -> pl.DataFrame:
+               fantasy_tournaments_dict=fantasy.fantasy_tournaments) -> Dict:
     event = tournament.for_year(year, load=True)
     if not event:
         return
