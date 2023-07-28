@@ -3,10 +3,9 @@ from gojos.players import mens_players
 
 
 def round_1(event):
-    round1 = event.leaderboard.for_round(1) 
-    round1.player_score(mens_players.Morikawa, 65)
-    round1.player_score(mens_players.Finau, 66)
+    round1 = event.leaderboard.for_round(1)
     round1.player_score(mens_players.Fleetwood, 67)
+    round1.player_score(mens_players.Morikawa, 65)
     round1.player_score(mens_players.Scheffler, 68)
     round1.player_score(mens_players.Fitzpatrick, 69)
     round1.player_score(mens_players.Rahm, 70)
@@ -14,6 +13,8 @@ def round_1(event):
     round1.player_score(mens_players.Hatton, 72)
     round1.player_score(mens_players.Homa, 73)
     round1.player_score(mens_players.Schauffele, 74)
+    round1.player_score(mens_players.McIlroy, 70)
+    round1.player_score(mens_players.Finau, 66)
     round1.done()
     
 def round_2(event):

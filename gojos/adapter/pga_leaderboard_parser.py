@@ -1,4 +1,4 @@
-from typing import Tuple, Union
+from typing import Tuple, Union, Callable
 from functools import reduce, partial
 import json
 
@@ -16,8 +16,8 @@ from . import value
 leaderboard = "https://www.pgatour.com/leaderboard"
 
 
-def build_leaderboard(for_round: int, to_model: bool = True):
-    return _csvw_parser(_entries(_get_page(leaderboard)), for_round, to_model)
+def build_leaderboard(for_round: int, to_model: bool = True, missing_player_writer: Callable = None):
+    return _csvw_parser(_entries(_get_page(leaderboard)), for_round, to_model, missing_player_writer)
 
 
 def _get_page(url_or_file):
@@ -30,16 +30,17 @@ def _entries(page):
     return page.find('script', type='application/ld+json').text
 
 
-def _csvw_parser(json_ld, for_round, to_model):
+def _csvw_parser(json_ld, for_round, to_model, missing_player_writer):
     data = json.loads(json_ld)
     num_players = len(data['mainEntity']['csvw:tableSchema']['csvw:columns'][1]['csvw:cells'])
-    return [_per_player_row(for_round, data['mainEntity']['csvw:tableSchema']['csvw:columns'], idx, to_model) for idx in
-            range(0, num_players - 1)]
-    # return reduce(partial(_per_player_row, for_round, data['mainEntity']['csvw:tableSchema']['csvw:columns']),
-    #               range(0, num_players - 1), [])
+    return [_per_player_row(for_round,
+                            data['mainEntity']['csvw:tableSchema']['csvw:columns'],
+                            idx,
+                            to_model,
+                            missing_player_writer) for idx in range(0, num_players)]
 
 
-def _per_player_row(for_round, table, cell_id, to_model):
+def _per_player_row(for_round, table, cell_id, to_model, missing_player_writer):
     player_state = None
     pos = _to_int(_extract_value(table, 0, cell_id, "-"))
     name = _extract_value(table, 1, cell_id, "-")
@@ -62,7 +63,8 @@ def _per_player_row(for_round, table, cell_id, to_model):
                                     total=None,
                                     position=pos,
                                     player_state=player_state,
-                                    round_scores=rds)
+                                    round_scores=rds,
+                                    missing_writer=missing_player_writer)
     else:
         return {
             'name': _tokenise(name),

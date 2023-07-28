@@ -1,10 +1,13 @@
 import pytest
+from jinja2 import Environment, FileSystemLoader
+
 from gojos import model
 from gojos.fantasy import points_strategy
 from gojos.players import mens_players as players
 
 from tests import fixtures
 
+environment = Environment(loader=FileSystemLoader("tests/fixtures/templates/"))
 
 def create_tournie():
     return model.GrandSlam.create(name="Clojos Open", subject_name="ClojosOpen", perma_id="co")
@@ -63,3 +66,20 @@ def entries():
             players.Schauffele,
             players.Finau,
             players.Morikawa]
+
+
+@pytest.fixture
+def empty_leaderboard_html():
+    leaderboard_template = environment.get_template("leaderboard.html")
+    context = {
+        "csvw_json": open('tests/fixtures/templates/csvw_empty_scores.json', 'r').read()
+    }
+    return leaderboard_template.render(context)
+
+@pytest.fixture
+def r1_leaderboard_html():
+    leaderboard_template = environment.get_template("leaderboard.html")
+    context = {
+        "csvw_json": open('tests/fixtures/templates/csvw_r1_scores.json', 'r').read()
+    }
+    return leaderboard_template.render(context)

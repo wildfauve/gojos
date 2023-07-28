@@ -1,0 +1,334 @@
+{
+  "@context": [
+    "https://schema.org",
+    {
+      "csvw": "https://www.w3.org/ns/csvw#"
+    }
+  ],
+  "@type": "Dataset",
+  "name": "Clojos Open 2023 Leaderboard",
+  "description": "PGA TOUR Live Leaderboard 2023 Clojos Open, Bronzino Hills",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PGA TOUR"
+  },
+  "mainEntity": {
+    "@type": "csvw:Table",
+    "csvw:tableSchema": {
+      "csvw:columns": [
+        {
+          "csvw:name": "POS",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "1"
+            },
+            {
+              "csvw:value": "2"
+            },
+            {
+              "csvw:value": "3"
+            },
+            {
+              "csvw:value": "4"
+            },
+            {
+              "csvw:value": "5"
+            },
+            {
+              "csvw:value": "6"
+            },
+            {
+              "csvw:value": "7"
+            },
+            {
+              "csvw:value": "8"
+            },
+            {
+              "csvw:value": "9"
+            },
+            {
+              "csvw:value": "10"
+            },
+            {
+              "csvw:value": "11"
+            }
+          ]
+        },
+        {
+          "csvw:name": "PLAYER",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "T. Fleetwood"
+            },
+            {
+              "csvw:value": "C. Morikawa"
+            },
+            {
+              "csvw:value": "S. Scheffler"
+            },
+            {
+              "csvw:value": "M. Fitzpatrick"
+            },
+            {
+              "csvw:value": "J. Rahm"
+            },
+            {
+              "csvw:value": "V. Hovland"
+            },
+            {
+              "csvw:value": "T. Hatton"
+            },
+            {
+              "csvw:value": "M. Homa"
+            },
+            {
+              "csvw:value": "Z. Schauffele"
+            },
+            {
+              "csvw:value": "R. McIlroy"
+            },
+            {
+              "csvw:value": "T. Finau"
+            }
+          ]
+        },
+        {
+          "csvw:name": "TOT",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-6"
+            },
+            {
+              "csvw:value": "-5"
+            },
+            {
+              "csvw:value": "-4"
+            },
+            {
+              "csvw:value": "-3"
+            },
+            {
+              "csvw:value": "-2"
+            },
+            {
+              "csvw:value": "-1"
+            },
+            {
+              "csvw:value": "E"
+            },
+            {
+              "csvw:value": "+1"
+            },
+            {
+              "csvw:value": "+2"
+            },
+            {
+              "csvw:value": "+3"
+            },
+            {
+              "csvw:value": "+4"
+            }
+          ]
+        },
+        {
+          "csvw:name": "THRU",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            },
+            {
+              "csvw:value": "F"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R1",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "66"
+            },
+            {
+              "csvw:value": "67"
+            },
+            {
+              "csvw:value": "68"
+            },
+            {
+              "csvw:value": "69"
+            },
+            {
+              "csvw:value": "70"
+            },
+            {
+              "csvw:value": "71"
+            },
+            {
+              "csvw:value": "72"
+            },
+            {
+              "csvw:value": "73"
+            },
+            {
+              "csvw:value": "74"
+            },
+            {
+              "csvw:value": "75"
+            },
+            {
+              "csvw:value": "76"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R2",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R3",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        },
+        {
+          "csvw:name": "R4",
+          "csvw:datatype": "string",
+          "csvw:cells": [
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            },
+            {
+              "csvw:value": "-"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

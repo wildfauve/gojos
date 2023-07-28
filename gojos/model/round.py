@@ -98,13 +98,8 @@ class Round:
         if not score:
             breakpoint()
         ps = model.PlayerScore.create(player=player, for_round=self, score=score, state=state)
-        # if self.round_number > 1:
-        #     breakpoint()
-        # if ps.state:
         if self.round_number == 1:  # That is, the first time this player has set a score; usually round 1
             self.leaderboard.add_scoring_player(ps.subject)
-        # if ps.state:
-        #     breakpoint()
         self.player_scores.append(ps)
         return self
 
