@@ -7,10 +7,10 @@
 <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> a clo-go:Leaderboard ;
     clo-go:isForEvent <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024> .
 
-clo-go-ind-tou:Players a clo-go:Tournament ;
+clo-go-ind-tou:ThePlayers a clo-go:Tournament ;
     skos:notation "The Players" ;
     clo-go:hasPermId "pl" ;
-    clo-go:hasSubjectName "theplayers" .
+    clo-go:hasSubjectName "ThePlayers" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024> a clo-go:TournamentEvent ;
     skos:notation "Players2024" ;
@@ -159,6 +159,6 @@ clo-go-ind-tou:Players a clo-go:Tournament ;
         clo-go-ind-plr:Zalatoris,
         clo-go-ind-plr:van_Rooyen ;
     clo-go:hasFantasyPointsStrategy <https://clojos.io/ontology/Fantasy/FantasyPointsStrategy/InvertedPosition/Points1_4_10> ;
-    clo-go:isEventOf clo-go-ind-tou:Players ;
+    clo-go:isEventOf clo-go-ind-tou:ThePlayers ;
     clo-go:isInYear 2024 .
 
