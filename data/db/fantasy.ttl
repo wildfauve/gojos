@@ -6,7 +6,7 @@
 
 clo-fan-ind:Fauve a clo-fan:Team ;
     skos:notation "Fauve" ;
-    clo-fan:hasTeamMembers "Perky, Jacque, Albert" .
+    clo-fan:hasTeamMembers "Perky, Latte, Peri" .
 
 clo-fan-ind:BearNecessities a clo-fan:Team ;
     skos:notation "Bear Necessities" ;
@@ -14,7 +14,7 @@ clo-fan-ind:BearNecessities a clo-fan:Team ;
 
 clo-fan-ind:Clojos a clo-fan:Team ;
     skos:notation "Clojos" ;
-    clo-fan:hasTeamMembers "Claudie, Fyodoro" .
+    clo-fan:hasTeamMembers "Claudie, Fyodoro, Sergio" .
 
 clo-fan-ind:GelatoGiants a clo-fan:Team ;
     skos:notation "Gelato Giants" ;
@@ -22,7 +22,7 @@ clo-fan-ind:GelatoGiants a clo-fan:Team ;
 
 clo-fan-ind:HeroHangouts a clo-fan:Team ;
     skos:notation "Hero Hangouts" ;
-    clo-fan:hasTeamMembers "Marmalade, Richmond, Greenwich" .
+    clo-fan:hasTeamMembers "Marmalade, Richmond, Greenwich, Wimbledon" .
 
 clo-fan-ind:LightHouse a clo-fan:Team ;
     skos:notation "LightHouse" ;

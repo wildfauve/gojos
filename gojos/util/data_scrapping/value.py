@@ -28,6 +28,7 @@ class ScrappedPlayer:
                 if players.player_by_klass_name(possible_klass_name, self.player_module):
                     breakpoint()
                 plyr_def = (f"{possible_klass_name} = Player('{self.name}',klass_name='{possible_klass_name}')\n")
+                breakpoint()
                 print(f"Cant find player: {plyr_def}")
                 missing_file.write(plyr_def)
 
