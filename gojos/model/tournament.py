@@ -121,6 +121,18 @@ class CutTop60AndTies(Cut):
         return self.cut_position - position
 
 
+class CutTop65AndTies(Cut):
+    cut_position = 65
+
+    def _position_from_cut(self, rd_position: dict):
+        if isinstance(rd_position, model.PlayerState) or not rd_position:
+            return -1
+        pos = rd_position.get('current_pos')
+        if pos == self.cut_position:
+            return 0
+        return self.cut_position - pos
+
+
 class CutTop70AndTies(Cut):
     cut_position = 70
 

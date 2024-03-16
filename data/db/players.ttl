@@ -903,10 +903,10 @@ clo-go-ind-plr:Montgomery
     foaf:name               "T. Montgomery" ;
     clo-go-plr:hasKlassName "Montgomery" .
 
-clo-go-ind-plr:Moore
+clo-go-ind-plr:Moore_T
     a                       clo-go:Player ;
     foaf:name               "T. Moore" ;
-    clo-go-plr:hasKlassName "Moore" .
+    clo-go-plr:hasKlassName "Moore_T" .
 
 clo-go-ind-plr:Morales
     a                       clo-go:Player ;
@@ -1548,9 +1548,9 @@ foaf:name "C. Kim" ;
 clo-go-plr:hasKlassName "Kim" .
 
 
-clo-go-ind-plr:Moore a clo-go:Player ;
+clo-go-ind-plr:Moore_R a clo-go:Player ;
 foaf:name "R. Moore" ;
-clo-go-plr:hasKlassName "Moore" .
+clo-go-plr:hasKlassName "Moore_R" .
 
 
 clo-go-ind-plr:Laird a clo-go:Player ;

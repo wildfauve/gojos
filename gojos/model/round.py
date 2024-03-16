@@ -95,7 +95,9 @@ class Round:
     def player_score(self, player: model.Player, score: int = None, state: Optional[model.PlayerState] = None):
         if not score and state == model.PlayerState.CUT:  # that is, they missed the cut
             return self
-        if not score:
+        if not score and state == model.PlayerState.WD:  # that is, they have withdrawn
+            return self
+        if not score and not state == model.PlayerState.WD:
             breakpoint()
         ps = model.PlayerScore.create(player=player, for_round=self, score=score, state=state)
         if self.round_number == 1:  # That is, the first time this player has set a score; usually round 1

@@ -25,6 +25,8 @@ class PlayerRepo(graphrepo.GraphRepo):
         triples = rdf.all_matching(self.graph, (sub, None, None))
         name = rdf.triple_finder(rdf.name, triples)
         klass_name = rdf.triple_finder(rdf.hasKlassName, triples)
+        if not name:
+            breakpoint()
         return (sub,
                 name.toPython(),
                 klass_name.toPython(),

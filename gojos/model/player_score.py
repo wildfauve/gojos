@@ -115,6 +115,10 @@ class PlayerScore:
             self.rounds[for_round.round_number] = {'score': score, 'current_pos': None}
             return self
         if for_round.subject in self.rounds.keys():
+            """
+            We are here because we have already added round scores for this player.  
+            There maybe a duplicate player.
+            """
             breakpoint()
         if state:
             self.state = state
@@ -145,6 +149,8 @@ class PlayerScore:
         # if self.state:
         #     breakpoint()
         self.current_position = pos
+        if not self.rounds.get(rd_sub, None):
+            breakpoint()
         if rd_sub:
             self.rounds[rd_sub]['current_pos'] = pos
             self.repo().update_round_position(self, rd_sub, pos)

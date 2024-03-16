@@ -19,6 +19,7 @@ class ScrappedPlayer:
     missing_writer: Callable = None
 
     def __post_init__(self):
+        logger.debug(f"Scaping Player: {self.name}, scores: {self.round_scores}")
         self.player_klass = model.Player.load(name=self.name)
         if not self.player_klass:
             possible_klass_name = model.Player.format_player_klass_name(self.name)
