@@ -51,4 +51,7 @@ def wildcards(major):
 
     """
 
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Finau).trade_in(players.Harman))
+    
+
     pass
