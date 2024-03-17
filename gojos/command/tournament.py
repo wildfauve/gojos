@@ -40,6 +40,13 @@ def add_entries(tournament, year):
 
 @commanda.command(graph_names=['tournament'])
 def leaderboard_for_round(tournament, year, for_round):
+    """
+    Scapes the leadboard for a specific round and updates the persisted tournament.s
+    :param tournament:
+    :param year:
+    :param for_round:
+    :return:
+    """
     event = tournament.for_year(year, load=True)
 
     rd_results = event.scores_for_round(for_round=for_round)
@@ -56,3 +63,14 @@ def leaderboard_for_round2(tournament_graph, players_graph, tournament, year, fo
     rd_results = event.scores_for_round(for_round=for_round)
     breakpoint()
     return monad.Right(event)
+
+
+def tournament_leaderboard(tournament, year):
+    """
+    Gets the current tournament leaderboard
+    :param tournament:
+    :param year:
+    :return:
+    """
+    event = tournament.for_year(year, load=True)
+    breakpoint()

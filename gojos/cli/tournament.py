@@ -59,8 +59,20 @@ def add_round_results(tournament, year, for_round):
     pass
 
 
+@click.command()
+@click.option("--tournament", "-t", type=click.Choice(helpers.tournament_names()))
+@click.option("--year", "-y", type=int)
+def tournament_leaderboard(tournament, year):
+    """
+    """
+    lb = command.tournament_leaderboard(tournament=helpers.to_tournament(tournament), year=year)
+    breakpoint()
+    pass
+
+
 
 cli.add_command(new_tournament)
 cli.add_command(new_event)
 cli.add_command(add_entries)
 cli.add_command(add_round_results)
+cli.add_command(tournament_leaderboard)

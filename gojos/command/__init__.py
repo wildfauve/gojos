@@ -10,4 +10,5 @@ from .tournament import (
     new_tournament,
     leaderboard_for_round,
     leaderboard_for_round2,
+    tournament_leaderboard
 )
