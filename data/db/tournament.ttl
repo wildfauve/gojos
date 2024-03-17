@@ -5,7 +5,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Aberg/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 27 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 12 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 207 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 27 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 140 ;
             clo-go:isRoundNumber 2 ;
@@ -15,8 +20,8 @@
             clo-go:hasRunningScoreTotal 67 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 140 ;
-    clo-go:isInCurrentPosition 27 ;
+    clo-go:hasScoreTotal 207 ;
+    clo-go:isInCurrentPosition 12 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Alexander/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -71,18 +76,23 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Bezuidenhout/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 22 ;
-            clo-go:hasRoundScore 70 ;
-            clo-go:hasRunningScoreTotal 139 ;
-            clo-go:isRoundNumber 2 ;
-            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/2> ],
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 12 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 207 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
         [ clo-go:hasPositionAfterRound 21 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
-            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 139 ;
-    clo-go:isInCurrentPosition 22 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ],
+        [ clo-go:hasPositionAfterRound 22 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 139 ;
+            clo-go:isRoundNumber 2 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/2> ] ;
+    clo-go:hasScoreTotal 207 ;
+    clo-go:isInCurrentPosition 12 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Bhatia/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -103,7 +113,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Blair/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -113,8 +128,8 @@
             clo-go:hasRunningScoreTotal 73 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Bradley/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -169,7 +184,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Burns/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 17 ;
+            clo-go:hasRoundScore 65 ;
+            clo-go:hasRunningScoreTotal 208 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -179,12 +199,17 @@
             clo-go:hasRunningScoreTotal 73 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 208 ;
+    clo-go:isInCurrentPosition 17 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Cantlay/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 64 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 215 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -194,12 +219,17 @@
             clo-go:hasRunningScoreTotal 72 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 215 ;
+    clo-go:isInCurrentPosition 64 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Clark/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 1 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 2 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 200 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 1 ;
             clo-go:hasRoundScore 65 ;
             clo-go:hasRunningScoreTotal 130 ;
             clo-go:isRoundNumber 2 ;
@@ -209,8 +239,8 @@
             clo-go:hasRunningScoreTotal 65 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 130 ;
-    clo-go:isInCurrentPosition 1 ;
+    clo-go:hasScoreTotal 200 ;
+    clo-go:isInCurrentPosition 2 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Cole/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -231,7 +261,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Conners/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 6 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 24 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 209 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 6 ;
             clo-go:hasRoundScore 68 ;
             clo-go:hasRunningScoreTotal 136 ;
             clo-go:isRoundNumber 2 ;
@@ -241,12 +276,17 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 136 ;
-    clo-go:isInCurrentPosition 6 ;
+    clo-go:hasScoreTotal 209 ;
+    clo-go:isInCurrentPosition 24 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Dahmen/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 17 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 208 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 67 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -256,8 +296,8 @@
             clo-go:hasRunningScoreTotal 74 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 208 ;
+    clo-go:isInCurrentPosition 17 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Davis/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -278,7 +318,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Day/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 29 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 210 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -288,12 +333,17 @@
             clo-go:hasRunningScoreTotal 67 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 210 ;
+    clo-go:isInCurrentPosition 29 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Detry/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 68 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 217 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -303,12 +353,17 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 217 ;
+    clo-go:isInCurrentPosition 68 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ducan/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 61 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 214 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 75 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -318,8 +373,8 @@
             clo-go:hasRunningScoreTotal 67 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 214 ;
+    clo-go:isInCurrentPosition 61 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Dunlap/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -357,7 +412,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Eckroat/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 27 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 17 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 208 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 27 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 140 ;
             clo-go:isRoundNumber 2 ;
@@ -367,12 +427,17 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 140 ;
-    clo-go:isInCurrentPosition 27 ;
+    clo-go:hasScoreTotal 208 ;
+    clo-go:isInCurrentPosition 17 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/English/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -382,12 +447,17 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Finau/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 29 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 210 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -397,12 +467,17 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 210 ;
+    clo-go:isInCurrentPosition 29 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fitzpatrick_M/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
     clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 4 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 203 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 4 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 135 ;
             clo-go:isRoundNumber 2 ;
@@ -412,12 +487,17 @@
             clo-go:hasRunningScoreTotal 66 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 135 ;
+    clo-go:hasScoreTotal 203 ;
     clo-go:isInCurrentPosition 4 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fleetwood/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -427,12 +507,17 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fowler/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 71 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 219 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -442,8 +527,8 @@
             clo-go:hasRunningScoreTotal 74 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 219 ;
+    clo-go:isInCurrentPosition 71 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Fox/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -464,7 +549,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Garnett/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 29 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 210 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -474,12 +564,17 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 210 ;
+    clo-go:isInCurrentPosition 29 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ghim/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 12 ;
+            clo-go:hasRoundScore 66 ;
+            clo-go:hasRunningScoreTotal 207 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -489,8 +584,8 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 207 ;
+    clo-go:isInCurrentPosition 12 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Glover/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -528,7 +623,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Grillo/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 27 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 24 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 209 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 27 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 140 ;
             clo-go:isRoundNumber 2 ;
@@ -538,8 +638,8 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 140 ;
-    clo-go:isInCurrentPosition 27 ;
+    clo-go:hasScoreTotal 209 ;
+    clo-go:isInCurrentPosition 24 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hadley/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -611,7 +711,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Harman/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 10 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 3 ;
+            clo-go:hasRoundScore 64 ;
+            clo-go:hasRunningScoreTotal 201 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 10 ;
             clo-go:hasRoundScore 65 ;
             clo-go:hasRunningScoreTotal 137 ;
             clo-go:isRoundNumber 2 ;
@@ -621,8 +726,8 @@
             clo-go:hasRunningScoreTotal 72 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 137 ;
-    clo-go:isInCurrentPosition 10 ;
+    clo-go:hasScoreTotal 201 ;
+    clo-go:isInCurrentPosition 3 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Henley/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -672,7 +777,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hodges/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 22 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 22 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 139 ;
             clo-go:isRoundNumber 2 ;
@@ -682,8 +792,8 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 139 ;
-    clo-go:isInCurrentPosition 22 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hoffman/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -704,7 +814,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hoge/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 6 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 75 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 6 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 136 ;
             clo-go:isRoundNumber 2 ;
@@ -714,12 +829,17 @@
             clo-go:hasRunningScoreTotal 67 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 136 ;
-    clo-go:isInCurrentPosition 6 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Homa/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 68 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 217 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 75 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -729,8 +849,8 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 217 ;
+    clo-go:isInCurrentPosition 68 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Horschel/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -768,7 +888,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hovland/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -778,12 +903,17 @@
             clo-go:hasRunningScoreTotal 73 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hubbard/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -793,12 +923,17 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Hughes/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 44 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 212 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -808,8 +943,8 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 212 ;
+    clo-go:isInCurrentPosition 44 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Højgaard/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -830,7 +965,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Im/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -840,8 +980,8 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Jaeger/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -862,7 +1002,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -872,8 +1017,8 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_M/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -911,7 +1056,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kim_S_W/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 24 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 209 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -921,12 +1071,17 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 209 ;
+    clo-go:isInCurrentPosition 24 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kirk/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -936,12 +1091,17 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kitayama/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 44 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 212 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -951,12 +1111,17 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 212 ;
+    clo-go:isInCurrentPosition 44 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Knapp/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -966,8 +1131,8 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Kohles/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1005,7 +1170,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Laird/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1015,12 +1185,17 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lashley/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 8 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 205 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -1030,8 +1205,8 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 205 ;
+    clo-go:isInCurrentPosition 8 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lee_K/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1052,7 +1227,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lee_M/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 216 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1062,12 +1242,17 @@
             clo-go:hasRunningScoreTotal 73 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 216 ;
+    clo-go:isInCurrentPosition 66 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lipsky/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 44 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 212 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1077,8 +1262,8 @@
             clo-go:hasRunningScoreTotal 73 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 212 ;
+    clo-go:isInCurrentPosition 44 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/List/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1116,7 +1301,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Lowry/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -1126,8 +1316,8 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/MacIntyre/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1148,7 +1338,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Malnati/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 24 ;
+            clo-go:hasRoundScore 66 ;
+            clo-go:hasRunningScoreTotal 209 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1158,12 +1353,17 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 209 ;
+    clo-go:isInCurrentPosition 24 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Martin/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 61 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 214 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1173,12 +1373,17 @@
             clo-go:hasRunningScoreTotal 72 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 214 ;
+    clo-go:isInCurrentPosition 61 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Matsuyama/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 9 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 206 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -1188,12 +1393,17 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 206 ;
+    clo-go:isInCurrentPosition 9 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/McCarthy/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -1203,12 +1413,17 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/McIlroy/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 12 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 207 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -1218,12 +1433,17 @@
             clo-go:hasRunningScoreTotal 65 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 207 ;
+    clo-go:isInCurrentPosition 12 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/McNealy/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
     clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 4 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 203 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 4 ;
             clo-go:hasRoundScore 68 ;
             clo-go:hasRunningScoreTotal 135 ;
             clo-go:isRoundNumber 2 ;
@@ -1233,7 +1453,7 @@
             clo-go:hasRunningScoreTotal 67 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 135 ;
+    clo-go:hasScoreTotal 203 ;
     clo-go:isInCurrentPosition 4 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
@@ -1255,7 +1475,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Mitchell/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 27 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 66 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 216 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 27 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 140 ;
             clo-go:isRoundNumber 2 ;
@@ -1265,12 +1490,17 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 140 ;
-    clo-go:isInCurrentPosition 27 ;
+    clo-go:hasScoreTotal 216 ;
+    clo-go:isInCurrentPosition 66 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Molinari_F/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 61 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 214 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -1280,12 +1510,17 @@
             clo-go:hasRunningScoreTotal 72 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 214 ;
+    clo-go:isInCurrentPosition 61 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Montgomery/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 9 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 206 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -1295,12 +1530,17 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 206 ;
+    clo-go:isInCurrentPosition 9 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Moore_R/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 22 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 44 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 212 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 22 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 139 ;
             clo-go:isRoundNumber 2 ;
@@ -1310,12 +1550,17 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 139 ;
-    clo-go:isInCurrentPosition 22 ;
+    clo-go:hasScoreTotal 212 ;
+    clo-go:isInCurrentPosition 44 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Moore_T/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 27 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 29 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 210 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 27 ;
             clo-go:hasRoundScore 68 ;
             clo-go:hasRunningScoreTotal 140 ;
             clo-go:isRoundNumber 2 ;
@@ -1325,12 +1570,17 @@
             clo-go:hasRunningScoreTotal 72 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 140 ;
-    clo-go:isInCurrentPosition 27 ;
+    clo-go:hasScoreTotal 210 ;
+    clo-go:isInCurrentPosition 29 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Morikawa/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 27 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 29 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 210 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 27 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 140 ;
             clo-go:isRoundNumber 2 ;
@@ -1340,12 +1590,17 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 140 ;
-    clo-go:isInCurrentPosition 27 ;
+    clo-go:hasScoreTotal 210 ;
+    clo-go:isInCurrentPosition 29 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Murray/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 71 ;
+            clo-go:hasRoundScore 77 ;
+            clo-go:hasRunningScoreTotal 219 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -1355,12 +1610,17 @@
             clo-go:hasRunningScoreTotal 73 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 219 ;
+    clo-go:isInCurrentPosition 71 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/NeSmith/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 27 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 17 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 208 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 27 ;
             clo-go:hasRoundScore 67 ;
             clo-go:hasRunningScoreTotal 140 ;
             clo-go:isRoundNumber 2 ;
@@ -1370,12 +1630,17 @@
             clo-go:hasRunningScoreTotal 73 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 140 ;
-    clo-go:isInCurrentPosition 27 ;
+    clo-go:hasScoreTotal 208 ;
+    clo-go:isInCurrentPosition 17 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Noren/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -1385,8 +1650,8 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Norrman/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1424,7 +1689,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Pan/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 10 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 12 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 207 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 10 ;
             clo-go:hasRoundScore 68 ;
             clo-go:hasRunningScoreTotal 137 ;
             clo-go:isRoundNumber 2 ;
@@ -1434,8 +1704,8 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 137 ;
-    clo-go:isInCurrentPosition 10 ;
+    clo-go:hasScoreTotal 207 ;
+    clo-go:isInCurrentPosition 12 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Pavon/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1473,7 +1743,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Poston/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 10 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 9 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 206 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 10 ;
             clo-go:hasRoundScore 68 ;
             clo-go:hasRunningScoreTotal 137 ;
             clo-go:isRoundNumber 2 ;
@@ -1483,12 +1758,17 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 137 ;
-    clo-go:isInCurrentPosition 10 ;
+    clo-go:hasScoreTotal 206 ;
+    clo-go:isInCurrentPosition 9 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Power/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 34 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 71 ;
+            clo-go:hasRoundScore 78 ;
+            clo-go:hasRunningScoreTotal 219 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 34 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 141 ;
             clo-go:isRoundNumber 2 ;
@@ -1498,12 +1778,17 @@
             clo-go:hasRunningScoreTotal 72 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 141 ;
-    clo-go:isInCurrentPosition 34 ;
+    clo-go:hasScoreTotal 219 ;
+    clo-go:isInCurrentPosition 71 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Putnam/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 64 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 215 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 74 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1513,12 +1798,17 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 215 ;
+    clo-go:isInCurrentPosition 64 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Rai/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 35 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 211 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1528,8 +1818,8 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 211 ;
+    clo-go:isInCurrentPosition 35 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ramey/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1618,7 +1908,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Ryder/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 22 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 24 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 209 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 22 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 139 ;
             clo-go:isRoundNumber 2 ;
@@ -1628,12 +1923,17 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 139 ;
-    clo-go:isInCurrentPosition 22 ;
+    clo-go:hasScoreTotal 209 ;
+    clo-go:isInCurrentPosition 24 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Schauffele/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 2 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 1 ;
+            clo-go:hasRoundScore 65 ;
+            clo-go:hasRunningScoreTotal 199 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 2 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 134 ;
             clo-go:isRoundNumber 2 ;
@@ -1643,12 +1943,17 @@
             clo-go:hasRunningScoreTotal 65 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 134 ;
-    clo-go:isInCurrentPosition 2 ;
+    clo-go:hasScoreTotal 199 ;
+    clo-go:isInCurrentPosition 1 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Scheffler/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
     clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 6 ;
+            clo-go:hasRoundScore 68 ;
+            clo-go:hasRunningScoreTotal 204 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 6 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 136 ;
             clo-go:isRoundNumber 2 ;
@@ -1658,12 +1963,17 @@
             clo-go:hasRunningScoreTotal 67 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 136 ;
+    clo-go:hasScoreTotal 204 ;
     clo-go:isInCurrentPosition 6 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Schenk/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 17 ;
+            clo-go:hasRoundScore 66 ;
+            clo-go:hasRunningScoreTotal 208 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -1673,12 +1983,17 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 208 ;
+    clo-go:isInCurrentPosition 17 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Schmid/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 6 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 17 ;
+            clo-go:hasRoundScore 72 ;
+            clo-go:hasRunningScoreTotal 208 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 6 ;
             clo-go:hasRoundScore 68 ;
             clo-go:hasRunningScoreTotal 136 ;
             clo-go:isRoundNumber 2 ;
@@ -1688,12 +2003,17 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 136 ;
-    clo-go:isInCurrentPosition 6 ;
+    clo-go:hasScoreTotal 208 ;
+    clo-go:isInCurrentPosition 17 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Scott/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -1703,8 +2023,8 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Shelton/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1810,7 +2130,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Spaun/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 71 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -1820,8 +2145,8 @@
             clo-go:hasRunningScoreTotal 72 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Spieth/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1859,7 +2184,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Stanger/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 45 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 51 ;
+            clo-go:hasRoundScore 71 ;
+            clo-go:hasRunningScoreTotal 213 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 45 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 142 ;
             clo-go:isRoundNumber 2 ;
@@ -1869,8 +2199,8 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 142 ;
-    clo-go:isInCurrentPosition 45 ;
+    clo-go:hasScoreTotal 213 ;
+    clo-go:isInCurrentPosition 51 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Stevens/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -1891,7 +2221,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Straka/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 14 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 17 ;
+            clo-go:hasRoundScore 70 ;
+            clo-go:hasRunningScoreTotal 208 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 14 ;
             clo-go:hasRoundScore 70 ;
             clo-go:hasRunningScoreTotal 138 ;
             clo-go:isRoundNumber 2 ;
@@ -1901,8 +2236,8 @@
             clo-go:hasRunningScoreTotal 68 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 138 ;
-    clo-go:isInCurrentPosition 14 ;
+    clo-go:hasScoreTotal 208 ;
+    clo-go:isInCurrentPosition 17 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Streelman/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -2008,7 +2343,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Taylor_N/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 2 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 29 ;
+            clo-go:hasRoundScore 76 ;
+            clo-go:hasRunningScoreTotal 210 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 2 ;
             clo-go:hasRoundScore 68 ;
             clo-go:hasRunningScoreTotal 134 ;
             clo-go:isRoundNumber 2 ;
@@ -2018,12 +2358,17 @@
             clo-go:hasRunningScoreTotal 66 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 134 ;
-    clo-go:isInCurrentPosition 2 ;
+    clo-go:hasScoreTotal 210 ;
+    clo-go:isInCurrentPosition 29 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Theegala/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 10 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 6 ;
+            clo-go:hasRoundScore 67 ;
+            clo-go:hasRunningScoreTotal 204 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 10 ;
             clo-go:hasRoundScore 67 ;
             clo-go:hasRunningScoreTotal 137 ;
             clo-go:isRoundNumber 2 ;
@@ -2033,8 +2378,8 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 137 ;
-    clo-go:isInCurrentPosition 10 ;
+    clo-go:hasScoreTotal 204 ;
+    clo-go:isInCurrentPosition 6 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Thomas/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -2089,7 +2434,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Valimaki/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 44 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 212 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 72 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -2099,8 +2449,8 @@
             clo-go:hasRunningScoreTotal 71 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 212 ;
+    clo-go:isInCurrentPosition 44 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Villegas/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -2138,7 +2488,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Woodland/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 68 ;
+            clo-go:hasRoundScore 74 ;
+            clo-go:hasRunningScoreTotal 217 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 73 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -2148,8 +2503,8 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 217 ;
+    clo-go:isInCurrentPosition 68 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Wu_B/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -2170,7 +2525,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Wu_D/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 55 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 44 ;
+            clo-go:hasRoundScore 69 ;
+            clo-go:hasRunningScoreTotal 212 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 55 ;
             clo-go:hasRoundScore 74 ;
             clo-go:hasRunningScoreTotal 143 ;
             clo-go:isRoundNumber 2 ;
@@ -2180,8 +2540,8 @@
             clo-go:hasRunningScoreTotal 69 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 143 ;
-    clo-go:isInCurrentPosition 55 ;
+    clo-go:hasScoreTotal 212 ;
+    clo-go:isInCurrentPosition 44 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Young/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -2202,7 +2562,12 @@
     clo-go:playerIsInState "urn:clojos:golf:playerState:cut" .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Young_Cam/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
-    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 22 ;
+    clo-go:hasRoundScores [ clo-go:hasPositionAfterRound 44 ;
+            clo-go:hasRoundScore 73 ;
+            clo-go:hasRunningScoreTotal 212 ;
+            clo-go:isRoundNumber 3 ;
+            clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ],
+        [ clo-go:hasPositionAfterRound 22 ;
             clo-go:hasRoundScore 69 ;
             clo-go:hasRunningScoreTotal 139 ;
             clo-go:isRoundNumber 2 ;
@@ -2212,8 +2577,8 @@
             clo-go:hasRunningScoreTotal 70 ;
             clo-go:isRoundNumber 1 ;
             clo-go:isRoundSubject <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1> ] ;
-    clo-go:hasScoreTotal 139 ;
-    clo-go:isInCurrentPosition 22 ;
+    clo-go:hasScoreTotal 212 ;
+    clo-go:isInCurrentPosition 44 ;
     clo-go:isOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Player/Yu/ThePlayers/2024/Leaderboard> a clo-go:PlayerScore ;
@@ -2440,6 +2805,10 @@ clo-go-ind-tou:ThePlayers a clo-go:Tournament ;
     clo-go:hasPermId "pl" ;
     clo-go:hasSubjectName "ThePlayers" .
 
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> a clo-go:ROUND ;
+    clo-go:isRoundNumber 3 ;
+    clo-go:isRoundOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
+
 <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/2> a clo-go:ROUND ;
     clo-go:isRoundNumber 2 ;
     clo-go:isRoundOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> .
@@ -2450,7 +2819,8 @@ clo-go-ind-tou:ThePlayers a clo-go:Tournament ;
 
 <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard> a clo-go:Leaderboard ;
     clo-go:hasRound <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/1>,
-        <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/2> ;
+        <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/2>,
+        <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024/Leaderboard/Round/3> ;
     clo-go:isForEvent <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/Players/2024> ;
     clo-go:isPlayerOnLeaderboard <https://clojos.io/ontology/FantasyGolf/Ind/Player/Aberg/ThePlayers/2024/Leaderboard>,
         <https://clojos.io/ontology/FantasyGolf/Ind/Player/Alexander/ThePlayers/2024/Leaderboard>,

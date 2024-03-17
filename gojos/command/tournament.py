@@ -65,7 +65,7 @@ def leaderboard_for_round2(tournament_graph, players_graph, tournament, year, fo
     return monad.Right(event)
 
 
-def tournament_leaderboard(tournament, year):
+def tournament_leaderboard(tournament, year, for_round):
     """
     Gets the current tournament leaderboard
     :param tournament:
@@ -73,4 +73,5 @@ def tournament_leaderboard(tournament, year):
     :return:
     """
     event = tournament.for_year(year, load=True)
+    players = event.leaderboard.for_round(for_round).player_scores
     breakpoint()
