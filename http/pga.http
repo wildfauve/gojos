@@ -1,0 +1,75 @@
+###
+POST https://orchestrator.pgatour.com/graphql
+Content-Type: application/json
+Origin: https://www.pgatour.com
+Referer: https://www.pgatour.com/
+X-Api-Key: da2-gsrx5bibzbb4njvhl7t37wqyl
+
+{"operationName":"Field","variables":{"fieldId":"R2024014","changesOnly":false},"query":"query Field($fieldId: ID!, $includeWithdrawn: Boolean, $changesOnly: Boolean) {
+  field(
+    id: $fieldId
+    includeWithdrawn: $includeWithdrawn
+    changesOnly: $changesOnly
+  ) {
+    tournamentName
+    id
+    lastUpdated
+    message
+    features {
+      name
+      new
+      tooltipText
+      tooltipTitle
+      fieldStatType
+      leaderboardFeatures
+    }
+    players {
+      ...FieldPlayer
+      teammate {
+        id
+        alphaSort
+        firstName
+        lastName
+        shortName
+        displayName
+        amateur
+        favorite
+        country
+        countryFlag
+        headshot
+        qualifier
+        alternate
+        withdrawn
+        status
+        owgr
+        rankingPoints
+      }
+    }
+    alternates {
+      ...FieldPlayer
+    }
+    standingsHeader
+  }
+}
+
+fragment FieldPlayer on PlayerField {
+  id
+  alphaSort
+  firstName
+  lastName
+  shortName
+  displayName
+  amateur
+  favorite
+  country
+  countryFlag
+  headshot
+  qualifier
+  alternate
+  withdrawn
+  status
+  owgr
+  rankingPoints
+  rankLogoLight
+  rankLogoDark
+}"}

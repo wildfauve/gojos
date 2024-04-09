@@ -14,6 +14,7 @@ from gojos.util import fn, logger
 from . import value
 
 leaderboard = "https://www.pgatour.com/leaderboard"
+# leaderboard = "https://www.pgatour.com/tournaments/2024/masters-tournament/R2024014"
 
 
 def build_leaderboard(for_round: int, to_model: bool = True, missing_player_writer: Callable = None):
