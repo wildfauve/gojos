@@ -1,17 +1,110 @@
 @prefix clo-go: <https://clojos.io/ontology/FantasyGolf/> .
+@prefix clo-go-ind-plr: <https://clojos.io/ontology/FantasyGolf/Ind/Player/> .
 @prefix clo-go-ind-tou: <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheMasters/2024> a clo-go:TournamentEvent ;
-    skos:notation "TheMasters2024" ;
-    clo-go:hasCutStrategy <https://clojos.io/ontology/FantasyGolf/CutStategy/CutTop60AndTies> ;
-    clo-go:hasFantasyPointsStrategy <https://clojos.io/ontology/Fantasy/FantasyPointsStrategy/InvertedPosition/Points1_4_10> ;
-    clo-go:isEventOf clo-go-ind-tou:TheMasters ;
-    clo-go:isInYear 2024 .
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheMasters/2024/Leaderboard> a clo-go:Leaderboard ;
+    clo-go:isForEvent <https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheMasters/2024> .
 
 clo-go-ind-tou:TheMasters a clo-go:Tournament ;
     skos:notation "The Masters" ;
     clo-go:hasPermId "ms" ;
     clo-go:hasSubjectName "TheMasters" .
+
+<https://clojos.io/ontology/FantasyGolf/Ind/Tournament/TheMasters/2024> a clo-go:TournamentEvent ;
+    skos:notation "TheMasters2024" ;
+    clo-go:hasCutStrategy <https://clojos.io/ontology/FantasyGolf/CutStategy/CutTop60AndTies> ;
+    clo-go:hasEnteredPlayer clo-go-ind-plr:Aberg,
+        clo-go-ind-plr:An,
+        clo-go-ind-plr:Bhatia,
+        clo-go-ind-plr:Bradley,
+        clo-go-ind-plr:Burns,
+        clo-go-ind-plr:Cantlay,
+        clo-go-ind-plr:Clark,
+        clo-go-ind-plr:Cole,
+        clo-go-ind-plr:Conners,
+        clo-go-ind-plr:Couples,
+        clo-go-ind-plr:Davis,
+        clo-go-ind-plr:Day,
+        clo-go-ind-plr:DeChambeau,
+        clo-go-ind-plr:De_la_Fuente,
+        clo-go-ind-plr:Dunlap,
+        clo-go-ind-plr:Eckroat,
+        clo-go-ind-plr:English,
+        clo-go-ind-plr:Finau,
+        clo-go-ind-plr:Fitzpatrick_M,
+        clo-go-ind-plr:Fleetwood,
+        clo-go-ind-plr:Fowler,
+        clo-go-ind-plr:Fox,
+        clo-go-ind-plr:Garcia,
+        clo-go-ind-plr:Glover,
+        clo-go-ind-plr:Grillo,
+        clo-go-ind-plr:Hadwin,
+        clo-go-ind-plr:Hagestad,
+        clo-go-ind-plr:Harman,
+        clo-go-ind-plr:Hatton,
+        clo-go-ind-plr:Henley,
+        clo-go-ind-plr:Hisatsune,
+        clo-go-ind-plr:Hodges,
+        clo-go-ind-plr:Homa,
+        clo-go-ind-plr:Hovland,
+        clo-go-ind-plr:Højgaard,
+        clo-go-ind-plr:Im,
+        clo-go-ind-plr:Jaeger,
+        clo-go-ind-plr:Johnson_D,
+        clo-go-ind-plr:Johnson_Z,
+        clo-go-ind-plr:Kim_S_W,
+        clo-go-ind-plr:Kim_T,
+        clo-go-ind-plr:Kirk,
+        clo-go-ind-plr:Kitayama,
+        clo-go-ind-plr:Knapp,
+        clo-go-ind-plr:Koepka,
+        clo-go-ind-plr:Lamprecht,
+        clo-go-ind-plr:Lee_M,
+        clo-go-ind-plr:List,
+        clo-go-ind-plr:Lowry,
+        clo-go-ind-plr:Malnati,
+        clo-go-ind-plr:Matsuyama,
+        clo-go-ind-plr:McCarthy,
+        clo-go-ind-plr:McIlroy,
+        clo-go-ind-plr:Meronk,
+        clo-go-ind-plr:Mickelson,
+        clo-go-ind-plr:Moore_T,
+        clo-go-ind-plr:Morikawa,
+        clo-go-ind-plr:Murray,
+        clo-go-ind-plr:Niemann,
+        clo-go-ind-plr:Olazábal,
+        clo-go-ind-plr:Olesen,
+        clo-go-ind-plr:Pavon,
+        clo-go-ind-plr:Poston,
+        clo-go-ind-plr:Rahm,
+        clo-go-ind-plr:Reed,
+        clo-go-ind-plr:Rose,
+        clo-go-ind-plr:Schauffele,
+        clo-go-ind-plr:Scheffler,
+        clo-go-ind-plr:Schenk,
+        clo-go-ind-plr:Schwartzel,
+        clo-go-ind-plr:Scott,
+        clo-go-ind-plr:Shipley,
+        clo-go-ind-plr:Singh,
+        clo-go-ind-plr:Smith_Ca,
+        clo-go-ind-plr:Spieth,
+        clo-go-ind-plr:Straka,
+        clo-go-ind-plr:Stubbs,
+        clo-go-ind-plr:Taylor_N,
+        clo-go-ind-plr:Theegala,
+        clo-go-ind-plr:Thomas,
+        clo-go-ind-plr:Villegas,
+        clo-go-ind-plr:Watson,
+        clo-go-ind-plr:Weir,
+        clo-go-ind-plr:Willett,
+        clo-go-ind-plr:Woodland,
+        clo-go-ind-plr:Woods,
+        clo-go-ind-plr:Young_Cam,
+        clo-go-ind-plr:Zalatoris,
+        clo-go-ind-plr:van_Rooyen ;
+    clo-go:hasFantasyPointsStrategy <https://clojos.io/ontology/Fantasy/FantasyPointsStrategy/InvertedPosition/Points1_4_10> ;
+    clo-go:isEventOf clo-go-ind-tou:TheMasters ;
+    clo-go:isInYear 2024 .
 

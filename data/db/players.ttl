@@ -1698,3 +1698,52 @@ foaf:name "B. Kohles" ;
 clo-go-plr:hasKlassName "Kohles" .
 
 
+clo-go-ind-plr:Olazábal a clo-go:Player ;
+foaf:name "J. Olazábal" ;
+clo-go-plr:hasKlassName "Olazábal" .
+
+
+clo-go-ind-plr:De_la_Fuente a clo-go:Player ;
+foaf:name "S. De la Fuente" ;
+clo-go-plr:hasKlassName "De_la_Fuente" .
+
+
+clo-go-ind-plr:Stubbs a clo-go:Player ;
+foaf:name "J. Stubbs" ;
+clo-go-plr:hasKlassName "Stubbs" .
+
+
+clo-go-ind-plr:Weir a clo-go:Player ;
+foaf:name "M. Weir" ;
+clo-go-plr:hasKlassName "Weir" .
+
+
+clo-go-ind-plr:Shipley a clo-go:Player ;
+foaf:name "N. Shipley" ;
+clo-go-plr:hasKlassName "Shipley" .
+
+
+clo-go-ind-plr:Singh a clo-go:Player ;
+foaf:name "V. Singh" ;
+clo-go-plr:hasKlassName "Singh" .
+
+
+clo-go-ind-plr:Couples a clo-go:Player ;
+foaf:name "F. Couples" ;
+clo-go-plr:hasKlassName "Couples" .
+
+
+clo-go-ind-plr:Hagestad a clo-go:Player ;
+foaf:name "S. Hagestad" ;
+clo-go-plr:hasKlassName "Hagestad" .
+
+
+clo-go-ind-plr:Watson a clo-go:Player ;
+foaf:name "B. Watson" ;
+clo-go-plr:hasKlassName "Watson" .
+
+
+clo-go-ind-plr:Woods a clo-go:Player ;
+foaf:name "T. Woods" ;
+clo-go-plr:hasKlassName "Woods" .
+

@@ -27,6 +27,15 @@ def selection(major):
     TEAM.major(major).on_roster(players.McIlroy)
     """
     TEAM.major(major).on_roster(players.McIlroy)
+    TEAM.major(major).on_roster(players.Clark)
+    TEAM.major(major).on_roster(players.Homa)
+    TEAM.major(major).on_roster(players.Matsuyama)
+    TEAM.major(major).on_roster(players.Scheffler)
+    TEAM.major(major).on_roster(players.Schauffele)
+    TEAM.major(major).on_roster(players.Fitzpatrick)
+    TEAM.major(major).on_roster(players.Aberg)
+    TEAM.major(major).on_roster(players.Fleetwood)
+    TEAM.major(major).on_roster(players.Theegala)
     pass
 
 
@@ -39,8 +48,4 @@ def wildcards(major):
 
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Scheffler).trade_in(players.Morikawa))
     """
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Cantlay).trade_in(players.Harman))
-    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Koepka).trade_in(players.Fleetwood))
-    TEAM.major(major).play_wildcard(WildCard().from_round(4).trade_out(players.Scheffler).trade_in(players.Rahm))
-    TEAM.major(major).play_wildcard(WildCard().from_round(4).trade_out(players.Smith_Ca).trade_in(players.Young_Cam))
     pass
