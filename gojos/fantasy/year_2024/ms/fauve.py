@@ -32,7 +32,7 @@ def selection(major):
     TEAM.major(major).on_roster(players.Matsuyama)
     TEAM.major(major).on_roster(players.Scheffler)
     TEAM.major(major).on_roster(players.Schauffele)
-    TEAM.major(major).on_roster(players.Fitzpatrick)
+    TEAM.major(major).on_roster(players.Fitzpatrick_M)
     TEAM.major(major).on_roster(players.Aberg)
     TEAM.major(major).on_roster(players.Fleetwood)
     TEAM.major(major).on_roster(players.Theegala)

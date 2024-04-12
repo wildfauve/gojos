@@ -63,6 +63,7 @@ class Team:
         return self.fantasy_tournament
 
     def points_per_round(self):
+        breakpoint()
         return self.fantasy_tournament.points_per_round()
 
     def total_points(self, for_round=None):

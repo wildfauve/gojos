@@ -3,9 +3,8 @@ import click
 from gojos import command, presenter
 from gojos.majors import tournaments
 
-from gojos.initialiser import environment, db
-
 from . import helpers
+
 
 def tournament_names():
     return tournaments.tournament_names()
@@ -63,13 +62,15 @@ def add_round_results(tournament, year, for_round):
 @click.option("--tournament", "-t", type=click.Choice(helpers.tournament_names()))
 @click.option("--year", "-y", type=int)
 @click.option("--for-round", "-r", type=int, default=1, help="Leaderboard as at round")
-def tournament_leaderboard(tournament, year, for_round):
+@click.option("--to-discord/--to-shell", "-d/-s", required=True, default=False, help="To discord or to the shell")
+def tournament_leaderboard(tournament, year, for_round, to_discord):
     """
     """
-    lb = command.tournament_leaderboard(tournament=helpers.to_tournament(tournament), year=year, for_round=for_round)
-    breakpoint()
+    presenter.leaderboard(command.tournament_leaderboard(tournament=helpers.to_tournament(tournament),
+                                                         year=year,
+                                                         for_round=for_round),
+                          to_discord)
     pass
-
 
 
 cli.add_command(new_tournament)

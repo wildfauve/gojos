@@ -5,6 +5,8 @@ from gojos import model, graph
 from gojos.util import monad
 from gojos.players import mens_players
 
+from gojos import dataframe
+
 from . import helpers, commanda
 
 
@@ -23,7 +25,6 @@ def new_event(tournament, year):
     if not ev:
         breakpoint()
     return monad.Right(ev)
-
 
 
 @commanda.command(graph_names=['tournament'])
@@ -73,5 +74,4 @@ def tournament_leaderboard(tournament, year, for_round):
     :return:
     """
     event = tournament.for_year(year, load=True)
-    players = event.leaderboard.for_round(for_round).player_scores
-    breakpoint()
+    return dataframe.player_scores_to_leaderboard_df(event.leaderboard.for_round(for_round).player_scores, for_round)

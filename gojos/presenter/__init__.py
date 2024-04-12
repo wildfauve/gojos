@@ -1,5 +1,6 @@
 from .df_table_presenter import (
-    event_team_scores_table
+    event_team_scores_table,
+    leaderboard
 )
 
 from .plot_channel_sender import (

@@ -84,8 +84,8 @@ class PlayerScore:
             f"total={self.total}",
             f"current_position={self.current_position}",
             f"state={self.state}",
-            f"round_scores=[{','.join([str(sc['score']) for sc in self.rounds.values()])}]",
-            f"round_positions=[{','.join([str(sc['current_pos']) for sc in self.rounds.values()])}]"]
+            f"round_scores=[{','.join([str(sc['score']) for sc in self.rounds_scores()])}]",
+            f"round_positions=[{','.join([str(sc['current_pos']) for sc in self.rounds_scores()])}]"]
         return f"{cls_name}({', '.join(fn.remove_none(components))})"
 
     def __hash__(self):
@@ -155,3 +155,6 @@ class PlayerScore:
             self.rounds[rd_sub]['current_pos'] = pos
             self.repo().update_round_position(self, rd_sub, pos)
         return self
+
+    def rounds_scores(self):
+        return self.rounds.values()
