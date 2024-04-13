@@ -11,15 +11,15 @@ from . import console
 temp_file_path = Path("_temp") / "leaderboard.txt"
 
 def event_team_scores_table(df: pl.DataFrame, to_discord: bool = False):
-    general_df_table(df, Table(title="Fantasy Scores"), to_discord)
+    general_df_table(df, Table(title="Fantasy Scores"), small=True, to_discord=to_discord)
     ...
 
 def leaderboard(df: pl.DataFrame, to_discord: bool = False):
-    general_df_table(df, Table(title="Leaderboard"), to_discord)
+    general_df_table(df, Table(title="Leaderboard"), small=False, to_discord=to_discord)
     ...
 
 
-def general_df_table(df, table, to_discord: bool = False):
+def general_df_table(df, table, small: bool = True, to_discord: bool = False):
     for column in df.columns:
         table.add_column(column, justify="right", style="green")
 
@@ -29,14 +29,17 @@ def general_df_table(df, table, to_discord: bool = False):
     console.terminal_console().print(table)
 
     if to_discord:
-        _send_to_discord(table)
+        _send_to_discord(table, as_text=True if small else False)
 
 
 
-def _send_to_discord(table):
+def _send_to_discord(table, as_text: bool = True):
     cons = console.to_string_console()
     cons.print(table)
-    _as_text(cons)
+    if as_text:
+        _as_text(cons)
+    else:
+        _as_attachment(cons)
     pass
 
 def _as_text(cons):
