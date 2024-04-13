@@ -29,7 +29,7 @@ def selection(major):
     TEAM.major(major).on_roster(players.McIlroy)
     TEAM.major(major).on_roster(players.Lowry)
     TEAM.major(major).on_roster(players.Rahm)
-    TEAM.major(major).on_roster(players.Matsuyama)
+    TEAM.major(major).on_roster(players.Højgaard)
     TEAM.major(major).on_roster(players.Scheffler)
     TEAM.major(major).on_roster(players.Zalatoris)
     TEAM.major(major).on_roster(players.Hovland)

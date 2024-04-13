@@ -29,13 +29,13 @@ def selection(major):
     TEAM.major(major).on_roster(players.McIlroy)
     TEAM.major(major).on_roster(players.Clark)
     TEAM.major(major).on_roster(players.Homa)
-    TEAM.major(major).on_roster(players.Matsuyama)
+    TEAM.major(major).on_roster(players.Cantlay)
     TEAM.major(major).on_roster(players.Scheffler)
     TEAM.major(major).on_roster(players.Schauffele)
     TEAM.major(major).on_roster(players.Fitzpatrick_M)
     TEAM.major(major).on_roster(players.Aberg)
     TEAM.major(major).on_roster(players.Fleetwood)
-    TEAM.major(major).on_roster(players.Theegala)
+    TEAM.major(major).on_roster(players.Finau)
     pass
 
 
