@@ -51,7 +51,6 @@ def leaderboard_for_round(tournament, year, for_round):
     event = tournament.for_year(year, load=True)
 
     rd_results = event.scores_for_round(for_round=for_round)
-    breakpoint()
     return monad.Right(event)
 
 
