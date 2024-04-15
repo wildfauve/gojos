@@ -54,5 +54,7 @@ def wildcards(major):
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.McIlroy).trade_in(players.Fox))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Hatton).trade_in(players.Davis))
     TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Fitzpatrick_M).trade_in(players.Morikawa))
+    TEAM.major(major).play_wildcard(WildCard().from_round(3).trade_out(players.Fleetwood).trade_in(players.DeChambeau))
 
+    
     pass
